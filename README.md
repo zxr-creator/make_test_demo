@@ -1,5 +1,5 @@
 # make_test_demo
-Makefile for a complex project with node dependencies.
+Makefile for a demo project with node dependencies.
 
 The dependency relationships are:
 

@@ -429,7 +429,7 @@ Considering target file 'all'.
        Finished prerequisites of target file 'n1'.
       Must remake target 'n1'.
 Need a job token; we don't have children
-Putting child 0x55fcb41125b0 (n1) PID 65473 on the chain.
+Putting child 0x55cd8850cb10 (n1) PID 38023 on the chain.
       Recipe of 'n1' is being run.
      Finished prerequisites of target file 'n3'.
     The prerequisites of 'n3' are being made.
@@ -510,12 +510,12 @@ Putting child 0x55fcb41125b0 (n1) PID 65473 on the chain.
   The prerequisites of 'n18' are being made.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb41125b0 (n1) PID 65473 
-Building n1
-Reaping winning child 0x55fcb41125b0 PID 65473 
-Live child 0x55fcb41125b0 (n1) PID 65474 
-Reaping winning child 0x55fcb41125b0 PID 65474 
-Removing child 0x55fcb41125b0 PID 65474 from chain.
+Live child 0x55cd8850cb10 (n1) PID 38023 
+[22:07:12] Building n1 on PID 38023
+Reaping winning child 0x55cd8850cb10 PID 38023 
+Live child 0x55cd8850cb10 (n1) PID 38024 
+Reaping winning child 0x55cd8850cb10 PID 38024 
+Removing child 0x55cd8850cb10 PID 38024 from chain.
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.
@@ -527,7 +527,7 @@ Considering target file 'all'.
      Finished prerequisites of target file 'n3'.
     Must remake target 'n3'.
 Need a job token; we don't have children
-Putting child 0x55fcb4117400 (n3) PID 65475 on the chain.
+Putting child 0x55cd8850f0e0 (n3) PID 38026 on the chain.
     Recipe of 'n3' is being run.
    Finished prerequisites of target file 'n4'.
   The prerequisites of 'n4' are being made.
@@ -536,11 +536,15 @@ Putting child 0x55fcb4117400 (n3) PID 65475 on the chain.
     Pruning file 'n1'.
    Finished prerequisites of target file 'n2'.
   Must remake target 'n2'.
-Live child 0x55fcb4117400 (n3) PID 65475 
+Live child 0x55cd8850f0e0 (n3) PID 38026 
+[22:07:12] Building n3 on PID 38026
+Live child 0x55cd8850f0e0 (n3) PID 38026 
+Reaping winning child 0x55cd8850f0e0 PID 38026 
+Live child 0x55cd8850f0e0 (n3) PID 38028 
 Need a job token; we have children
-Live child 0x55fcb4117400 (n3) PID 65475 
-Obtained token for child 0x55fcb4115050 (n2).
-Putting child 0x55fcb4115050 (n2) PID 65476 on the chain.
+Live child 0x55cd8850f0e0 (n3) PID 38028 
+Obtained token for child 0x55cd8850fcc0 (n2).
+Putting child 0x55cd8850fcc0 (n2) PID 38029 on the chain.
   Recipe of 'n2' is being run.
   Considering target file 'n8'.
    File 'n8' does not exist.
@@ -612,20 +616,12 @@ Putting child 0x55fcb4115050 (n2) PID 65476 on the chain.
   The prerequisites of 'n18' are being made.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb4115050 (n2) PID 65476 
-Live child 0x55fcb4117400 (n3) PID 65475 
-Building n3
-Building n2
-Reaping winning child 0x55fcb4117400 PID 65475 
-Live child 0x55fcb4115050 (n2) PID 65476 
-Live child 0x55fcb4117400 (n3) PID 65477 
-Reaping winning child 0x55fcb4115050 PID 65476 
-Live child 0x55fcb4115050 (n2) PID 65478 
-Live child 0x55fcb4117400 (n3) PID 65477 
-Reaping winning child 0x55fcb4117400 PID 65477 
-Removing child 0x55fcb4117400 PID 65477 from chain.
-Released token for child 0x55fcb4117400 (n3).
-Live child 0x55fcb4115050 (n2) PID 65478 
+Live child 0x55cd8850fcc0 (n2) PID 38029 
+Live child 0x55cd8850f0e0 (n3) PID 38028 
+Reaping winning child 0x55cd8850f0e0 PID 38028 
+Removing child 0x55cd8850f0e0 PID 38028 from chain.
+Released token for child 0x55cd8850f0e0 (n3).
+Live child 0x55cd8850fcc0 (n2) PID 38029 
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.
@@ -634,11 +630,15 @@ Considering target file 'all'.
     File 'n3' was considered already.
    Finished prerequisites of target file 'n4'.
   Must remake target 'n4'.
-Live child 0x55fcb4115050 (n2) PID 65478 
+Live child 0x55cd8850fcc0 (n2) PID 38029 
+[22:07:12] Building n2 on PID 38029
+Live child 0x55cd8850fcc0 (n2) PID 38029 
+Reaping winning child 0x55cd8850fcc0 PID 38029 
+Live child 0x55cd8850fcc0 (n2) PID 38031 
 Need a job token; we have children
-Live child 0x55fcb4115050 (n2) PID 65478 
-Obtained token for child 0x55fcb4114610 (n4).
-Putting child 0x55fcb4114610 (n4) PID 65479 on the chain.
+Live child 0x55cd8850fcc0 (n2) PID 38031 
+Obtained token for child 0x55cd8850f440 (n4).
+Putting child 0x55cd8850f440 (n4) PID 38032 on the chain.
   Recipe of 'n4' is being run.
   Considering target file 'n2'.
   Still updating file 'n2'.
@@ -651,17 +651,21 @@ Putting child 0x55fcb4114610 (n4) PID 65479 on the chain.
         Pruning file 'n3'.
        Finished prerequisites of target file 'n5'.
       Must remake target 'n5'.
-Live child 0x55fcb4114610 (n4) PID 65479 
-Live child 0x55fcb4115050 (n2) PID 65478 
-Reaping winning child 0x55fcb4115050 PID 65478 
-Removing child 0x55fcb4115050 PID 65478 from chain.
-Released token for child 0x55fcb4115050 (n2).
-Live child 0x55fcb4114610 (n4) PID 65479 
+Live child 0x55cd8850f440 (n4) PID 38032 
+Live child 0x55cd8850fcc0 (n2) PID 38031 
+[22:07:12] Building n4 on PID 38032
+Live child 0x55cd8850f440 (n4) PID 38032 
+Live child 0x55cd8850fcc0 (n2) PID 38031 
+Reaping winning child 0x55cd8850fcc0 PID 38031 
+Removing child 0x55cd8850fcc0 PID 38031 from chain.
+Released token for child 0x55cd8850fcc0 (n2).
+Live child 0x55cd8850f440 (n4) PID 38032 
+Reaping winning child 0x55cd8850f440 PID 38032 
+Live child 0x55cd8850f440 (n4) PID 38034 
 Need a job token; we have children
-Live child 0x55fcb4114610 (n4) PID 65479 
-Obtained token for child 0x55fcb4118980 (n5).
-Putting child 0x55fcb4118980 (n5) PID 65480 on the chain.
-Building n4
+Live child 0x55cd8850f440 (n4) PID 38034 
+Obtained token for child 0x55cd88513740 (n5).
+Putting child 0x55cd88513740 (n5) PID 38035 on the chain.
       Recipe of 'n5' is being run.
      Finished prerequisites of target file 'n6'.
     The prerequisites of 'n6' are being made.
@@ -687,30 +691,21 @@ Building n4
         Pruning file 'n3'.
        Finished prerequisites of target file 'n13'.
       Must remake target 'n13'.
-Live child 0x55fcb4118980 (n5) PID 65480 
-Live child 0x55fcb4114610 (n4) PID 65479 
-Reaping winning child 0x55fcb4114610 PID 65479 
-Live child 0x55fcb4118980 (n5) PID 65480 
-Live child 0x55fcb4114610 (n4) PID 65481 
+Live child 0x55cd88513740 (n5) PID 38035 
+Live child 0x55cd8850f440 (n4) PID 38034 
+[22:07:12] Building n5 on PID 38035
+Live child 0x55cd88513740 (n5) PID 38035 
+Live child 0x55cd8850f440 (n4) PID 38034 
+Reaping winning child 0x55cd8850f440 PID 38034 
+Removing child 0x55cd8850f440 PID 38034 from chain.
+Released token for child 0x55cd8850f440 (n4).
+Live child 0x55cd88513740 (n5) PID 38035 
+Reaping winning child 0x55cd88513740 PID 38035 
+Live child 0x55cd88513740 (n5) PID 38037 
 Need a job token; we have children
-Live child 0x55fcb4118980 (n5) PID 65480 
-Live child 0x55fcb4114610 (n4) PID 65481 
-Need a job token; we have children
-Live child 0x55fcb4118980 (n5) PID 65480 
-Live child 0x55fcb4114610 (n4) PID 65481 
-Building n5
-Need a job token; we have children
-Live child 0x55fcb4118980 (n5) PID 65480 
-Live child 0x55fcb4114610 (n4) PID 65481 
-Reaping winning child 0x55fcb4118980 PID 65480 
-Live child 0x55fcb4118980 (n5) PID 65482 
-Live child 0x55fcb4114610 (n4) PID 65481 
-Reaping winning child 0x55fcb4114610 PID 65481 
-Removing child 0x55fcb4114610 PID 65481 from chain.
-Released token for child 0x55fcb4114610 (n4).
-Live child 0x55fcb4118980 (n5) PID 65482 
-Obtained token for child 0x55fcb4115fe0 (n13).
-Putting child 0x55fcb4115fe0 (n13) PID 65483 on the chain.
+Live child 0x55cd88513740 (n5) PID 38037 
+Obtained token for child 0x55cd885140f0 (n13).
+Putting child 0x55cd885140f0 (n13) PID 38038 on the chain.
       Recipe of 'n13' is being run.
      Finished prerequisites of target file 'n10'.
     The prerequisites of 'n10' are being made.
@@ -749,13 +744,12 @@ Putting child 0x55fcb4115fe0 (n13) PID 65483 on the chain.
   The prerequisites of 'n18' are being made.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb4115fe0 (n13) PID 65483 
-Live child 0x55fcb4118980 (n5) PID 65482 
-Reaping winning child 0x55fcb4118980 PID 65482 
-Removing child 0x55fcb4118980 PID 65482 from chain.
-Released token for child 0x55fcb4118980 (n5).
-Building n13
-Live child 0x55fcb4115fe0 (n13) PID 65483 
+Live child 0x55cd885140f0 (n13) PID 38038 
+Live child 0x55cd88513740 (n5) PID 38037 
+Reaping winning child 0x55cd88513740 PID 38037 
+Removing child 0x55cd88513740 PID 38037 from chain.
+Released token for child 0x55cd88513740 (n5).
+Live child 0x55cd885140f0 (n13) PID 38038 
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.
@@ -770,13 +764,15 @@ Considering target file 'all'.
       File 'n5' was considered already.
      Finished prerequisites of target file 'n6'.
     Must remake target 'n6'.
-Live child 0x55fcb4115fe0 (n13) PID 65483 
-Reaping winning child 0x55fcb4115fe0 PID 65483 
-Live child 0x55fcb4115fe0 (n13) PID 65484 
+Live child 0x55cd885140f0 (n13) PID 38038 
+[22:07:12] Building n13 on PID 38038
+Live child 0x55cd885140f0 (n13) PID 38038 
+Reaping winning child 0x55cd885140f0 PID 38038 
+Live child 0x55cd885140f0 (n13) PID 38040 
 Need a job token; we have children
-Live child 0x55fcb4115fe0 (n13) PID 65484 
-Obtained token for child 0x55fcb4115900 (n6).
-Putting child 0x55fcb4115900 (n6) PID 65485 on the chain.
+Live child 0x55cd885140f0 (n13) PID 38040 
+Obtained token for child 0x55cd885129e0 (n6).
+Putting child 0x55cd885129e0 (n6) PID 38041 on the chain.
     Recipe of 'n6' is being run.
    Finished prerequisites of target file 'n8'.
   The prerequisites of 'n8' are being made.
@@ -794,24 +790,21 @@ Putting child 0x55fcb4115900 (n6) PID 65485 on the chain.
         Pruning file 'n5'.
        Finished prerequisites of target file 'n7'.
       Must remake target 'n7'.
-Live child 0x55fcb4115900 (n6) PID 65485 
-Live child 0x55fcb4115fe0 (n13) PID 65484 
+Live child 0x55cd885129e0 (n6) PID 38041 
+Live child 0x55cd885140f0 (n13) PID 38040 
+[22:07:12] Building n6 on PID 38041
+Live child 0x55cd885129e0 (n6) PID 38041 
+Live child 0x55cd885140f0 (n13) PID 38040 
+Reaping winning child 0x55cd885140f0 PID 38040 
+Removing child 0x55cd885140f0 PID 38040 from chain.
+Released token for child 0x55cd885140f0 (n13).
+Live child 0x55cd885129e0 (n6) PID 38041 
+Reaping winning child 0x55cd885129e0 PID 38041 
+Live child 0x55cd885129e0 (n6) PID 38043 
 Need a job token; we have children
-Live child 0x55fcb4115900 (n6) PID 65485 
-Live child 0x55fcb4115fe0 (n13) PID 65484 
-Need a job token; we have children
-Live child 0x55fcb4115900 (n6) PID 65485 
-Live child 0x55fcb4115fe0 (n13) PID 65484 
-Need a job token; we have children
-Live child 0x55fcb4115900 (n6) PID 65485 
-Live child 0x55fcb4115fe0 (n13) PID 65484 
-Reaping winning child 0x55fcb4115fe0 PID 65484 
-Removing child 0x55fcb4115fe0 PID 65484 from chain.
-Released token for child 0x55fcb4115fe0 (n13).
-Live child 0x55fcb4115900 (n6) PID 65485 
-Obtained token for child 0x55fcb411a690 (n7).
-Building n6
-Putting child 0x55fcb411a690 (n7) PID 65486 on the chain.
+Live child 0x55cd885129e0 (n6) PID 38043 
+Obtained token for child 0x55cd88515990 (n7).
+Putting child 0x55cd88515990 (n7) PID 38044 on the chain.
       Recipe of 'n7' is being run.
       Pruning file 'n9'.
       Considering target file 'n13'.
@@ -831,33 +824,21 @@ Putting child 0x55fcb411a690 (n7) PID 65486 on the chain.
         Pruning file 'n13'.
        Finished prerequisites of target file 'n14'.
       Must remake target 'n14'.
-Live child 0x55fcb411a690 (n7) PID 65486 
-Live child 0x55fcb4115900 (n6) PID 65485 
-Reaping winning child 0x55fcb4115900 PID 65485 
-Live child 0x55fcb411a690 (n7) PID 65486 
-Building n7
-Live child 0x55fcb4115900 (n6) PID 65487 
+Live child 0x55cd88515990 (n7) PID 38044 
+Live child 0x55cd885129e0 (n6) PID 38043 
+[22:07:12] Building n7 on PID 38044
+Live child 0x55cd88515990 (n7) PID 38044 
+Live child 0x55cd885129e0 (n6) PID 38043 
+Reaping winning child 0x55cd885129e0 PID 38043 
+Removing child 0x55cd885129e0 PID 38043 from chain.
+Released token for child 0x55cd885129e0 (n6).
+Live child 0x55cd88515990 (n7) PID 38044 
+Reaping winning child 0x55cd88515990 PID 38044 
+Live child 0x55cd88515990 (n7) PID 38046 
 Need a job token; we have children
-Live child 0x55fcb411a690 (n7) PID 65486 
-Live child 0x55fcb4115900 (n6) PID 65487 
-Need a job token; we have children
-Live child 0x55fcb411a690 (n7) PID 65486 
-Live child 0x55fcb4115900 (n6) PID 65487 
-Reaping winning child 0x55fcb411a690 PID 65486 
-Live child 0x55fcb411a690 (n7) PID 65488 
-Live child 0x55fcb4115900 (n6) PID 65487 
-Need a job token; we have children
-Live child 0x55fcb411a690 (n7) PID 65488 
-Live child 0x55fcb4115900 (n6) PID 65487 
-Need a job token; we have children
-Live child 0x55fcb411a690 (n7) PID 65488 
-Live child 0x55fcb4115900 (n6) PID 65487 
-Reaping winning child 0x55fcb4115900 PID 65487 
-Removing child 0x55fcb4115900 PID 65487 from chain.
-Released token for child 0x55fcb4115900 (n6).
-Live child 0x55fcb411a690 (n7) PID 65488 
-Obtained token for child 0x55fcb411b0e0 (n14).
-Putting child 0x55fcb411b0e0 (n14) PID 65489 on the chain.
+Live child 0x55cd88515990 (n7) PID 38046 
+Obtained token for child 0x55cd88516200 (n14).
+Putting child 0x55cd88516200 (n14) PID 38047 on the chain.
       Recipe of 'n14' is being run.
      Finished prerequisites of target file 'n16'.
     The prerequisites of 'n16' are being made.
@@ -871,17 +852,21 @@ Putting child 0x55fcb411b0e0 (n14) PID 65489 on the chain.
       Pruning file 'n13'.
      Finished prerequisites of target file 'n15'.
     Must remake target 'n15'.
-Live child 0x55fcb411b0e0 (n14) PID 65489 
-Live child 0x55fcb411a690 (n7) PID 65488 
-Reaping winning child 0x55fcb411a690 PID 65488 
-Removing child 0x55fcb411a690 PID 65488 from chain.
-Released token for child 0x55fcb411a690 (n7).
-Live child 0x55fcb411b0e0 (n14) PID 65489 
+Live child 0x55cd88516200 (n14) PID 38047 
+Live child 0x55cd88515990 (n7) PID 38046 
+[22:07:12] Building n14 on PID 38047
+Live child 0x55cd88516200 (n14) PID 38047 
+Live child 0x55cd88515990 (n7) PID 38046 
+Reaping winning child 0x55cd88515990 PID 38046 
+Removing child 0x55cd88515990 PID 38046 from chain.
+Released token for child 0x55cd88515990 (n7).
+Live child 0x55cd88516200 (n14) PID 38047 
+Reaping winning child 0x55cd88516200 PID 38047 
+Live child 0x55cd88516200 (n14) PID 38049 
 Need a job token; we have children
-Live child 0x55fcb411b0e0 (n14) PID 65489 
-Obtained token for child 0x55fcb4117a30 (n15).
-Putting child 0x55fcb4117a30 (n15) PID 65490 on the chain.
-Building n14
+Live child 0x55cd88516200 (n14) PID 38049 
+Obtained token for child 0x55cd885169c0 (n15).
+Putting child 0x55cd885169c0 (n15) PID 38050 on the chain.
     Recipe of 'n15' is being run.
    Finished prerequisites of target file 'n17'.
   The prerequisites of 'n17' are being made.
@@ -893,19 +878,12 @@ Building n14
   The prerequisites of 'n18' are being made.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb4117a30 (n15) PID 65490 
-Live child 0x55fcb411b0e0 (n14) PID 65489 
-Reaping winning child 0x55fcb411b0e0 PID 65489 
-Live child 0x55fcb4117a30 (n15) PID 65490 
-Live child 0x55fcb411b0e0 (n14) PID 65491 
-Building n15
-Reaping winning child 0x55fcb4117a30 PID 65490 
-Live child 0x55fcb4117a30 (n15) PID 65492 
-Live child 0x55fcb411b0e0 (n14) PID 65491 
-Reaping winning child 0x55fcb411b0e0 PID 65491 
-Removing child 0x55fcb411b0e0 PID 65491 from chain.
-Released token for child 0x55fcb411b0e0 (n14).
-Live child 0x55fcb4117a30 (n15) PID 65492 
+Live child 0x55cd885169c0 (n15) PID 38050 
+Live child 0x55cd88516200 (n14) PID 38049 
+Reaping winning child 0x55cd88516200 PID 38049 
+Removing child 0x55cd88516200 PID 38049 from chain.
+Released token for child 0x55cd88516200 (n14).
+Live child 0x55cd885169c0 (n15) PID 38050 
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.
@@ -913,40 +891,41 @@ Considering target file 'all'.
   Considering target file 'n2'.
   File 'n2' was considered already.
   Considering target file 'n8'.
+[22:07:12] Building n15 on PID 38050
    File 'n8' does not exist.
     Considering target file 'n6'.
     File 'n6' was considered already.
    Finished prerequisites of target file 'n8'.
   Must remake target 'n8'.
-Live child 0x55fcb4117a30 (n15) PID 65492 
+Live child 0x55cd885169c0 (n15) PID 38050 
+Live child 0x55cd885169c0 (n15) PID 38050 
+Reaping winning child 0x55cd885169c0 PID 38050 
+Live child 0x55cd885169c0 (n15) PID 38052 
 Need a job token; we have children
-Live child 0x55fcb4117a30 (n15) PID 65492 
-Obtained token for child 0x55fcb4115a60 (n8).
-Putting child 0x55fcb4115a60 (n8) PID 65493 on the chain.
+Live child 0x55cd885169c0 (n15) PID 38052 
+Obtained token for child 0x55cd88516400 (n8).
+Putting child 0x55cd88516400 (n8) PID 38053 on the chain.
   Recipe of 'n8' is being run.
   Considering target file 'n9'.
    File 'n9' does not exist.
     Pruning file 'n6'.
    Finished prerequisites of target file 'n9'.
   Must remake target 'n9'.
-Live child 0x55fcb4115a60 (n8) PID 65493 
-Live child 0x55fcb4117a30 (n15) PID 65492 
+Live child 0x55cd88516400 (n8) PID 38053 
+Live child 0x55cd885169c0 (n15) PID 38052 
+[22:07:12] Building n8 on PID 38053
+Live child 0x55cd88516400 (n8) PID 38053 
+Live child 0x55cd885169c0 (n15) PID 38052 
+Reaping winning child 0x55cd885169c0 PID 38052 
+Removing child 0x55cd885169c0 PID 38052 from chain.
+Released token for child 0x55cd885169c0 (n15).
+Live child 0x55cd88516400 (n8) PID 38053 
+Reaping winning child 0x55cd88516400 PID 38053 
+Live child 0x55cd88516400 (n8) PID 38055 
 Need a job token; we have children
-Live child 0x55fcb4115a60 (n8) PID 65493 
-Live child 0x55fcb4117a30 (n15) PID 65492 
-Need a job token; we have children
-Live child 0x55fcb4115a60 (n8) PID 65493 
-Live child 0x55fcb4117a30 (n15) PID 65492 
-Need a job token; we have children
-Live child 0x55fcb4115a60 (n8) PID 65493 
-Live child 0x55fcb4117a30 (n15) PID 65492 
-Reaping winning child 0x55fcb4117a30 PID 65492 
-Removing child 0x55fcb4117a30 PID 65492 from chain.
-Released token for child 0x55fcb4117a30 (n15).
-Live child 0x55fcb4115a60 (n8) PID 65493 
-Obtained token for child 0x55fcb411c2d0 (n9).
-Building n8
-Putting child 0x55fcb411c2d0 (n9) PID 65494 on the chain.
+Live child 0x55cd88516400 (n8) PID 38055 
+Obtained token for child 0x55cd88517410 (n9).
+Putting child 0x55cd88517410 (n9) PID 38056 on the chain.
   Recipe of 'n9' is being run.
   Considering target file 'n11'.
    File 'n11' does not exist.
@@ -971,33 +950,21 @@ Putting child 0x55fcb411c2d0 (n9) PID 65494 on the chain.
       File 'n14' was considered already.
      Finished prerequisites of target file 'n16'.
     Must remake target 'n16'.
-Live child 0x55fcb411c2d0 (n9) PID 65494 
-Live child 0x55fcb4115a60 (n8) PID 65493 
-Reaping winning child 0x55fcb4115a60 PID 65493 
-Live child 0x55fcb411c2d0 (n9) PID 65494 
-Live child 0x55fcb4115a60 (n8) PID 65495 
+Live child 0x55cd88517410 (n9) PID 38056 
+Live child 0x55cd88516400 (n8) PID 38055 
+[22:07:12] Building n9 on PID 38056
+Live child 0x55cd88517410 (n9) PID 38056 
+Live child 0x55cd88516400 (n8) PID 38055 
+Reaping winning child 0x55cd88516400 PID 38055 
+Removing child 0x55cd88516400 PID 38055 from chain.
+Released token for child 0x55cd88516400 (n8).
+Live child 0x55cd88517410 (n9) PID 38056 
+Reaping winning child 0x55cd88517410 PID 38056 
+Live child 0x55cd88517410 (n9) PID 38058 
 Need a job token; we have children
-Live child 0x55fcb411c2d0 (n9) PID 65494 
-Live child 0x55fcb4115a60 (n8) PID 65495 
-Need a job token; we have children
-Live child 0x55fcb411c2d0 (n9) PID 65494 
-Live child 0x55fcb4115a60 (n8) PID 65495 
-Building n9
-Need a job token; we have children
-Live child 0x55fcb411c2d0 (n9) PID 65494 
-Live child 0x55fcb4115a60 (n8) PID 65495 
-Reaping winning child 0x55fcb411c2d0 PID 65494 
-Live child 0x55fcb411c2d0 (n9) PID 65496 
-Live child 0x55fcb4115a60 (n8) PID 65495 
-Need a job token; we have children
-Live child 0x55fcb411c2d0 (n9) PID 65496 
-Live child 0x55fcb4115a60 (n8) PID 65495 
-Reaping winning child 0x55fcb4115a60 PID 65495 
-Removing child 0x55fcb4115a60 PID 65495 from chain.
-Released token for child 0x55fcb4115a60 (n8).
-Live child 0x55fcb411c2d0 (n9) PID 65496 
-Obtained token for child 0x55fcb411c830 (n16).
-Putting child 0x55fcb411c830 (n16) PID 65497 on the chain.
+Live child 0x55cd88517410 (n9) PID 38058 
+Obtained token for child 0x55cd885178e0 (n16).
+Putting child 0x55cd885178e0 (n16) PID 38059 on the chain.
     Recipe of 'n16' is being run.
    Finished prerequisites of target file 'n12'.
   The prerequisites of 'n12' are being made.
@@ -1008,21 +975,21 @@ Putting child 0x55fcb411c830 (n16) PID 65497 on the chain.
     File 'n15' was considered already.
    Finished prerequisites of target file 'n17'.
   Must remake target 'n17'.
-Live child 0x55fcb411c830 (n16) PID 65497 
-Live child 0x55fcb411c2d0 (n9) PID 65496 
+Live child 0x55cd885178e0 (n16) PID 38059 
+Live child 0x55cd88517410 (n9) PID 38058 
+[22:07:12] Building n16 on PID 38059
+Live child 0x55cd885178e0 (n16) PID 38059 
+Live child 0x55cd88517410 (n9) PID 38058 
+Reaping winning child 0x55cd88517410 PID 38058 
+Removing child 0x55cd88517410 PID 38058 from chain.
+Released token for child 0x55cd88517410 (n9).
+Live child 0x55cd885178e0 (n16) PID 38059 
+Reaping winning child 0x55cd885178e0 PID 38059 
+Live child 0x55cd885178e0 (n16) PID 38061 
 Need a job token; we have children
-Live child 0x55fcb411c830 (n16) PID 65497 
-Live child 0x55fcb411c2d0 (n9) PID 65496 
-Need a job token; we have children
-Live child 0x55fcb411c830 (n16) PID 65497 
-Live child 0x55fcb411c2d0 (n9) PID 65496 
-Reaping winning child 0x55fcb411c2d0 PID 65496 
-Removing child 0x55fcb411c2d0 PID 65496 from chain.
-Released token for child 0x55fcb411c2d0 (n9).
-Live child 0x55fcb411c830 (n16) PID 65497 
-Obtained token for child 0x55fcb411ccb0 (n17).
-Building n16
-Putting child 0x55fcb411ccb0 (n17) PID 65498 on the chain.
+Live child 0x55cd885178e0 (n16) PID 38061 
+Obtained token for child 0x55cd88518650 (n17).
+Putting child 0x55cd88518650 (n17) PID 38062 on the chain.
   Recipe of 'n17' is being run.
   Considering target file 'n18'.
    File 'n18' does not exist.
@@ -1032,19 +999,13 @@ Putting child 0x55fcb411ccb0 (n17) PID 65498 on the chain.
   The prerequisites of 'n18' are being made.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb411ccb0 (n17) PID 65498 
-Live child 0x55fcb411c830 (n16) PID 65497 
-Reaping winning child 0x55fcb411c830 PID 65497 
-Live child 0x55fcb411ccb0 (n17) PID 65498 
-Building n17
-Live child 0x55fcb411c830 (n16) PID 65499 
-Reaping winning child 0x55fcb411ccb0 PID 65498 
-Live child 0x55fcb411ccb0 (n17) PID 65500 
-Live child 0x55fcb411c830 (n16) PID 65499 
-Reaping winning child 0x55fcb411c830 PID 65499 
-Removing child 0x55fcb411c830 PID 65499 from chain.
-Released token for child 0x55fcb411c830 (n16).
-Live child 0x55fcb411ccb0 (n17) PID 65500 
+Live child 0x55cd88518650 (n17) PID 38062 
+Live child 0x55cd885178e0 (n16) PID 38061 
+[22:07:12] Building n17 on PID 38062
+Reaping winning child 0x55cd885178e0 PID 38061 
+Removing child 0x55cd885178e0 PID 38061 from chain.
+Released token for child 0x55cd885178e0 (n16).
+Live child 0x55cd88518650 (n17) PID 38062 
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.
@@ -1066,54 +1027,15 @@ Considering target file 'all'.
       File 'n13' was considered already.
      Finished prerequisites of target file 'n10'.
     Must remake target 'n10'.
-Live child 0x55fcb411ccb0 (n17) PID 65500 
-Need a job token; we have children
-Live child 0x55fcb411ccb0 (n17) PID 65500 
-Obtained token for child 0x55fcb411ba40 (n10).
-Putting child 0x55fcb411ba40 (n10) PID 65501 on the chain.
+Live child 0x55cd88518650 (n17) PID 38062 
+Reaping winning child 0x55cd88518650 PID 38062 
+Live child 0x55cd88518650 (n17) PID 38063 
+Live child 0x55cd88518650 (n17) PID 38063 
+Reaping winning child 0x55cd88518650 PID 38063 
+Removing child 0x55cd88518650 PID 38063 from chain.
+Need a job token; we don't have children
+Putting child 0x55cd8850ff80 (n10) PID 38065 on the chain.
     Recipe of 'n10' is being run.
-   Finished prerequisites of target file 'n11'.
-  The prerequisites of 'n11' are being made.
-  Considering target file 'n12'.
-   File 'n12' does not exist.
-    Pruning file 'n11'.
-    Pruning file 'n10'.
-    Considering target file 'n16'.
-    File 'n16' was considered already.
-   Finished prerequisites of target file 'n12'.
-  The prerequisites of 'n12' are being made.
-  Pruning file 'n16'.
-  Considering target file 'n17'.
-  Still updating file 'n17'.
-  Considering target file 'n18'.
-   File 'n18' does not exist.
-    Pruning file 'n12'.
-    Considering target file 'n15'.
-    File 'n15' was considered already.
-   Finished prerequisites of target file 'n18'.
-  The prerequisites of 'n18' are being made.
- Finished prerequisites of target file 'all'.
-The prerequisites of 'all' are being made.
-Live child 0x55fcb411ba40 (n10) PID 65501 
-Live child 0x55fcb411ccb0 (n17) PID 65500 
-Reaping winning child 0x55fcb411ccb0 PID 65500 
-Removing child 0x55fcb411ccb0 PID 65500 from chain.
-Released token for child 0x55fcb411ccb0 (n17).
-Live child 0x55fcb411ba40 (n10) PID 65501 
-Considering target file 'all'.
- File 'all' does not exist.
-  Considering target file 'n4'.
-  File 'n4' was considered already.
-  Considering target file 'n2'.
-  File 'n2' was considered already.
-  Considering target file 'n8'.
-  File 'n8' was considered already.
-  Considering target file 'n9'.
-  File 'n9' was considered already.
-  Considering target file 'n11'.
-   File 'n11' does not exist.
-    Considering target file 'n10'.
-    Still updating file 'n10'.
    Finished prerequisites of target file 'n11'.
   The prerequisites of 'n11' are being made.
   Considering target file 'n12'.
@@ -1136,12 +1058,12 @@ Considering target file 'all'.
   The prerequisites of 'n18' are being made.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb411ba40 (n10) PID 65501 
-Building n10
-Reaping winning child 0x55fcb411ba40 PID 65501 
-Live child 0x55fcb411ba40 (n10) PID 65502 
-Reaping winning child 0x55fcb411ba40 PID 65502 
-Removing child 0x55fcb411ba40 PID 65502 from chain.
+Live child 0x55cd8850ff80 (n10) PID 38065 
+[22:07:12] Building n10 on PID 38065
+Reaping winning child 0x55cd8850ff80 PID 38065 
+Live child 0x55cd8850ff80 (n10) PID 38066 
+Reaping winning child 0x55cd8850ff80 PID 38066 
+Removing child 0x55cd8850ff80 PID 38066 from chain.
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.
@@ -1159,7 +1081,7 @@ Considering target file 'all'.
    Finished prerequisites of target file 'n11'.
   Must remake target 'n11'.
 Need a job token; we don't have children
-Putting child 0x55fcb4115540 (n11) PID 65503 on the chain.
+Putting child 0x55cd88512090 (n11) PID 38068 on the chain.
   Recipe of 'n11' is being run.
   Considering target file 'n12'.
    File 'n12' does not exist.
@@ -1181,12 +1103,12 @@ Putting child 0x55fcb4115540 (n11) PID 65503 on the chain.
   The prerequisites of 'n18' are being made.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb4115540 (n11) PID 65503 
-Building n11
-Reaping winning child 0x55fcb4115540 PID 65503 
-Live child 0x55fcb4115540 (n11) PID 65504 
-Reaping winning child 0x55fcb4115540 PID 65504 
-Removing child 0x55fcb4115540 PID 65504 from chain.
+Live child 0x55cd88512090 (n11) PID 38068 
+[22:07:12] Building n11 on PID 38068
+Reaping winning child 0x55cd88512090 PID 38068 
+Live child 0x55cd88512090 (n11) PID 38069 
+Reaping winning child 0x55cd88512090 PID 38069 
+Removing child 0x55cd88512090 PID 38069 from chain.
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.
@@ -1209,7 +1131,7 @@ Considering target file 'all'.
    Finished prerequisites of target file 'n12'.
   Must remake target 'n12'.
 Need a job token; we don't have children
-Putting child 0x55fcb411bcd0 (n12) PID 65505 on the chain.
+Putting child 0x55cd885163b0 (n12) PID 38071 on the chain.
   Recipe of 'n12' is being run.
   Pruning file 'n16'.
   Considering target file 'n17'.
@@ -1223,12 +1145,12 @@ Putting child 0x55fcb411bcd0 (n12) PID 65505 on the chain.
   The prerequisites of 'n18' are being made.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb411bcd0 (n12) PID 65505 
-Building n12
-Reaping winning child 0x55fcb411bcd0 PID 65505 
-Live child 0x55fcb411bcd0 (n12) PID 65506 
-Reaping winning child 0x55fcb411bcd0 PID 65506 
-Removing child 0x55fcb411bcd0 PID 65506 from chain.
+Live child 0x55cd885163b0 (n12) PID 38071 
+[22:07:12] Building n12 on PID 38071
+Reaping winning child 0x55cd885163b0 PID 38071 
+Live child 0x55cd885163b0 (n12) PID 38072 
+Reaping winning child 0x55cd885163b0 PID 38072 
+Removing child 0x55cd885163b0 PID 38072 from chain.
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.
@@ -1255,16 +1177,16 @@ Considering target file 'all'.
    Finished prerequisites of target file 'n18'.
   Must remake target 'n18'.
 Need a job token; we don't have children
-Putting child 0x55fcb4117d60 (n18) PID 65507 on the chain.
+Putting child 0x55cd88512560 (n18) PID 38074 on the chain.
   Recipe of 'n18' is being run.
  Finished prerequisites of target file 'all'.
 The prerequisites of 'all' are being made.
-Live child 0x55fcb4117d60 (n18) PID 65507 
-Building n18
-Reaping winning child 0x55fcb4117d60 PID 65507 
-Live child 0x55fcb4117d60 (n18) PID 65508 
-Reaping winning child 0x55fcb4117d60 PID 65508 
-Removing child 0x55fcb4117d60 PID 65508 from chain.
+Live child 0x55cd88512560 (n18) PID 38074 
+[22:07:12] Building n18 on PID 38074
+Reaping winning child 0x55cd88512560 PID 38074 
+Live child 0x55cd88512560 (n18) PID 38075 
+Reaping winning child 0x55cd88512560 PID 38075 
+Removing child 0x55cd88512560 PID 38075 from chain.
 Considering target file 'all'.
  File 'all' does not exist.
   Considering target file 'n4'.

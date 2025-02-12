@@ -150,25 +150,42 @@ def main():
     #
     # For each node in the DOT file, if we recorded a token in
     # node_to_token_assigned, append it to the label.
+    # Additionally, if the total number of unique tokens is 8 or less,
+    # assign a distinct color to each token.
     ####################################################################
     print(f"node_to_token_assigned:{node_to_token_assigned}")
     print(f"Annotating {dependencies_dot} -> {updated_dot}")
+
+    # If we have 8 or fewer tokens, set up a color map.
+
+    color_map = {
+            'j1': 'red',
+            'j2': 'green',
+            'j3': 'blue',
+            'j4': 'yellow',
+            'j5': 'cyan',
+            'j6': 'magenta',
+            'j7': 'orange',
+            'j8': 'purple',
+    }
 
     with open(dependencies_dot, "r") as f:
         dot_lines = f.readlines()
 
     updated_dot_lines = []
-    label_node_re = re.compile(r'n(\d+)\[label="([^"]+)"')
+    label_node_re = re.compile(r'(n\d+)\[label="([^"]+)"')
     for line in dot_lines:
         match = label_node_re.search(line)
         if match:
-            node_num, label_text = match.groups()
-            # print(f"node_num:{node_num}, label_text:{label_text}")
+            node_id, label_text = match.groups()
+            # If this label (node) has an assigned token, update it.
             if label_text in node_to_token_assigned:
                 token = node_to_token_assigned[label_text]
                 new_label = f'{label_text}_{token}'
                 print(f"new_label:{new_label}")
                 line = line.replace(f'label="{label_text}"', f'label="{new_label}"')
+                # If we have a color mapping for this token, add the color attributes.
+                line = re.sub(r'color="[^"]*"', f'color="{color_map[token]}"', line)
         updated_dot_lines.append(line)
 
     with open(updated_dot, "w") as f:

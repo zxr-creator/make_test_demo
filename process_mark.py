@@ -197,6 +197,7 @@ def main():
         subprocess.run(["dot", "-Tsvg", updated_dot, "-o", updated_svg], check=False)
 
     print("All done.")
+    subprocess.run(["make", "clean"], check=False)
 
 if __name__ == "__main__":
     main()

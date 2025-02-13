@@ -34,7 +34,7 @@ def main():
     # Define filenames based on the number of jobs.
     make_log_path = f"make_d_j{args.jobs}.txt"
     dependencies_dot = "dependencies.dot"
-    updated_dot = "updated_dependencies.dot"
+    updated_dot = f"make_d_j{args.jobs}.dot"
 
     ####################################################################
     # 0. Clean the build.
@@ -192,7 +192,7 @@ def main():
         f.writelines(updated_dot_lines)
 
     if not args.no_svg:
-        updated_svg = "updated_dependencies.svg"
+        updated_svg = f"make_d_j{args.jobs}.svg"
         print(f"Generating {updated_svg} from {updated_dot}")
         subprocess.run(["dot", "-Tsvg", updated_dot, "-o", updated_svg], check=False)
 

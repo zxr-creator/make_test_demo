@@ -4,6 +4,71 @@ import subprocess
 import re
 import os
 
+def print_parallel_sequence(args, make_log_path):
+    """
+    This function re-parses the make debug log and records the parallel execution sequence.
+    It writes the sequence to a text file named "make_d_j{jobs}_seq.txt". Each line has:
+        time_index  n1 pid_of_n1 n2 pid_of_n2 n3 pid_of_n3 ...
+    where the nodes listed are those concurrently running at that moment.
+    """
+    # Prepare output file name.
+    seq_filename = f"make_d_j{args.jobs}_seq.txt"
+    
+    # Regexes for child addition events:
+    live_child_re   = re.compile(r"Live child \S+ \((n\d+)\) PID (\d+)")
+    putting_child_re = re.compile(r"Putting child \S+ \((n\d+)\) PID (\d+)")
+    # Removal events: including both "Reaping winning child" and "Removing child".
+    child_done_re   = re.compile(r"(?:Reaping winning child|Removing child) \S+(?: \((n\d+)\))? PID (\d+)")
+    
+    # Data structure to track currently running processes.
+    current_live = {}   # mapping: pid -> node
+    snapshots = []      # list of snapshots: each is (time_index, list of (node, pid))
+    time_index = 0      # incremental index for each state change
+    
+    def record_snapshot():
+        nonlocal time_index
+        # Create a sorted list by node name for a consistent order.
+        snapshot = sorted([(node, pid) for pid, node in current_live.items()], key=lambda x: x[0])
+        # Only record if there is at least one running process.
+        if snapshot:
+            time_index += 1
+            snapshots.append((time_index, snapshot))
+    
+    with open(make_log_path, "r") as f:
+        for line in f:
+            changed = False
+            # (a) Check for child addition events.
+            match = live_child_re.search(line)
+            if not match:
+                match = putting_child_re.search(line)
+            if match:
+                node, pid = match.groups()
+                # If the pid is not already recorded, add it.
+                if pid not in current_live:
+                    current_live[pid] = node
+                    changed = True
+            # (b) Check for removal events.
+            done_match = child_done_re.search(line)
+            if done_match:
+                # The node may be present as an optional group.
+                _, pid = done_match.groups()
+                if pid in current_live:
+                    del current_live[pid]
+                    changed = True
+            if changed:
+                record_snapshot()
+    
+    # Write the snapshots to file.
+    with open(seq_filename, "w") as out:
+        for idx, snapshot in snapshots:
+            # Format: time_index n1 pid n2 pid ...
+            line_items = [str(idx)]
+            for node, pid in snapshot:
+                line_items.append(node)
+                line_items.append(pid)
+            out.write(" ".join(line_items) + "\n")
+    print(f"Parallel execution sequence written to {seq_filename}")
+
 def main():
     parser = argparse.ArgumentParser(
         description="Run Make with concurrency, parse logs using live/putting-child events, and annotate DOT file."
@@ -157,7 +222,6 @@ def main():
     print(f"Annotating {dependencies_dot} -> {updated_dot}")
 
     # If we have 8 or fewer tokens, set up a color map.
-
     color_map = {
             'j1': 'red',
             'j2': 'green',
@@ -195,6 +259,11 @@ def main():
         updated_svg = f"make_d_j{args.jobs}.svg"
         print(f"Generating {updated_svg} from {updated_dot}")
         subprocess.run(["dot", "-Tsvg", updated_dot, "-o", updated_svg], check=False)
+
+    # ------------------------------------------------------------------
+    # NEW: Print the parallel execution sequence to a txt file.
+    # ------------------------------------------------------------------
+    print_parallel_sequence(args, make_log_path)
 
     print("All done.")
     subprocess.run(["make", "clean"], check=False)

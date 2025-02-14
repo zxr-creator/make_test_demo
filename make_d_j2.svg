@@ -48,14 +48,14 @@
 <!-- n12 -->
 <g id="node3" class="node">
 <title>n12</title>
-<ellipse fill="none" stroke="red" cx="213" cy="-306" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="213" y="-302.3" font-family="Times,serif" font-size="14.00">n10_j1</text>
+<ellipse fill="none" stroke="green" cx="213" cy="-306" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="213" y="-302.3" font-family="Times,serif" font-size="14.00">n10_j2</text>
 </g>
 <!-- n11 -->
 <g id="node4" class="node">
 <title>n11</title>
-<ellipse fill="none" stroke="red" cx="173" cy="-234" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="173" y="-230.3" font-family="Times,serif" font-size="14.00">n11_j1</text>
+<ellipse fill="none" stroke="green" cx="173" cy="-234" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="173" y="-230.3" font-family="Times,serif" font-size="14.00">n11_j2</text>
 </g>
 <!-- n12&#45;&gt;n11 -->
 <g id="edge13" class="edge">
@@ -66,8 +66,8 @@
 <!-- n15 -->
 <g id="node5" class="node">
 <title>n15</title>
-<ellipse fill="none" stroke="red" cx="243" cy="-162" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="243" y="-158.3" font-family="Times,serif" font-size="14.00">n12_j1</text>
+<ellipse fill="none" stroke="green" cx="243" cy="-162" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="243" y="-158.3" font-family="Times,serif" font-size="14.00">n12_j2</text>
 </g>
 <!-- n12&#45;&gt;n15 -->
 <g id="edge14" class="edge">
@@ -96,8 +96,8 @@
 <!-- n20 -->
 <g id="node11" class="node">
 <title>n20</title>
-<ellipse fill="none" stroke="red" cx="248" cy="-90" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="248" y="-86.3" font-family="Times,serif" font-size="14.00">n18_j1</text>
+<ellipse fill="none" stroke="green" cx="248" cy="-90" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="248" y="-86.3" font-family="Times,serif" font-size="14.00">n18_j2</text>
 </g>
 <!-- n15&#45;&gt;n20 -->
 <g id="edge22" class="edge">
@@ -108,8 +108,8 @@
 <!-- n14 -->
 <g id="node6" class="node">
 <title>n14</title>
-<ellipse fill="none" stroke="green" cx="305" cy="-378" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="305" y="-374.3" font-family="Times,serif" font-size="14.00">n13_j2</text>
+<ellipse fill="none" stroke="red" cx="305" cy="-378" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="305" y="-374.3" font-family="Times,serif" font-size="14.00">n13_j1</text>
 </g>
 <!-- n14&#45;&gt;n12 -->
 <g id="edge10" class="edge">
@@ -120,8 +120,8 @@
 <!-- n17 -->
 <g id="node7" class="node">
 <title>n17</title>
-<ellipse fill="none" stroke="red" cx="314" cy="-306" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="314" y="-302.3" font-family="Times,serif" font-size="14.00">n14_j1</text>
+<ellipse fill="none" stroke="green" cx="314" cy="-306" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="314" y="-302.3" font-family="Times,serif" font-size="14.00">n14_j2</text>
 </g>
 <!-- n14&#45;&gt;n17 -->
 <g id="edge18" class="edge">
@@ -132,8 +132,8 @@
 <!-- n19 -->
 <g id="node8" class="node">
 <title>n19</title>
-<ellipse fill="none" stroke="green" cx="388" cy="-162" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="388" y="-158.3" font-family="Times,serif" font-size="14.00">n15_j2</text>
+<ellipse fill="none" stroke="red" cx="388" cy="-162" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="388" y="-158.3" font-family="Times,serif" font-size="14.00">n15_j1</text>
 </g>
 <!-- n14&#45;&gt;n19 -->
 <g id="edge19" class="edge">
@@ -222,8 +222,8 @@
 <!-- n9 -->
 <g id="node15" class="node">
 <title>n9</title>
-<ellipse fill="none" stroke="red" cx="216" cy="-522" rx="36" ry="18"/>
-<text text-anchor="middle" x="216" y="-518.3" font-family="Times,serif" font-size="14.00">n5_j1</text>
+<ellipse fill="none" stroke="green" cx="216" cy="-522" rx="36" ry="18"/>
+<text text-anchor="middle" x="216" y="-518.3" font-family="Times,serif" font-size="14.00">n5_j2</text>
 </g>
 <!-- n4&#45;&gt;n9 -->
 <g id="edge27" class="edge">
@@ -240,8 +240,8 @@
 <!-- n8 -->
 <g id="node16" class="node">
 <title>n8</title>
-<ellipse fill="none" stroke="red" cx="127" cy="-450" rx="36" ry="18"/>
-<text text-anchor="middle" x="127" y="-446.3" font-family="Times,serif" font-size="14.00">n6_j1</text>
+<ellipse fill="none" stroke="green" cx="127" cy="-450" rx="36" ry="18"/>
+<text text-anchor="middle" x="127" y="-446.3" font-family="Times,serif" font-size="14.00">n6_j2</text>
 </g>
 <!-- n9&#45;&gt;n8 -->
 <g id="edge28" class="edge">
@@ -252,8 +252,8 @@
 <!-- n13 -->
 <g id="node17" class="node">
 <title>n13</title>
-<ellipse fill="none" stroke="green" cx="216" cy="-450" rx="36" ry="18"/>
-<text text-anchor="middle" x="216" y="-446.3" font-family="Times,serif" font-size="14.00">n7_j2</text>
+<ellipse fill="none" stroke="red" cx="216" cy="-450" rx="36" ry="18"/>
+<text text-anchor="middle" x="216" y="-446.3" font-family="Times,serif" font-size="14.00">n7_j1</text>
 </g>
 <!-- n9&#45;&gt;n13 -->
 <g id="edge29" class="edge">

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/json-c
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/json-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/json-c/json-c-build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build
 
 # Utility rule file for NightlyMemCheck.
 
@@ -82,6 +82,6 @@ CMakeFiles/NightlyMemCheck.dir/clean:
 .PHONY : CMakeFiles/NightlyMemCheck.dir/clean
 
 CMakeFiles/NightlyMemCheck.dir/depend:
-	cd /home/ued520/json-c/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ued520/json-c /home/ued520/json-c /home/ued520/json-c/json-c-build /home/ued520/json-c/json-c-build /home/ued520/json-c/json-c-build/CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ued520/makefile_ninja_benchmarks/json-c /home/ued520/makefile_ninja_benchmarks/json-c /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/NightlyMemCheck.dir/depend
 

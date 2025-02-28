@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/json-c
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/json-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/json-c/json-c-build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ued520/json-c/json-c-build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/ued520/json-c/json-c-build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/ued520/json-c/json-c-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ued520/json-c/json-c-build/CPackSourceConfig.cmake
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/json-c/json-c-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/json-c/json-c-build/CMakeFiles /home/ued520/json-c/json-c-build/tests//CMakeFiles/progress.marks
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/json-c/json-c-build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/tests//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/json-c/json-c-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/test1Formatted.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test1Formatted.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test1Formatted.dir/rule
 .PHONY : tests/CMakeFiles/test1Formatted.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ test1Formatted: tests/CMakeFiles/test1Formatted.dir/rule
 
 # fast build rule for target.
 test1Formatted/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/build
 .PHONY : test1Formatted/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test2Formatted.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test2Formatted.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test2Formatted.dir/rule
 .PHONY : tests/CMakeFiles/test2Formatted.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ test2Formatted: tests/CMakeFiles/test2Formatted.dir/rule
 
 # fast build rule for target.
 test2Formatted/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/build
 .PHONY : test2Formatted/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test1.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test1.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test1.dir/rule
 .PHONY : tests/CMakeFiles/test1.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ test1: tests/CMakeFiles/test1.dir/rule
 
 # fast build rule for target.
 test1/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1.dir/build.make tests/CMakeFiles/test1.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1.dir/build.make tests/CMakeFiles/test1.dir/build
 .PHONY : test1/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test2.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test2.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test2.dir/rule
 .PHONY : tests/CMakeFiles/test2.dir/rule
 
 # Convenience name for target.
@@ -244,12 +244,12 @@ test2: tests/CMakeFiles/test2.dir/rule
 
 # fast build rule for target.
 test2/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2.dir/build.make tests/CMakeFiles/test2.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2.dir/build.make tests/CMakeFiles/test2.dir/build
 .PHONY : test2/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test4.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test4.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test4.dir/rule
 .PHONY : tests/CMakeFiles/test4.dir/rule
 
 # Convenience name for target.
@@ -258,12 +258,12 @@ test4: tests/CMakeFiles/test4.dir/rule
 
 # fast build rule for target.
 test4/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test4.dir/build.make tests/CMakeFiles/test4.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test4.dir/build.make tests/CMakeFiles/test4.dir/build
 .PHONY : test4/fast
 
 # Convenience name for target.
 tests/CMakeFiles/testReplaceExisting.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/testReplaceExisting.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/testReplaceExisting.dir/rule
 .PHONY : tests/CMakeFiles/testReplaceExisting.dir/rule
 
 # Convenience name for target.
@@ -272,12 +272,12 @@ testReplaceExisting: tests/CMakeFiles/testReplaceExisting.dir/rule
 
 # fast build rule for target.
 testReplaceExisting/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testReplaceExisting.dir/build.make tests/CMakeFiles/testReplaceExisting.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testReplaceExisting.dir/build.make tests/CMakeFiles/testReplaceExisting.dir/build
 .PHONY : testReplaceExisting/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_cast.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_cast.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_cast.dir/rule
 .PHONY : tests/CMakeFiles/test_cast.dir/rule
 
 # Convenience name for target.
@@ -286,12 +286,12 @@ test_cast: tests/CMakeFiles/test_cast.dir/rule
 
 # fast build rule for target.
 test_cast/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cast.dir/build.make tests/CMakeFiles/test_cast.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cast.dir/build.make tests/CMakeFiles/test_cast.dir/build
 .PHONY : test_cast/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_charcase.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_charcase.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_charcase.dir/rule
 .PHONY : tests/CMakeFiles/test_charcase.dir/rule
 
 # Convenience name for target.
@@ -300,12 +300,12 @@ test_charcase: tests/CMakeFiles/test_charcase.dir/rule
 
 # fast build rule for target.
 test_charcase/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_charcase.dir/build.make tests/CMakeFiles/test_charcase.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_charcase.dir/build.make tests/CMakeFiles/test_charcase.dir/build
 .PHONY : test_charcase/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_compare.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_compare.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_compare.dir/rule
 .PHONY : tests/CMakeFiles/test_compare.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ test_compare: tests/CMakeFiles/test_compare.dir/rule
 
 # fast build rule for target.
 test_compare/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_compare.dir/build.make tests/CMakeFiles/test_compare.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_compare.dir/build.make tests/CMakeFiles/test_compare.dir/build
 .PHONY : test_compare/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_deep_copy.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_deep_copy.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_deep_copy.dir/rule
 .PHONY : tests/CMakeFiles/test_deep_copy.dir/rule
 
 # Convenience name for target.
@@ -328,12 +328,12 @@ test_deep_copy: tests/CMakeFiles/test_deep_copy.dir/rule
 
 # fast build rule for target.
 test_deep_copy/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deep_copy.dir/build.make tests/CMakeFiles/test_deep_copy.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deep_copy.dir/build.make tests/CMakeFiles/test_deep_copy.dir/build
 .PHONY : test_deep_copy/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_double_serializer.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_double_serializer.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_double_serializer.dir/rule
 .PHONY : tests/CMakeFiles/test_double_serializer.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ test_double_serializer: tests/CMakeFiles/test_double_serializer.dir/rule
 
 # fast build rule for target.
 test_double_serializer/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_double_serializer.dir/build.make tests/CMakeFiles/test_double_serializer.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_double_serializer.dir/build.make tests/CMakeFiles/test_double_serializer.dir/build
 .PHONY : test_double_serializer/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_float.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_float.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_float.dir/rule
 .PHONY : tests/CMakeFiles/test_float.dir/rule
 
 # Convenience name for target.
@@ -356,12 +356,12 @@ test_float: tests/CMakeFiles/test_float.dir/rule
 
 # fast build rule for target.
 test_float/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_float.dir/build.make tests/CMakeFiles/test_float.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_float.dir/build.make tests/CMakeFiles/test_float.dir/build
 .PHONY : test_float/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_int_add.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_int_add.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_int_add.dir/rule
 .PHONY : tests/CMakeFiles/test_int_add.dir/rule
 
 # Convenience name for target.
@@ -370,12 +370,12 @@ test_int_add: tests/CMakeFiles/test_int_add.dir/rule
 
 # fast build rule for target.
 test_int_add/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_add.dir/build.make tests/CMakeFiles/test_int_add.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_add.dir/build.make tests/CMakeFiles/test_int_add.dir/build
 .PHONY : test_int_add/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_int_get.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_int_get.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_int_get.dir/rule
 .PHONY : tests/CMakeFiles/test_int_get.dir/rule
 
 # Convenience name for target.
@@ -384,12 +384,12 @@ test_int_get: tests/CMakeFiles/test_int_get.dir/rule
 
 # fast build rule for target.
 test_int_get/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_get.dir/build.make tests/CMakeFiles/test_int_get.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_get.dir/build.make tests/CMakeFiles/test_int_get.dir/build
 .PHONY : test_int_get/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_locale.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_locale.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_locale.dir/rule
 .PHONY : tests/CMakeFiles/test_locale.dir/rule
 
 # Convenience name for target.
@@ -398,12 +398,12 @@ test_locale: tests/CMakeFiles/test_locale.dir/rule
 
 # fast build rule for target.
 test_locale/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locale.dir/build.make tests/CMakeFiles/test_locale.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locale.dir/build.make tests/CMakeFiles/test_locale.dir/build
 .PHONY : test_locale/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_null.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_null.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_null.dir/rule
 .PHONY : tests/CMakeFiles/test_null.dir/rule
 
 # Convenience name for target.
@@ -412,12 +412,12 @@ test_null: tests/CMakeFiles/test_null.dir/rule
 
 # fast build rule for target.
 test_null/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_null.dir/build.make tests/CMakeFiles/test_null.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_null.dir/build.make tests/CMakeFiles/test_null.dir/build
 .PHONY : test_null/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_parse.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_parse.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_parse.dir/rule
 .PHONY : tests/CMakeFiles/test_parse.dir/rule
 
 # Convenience name for target.
@@ -426,12 +426,12 @@ test_parse: tests/CMakeFiles/test_parse.dir/rule
 
 # fast build rule for target.
 test_parse/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse.dir/build.make tests/CMakeFiles/test_parse.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse.dir/build.make tests/CMakeFiles/test_parse.dir/build
 .PHONY : test_parse/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_parse_int64.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_parse_int64.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_parse_int64.dir/rule
 .PHONY : tests/CMakeFiles/test_parse_int64.dir/rule
 
 # Convenience name for target.
@@ -440,12 +440,12 @@ test_parse_int64: tests/CMakeFiles/test_parse_int64.dir/rule
 
 # fast build rule for target.
 test_parse_int64/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse_int64.dir/build.make tests/CMakeFiles/test_parse_int64.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse_int64.dir/build.make tests/CMakeFiles/test_parse_int64.dir/build
 .PHONY : test_parse_int64/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_printbuf.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_printbuf.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_printbuf.dir/rule
 .PHONY : tests/CMakeFiles/test_printbuf.dir/rule
 
 # Convenience name for target.
@@ -454,12 +454,12 @@ test_printbuf: tests/CMakeFiles/test_printbuf.dir/rule
 
 # fast build rule for target.
 test_printbuf/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_printbuf.dir/build.make tests/CMakeFiles/test_printbuf.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_printbuf.dir/build.make tests/CMakeFiles/test_printbuf.dir/build
 .PHONY : test_printbuf/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_set_serializer.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_set_serializer.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_set_serializer.dir/rule
 .PHONY : tests/CMakeFiles/test_set_serializer.dir/rule
 
 # Convenience name for target.
@@ -468,12 +468,12 @@ test_set_serializer: tests/CMakeFiles/test_set_serializer.dir/rule
 
 # fast build rule for target.
 test_set_serializer/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_serializer.dir/build.make tests/CMakeFiles/test_set_serializer.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_serializer.dir/build.make tests/CMakeFiles/test_set_serializer.dir/build
 .PHONY : test_set_serializer/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_set_value.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_set_value.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_set_value.dir/rule
 .PHONY : tests/CMakeFiles/test_set_value.dir/rule
 
 # Convenience name for target.
@@ -482,12 +482,12 @@ test_set_value: tests/CMakeFiles/test_set_value.dir/rule
 
 # fast build rule for target.
 test_set_value/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_value.dir/build.make tests/CMakeFiles/test_set_value.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_value.dir/build.make tests/CMakeFiles/test_set_value.dir/build
 .PHONY : test_set_value/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_strerror.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_strerror.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_strerror.dir/rule
 .PHONY : tests/CMakeFiles/test_strerror.dir/rule
 
 # Convenience name for target.
@@ -496,12 +496,12 @@ test_strerror: tests/CMakeFiles/test_strerror.dir/rule
 
 # fast build rule for target.
 test_strerror/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_strerror.dir/build.make tests/CMakeFiles/test_strerror.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_strerror.dir/build.make tests/CMakeFiles/test_strerror.dir/build
 .PHONY : test_strerror/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_util_file.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_util_file.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_util_file.dir/rule
 .PHONY : tests/CMakeFiles/test_util_file.dir/rule
 
 # Convenience name for target.
@@ -510,12 +510,12 @@ test_util_file: tests/CMakeFiles/test_util_file.dir/rule
 
 # fast build rule for target.
 test_util_file/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_util_file.dir/build.make tests/CMakeFiles/test_util_file.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_util_file.dir/build.make tests/CMakeFiles/test_util_file.dir/build
 .PHONY : test_util_file/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_visit.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_visit.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_visit.dir/rule
 .PHONY : tests/CMakeFiles/test_visit.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ test_visit: tests/CMakeFiles/test_visit.dir/rule
 
 # fast build rule for target.
 test_visit/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_visit.dir/build.make tests/CMakeFiles/test_visit.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_visit.dir/build.make tests/CMakeFiles/test_visit.dir/build
 .PHONY : test_visit/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_object_iterator.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_object_iterator.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_object_iterator.dir/rule
 .PHONY : tests/CMakeFiles/test_object_iterator.dir/rule
 
 # Convenience name for target.
@@ -538,12 +538,12 @@ test_object_iterator: tests/CMakeFiles/test_object_iterator.dir/rule
 
 # fast build rule for target.
 test_object_iterator/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_object_iterator.dir/build.make tests/CMakeFiles/test_object_iterator.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_object_iterator.dir/build.make tests/CMakeFiles/test_object_iterator.dir/build
 .PHONY : test_object_iterator/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_json_pointer.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_json_pointer.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_json_pointer.dir/rule
 .PHONY : tests/CMakeFiles/test_json_pointer.dir/rule
 
 # Convenience name for target.
@@ -552,12 +552,12 @@ test_json_pointer: tests/CMakeFiles/test_json_pointer.dir/rule
 
 # fast build rule for target.
 test_json_pointer/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_pointer.dir/build.make tests/CMakeFiles/test_json_pointer.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_pointer.dir/build.make tests/CMakeFiles/test_json_pointer.dir/build
 .PHONY : test_json_pointer/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test_json_patch.dir/rule:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_json_patch.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_json_patch.dir/rule
 .PHONY : tests/CMakeFiles/test_json_patch.dir/rule
 
 # Convenience name for target.
@@ -566,7 +566,7 @@ test_json_patch: tests/CMakeFiles/test_json_patch.dir/rule
 
 # fast build rule for target.
 test_json_patch/fast:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_patch.dir/build.make tests/CMakeFiles/test_json_patch.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_patch.dir/build.make tests/CMakeFiles/test_json_patch.dir/build
 .PHONY : test_json_patch/fast
 
 parse_flags.o: parse_flags.c.o
@@ -574,8 +574,8 @@ parse_flags.o: parse_flags.c.o
 
 # target to build an object file
 parse_flags.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/parse_flags.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/parse_flags.c.o
 .PHONY : parse_flags.c.o
 
 parse_flags.i: parse_flags.c.i
@@ -583,8 +583,8 @@ parse_flags.i: parse_flags.c.i
 
 # target to preprocess a source file
 parse_flags.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/parse_flags.c.i
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/parse_flags.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/parse_flags.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/parse_flags.c.i
 .PHONY : parse_flags.c.i
 
 parse_flags.s: parse_flags.c.s
@@ -592,8 +592,8 @@ parse_flags.s: parse_flags.c.s
 
 # target to generate assembly for a file
 parse_flags.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/parse_flags.c.s
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/parse_flags.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/parse_flags.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/parse_flags.c.s
 .PHONY : parse_flags.c.s
 
 test1.o: test1.c.o
@@ -601,8 +601,8 @@ test1.o: test1.c.o
 
 # target to build an object file
 test1.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/test1.c.o
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1.dir/build.make tests/CMakeFiles/test1.dir/test1.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/test1.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1.dir/build.make tests/CMakeFiles/test1.dir/test1.c.o
 .PHONY : test1.c.o
 
 test1.i: test1.c.i
@@ -610,8 +610,8 @@ test1.i: test1.c.i
 
 # target to preprocess a source file
 test1.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/test1.c.i
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1.dir/build.make tests/CMakeFiles/test1.dir/test1.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/test1.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1.dir/build.make tests/CMakeFiles/test1.dir/test1.c.i
 .PHONY : test1.c.i
 
 test1.s: test1.c.s
@@ -619,8 +619,8 @@ test1.s: test1.c.s
 
 # target to generate assembly for a file
 test1.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/test1.c.s
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1.dir/build.make tests/CMakeFiles/test1.dir/test1.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1Formatted.dir/build.make tests/CMakeFiles/test1Formatted.dir/test1.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test1.dir/build.make tests/CMakeFiles/test1.dir/test1.c.s
 .PHONY : test1.c.s
 
 test2.o: test2.c.o
@@ -628,8 +628,8 @@ test2.o: test2.c.o
 
 # target to build an object file
 test2.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/test2.c.o
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2.dir/build.make tests/CMakeFiles/test2.dir/test2.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/test2.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2.dir/build.make tests/CMakeFiles/test2.dir/test2.c.o
 .PHONY : test2.c.o
 
 test2.i: test2.c.i
@@ -637,8 +637,8 @@ test2.i: test2.c.i
 
 # target to preprocess a source file
 test2.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/test2.c.i
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2.dir/build.make tests/CMakeFiles/test2.dir/test2.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/test2.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2.dir/build.make tests/CMakeFiles/test2.dir/test2.c.i
 .PHONY : test2.c.i
 
 test2.s: test2.c.s
@@ -646,8 +646,8 @@ test2.s: test2.c.s
 
 # target to generate assembly for a file
 test2.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/test2.c.s
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2.dir/build.make tests/CMakeFiles/test2.dir/test2.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2Formatted.dir/build.make tests/CMakeFiles/test2Formatted.dir/test2.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test2.dir/build.make tests/CMakeFiles/test2.dir/test2.c.s
 .PHONY : test2.c.s
 
 test4.o: test4.c.o
@@ -655,7 +655,7 @@ test4.o: test4.c.o
 
 # target to build an object file
 test4.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test4.dir/build.make tests/CMakeFiles/test4.dir/test4.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test4.dir/build.make tests/CMakeFiles/test4.dir/test4.c.o
 .PHONY : test4.c.o
 
 test4.i: test4.c.i
@@ -663,7 +663,7 @@ test4.i: test4.c.i
 
 # target to preprocess a source file
 test4.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test4.dir/build.make tests/CMakeFiles/test4.dir/test4.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test4.dir/build.make tests/CMakeFiles/test4.dir/test4.c.i
 .PHONY : test4.c.i
 
 test4.s: test4.c.s
@@ -671,7 +671,7 @@ test4.s: test4.c.s
 
 # target to generate assembly for a file
 test4.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test4.dir/build.make tests/CMakeFiles/test4.dir/test4.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test4.dir/build.make tests/CMakeFiles/test4.dir/test4.c.s
 .PHONY : test4.c.s
 
 testReplaceExisting.o: testReplaceExisting.c.o
@@ -679,7 +679,7 @@ testReplaceExisting.o: testReplaceExisting.c.o
 
 # target to build an object file
 testReplaceExisting.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testReplaceExisting.dir/build.make tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testReplaceExisting.dir/build.make tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o
 .PHONY : testReplaceExisting.c.o
 
 testReplaceExisting.i: testReplaceExisting.c.i
@@ -687,7 +687,7 @@ testReplaceExisting.i: testReplaceExisting.c.i
 
 # target to preprocess a source file
 testReplaceExisting.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testReplaceExisting.dir/build.make tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testReplaceExisting.dir/build.make tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.i
 .PHONY : testReplaceExisting.c.i
 
 testReplaceExisting.s: testReplaceExisting.c.s
@@ -695,7 +695,7 @@ testReplaceExisting.s: testReplaceExisting.c.s
 
 # target to generate assembly for a file
 testReplaceExisting.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testReplaceExisting.dir/build.make tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testReplaceExisting.dir/build.make tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.s
 .PHONY : testReplaceExisting.c.s
 
 test_cast.o: test_cast.c.o
@@ -703,7 +703,7 @@ test_cast.o: test_cast.c.o
 
 # target to build an object file
 test_cast.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cast.dir/build.make tests/CMakeFiles/test_cast.dir/test_cast.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cast.dir/build.make tests/CMakeFiles/test_cast.dir/test_cast.c.o
 .PHONY : test_cast.c.o
 
 test_cast.i: test_cast.c.i
@@ -711,7 +711,7 @@ test_cast.i: test_cast.c.i
 
 # target to preprocess a source file
 test_cast.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cast.dir/build.make tests/CMakeFiles/test_cast.dir/test_cast.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cast.dir/build.make tests/CMakeFiles/test_cast.dir/test_cast.c.i
 .PHONY : test_cast.c.i
 
 test_cast.s: test_cast.c.s
@@ -719,7 +719,7 @@ test_cast.s: test_cast.c.s
 
 # target to generate assembly for a file
 test_cast.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cast.dir/build.make tests/CMakeFiles/test_cast.dir/test_cast.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cast.dir/build.make tests/CMakeFiles/test_cast.dir/test_cast.c.s
 .PHONY : test_cast.c.s
 
 test_charcase.o: test_charcase.c.o
@@ -727,7 +727,7 @@ test_charcase.o: test_charcase.c.o
 
 # target to build an object file
 test_charcase.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_charcase.dir/build.make tests/CMakeFiles/test_charcase.dir/test_charcase.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_charcase.dir/build.make tests/CMakeFiles/test_charcase.dir/test_charcase.c.o
 .PHONY : test_charcase.c.o
 
 test_charcase.i: test_charcase.c.i
@@ -735,7 +735,7 @@ test_charcase.i: test_charcase.c.i
 
 # target to preprocess a source file
 test_charcase.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_charcase.dir/build.make tests/CMakeFiles/test_charcase.dir/test_charcase.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_charcase.dir/build.make tests/CMakeFiles/test_charcase.dir/test_charcase.c.i
 .PHONY : test_charcase.c.i
 
 test_charcase.s: test_charcase.c.s
@@ -743,7 +743,7 @@ test_charcase.s: test_charcase.c.s
 
 # target to generate assembly for a file
 test_charcase.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_charcase.dir/build.make tests/CMakeFiles/test_charcase.dir/test_charcase.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_charcase.dir/build.make tests/CMakeFiles/test_charcase.dir/test_charcase.c.s
 .PHONY : test_charcase.c.s
 
 test_compare.o: test_compare.c.o
@@ -751,7 +751,7 @@ test_compare.o: test_compare.c.o
 
 # target to build an object file
 test_compare.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_compare.dir/build.make tests/CMakeFiles/test_compare.dir/test_compare.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_compare.dir/build.make tests/CMakeFiles/test_compare.dir/test_compare.c.o
 .PHONY : test_compare.c.o
 
 test_compare.i: test_compare.c.i
@@ -759,7 +759,7 @@ test_compare.i: test_compare.c.i
 
 # target to preprocess a source file
 test_compare.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_compare.dir/build.make tests/CMakeFiles/test_compare.dir/test_compare.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_compare.dir/build.make tests/CMakeFiles/test_compare.dir/test_compare.c.i
 .PHONY : test_compare.c.i
 
 test_compare.s: test_compare.c.s
@@ -767,7 +767,7 @@ test_compare.s: test_compare.c.s
 
 # target to generate assembly for a file
 test_compare.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_compare.dir/build.make tests/CMakeFiles/test_compare.dir/test_compare.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_compare.dir/build.make tests/CMakeFiles/test_compare.dir/test_compare.c.s
 .PHONY : test_compare.c.s
 
 test_deep_copy.o: test_deep_copy.c.o
@@ -775,7 +775,7 @@ test_deep_copy.o: test_deep_copy.c.o
 
 # target to build an object file
 test_deep_copy.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deep_copy.dir/build.make tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deep_copy.dir/build.make tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o
 .PHONY : test_deep_copy.c.o
 
 test_deep_copy.i: test_deep_copy.c.i
@@ -783,7 +783,7 @@ test_deep_copy.i: test_deep_copy.c.i
 
 # target to preprocess a source file
 test_deep_copy.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deep_copy.dir/build.make tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deep_copy.dir/build.make tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.i
 .PHONY : test_deep_copy.c.i
 
 test_deep_copy.s: test_deep_copy.c.s
@@ -791,7 +791,7 @@ test_deep_copy.s: test_deep_copy.c.s
 
 # target to generate assembly for a file
 test_deep_copy.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deep_copy.dir/build.make tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deep_copy.dir/build.make tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.s
 .PHONY : test_deep_copy.c.s
 
 test_double_serializer.o: test_double_serializer.c.o
@@ -799,7 +799,7 @@ test_double_serializer.o: test_double_serializer.c.o
 
 # target to build an object file
 test_double_serializer.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_double_serializer.dir/build.make tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_double_serializer.dir/build.make tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.o
 .PHONY : test_double_serializer.c.o
 
 test_double_serializer.i: test_double_serializer.c.i
@@ -807,7 +807,7 @@ test_double_serializer.i: test_double_serializer.c.i
 
 # target to preprocess a source file
 test_double_serializer.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_double_serializer.dir/build.make tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_double_serializer.dir/build.make tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.i
 .PHONY : test_double_serializer.c.i
 
 test_double_serializer.s: test_double_serializer.c.s
@@ -815,7 +815,7 @@ test_double_serializer.s: test_double_serializer.c.s
 
 # target to generate assembly for a file
 test_double_serializer.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_double_serializer.dir/build.make tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_double_serializer.dir/build.make tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.s
 .PHONY : test_double_serializer.c.s
 
 test_float.o: test_float.c.o
@@ -823,7 +823,7 @@ test_float.o: test_float.c.o
 
 # target to build an object file
 test_float.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_float.dir/build.make tests/CMakeFiles/test_float.dir/test_float.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_float.dir/build.make tests/CMakeFiles/test_float.dir/test_float.c.o
 .PHONY : test_float.c.o
 
 test_float.i: test_float.c.i
@@ -831,7 +831,7 @@ test_float.i: test_float.c.i
 
 # target to preprocess a source file
 test_float.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_float.dir/build.make tests/CMakeFiles/test_float.dir/test_float.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_float.dir/build.make tests/CMakeFiles/test_float.dir/test_float.c.i
 .PHONY : test_float.c.i
 
 test_float.s: test_float.c.s
@@ -839,7 +839,7 @@ test_float.s: test_float.c.s
 
 # target to generate assembly for a file
 test_float.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_float.dir/build.make tests/CMakeFiles/test_float.dir/test_float.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_float.dir/build.make tests/CMakeFiles/test_float.dir/test_float.c.s
 .PHONY : test_float.c.s
 
 test_int_add.o: test_int_add.c.o
@@ -847,7 +847,7 @@ test_int_add.o: test_int_add.c.o
 
 # target to build an object file
 test_int_add.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_add.dir/build.make tests/CMakeFiles/test_int_add.dir/test_int_add.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_add.dir/build.make tests/CMakeFiles/test_int_add.dir/test_int_add.c.o
 .PHONY : test_int_add.c.o
 
 test_int_add.i: test_int_add.c.i
@@ -855,7 +855,7 @@ test_int_add.i: test_int_add.c.i
 
 # target to preprocess a source file
 test_int_add.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_add.dir/build.make tests/CMakeFiles/test_int_add.dir/test_int_add.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_add.dir/build.make tests/CMakeFiles/test_int_add.dir/test_int_add.c.i
 .PHONY : test_int_add.c.i
 
 test_int_add.s: test_int_add.c.s
@@ -863,7 +863,7 @@ test_int_add.s: test_int_add.c.s
 
 # target to generate assembly for a file
 test_int_add.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_add.dir/build.make tests/CMakeFiles/test_int_add.dir/test_int_add.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_add.dir/build.make tests/CMakeFiles/test_int_add.dir/test_int_add.c.s
 .PHONY : test_int_add.c.s
 
 test_int_get.o: test_int_get.c.o
@@ -871,7 +871,7 @@ test_int_get.o: test_int_get.c.o
 
 # target to build an object file
 test_int_get.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_get.dir/build.make tests/CMakeFiles/test_int_get.dir/test_int_get.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_get.dir/build.make tests/CMakeFiles/test_int_get.dir/test_int_get.c.o
 .PHONY : test_int_get.c.o
 
 test_int_get.i: test_int_get.c.i
@@ -879,7 +879,7 @@ test_int_get.i: test_int_get.c.i
 
 # target to preprocess a source file
 test_int_get.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_get.dir/build.make tests/CMakeFiles/test_int_get.dir/test_int_get.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_get.dir/build.make tests/CMakeFiles/test_int_get.dir/test_int_get.c.i
 .PHONY : test_int_get.c.i
 
 test_int_get.s: test_int_get.c.s
@@ -887,7 +887,7 @@ test_int_get.s: test_int_get.c.s
 
 # target to generate assembly for a file
 test_int_get.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_get.dir/build.make tests/CMakeFiles/test_int_get.dir/test_int_get.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_int_get.dir/build.make tests/CMakeFiles/test_int_get.dir/test_int_get.c.s
 .PHONY : test_int_get.c.s
 
 test_json_patch.o: test_json_patch.c.o
@@ -895,7 +895,7 @@ test_json_patch.o: test_json_patch.c.o
 
 # target to build an object file
 test_json_patch.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_patch.dir/build.make tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_patch.dir/build.make tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.o
 .PHONY : test_json_patch.c.o
 
 test_json_patch.i: test_json_patch.c.i
@@ -903,7 +903,7 @@ test_json_patch.i: test_json_patch.c.i
 
 # target to preprocess a source file
 test_json_patch.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_patch.dir/build.make tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_patch.dir/build.make tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.i
 .PHONY : test_json_patch.c.i
 
 test_json_patch.s: test_json_patch.c.s
@@ -911,7 +911,7 @@ test_json_patch.s: test_json_patch.c.s
 
 # target to generate assembly for a file
 test_json_patch.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_patch.dir/build.make tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_patch.dir/build.make tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.s
 .PHONY : test_json_patch.c.s
 
 test_json_pointer.o: test_json_pointer.c.o
@@ -919,7 +919,7 @@ test_json_pointer.o: test_json_pointer.c.o
 
 # target to build an object file
 test_json_pointer.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_pointer.dir/build.make tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_pointer.dir/build.make tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o
 .PHONY : test_json_pointer.c.o
 
 test_json_pointer.i: test_json_pointer.c.i
@@ -927,7 +927,7 @@ test_json_pointer.i: test_json_pointer.c.i
 
 # target to preprocess a source file
 test_json_pointer.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_pointer.dir/build.make tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_pointer.dir/build.make tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.i
 .PHONY : test_json_pointer.c.i
 
 test_json_pointer.s: test_json_pointer.c.s
@@ -935,7 +935,7 @@ test_json_pointer.s: test_json_pointer.c.s
 
 # target to generate assembly for a file
 test_json_pointer.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_pointer.dir/build.make tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_json_pointer.dir/build.make tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.s
 .PHONY : test_json_pointer.c.s
 
 test_locale.o: test_locale.c.o
@@ -943,7 +943,7 @@ test_locale.o: test_locale.c.o
 
 # target to build an object file
 test_locale.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locale.dir/build.make tests/CMakeFiles/test_locale.dir/test_locale.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locale.dir/build.make tests/CMakeFiles/test_locale.dir/test_locale.c.o
 .PHONY : test_locale.c.o
 
 test_locale.i: test_locale.c.i
@@ -951,7 +951,7 @@ test_locale.i: test_locale.c.i
 
 # target to preprocess a source file
 test_locale.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locale.dir/build.make tests/CMakeFiles/test_locale.dir/test_locale.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locale.dir/build.make tests/CMakeFiles/test_locale.dir/test_locale.c.i
 .PHONY : test_locale.c.i
 
 test_locale.s: test_locale.c.s
@@ -959,7 +959,7 @@ test_locale.s: test_locale.c.s
 
 # target to generate assembly for a file
 test_locale.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locale.dir/build.make tests/CMakeFiles/test_locale.dir/test_locale.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_locale.dir/build.make tests/CMakeFiles/test_locale.dir/test_locale.c.s
 .PHONY : test_locale.c.s
 
 test_null.o: test_null.c.o
@@ -967,7 +967,7 @@ test_null.o: test_null.c.o
 
 # target to build an object file
 test_null.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_null.dir/build.make tests/CMakeFiles/test_null.dir/test_null.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_null.dir/build.make tests/CMakeFiles/test_null.dir/test_null.c.o
 .PHONY : test_null.c.o
 
 test_null.i: test_null.c.i
@@ -975,7 +975,7 @@ test_null.i: test_null.c.i
 
 # target to preprocess a source file
 test_null.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_null.dir/build.make tests/CMakeFiles/test_null.dir/test_null.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_null.dir/build.make tests/CMakeFiles/test_null.dir/test_null.c.i
 .PHONY : test_null.c.i
 
 test_null.s: test_null.c.s
@@ -983,7 +983,7 @@ test_null.s: test_null.c.s
 
 # target to generate assembly for a file
 test_null.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_null.dir/build.make tests/CMakeFiles/test_null.dir/test_null.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_null.dir/build.make tests/CMakeFiles/test_null.dir/test_null.c.s
 .PHONY : test_null.c.s
 
 test_object_iterator.o: test_object_iterator.c.o
@@ -991,7 +991,7 @@ test_object_iterator.o: test_object_iterator.c.o
 
 # target to build an object file
 test_object_iterator.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_object_iterator.dir/build.make tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_object_iterator.dir/build.make tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.o
 .PHONY : test_object_iterator.c.o
 
 test_object_iterator.i: test_object_iterator.c.i
@@ -999,7 +999,7 @@ test_object_iterator.i: test_object_iterator.c.i
 
 # target to preprocess a source file
 test_object_iterator.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_object_iterator.dir/build.make tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_object_iterator.dir/build.make tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.i
 .PHONY : test_object_iterator.c.i
 
 test_object_iterator.s: test_object_iterator.c.s
@@ -1007,7 +1007,7 @@ test_object_iterator.s: test_object_iterator.c.s
 
 # target to generate assembly for a file
 test_object_iterator.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_object_iterator.dir/build.make tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_object_iterator.dir/build.make tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.s
 .PHONY : test_object_iterator.c.s
 
 test_parse.o: test_parse.c.o
@@ -1015,7 +1015,7 @@ test_parse.o: test_parse.c.o
 
 # target to build an object file
 test_parse.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse.dir/build.make tests/CMakeFiles/test_parse.dir/test_parse.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse.dir/build.make tests/CMakeFiles/test_parse.dir/test_parse.c.o
 .PHONY : test_parse.c.o
 
 test_parse.i: test_parse.c.i
@@ -1023,7 +1023,7 @@ test_parse.i: test_parse.c.i
 
 # target to preprocess a source file
 test_parse.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse.dir/build.make tests/CMakeFiles/test_parse.dir/test_parse.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse.dir/build.make tests/CMakeFiles/test_parse.dir/test_parse.c.i
 .PHONY : test_parse.c.i
 
 test_parse.s: test_parse.c.s
@@ -1031,7 +1031,7 @@ test_parse.s: test_parse.c.s
 
 # target to generate assembly for a file
 test_parse.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse.dir/build.make tests/CMakeFiles/test_parse.dir/test_parse.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse.dir/build.make tests/CMakeFiles/test_parse.dir/test_parse.c.s
 .PHONY : test_parse.c.s
 
 test_parse_int64.o: test_parse_int64.c.o
@@ -1039,7 +1039,7 @@ test_parse_int64.o: test_parse_int64.c.o
 
 # target to build an object file
 test_parse_int64.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse_int64.dir/build.make tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse_int64.dir/build.make tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o
 .PHONY : test_parse_int64.c.o
 
 test_parse_int64.i: test_parse_int64.c.i
@@ -1047,7 +1047,7 @@ test_parse_int64.i: test_parse_int64.c.i
 
 # target to preprocess a source file
 test_parse_int64.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse_int64.dir/build.make tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse_int64.dir/build.make tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.i
 .PHONY : test_parse_int64.c.i
 
 test_parse_int64.s: test_parse_int64.c.s
@@ -1055,7 +1055,7 @@ test_parse_int64.s: test_parse_int64.c.s
 
 # target to generate assembly for a file
 test_parse_int64.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse_int64.dir/build.make tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_parse_int64.dir/build.make tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.s
 .PHONY : test_parse_int64.c.s
 
 test_printbuf.o: test_printbuf.c.o
@@ -1063,7 +1063,7 @@ test_printbuf.o: test_printbuf.c.o
 
 # target to build an object file
 test_printbuf.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_printbuf.dir/build.make tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_printbuf.dir/build.make tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o
 .PHONY : test_printbuf.c.o
 
 test_printbuf.i: test_printbuf.c.i
@@ -1071,7 +1071,7 @@ test_printbuf.i: test_printbuf.c.i
 
 # target to preprocess a source file
 test_printbuf.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_printbuf.dir/build.make tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_printbuf.dir/build.make tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.i
 .PHONY : test_printbuf.c.i
 
 test_printbuf.s: test_printbuf.c.s
@@ -1079,7 +1079,7 @@ test_printbuf.s: test_printbuf.c.s
 
 # target to generate assembly for a file
 test_printbuf.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_printbuf.dir/build.make tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_printbuf.dir/build.make tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.s
 .PHONY : test_printbuf.c.s
 
 test_set_serializer.o: test_set_serializer.c.o
@@ -1087,7 +1087,7 @@ test_set_serializer.o: test_set_serializer.c.o
 
 # target to build an object file
 test_set_serializer.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_serializer.dir/build.make tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_serializer.dir/build.make tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.o
 .PHONY : test_set_serializer.c.o
 
 test_set_serializer.i: test_set_serializer.c.i
@@ -1095,7 +1095,7 @@ test_set_serializer.i: test_set_serializer.c.i
 
 # target to preprocess a source file
 test_set_serializer.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_serializer.dir/build.make tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_serializer.dir/build.make tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.i
 .PHONY : test_set_serializer.c.i
 
 test_set_serializer.s: test_set_serializer.c.s
@@ -1103,7 +1103,7 @@ test_set_serializer.s: test_set_serializer.c.s
 
 # target to generate assembly for a file
 test_set_serializer.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_serializer.dir/build.make tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_serializer.dir/build.make tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.s
 .PHONY : test_set_serializer.c.s
 
 test_set_value.o: test_set_value.c.o
@@ -1111,7 +1111,7 @@ test_set_value.o: test_set_value.c.o
 
 # target to build an object file
 test_set_value.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_value.dir/build.make tests/CMakeFiles/test_set_value.dir/test_set_value.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_value.dir/build.make tests/CMakeFiles/test_set_value.dir/test_set_value.c.o
 .PHONY : test_set_value.c.o
 
 test_set_value.i: test_set_value.c.i
@@ -1119,7 +1119,7 @@ test_set_value.i: test_set_value.c.i
 
 # target to preprocess a source file
 test_set_value.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_value.dir/build.make tests/CMakeFiles/test_set_value.dir/test_set_value.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_value.dir/build.make tests/CMakeFiles/test_set_value.dir/test_set_value.c.i
 .PHONY : test_set_value.c.i
 
 test_set_value.s: test_set_value.c.s
@@ -1127,7 +1127,7 @@ test_set_value.s: test_set_value.c.s
 
 # target to generate assembly for a file
 test_set_value.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_value.dir/build.make tests/CMakeFiles/test_set_value.dir/test_set_value.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_set_value.dir/build.make tests/CMakeFiles/test_set_value.dir/test_set_value.c.s
 .PHONY : test_set_value.c.s
 
 test_strerror.o: test_strerror.c.o
@@ -1135,7 +1135,7 @@ test_strerror.o: test_strerror.c.o
 
 # target to build an object file
 test_strerror.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_strerror.dir/build.make tests/CMakeFiles/test_strerror.dir/test_strerror.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_strerror.dir/build.make tests/CMakeFiles/test_strerror.dir/test_strerror.c.o
 .PHONY : test_strerror.c.o
 
 test_strerror.i: test_strerror.c.i
@@ -1143,7 +1143,7 @@ test_strerror.i: test_strerror.c.i
 
 # target to preprocess a source file
 test_strerror.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_strerror.dir/build.make tests/CMakeFiles/test_strerror.dir/test_strerror.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_strerror.dir/build.make tests/CMakeFiles/test_strerror.dir/test_strerror.c.i
 .PHONY : test_strerror.c.i
 
 test_strerror.s: test_strerror.c.s
@@ -1151,7 +1151,7 @@ test_strerror.s: test_strerror.c.s
 
 # target to generate assembly for a file
 test_strerror.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_strerror.dir/build.make tests/CMakeFiles/test_strerror.dir/test_strerror.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_strerror.dir/build.make tests/CMakeFiles/test_strerror.dir/test_strerror.c.s
 .PHONY : test_strerror.c.s
 
 test_util_file.o: test_util_file.c.o
@@ -1159,7 +1159,7 @@ test_util_file.o: test_util_file.c.o
 
 # target to build an object file
 test_util_file.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_util_file.dir/build.make tests/CMakeFiles/test_util_file.dir/test_util_file.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_util_file.dir/build.make tests/CMakeFiles/test_util_file.dir/test_util_file.c.o
 .PHONY : test_util_file.c.o
 
 test_util_file.i: test_util_file.c.i
@@ -1167,7 +1167,7 @@ test_util_file.i: test_util_file.c.i
 
 # target to preprocess a source file
 test_util_file.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_util_file.dir/build.make tests/CMakeFiles/test_util_file.dir/test_util_file.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_util_file.dir/build.make tests/CMakeFiles/test_util_file.dir/test_util_file.c.i
 .PHONY : test_util_file.c.i
 
 test_util_file.s: test_util_file.c.s
@@ -1175,7 +1175,7 @@ test_util_file.s: test_util_file.c.s
 
 # target to generate assembly for a file
 test_util_file.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_util_file.dir/build.make tests/CMakeFiles/test_util_file.dir/test_util_file.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_util_file.dir/build.make tests/CMakeFiles/test_util_file.dir/test_util_file.c.s
 .PHONY : test_util_file.c.s
 
 test_visit.o: test_visit.c.o
@@ -1183,7 +1183,7 @@ test_visit.o: test_visit.c.o
 
 # target to build an object file
 test_visit.c.o:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_visit.dir/build.make tests/CMakeFiles/test_visit.dir/test_visit.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_visit.dir/build.make tests/CMakeFiles/test_visit.dir/test_visit.c.o
 .PHONY : test_visit.c.o
 
 test_visit.i: test_visit.c.i
@@ -1191,7 +1191,7 @@ test_visit.i: test_visit.c.i
 
 # target to preprocess a source file
 test_visit.c.i:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_visit.dir/build.make tests/CMakeFiles/test_visit.dir/test_visit.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_visit.dir/build.make tests/CMakeFiles/test_visit.dir/test_visit.c.i
 .PHONY : test_visit.c.i
 
 test_visit.s: test_visit.c.s
@@ -1199,7 +1199,7 @@ test_visit.s: test_visit.c.s
 
 # target to generate assembly for a file
 test_visit.c.s:
-	cd /home/ued520/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_visit.dir/build.make tests/CMakeFiles/test_visit.dir/test_visit.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_visit.dir/build.make tests/CMakeFiles/test_visit.dir/test_visit.c.s
 .PHONY : test_visit.c.s
 
 # Help Target
@@ -1333,6 +1333,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/json-c/json-c-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

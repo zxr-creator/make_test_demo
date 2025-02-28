@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/json-c
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/json-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/json-c/json-c-build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/uninstall.dir/compiler_depend.make
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	cd /home/ued520/json-c && cat /home/ued520/json-c/json-c-build/install_manifest.txt | xargs rm
+	cd /home/ued520/makefile_ninja_benchmarks/json-c && cat /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/install_manifest.txt | xargs rm
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ued520/json-c/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ued520/json-c /home/ued520/json-c /home/ued520/json-c/json-c-build /home/ued520/json-c/json-c-build /home/ued520/json-c/json-c-build/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ued520/makefile_ninja_benchmarks/json-c /home/ued520/makefile_ninja_benchmarks/json-c /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

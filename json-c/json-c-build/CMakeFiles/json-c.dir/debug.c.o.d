@@ -1,5 +1,7 @@
-CMakeFiles/json-c.dir/debug.c.o: /home/ued520/json-c/debug.c \
- /usr/include/stdc-predef.h /home/ued520/json-c/json-c-build/config.h \
+CMakeFiles/json-c.dir/debug.c.o: \
+ /home/ued520/makefile_ninja_benchmarks/json-c/debug.c \
+ /usr/include/stdc-predef.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -93,4 +95,5 @@ CMakeFiles/json-c.dir/debug.c.o: /home/ued520/json-c/debug.c \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
  /usr/include/x86_64-linux-gnu/asm/param.h \
- /usr/include/asm-generic/param.h /home/ued520/json-c/debug.h
+ /usr/include/asm-generic/param.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/debug.h

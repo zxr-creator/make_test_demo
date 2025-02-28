@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/json-c/tests/test_json_pointer.c" "tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o" "gcc" "tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/json-c/tests/test_json_pointer.c" "tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o" "gcc" "tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

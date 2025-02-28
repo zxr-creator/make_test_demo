@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/json-c/tests/test_float.c" "tests/CMakeFiles/test_float.dir/test_float.c.o" "gcc" "tests/CMakeFiles/test_float.dir/test_float.c.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/json-c/tests/test_float.c" "tests/CMakeFiles/test_float.dir/test_float.c.o" "gcc" "tests/CMakeFiles/test_float.dir/test_float.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

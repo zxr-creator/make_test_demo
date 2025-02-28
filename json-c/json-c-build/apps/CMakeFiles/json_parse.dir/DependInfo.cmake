@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/json-c/apps/json_parse.c" "apps/CMakeFiles/json_parse.dir/json_parse.c.o" "gcc" "apps/CMakeFiles/json_parse.dir/json_parse.c.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/json-c/apps/json_parse.c" "apps/CMakeFiles/json_parse.dir/json_parse.c.o" "gcc" "apps/CMakeFiles/json_parse.dir/json_parse.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

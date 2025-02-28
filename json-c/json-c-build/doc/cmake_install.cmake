@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/json-c/doc
+# Install script for directory: /home/ued520/makefile_ninja_benchmarks/json-c/doc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

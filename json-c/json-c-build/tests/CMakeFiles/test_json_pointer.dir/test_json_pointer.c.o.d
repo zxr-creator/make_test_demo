@@ -1,6 +1,6 @@
 tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o: \
- /home/ued520/json-c/tests/test_json_pointer.c /usr/include/stdc-predef.h \
- /usr/include/assert.h /usr/include/features.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/tests/test_json_pointer.c \
+ /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -30,8 +30,10 @@ tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /home/ued520/json-c/json-c-build/json.h \
- /home/ued520/json-c/arraylist.h /home/ued520/json-c/debug.h \
+ /usr/include/strings.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/json.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/arraylist.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/debug.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -57,16 +59,22 @@ tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/ued520/json-c/json_c_version.h /home/ued520/json-c/json_object.h \
- /home/ued520/json-c/json_inttypes.h \
- /home/ued520/json-c/json-c-build/json_config.h /usr/include/inttypes.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_c_version.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_object.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_inttypes.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/json_config.h \
+ /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/ued520/json-c/json_types.h /home/ued520/json-c/printbuf.h \
- /home/ued520/json-c/json_object_iterator.h \
- /home/ued520/json-c/json_patch.h /home/ued520/json-c/json_pointer.h \
- /home/ued520/json-c/json_object.h /home/ued520/json-c/json_pointer.h \
- /home/ued520/json-c/json_tokener.h /home/ued520/json-c/json_util.h \
- /home/ued520/json-c/linkhash.h
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_types.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/printbuf.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_object_iterator.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_patch.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_pointer.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_object.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_pointer.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_tokener.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_util.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/linkhash.h

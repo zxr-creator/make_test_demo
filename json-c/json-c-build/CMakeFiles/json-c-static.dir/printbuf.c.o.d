@@ -1,5 +1,7 @@
-CMakeFiles/json-c-static.dir/printbuf.c.o: /home/ued520/json-c/printbuf.c \
- /usr/include/stdc-predef.h /home/ued520/json-c/json-c-build/config.h \
+CMakeFiles/json-c-static.dir/printbuf.c.o: \
+ /home/ued520/makefile_ninja_benchmarks/json-c/printbuf.c \
+ /usr/include/stdc-predef.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/config.h \
  /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -65,9 +67,11 @@ CMakeFiles/json-c-static.dir/printbuf.c.o: /home/ued520/json-c/printbuf.c \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
- /usr/include/strings.h /home/ued520/json-c/debug.h \
- /home/ued520/json-c/printbuf.h /home/ued520/json-c/snprintf_compat.h \
- /home/ued520/json-c/vasprintf_compat.h \
+ /usr/include/strings.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/debug.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/printbuf.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/snprintf_compat.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/vasprintf_compat.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \

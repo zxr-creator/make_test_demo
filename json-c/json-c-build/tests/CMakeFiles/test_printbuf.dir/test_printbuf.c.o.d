@@ -1,6 +1,6 @@
 tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o: \
- /home/ued520/json-c/tests/test_printbuf.c /usr/include/stdc-predef.h \
- /usr/include/assert.h /usr/include/features.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/tests/test_printbuf.c \
+ /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -61,5 +61,6 @@ tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
- /usr/include/strings.h /home/ued520/json-c/debug.h \
- /home/ued520/json-c/printbuf.h
+ /usr/include/strings.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/debug.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/printbuf.h

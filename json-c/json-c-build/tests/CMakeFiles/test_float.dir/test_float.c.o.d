@@ -1,9 +1,12 @@
 tests/CMakeFiles/test_float.dir/test_float.c.o: \
- /home/ued520/json-c/tests/test_float.c /usr/include/stdc-predef.h \
- /home/ued520/json-c/json-c-build/config.h \
- /home/ued520/json-c/json_object.h /home/ued520/json-c/json_inttypes.h \
- /home/ued520/json-c/json-c-build/json_config.h /usr/include/inttypes.h \
- /usr/include/features.h /usr/include/features-time64.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/tests/test_float.c \
+ /usr/include/stdc-predef.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/config.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_object.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_inttypes.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/json_config.h \
+ /usr/include/inttypes.h /usr/include/features.h \
+ /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -19,9 +22,11 @@ tests/CMakeFiles/test_float.dir/test_float.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/ued520/json-c/json_types.h /home/ued520/json-c/printbuf.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_types.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/printbuf.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /home/ued520/json-c/json_tokener.h /home/ued520/json-c/json_object.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_tokener.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json_object.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \

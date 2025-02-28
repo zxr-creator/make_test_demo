@@ -1,0 +1,16 @@
+./configure
+
+add this to makefile:
+CXX = g++
+CXXFLAGS = -std=c++11
+
+timetracker.o: timetracker.cpp timetracker.h
+    $(CXX) $(CXXFLAGS) -c timetracker.cpp -o timetracker.o
+
+
+make
+make distclean
+./make ... 2>&1 | tee make_profiling_demo.log
+
+/home/ued520/make_new/make -d  > test1.txt
+

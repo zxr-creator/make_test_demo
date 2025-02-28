@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/json-c
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/json-c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/json-c/json-c-build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build
 
 # Utility rule file for distcheck.
 
@@ -88,6 +88,6 @@ CMakeFiles/distcheck.dir/clean:
 .PHONY : CMakeFiles/distcheck.dir/clean
 
 CMakeFiles/distcheck.dir/depend:
-	cd /home/ued520/json-c/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ued520/json-c /home/ued520/json-c /home/ued520/json-c/json-c-build /home/ued520/json-c/json-c-build /home/ued520/json-c/json-c-build/CMakeFiles/distcheck.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ued520/makefile_ninja_benchmarks/json-c /home/ued520/makefile_ninja_benchmarks/json-c /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/CMakeFiles/distcheck.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/distcheck.dir/depend
 

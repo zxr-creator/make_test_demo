@@ -1,5 +1,7 @@
-CMakeFiles/json-c.dir/arraylist.c.o: /home/ued520/json-c/arraylist.c \
- /usr/include/stdc-predef.h /home/ued520/json-c/json-c-build/config.h \
+CMakeFiles/json-c.dir/arraylist.c.o: \
+ /home/ued520/makefile_ninja_benchmarks/json-c/arraylist.c \
+ /usr/include/stdc-predef.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/json-c-build/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
  /usr/include/limits.h \
@@ -51,4 +53,5 @@ CMakeFiles/json-c.dir/arraylist.c.o: /home/ued520/json-c/arraylist.c \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
- /usr/include/strings.h /home/ued520/json-c/arraylist.h
+ /usr/include/strings.h \
+ /home/ued520/makefile_ninja_benchmarks/json-c/arraylist.h

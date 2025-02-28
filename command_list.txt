@@ -1,0 +1,10 @@
+cd /home/ued520/makefile_ninja_benchmarks/make_new
+make clean
+make
+
+cd /home/ued520/makefile_ninja_benchmarks/demo_project
+/home/ued520/makefile_ninja_benchmarks/make_new/make clean
+/home/ued520/makefile_ninja_benchmarks/make_new/make -d > make_profile.txt
+
+mkdir build_ninja
+/home/ued520/makefile_ninja_benchmarks/ninja/ninja 

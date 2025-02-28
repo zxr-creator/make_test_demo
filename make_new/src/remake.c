@@ -110,7 +110,6 @@ check_also_make (const struct file *file)
 enum update_status
 update_goal_chain (struct goaldep *goaldeps)
 {
-  profiler_operation_start(2, "Update_goal_chain loop.");
   int t = touch_flag, q = question_flag, n = just_print_flag;
   enum update_status status = us_none;
 
@@ -118,7 +117,7 @@ update_goal_chain (struct goaldep *goaldeps)
   profiler_operation_start(2, "Duplicate the chain.");
   struct dep *goals_orig = copy_dep_chain ((struct dep *)goaldeps);
   struct dep *goals = goals_orig;
-  profiler_operation_end(2, "Duplicate the chain.");
+  
   goal_list = rebuilding_makefiles ? goaldeps : NULL;
 
 #define MTIME(file) (rebuilding_makefiles ? file_mtime_no_search (file) \
@@ -128,6 +127,7 @@ update_goal_chain (struct goaldep *goaldeps)
   ++considered;
 
   /* Update all the goals until they are all finished.  */
+  profiler_operation_end(2, "Duplicate the chain.");
   profiler_operation_start(2, "Update all the goals.");
   while (goals != 0)
     {
@@ -297,8 +297,8 @@ update_goal_chain (struct goaldep *goaldeps)
       question_flag = q;
       just_print_flag = n;
     }
-  profiler_operation_end(2, "Update_goal_chain loop.");  
   return status;
+  
 }
 
 /* If we're rebuilding an included makefile that failed, and we care

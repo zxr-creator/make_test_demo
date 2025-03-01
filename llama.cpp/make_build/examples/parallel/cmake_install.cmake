@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/llama.cpp/examples/parallel
+# Install script for directory: /home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/parallel
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,12 +49,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-parallel"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ued520/llama.cpp/make_build/bin/llama-parallel")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/bin/llama-parallel")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-parallel" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-parallel")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-parallel"
-         OLD_RPATH "/home/ued520/llama.cpp/make_build/bin:"
+         OLD_RPATH "/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/bin:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-parallel")

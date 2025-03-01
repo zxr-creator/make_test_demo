@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/ggml/src//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/ggml/src//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ggml/src/CMakeFiles/ggml-base.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/CMakeFiles/ggml-base.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/CMakeFiles/ggml-base.dir/rule
 .PHONY : ggml/src/CMakeFiles/ggml-base.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ ggml-base: ggml/src/CMakeFiles/ggml-base.dir/rule
 
 # fast build rule for target.
 ggml-base/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/build
 .PHONY : ggml-base/fast
 
 # Convenience name for target.
 ggml/src/CMakeFiles/ggml.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/CMakeFiles/ggml.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/CMakeFiles/ggml.dir/rule
 .PHONY : ggml/src/CMakeFiles/ggml.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ ggml: ggml/src/CMakeFiles/ggml.dir/rule
 
 # fast build rule for target.
 ggml/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml.dir/build.make ggml/src/CMakeFiles/ggml.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml.dir/build.make ggml/src/CMakeFiles/ggml.dir/build
 .PHONY : ggml/fast
 
 # Convenience name for target.
 ggml/src/CMakeFiles/ggml-cpu.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/CMakeFiles/ggml-cpu.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml/src/CMakeFiles/ggml-cpu.dir/rule
 .PHONY : ggml/src/CMakeFiles/ggml-cpu.dir/rule
 
 # Convenience name for target.
@@ -210,7 +210,7 @@ ggml-cpu: ggml/src/CMakeFiles/ggml-cpu.dir/rule
 
 # fast build rule for target.
 ggml-cpu/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/build
 .PHONY : ggml-cpu/fast
 
 ggml-alloc.o: ggml-alloc.c.o
@@ -218,7 +218,7 @@ ggml-alloc.o: ggml-alloc.c.o
 
 # target to build an object file
 ggml-alloc.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
 .PHONY : ggml-alloc.c.o
 
 ggml-alloc.i: ggml-alloc.c.i
@@ -226,7 +226,7 @@ ggml-alloc.i: ggml-alloc.c.i
 
 # target to preprocess a source file
 ggml-alloc.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.i
 .PHONY : ggml-alloc.c.i
 
 ggml-alloc.s: ggml-alloc.c.s
@@ -234,7 +234,7 @@ ggml-alloc.s: ggml-alloc.c.s
 
 # target to generate assembly for a file
 ggml-alloc.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.s
 .PHONY : ggml-alloc.c.s
 
 ggml-backend-reg.o: ggml-backend-reg.cpp.o
@@ -242,7 +242,7 @@ ggml-backend-reg.o: ggml-backend-reg.cpp.o
 
 # target to build an object file
 ggml-backend-reg.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml.dir/build.make ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml.dir/build.make ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
 .PHONY : ggml-backend-reg.cpp.o
 
 ggml-backend-reg.i: ggml-backend-reg.cpp.i
@@ -250,7 +250,7 @@ ggml-backend-reg.i: ggml-backend-reg.cpp.i
 
 # target to preprocess a source file
 ggml-backend-reg.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml.dir/build.make ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml.dir/build.make ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.i
 .PHONY : ggml-backend-reg.cpp.i
 
 ggml-backend-reg.s: ggml-backend-reg.cpp.s
@@ -258,7 +258,7 @@ ggml-backend-reg.s: ggml-backend-reg.cpp.s
 
 # target to generate assembly for a file
 ggml-backend-reg.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml.dir/build.make ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml.dir/build.make ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.s
 .PHONY : ggml-backend-reg.cpp.s
 
 ggml-backend.o: ggml-backend.cpp.o
@@ -266,7 +266,7 @@ ggml-backend.o: ggml-backend.cpp.o
 
 # target to build an object file
 ggml-backend.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
 .PHONY : ggml-backend.cpp.o
 
 ggml-backend.i: ggml-backend.cpp.i
@@ -274,7 +274,7 @@ ggml-backend.i: ggml-backend.cpp.i
 
 # target to preprocess a source file
 ggml-backend.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.i
 .PHONY : ggml-backend.cpp.i
 
 ggml-backend.s: ggml-backend.cpp.s
@@ -282,7 +282,7 @@ ggml-backend.s: ggml-backend.cpp.s
 
 # target to generate assembly for a file
 ggml-backend.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.s
 .PHONY : ggml-backend.cpp.s
 
 ggml-cpu/amx/amx.o: ggml-cpu/amx/amx.cpp.o
@@ -290,7 +290,7 @@ ggml-cpu/amx/amx.o: ggml-cpu/amx/amx.cpp.o
 
 # target to build an object file
 ggml-cpu/amx/amx.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
 .PHONY : ggml-cpu/amx/amx.cpp.o
 
 ggml-cpu/amx/amx.i: ggml-cpu/amx/amx.cpp.i
@@ -298,7 +298,7 @@ ggml-cpu/amx/amx.i: ggml-cpu/amx/amx.cpp.i
 
 # target to preprocess a source file
 ggml-cpu/amx/amx.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.i
 .PHONY : ggml-cpu/amx/amx.cpp.i
 
 ggml-cpu/amx/amx.s: ggml-cpu/amx/amx.cpp.s
@@ -306,7 +306,7 @@ ggml-cpu/amx/amx.s: ggml-cpu/amx/amx.cpp.s
 
 # target to generate assembly for a file
 ggml-cpu/amx/amx.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.s
 .PHONY : ggml-cpu/amx/amx.cpp.s
 
 ggml-cpu/amx/mmq.o: ggml-cpu/amx/mmq.cpp.o
@@ -314,7 +314,7 @@ ggml-cpu/amx/mmq.o: ggml-cpu/amx/mmq.cpp.o
 
 # target to build an object file
 ggml-cpu/amx/mmq.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
 .PHONY : ggml-cpu/amx/mmq.cpp.o
 
 ggml-cpu/amx/mmq.i: ggml-cpu/amx/mmq.cpp.i
@@ -322,7 +322,7 @@ ggml-cpu/amx/mmq.i: ggml-cpu/amx/mmq.cpp.i
 
 # target to preprocess a source file
 ggml-cpu/amx/mmq.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.i
 .PHONY : ggml-cpu/amx/mmq.cpp.i
 
 ggml-cpu/amx/mmq.s: ggml-cpu/amx/mmq.cpp.s
@@ -330,7 +330,7 @@ ggml-cpu/amx/mmq.s: ggml-cpu/amx/mmq.cpp.s
 
 # target to generate assembly for a file
 ggml-cpu/amx/mmq.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.s
 .PHONY : ggml-cpu/amx/mmq.cpp.s
 
 ggml-cpu/ggml-cpu-aarch64.o: ggml-cpu/ggml-cpu-aarch64.cpp.o
@@ -338,7 +338,7 @@ ggml-cpu/ggml-cpu-aarch64.o: ggml-cpu/ggml-cpu-aarch64.cpp.o
 
 # target to build an object file
 ggml-cpu/ggml-cpu-aarch64.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.o
 .PHONY : ggml-cpu/ggml-cpu-aarch64.cpp.o
 
 ggml-cpu/ggml-cpu-aarch64.i: ggml-cpu/ggml-cpu-aarch64.cpp.i
@@ -346,7 +346,7 @@ ggml-cpu/ggml-cpu-aarch64.i: ggml-cpu/ggml-cpu-aarch64.cpp.i
 
 # target to preprocess a source file
 ggml-cpu/ggml-cpu-aarch64.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.i
 .PHONY : ggml-cpu/ggml-cpu-aarch64.cpp.i
 
 ggml-cpu/ggml-cpu-aarch64.s: ggml-cpu/ggml-cpu-aarch64.cpp.s
@@ -354,7 +354,7 @@ ggml-cpu/ggml-cpu-aarch64.s: ggml-cpu/ggml-cpu-aarch64.cpp.s
 
 # target to generate assembly for a file
 ggml-cpu/ggml-cpu-aarch64.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.s
 .PHONY : ggml-cpu/ggml-cpu-aarch64.cpp.s
 
 ggml-cpu/ggml-cpu-hbm.o: ggml-cpu/ggml-cpu-hbm.cpp.o
@@ -362,7 +362,7 @@ ggml-cpu/ggml-cpu-hbm.o: ggml-cpu/ggml-cpu-hbm.cpp.o
 
 # target to build an object file
 ggml-cpu/ggml-cpu-hbm.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.o
 .PHONY : ggml-cpu/ggml-cpu-hbm.cpp.o
 
 ggml-cpu/ggml-cpu-hbm.i: ggml-cpu/ggml-cpu-hbm.cpp.i
@@ -370,7 +370,7 @@ ggml-cpu/ggml-cpu-hbm.i: ggml-cpu/ggml-cpu-hbm.cpp.i
 
 # target to preprocess a source file
 ggml-cpu/ggml-cpu-hbm.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.i
 .PHONY : ggml-cpu/ggml-cpu-hbm.cpp.i
 
 ggml-cpu/ggml-cpu-hbm.s: ggml-cpu/ggml-cpu-hbm.cpp.s
@@ -378,7 +378,7 @@ ggml-cpu/ggml-cpu-hbm.s: ggml-cpu/ggml-cpu-hbm.cpp.s
 
 # target to generate assembly for a file
 ggml-cpu/ggml-cpu-hbm.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.s
 .PHONY : ggml-cpu/ggml-cpu-hbm.cpp.s
 
 ggml-cpu/ggml-cpu-quants.o: ggml-cpu/ggml-cpu-quants.c.o
@@ -386,7 +386,7 @@ ggml-cpu/ggml-cpu-quants.o: ggml-cpu/ggml-cpu-quants.c.o
 
 # target to build an object file
 ggml-cpu/ggml-cpu-quants.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o
 .PHONY : ggml-cpu/ggml-cpu-quants.c.o
 
 ggml-cpu/ggml-cpu-quants.i: ggml-cpu/ggml-cpu-quants.c.i
@@ -394,7 +394,7 @@ ggml-cpu/ggml-cpu-quants.i: ggml-cpu/ggml-cpu-quants.c.i
 
 # target to preprocess a source file
 ggml-cpu/ggml-cpu-quants.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.i
 .PHONY : ggml-cpu/ggml-cpu-quants.c.i
 
 ggml-cpu/ggml-cpu-quants.s: ggml-cpu/ggml-cpu-quants.c.s
@@ -402,7 +402,7 @@ ggml-cpu/ggml-cpu-quants.s: ggml-cpu/ggml-cpu-quants.c.s
 
 # target to generate assembly for a file
 ggml-cpu/ggml-cpu-quants.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.s
 .PHONY : ggml-cpu/ggml-cpu-quants.c.s
 
 ggml-cpu/ggml-cpu-traits.o: ggml-cpu/ggml-cpu-traits.cpp.o
@@ -410,7 +410,7 @@ ggml-cpu/ggml-cpu-traits.o: ggml-cpu/ggml-cpu-traits.cpp.o
 
 # target to build an object file
 ggml-cpu/ggml-cpu-traits.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.o
 .PHONY : ggml-cpu/ggml-cpu-traits.cpp.o
 
 ggml-cpu/ggml-cpu-traits.i: ggml-cpu/ggml-cpu-traits.cpp.i
@@ -418,7 +418,7 @@ ggml-cpu/ggml-cpu-traits.i: ggml-cpu/ggml-cpu-traits.cpp.i
 
 # target to preprocess a source file
 ggml-cpu/ggml-cpu-traits.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.i
 .PHONY : ggml-cpu/ggml-cpu-traits.cpp.i
 
 ggml-cpu/ggml-cpu-traits.s: ggml-cpu/ggml-cpu-traits.cpp.s
@@ -426,7 +426,7 @@ ggml-cpu/ggml-cpu-traits.s: ggml-cpu/ggml-cpu-traits.cpp.s
 
 # target to generate assembly for a file
 ggml-cpu/ggml-cpu-traits.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.s
 .PHONY : ggml-cpu/ggml-cpu-traits.cpp.s
 
 ggml-cpu/ggml-cpu.o: ggml-cpu/ggml-cpu.c.o
@@ -434,7 +434,7 @@ ggml-cpu/ggml-cpu.o: ggml-cpu/ggml-cpu.c.o
 
 # target to build an object file
 ggml-cpu/ggml-cpu.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
 .PHONY : ggml-cpu/ggml-cpu.c.o
 
 ggml-cpu/ggml-cpu.i: ggml-cpu/ggml-cpu.c.i
@@ -442,7 +442,7 @@ ggml-cpu/ggml-cpu.i: ggml-cpu/ggml-cpu.c.i
 
 # target to preprocess a source file
 ggml-cpu/ggml-cpu.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.i
 .PHONY : ggml-cpu/ggml-cpu.c.i
 
 ggml-cpu/ggml-cpu.s: ggml-cpu/ggml-cpu.c.s
@@ -450,7 +450,7 @@ ggml-cpu/ggml-cpu.s: ggml-cpu/ggml-cpu.c.s
 
 # target to generate assembly for a file
 ggml-cpu/ggml-cpu.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.s
 .PHONY : ggml-cpu/ggml-cpu.c.s
 
 ggml-cpu/ggml-cpu.o: ggml-cpu/ggml-cpu.cpp.o
@@ -458,7 +458,7 @@ ggml-cpu/ggml-cpu.o: ggml-cpu/ggml-cpu.cpp.o
 
 # target to build an object file
 ggml-cpu/ggml-cpu.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
 .PHONY : ggml-cpu/ggml-cpu.cpp.o
 
 ggml-cpu/ggml-cpu.i: ggml-cpu/ggml-cpu.cpp.i
@@ -466,7 +466,7 @@ ggml-cpu/ggml-cpu.i: ggml-cpu/ggml-cpu.cpp.i
 
 # target to preprocess a source file
 ggml-cpu/ggml-cpu.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.i
 .PHONY : ggml-cpu/ggml-cpu.cpp.i
 
 ggml-cpu/ggml-cpu.s: ggml-cpu/ggml-cpu.cpp.s
@@ -474,7 +474,7 @@ ggml-cpu/ggml-cpu.s: ggml-cpu/ggml-cpu.cpp.s
 
 # target to generate assembly for a file
 ggml-cpu/ggml-cpu.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.s
 .PHONY : ggml-cpu/ggml-cpu.cpp.s
 
 ggml-cpu/llamafile/sgemm.o: ggml-cpu/llamafile/sgemm.cpp.o
@@ -482,7 +482,7 @@ ggml-cpu/llamafile/sgemm.o: ggml-cpu/llamafile/sgemm.cpp.o
 
 # target to build an object file
 ggml-cpu/llamafile/sgemm.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
 .PHONY : ggml-cpu/llamafile/sgemm.cpp.o
 
 ggml-cpu/llamafile/sgemm.i: ggml-cpu/llamafile/sgemm.cpp.i
@@ -490,7 +490,7 @@ ggml-cpu/llamafile/sgemm.i: ggml-cpu/llamafile/sgemm.cpp.i
 
 # target to preprocess a source file
 ggml-cpu/llamafile/sgemm.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.i
 .PHONY : ggml-cpu/llamafile/sgemm.cpp.i
 
 ggml-cpu/llamafile/sgemm.s: ggml-cpu/llamafile/sgemm.cpp.s
@@ -498,7 +498,7 @@ ggml-cpu/llamafile/sgemm.s: ggml-cpu/llamafile/sgemm.cpp.s
 
 # target to generate assembly for a file
 ggml-cpu/llamafile/sgemm.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-cpu.dir/build.make ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.s
 .PHONY : ggml-cpu/llamafile/sgemm.cpp.s
 
 ggml-opt.o: ggml-opt.cpp.o
@@ -506,7 +506,7 @@ ggml-opt.o: ggml-opt.cpp.o
 
 # target to build an object file
 ggml-opt.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
 .PHONY : ggml-opt.cpp.o
 
 ggml-opt.i: ggml-opt.cpp.i
@@ -514,7 +514,7 @@ ggml-opt.i: ggml-opt.cpp.i
 
 # target to preprocess a source file
 ggml-opt.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.i
 .PHONY : ggml-opt.cpp.i
 
 ggml-opt.s: ggml-opt.cpp.s
@@ -522,7 +522,7 @@ ggml-opt.s: ggml-opt.cpp.s
 
 # target to generate assembly for a file
 ggml-opt.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.s
 .PHONY : ggml-opt.cpp.s
 
 ggml-quants.o: ggml-quants.c.o
@@ -530,7 +530,7 @@ ggml-quants.o: ggml-quants.c.o
 
 # target to build an object file
 ggml-quants.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
 .PHONY : ggml-quants.c.o
 
 ggml-quants.i: ggml-quants.c.i
@@ -538,7 +538,7 @@ ggml-quants.i: ggml-quants.c.i
 
 # target to preprocess a source file
 ggml-quants.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.i
 .PHONY : ggml-quants.c.i
 
 ggml-quants.s: ggml-quants.c.s
@@ -546,7 +546,7 @@ ggml-quants.s: ggml-quants.c.s
 
 # target to generate assembly for a file
 ggml-quants.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.s
 .PHONY : ggml-quants.c.s
 
 ggml-threading.o: ggml-threading.cpp.o
@@ -554,7 +554,7 @@ ggml-threading.o: ggml-threading.cpp.o
 
 # target to build an object file
 ggml-threading.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
 .PHONY : ggml-threading.cpp.o
 
 ggml-threading.i: ggml-threading.cpp.i
@@ -562,7 +562,7 @@ ggml-threading.i: ggml-threading.cpp.i
 
 # target to preprocess a source file
 ggml-threading.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.i
 .PHONY : ggml-threading.cpp.i
 
 ggml-threading.s: ggml-threading.cpp.s
@@ -570,7 +570,7 @@ ggml-threading.s: ggml-threading.cpp.s
 
 # target to generate assembly for a file
 ggml-threading.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.s
 .PHONY : ggml-threading.cpp.s
 
 ggml.o: ggml.c.o
@@ -578,7 +578,7 @@ ggml.o: ggml.c.o
 
 # target to build an object file
 ggml.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
 .PHONY : ggml.c.o
 
 ggml.i: ggml.c.i
@@ -586,7 +586,7 @@ ggml.i: ggml.c.i
 
 # target to preprocess a source file
 ggml.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml.c.i
 .PHONY : ggml.c.i
 
 ggml.s: ggml.c.s
@@ -594,7 +594,7 @@ ggml.s: ggml.c.s
 
 # target to generate assembly for a file
 ggml.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/ggml.c.s
 .PHONY : ggml.c.s
 
 gguf.o: gguf.cpp.o
@@ -602,7 +602,7 @@ gguf.o: gguf.cpp.o
 
 # target to build an object file
 gguf.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
 .PHONY : gguf.cpp.o
 
 gguf.i: gguf.cpp.i
@@ -610,7 +610,7 @@ gguf.i: gguf.cpp.i
 
 # target to preprocess a source file
 gguf.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.i
 .PHONY : gguf.cpp.i
 
 gguf.s: gguf.cpp.s
@@ -618,7 +618,7 @@ gguf.s: gguf.cpp.s
 
 # target to generate assembly for a file
 gguf.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f ggml/src/CMakeFiles/ggml-base.dir/build.make ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.s
 .PHONY : gguf.cpp.s
 
 # Help Target
@@ -699,6 +699,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

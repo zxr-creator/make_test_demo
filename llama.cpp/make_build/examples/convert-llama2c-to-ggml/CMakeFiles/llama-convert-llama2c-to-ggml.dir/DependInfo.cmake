@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp" "examples/convert-llama2c-to-ggml/CMakeFiles/llama-convert-llama2c-to-ggml.dir/convert-llama2c-to-ggml.cpp.o" "gcc" "examples/convert-llama2c-to-ggml/CMakeFiles/llama-convert-llama2c-to-ggml.dir/convert-llama2c-to-ggml.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp" "examples/convert-llama2c-to-ggml/CMakeFiles/llama-convert-llama2c-to-ggml.dir/convert-llama2c-to-ggml.cpp.o" "gcc" "examples/convert-llama2c-to-ggml/CMakeFiles/llama-convert-llama2c-to-ggml.dir/convert-llama2c-to-ggml.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

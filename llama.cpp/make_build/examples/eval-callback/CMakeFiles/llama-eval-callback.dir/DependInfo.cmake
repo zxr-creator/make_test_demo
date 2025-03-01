@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/examples/eval-callback/eval-callback.cpp" "examples/eval-callback/CMakeFiles/llama-eval-callback.dir/eval-callback.cpp.o" "gcc" "examples/eval-callback/CMakeFiles/llama-eval-callback.dir/eval-callback.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/eval-callback/eval-callback.cpp" "examples/eval-callback/CMakeFiles/llama-eval-callback.dir/eval-callback.cpp.o" "gcc" "examples/eval-callback/CMakeFiles/llama-eval-callback.dir/eval-callback.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/examples/passkey/passkey.cpp" "examples/passkey/CMakeFiles/llama-passkey.dir/passkey.cpp.o" "gcc" "examples/passkey/CMakeFiles/llama-passkey.dir/passkey.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/passkey/passkey.cpp" "examples/passkey/CMakeFiles/llama-passkey.dir/passkey.cpp.o" "gcc" "examples/passkey/CMakeFiles/llama-passkey.dir/passkey.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

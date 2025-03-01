@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/examples/run//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/run//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/run/CMakeFiles/llama-run.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/CMakeFiles/llama-run.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/run/CMakeFiles/llama-run.dir/rule
 .PHONY : examples/run/CMakeFiles/llama-run.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ llama-run: examples/run/CMakeFiles/llama-run.dir/rule
 
 # fast build rule for target.
 llama-run/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/build
 .PHONY : llama-run/fast
 
 linenoise.cpp/linenoise.o: linenoise.cpp/linenoise.cpp.o
@@ -190,7 +190,7 @@ linenoise.cpp/linenoise.o: linenoise.cpp/linenoise.cpp.o
 
 # target to build an object file
 linenoise.cpp/linenoise.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/linenoise.cpp/linenoise.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/linenoise.cpp/linenoise.cpp.o
 .PHONY : linenoise.cpp/linenoise.cpp.o
 
 linenoise.cpp/linenoise.i: linenoise.cpp/linenoise.cpp.i
@@ -198,7 +198,7 @@ linenoise.cpp/linenoise.i: linenoise.cpp/linenoise.cpp.i
 
 # target to preprocess a source file
 linenoise.cpp/linenoise.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/linenoise.cpp/linenoise.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/linenoise.cpp/linenoise.cpp.i
 .PHONY : linenoise.cpp/linenoise.cpp.i
 
 linenoise.cpp/linenoise.s: linenoise.cpp/linenoise.cpp.s
@@ -206,7 +206,7 @@ linenoise.cpp/linenoise.s: linenoise.cpp/linenoise.cpp.s
 
 # target to generate assembly for a file
 linenoise.cpp/linenoise.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/linenoise.cpp/linenoise.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/linenoise.cpp/linenoise.cpp.s
 .PHONY : linenoise.cpp/linenoise.cpp.s
 
 run.o: run.cpp.o
@@ -214,7 +214,7 @@ run.o: run.cpp.o
 
 # target to build an object file
 run.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/run.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/run.cpp.o
 .PHONY : run.cpp.o
 
 run.i: run.cpp.i
@@ -222,7 +222,7 @@ run.i: run.cpp.i
 
 # target to preprocess a source file
 run.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/run.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/run.cpp.i
 .PHONY : run.cpp.i
 
 run.s: run.cpp.s
@@ -230,7 +230,7 @@ run.s: run.cpp.s
 
 # target to generate assembly for a file
 run.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/run.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/run/CMakeFiles/llama-run.dir/build.make examples/run/CMakeFiles/llama-run.dir/run.cpp.s
 .PHONY : run.cpp.s
 
 # Help Target
@@ -264,6 +264,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

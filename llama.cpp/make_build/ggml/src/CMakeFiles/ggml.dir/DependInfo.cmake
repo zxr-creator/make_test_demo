@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/ggml/src/ggml-backend-reg.cpp" "ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o" "gcc" "ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ggml/src/ggml-backend-reg.cpp" "ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o" "gcc" "ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

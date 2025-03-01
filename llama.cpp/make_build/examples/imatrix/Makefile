@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/examples/imatrix//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/imatrix//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/imatrix/CMakeFiles/llama-imatrix.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/CMakeFiles/llama-imatrix.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/imatrix/CMakeFiles/llama-imatrix.dir/rule
 .PHONY : examples/imatrix/CMakeFiles/llama-imatrix.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ llama-imatrix: examples/imatrix/CMakeFiles/llama-imatrix.dir/rule
 
 # fast build rule for target.
 llama-imatrix/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/imatrix/CMakeFiles/llama-imatrix.dir/build.make examples/imatrix/CMakeFiles/llama-imatrix.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/imatrix/CMakeFiles/llama-imatrix.dir/build.make examples/imatrix/CMakeFiles/llama-imatrix.dir/build
 .PHONY : llama-imatrix/fast
 
 imatrix.o: imatrix.cpp.o
@@ -190,7 +190,7 @@ imatrix.o: imatrix.cpp.o
 
 # target to build an object file
 imatrix.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/imatrix/CMakeFiles/llama-imatrix.dir/build.make examples/imatrix/CMakeFiles/llama-imatrix.dir/imatrix.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/imatrix/CMakeFiles/llama-imatrix.dir/build.make examples/imatrix/CMakeFiles/llama-imatrix.dir/imatrix.cpp.o
 .PHONY : imatrix.cpp.o
 
 imatrix.i: imatrix.cpp.i
@@ -198,7 +198,7 @@ imatrix.i: imatrix.cpp.i
 
 # target to preprocess a source file
 imatrix.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/imatrix/CMakeFiles/llama-imatrix.dir/build.make examples/imatrix/CMakeFiles/llama-imatrix.dir/imatrix.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/imatrix/CMakeFiles/llama-imatrix.dir/build.make examples/imatrix/CMakeFiles/llama-imatrix.dir/imatrix.cpp.i
 .PHONY : imatrix.cpp.i
 
 imatrix.s: imatrix.cpp.s
@@ -206,7 +206,7 @@ imatrix.s: imatrix.cpp.s
 
 # target to generate assembly for a file
 imatrix.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/imatrix/CMakeFiles/llama-imatrix.dir/build.make examples/imatrix/CMakeFiles/llama-imatrix.dir/imatrix.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/imatrix/CMakeFiles/llama-imatrix.dir/build.make examples/imatrix/CMakeFiles/llama-imatrix.dir/imatrix.cpp.s
 .PHONY : imatrix.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

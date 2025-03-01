@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/examples/llava//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/llava//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llava.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llava.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llava.dir/rule
 .PHONY : examples/llava/CMakeFiles/llava.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ llava: examples/llava/CMakeFiles/llava.dir/rule
 
 # fast build rule for target.
 llava/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/build
 .PHONY : llava/fast
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llava_static.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llava_static.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llava_static.dir/rule
 .PHONY : examples/llava/CMakeFiles/llava_static.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ llava_static: examples/llava/CMakeFiles/llava_static.dir/rule
 
 # fast build rule for target.
 llava_static/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava_static.dir/build.make examples/llava/CMakeFiles/llava_static.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava_static.dir/build.make examples/llava/CMakeFiles/llava_static.dir/build
 .PHONY : llava_static/fast
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llava_shared.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llava_shared.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llava_shared.dir/rule
 .PHONY : examples/llava/CMakeFiles/llava_shared.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ llava_shared: examples/llava/CMakeFiles/llava_shared.dir/rule
 
 # fast build rule for target.
 llava_shared/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava_shared.dir/build.make examples/llava/CMakeFiles/llava_shared.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava_shared.dir/build.make examples/llava/CMakeFiles/llava_shared.dir/build
 .PHONY : llava_shared/fast
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llama-llava-cli.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-llava-cli.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-llava-cli.dir/rule
 .PHONY : examples/llava/CMakeFiles/llama-llava-cli.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ llama-llava-cli: examples/llava/CMakeFiles/llama-llava-cli.dir/rule
 
 # fast build rule for target.
 llama-llava-cli/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/build
 .PHONY : llama-llava-cli/fast
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llama-minicpmv-cli.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-minicpmv-cli.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-minicpmv-cli.dir/rule
 .PHONY : examples/llava/CMakeFiles/llama-minicpmv-cli.dir/rule
 
 # Convenience name for target.
@@ -238,12 +238,12 @@ llama-minicpmv-cli: examples/llava/CMakeFiles/llama-minicpmv-cli.dir/rule
 
 # fast build rule for target.
 llama-minicpmv-cli/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build
 .PHONY : llama-minicpmv-cli/fast
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/rule
 .PHONY : examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ llama-qwen2vl-cli: examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/rule
 
 # fast build rule for target.
 llama-qwen2vl-cli/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build.make examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build.make examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build
 .PHONY : llama-qwen2vl-cli/fast
 
 # Convenience name for target.
 examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/rule
 .PHONY : examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/rule
 
 # Convenience name for target.
@@ -266,7 +266,7 @@ llama-llava-clip-quantize-cli: examples/llava/CMakeFiles/llama-llava-clip-quanti
 
 # fast build rule for target.
 llama-llava-clip-quantize-cli/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build
 .PHONY : llama-llava-clip-quantize-cli/fast
 
 clip-quantize-cli.o: clip-quantize-cli.cpp.o
@@ -274,7 +274,7 @@ clip-quantize-cli.o: clip-quantize-cli.cpp.o
 
 # target to build an object file
 clip-quantize-cli.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/clip-quantize-cli.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/clip-quantize-cli.cpp.o
 .PHONY : clip-quantize-cli.cpp.o
 
 clip-quantize-cli.i: clip-quantize-cli.cpp.i
@@ -282,7 +282,7 @@ clip-quantize-cli.i: clip-quantize-cli.cpp.i
 
 # target to preprocess a source file
 clip-quantize-cli.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/clip-quantize-cli.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/clip-quantize-cli.cpp.i
 .PHONY : clip-quantize-cli.cpp.i
 
 clip-quantize-cli.s: clip-quantize-cli.cpp.s
@@ -290,7 +290,7 @@ clip-quantize-cli.s: clip-quantize-cli.cpp.s
 
 # target to generate assembly for a file
 clip-quantize-cli.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/clip-quantize-cli.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/clip-quantize-cli.cpp.s
 .PHONY : clip-quantize-cli.cpp.s
 
 clip.o: clip.cpp.o
@@ -298,7 +298,7 @@ clip.o: clip.cpp.o
 
 # target to build an object file
 clip.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.o
 .PHONY : clip.cpp.o
 
 clip.i: clip.cpp.i
@@ -306,7 +306,7 @@ clip.i: clip.cpp.i
 
 # target to preprocess a source file
 clip.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.i
 .PHONY : clip.cpp.i
 
 clip.s: clip.cpp.s
@@ -314,7 +314,7 @@ clip.s: clip.cpp.s
 
 # target to generate assembly for a file
 clip.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/clip.cpp.s
 .PHONY : clip.cpp.s
 
 llava-cli.o: llava-cli.cpp.o
@@ -322,7 +322,7 @@ llava-cli.o: llava-cli.cpp.o
 
 # target to build an object file
 llava-cli.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o
 .PHONY : llava-cli.cpp.o
 
 llava-cli.i: llava-cli.cpp.i
@@ -330,7 +330,7 @@ llava-cli.i: llava-cli.cpp.i
 
 # target to preprocess a source file
 llava-cli.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.i
 .PHONY : llava-cli.cpp.i
 
 llava-cli.s: llava-cli.cpp.s
@@ -338,7 +338,7 @@ llava-cli.s: llava-cli.cpp.s
 
 # target to generate assembly for a file
 llava-cli.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-llava-cli.dir/build.make examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.s
 .PHONY : llava-cli.cpp.s
 
 llava.o: llava.cpp.o
@@ -346,7 +346,7 @@ llava.o: llava.cpp.o
 
 # target to build an object file
 llava.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/llava.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/llava.cpp.o
 .PHONY : llava.cpp.o
 
 llava.i: llava.cpp.i
@@ -354,7 +354,7 @@ llava.i: llava.cpp.i
 
 # target to preprocess a source file
 llava.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/llava.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/llava.cpp.i
 .PHONY : llava.cpp.i
 
 llava.s: llava.cpp.s
@@ -362,7 +362,7 @@ llava.s: llava.cpp.s
 
 # target to generate assembly for a file
 llava.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/llava.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llava.dir/build.make examples/llava/CMakeFiles/llava.dir/llava.cpp.s
 .PHONY : llava.cpp.s
 
 minicpmv-cli.o: minicpmv-cli.cpp.o
@@ -370,7 +370,7 @@ minicpmv-cli.o: minicpmv-cli.cpp.o
 
 # target to build an object file
 minicpmv-cli.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.o
 .PHONY : minicpmv-cli.cpp.o
 
 minicpmv-cli.i: minicpmv-cli.cpp.i
@@ -378,7 +378,7 @@ minicpmv-cli.i: minicpmv-cli.cpp.i
 
 # target to preprocess a source file
 minicpmv-cli.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.i
 .PHONY : minicpmv-cli.cpp.i
 
 minicpmv-cli.s: minicpmv-cli.cpp.s
@@ -386,7 +386,7 @@ minicpmv-cli.s: minicpmv-cli.cpp.s
 
 # target to generate assembly for a file
 minicpmv-cli.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-minicpmv-cli.dir/build.make examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.s
 .PHONY : minicpmv-cli.cpp.s
 
 qwen2vl-cli.o: qwen2vl-cli.cpp.o
@@ -394,7 +394,7 @@ qwen2vl-cli.o: qwen2vl-cli.cpp.o
 
 # target to build an object file
 qwen2vl-cli.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build.make examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/qwen2vl-cli.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build.make examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/qwen2vl-cli.cpp.o
 .PHONY : qwen2vl-cli.cpp.o
 
 qwen2vl-cli.i: qwen2vl-cli.cpp.i
@@ -402,7 +402,7 @@ qwen2vl-cli.i: qwen2vl-cli.cpp.i
 
 # target to preprocess a source file
 qwen2vl-cli.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build.make examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/qwen2vl-cli.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build.make examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/qwen2vl-cli.cpp.i
 .PHONY : qwen2vl-cli.cpp.i
 
 qwen2vl-cli.s: qwen2vl-cli.cpp.s
@@ -410,7 +410,7 @@ qwen2vl-cli.s: qwen2vl-cli.cpp.s
 
 # target to generate assembly for a file
 qwen2vl-cli.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build.make examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/qwen2vl-cli.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/build.make examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/qwen2vl-cli.cpp.s
 .PHONY : qwen2vl-cli.cpp.s
 
 # Help Target
@@ -462,6 +462,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

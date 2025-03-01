@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/examples/gguf-split//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/gguf-split//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/gguf-split/CMakeFiles/llama-gguf-split.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/CMakeFiles/llama-gguf-split.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-split/CMakeFiles/llama-gguf-split.dir/rule
 .PHONY : examples/gguf-split/CMakeFiles/llama-gguf-split.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ llama-gguf-split: examples/gguf-split/CMakeFiles/llama-gguf-split.dir/rule
 
 # fast build rule for target.
 llama-gguf-split/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build
 .PHONY : llama-gguf-split/fast
 
 gguf-split.o: gguf-split.cpp.o
@@ -190,7 +190,7 @@ gguf-split.o: gguf-split.cpp.o
 
 # target to build an object file
 gguf-split.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make examples/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make examples/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.o
 .PHONY : gguf-split.cpp.o
 
 gguf-split.i: gguf-split.cpp.i
@@ -198,7 +198,7 @@ gguf-split.i: gguf-split.cpp.i
 
 # target to preprocess a source file
 gguf-split.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make examples/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make examples/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.i
 .PHONY : gguf-split.cpp.i
 
 gguf-split.s: gguf-split.cpp.s
@@ -206,7 +206,7 @@ gguf-split.s: gguf-split.cpp.s
 
 # target to generate assembly for a file
 gguf-split.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make examples/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make examples/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.s
 .PHONY : gguf-split.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

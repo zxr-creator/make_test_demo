@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/examples/export-lora/export-lora.cpp" "examples/export-lora/CMakeFiles/llama-export-lora.dir/export-lora.cpp.o" "gcc" "examples/export-lora/CMakeFiles/llama-export-lora.dir/export-lora.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/export-lora/export-lora.cpp" "examples/export-lora/CMakeFiles/llama-export-lora.dir/export-lora.cpp.o" "gcc" "examples/export-lora/CMakeFiles/llama-export-lora.dir/export-lora.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

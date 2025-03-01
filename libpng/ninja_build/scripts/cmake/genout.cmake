@@ -24,7 +24,7 @@ set(INCDIR "/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build")
 set(PNG_PREFIX "")
 set(PNGLIB_MAJOR "1")
 set(PNGLIB_MINOR "6")
-set(PNGLIB_VERSION "1.6.47")
+set(PNGLIB_VERSION "1.6.48")
 set(ZLIBINCDIR "/usr/include")
 
 set(PLATFORM_C_FLAGS)

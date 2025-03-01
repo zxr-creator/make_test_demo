@@ -19,7 +19,7 @@ set(BINDIR "/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build")
 set(AWK "/usr/bin/gawk")
 set(DFA_XTRA "")
 set(PNG_PREFIX "")
-set(PNGLIB_VERSION "1.6.47")
+set(PNGLIB_VERSION "1.6.48")
 
 if(OUTPUT STREQUAL "scripts/pnglibconf.c")
   # Generate scripts/pnglibconf.c

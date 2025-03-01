@@ -8,12 +8,12 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 # Import target "PNG::png_shared" for configuration ""
 set_property(TARGET PNG::png_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(PNG::png_shared PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libpng16.so.16.47.git"
+  IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libpng16.so.16.48.git"
   IMPORTED_SONAME_NOCONFIG "libpng16.so.16"
   )
 
 list(APPEND _cmake_import_check_targets PNG::png_shared )
-list(APPEND _cmake_import_check_files_for_PNG::png_shared "${_IMPORT_PREFIX}/lib/libpng16.so.16.47.git" )
+list(APPEND _cmake_import_check_files_for_PNG::png_shared "${_IMPORT_PREFIX}/lib/libpng16.so.16.48.git" )
 
 # Import target "PNG::png_static" for configuration ""
 set_property(TARGET PNG::png_static APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)

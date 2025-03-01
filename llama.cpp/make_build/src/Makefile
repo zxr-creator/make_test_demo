@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/src//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/src//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/llama.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/llama.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/llama.dir/rule
 .PHONY : src/CMakeFiles/llama.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ llama: src/CMakeFiles/llama.dir/rule
 
 # fast build rule for target.
 llama/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/build
 .PHONY : llama/fast
 
 llama-adapter.o: llama-adapter.cpp.o
@@ -190,7 +190,7 @@ llama-adapter.o: llama-adapter.cpp.o
 
 # target to build an object file
 llama-adapter.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-adapter.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-adapter.cpp.o
 .PHONY : llama-adapter.cpp.o
 
 llama-adapter.i: llama-adapter.cpp.i
@@ -198,7 +198,7 @@ llama-adapter.i: llama-adapter.cpp.i
 
 # target to preprocess a source file
 llama-adapter.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-adapter.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-adapter.cpp.i
 .PHONY : llama-adapter.cpp.i
 
 llama-adapter.s: llama-adapter.cpp.s
@@ -206,7 +206,7 @@ llama-adapter.s: llama-adapter.cpp.s
 
 # target to generate assembly for a file
 llama-adapter.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-adapter.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-adapter.cpp.s
 .PHONY : llama-adapter.cpp.s
 
 llama-arch.o: llama-arch.cpp.o
@@ -214,7 +214,7 @@ llama-arch.o: llama-arch.cpp.o
 
 # target to build an object file
 llama-arch.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-arch.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-arch.cpp.o
 .PHONY : llama-arch.cpp.o
 
 llama-arch.i: llama-arch.cpp.i
@@ -222,7 +222,7 @@ llama-arch.i: llama-arch.cpp.i
 
 # target to preprocess a source file
 llama-arch.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-arch.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-arch.cpp.i
 .PHONY : llama-arch.cpp.i
 
 llama-arch.s: llama-arch.cpp.s
@@ -230,7 +230,7 @@ llama-arch.s: llama-arch.cpp.s
 
 # target to generate assembly for a file
 llama-arch.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-arch.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-arch.cpp.s
 .PHONY : llama-arch.cpp.s
 
 llama-batch.o: llama-batch.cpp.o
@@ -238,7 +238,7 @@ llama-batch.o: llama-batch.cpp.o
 
 # target to build an object file
 llama-batch.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-batch.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-batch.cpp.o
 .PHONY : llama-batch.cpp.o
 
 llama-batch.i: llama-batch.cpp.i
@@ -246,7 +246,7 @@ llama-batch.i: llama-batch.cpp.i
 
 # target to preprocess a source file
 llama-batch.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-batch.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-batch.cpp.i
 .PHONY : llama-batch.cpp.i
 
 llama-batch.s: llama-batch.cpp.s
@@ -254,7 +254,7 @@ llama-batch.s: llama-batch.cpp.s
 
 # target to generate assembly for a file
 llama-batch.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-batch.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-batch.cpp.s
 .PHONY : llama-batch.cpp.s
 
 llama-chat.o: llama-chat.cpp.o
@@ -262,7 +262,7 @@ llama-chat.o: llama-chat.cpp.o
 
 # target to build an object file
 llama-chat.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-chat.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-chat.cpp.o
 .PHONY : llama-chat.cpp.o
 
 llama-chat.i: llama-chat.cpp.i
@@ -270,7 +270,7 @@ llama-chat.i: llama-chat.cpp.i
 
 # target to preprocess a source file
 llama-chat.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-chat.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-chat.cpp.i
 .PHONY : llama-chat.cpp.i
 
 llama-chat.s: llama-chat.cpp.s
@@ -278,7 +278,7 @@ llama-chat.s: llama-chat.cpp.s
 
 # target to generate assembly for a file
 llama-chat.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-chat.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-chat.cpp.s
 .PHONY : llama-chat.cpp.s
 
 llama-context.o: llama-context.cpp.o
@@ -286,7 +286,7 @@ llama-context.o: llama-context.cpp.o
 
 # target to build an object file
 llama-context.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-context.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-context.cpp.o
 .PHONY : llama-context.cpp.o
 
 llama-context.i: llama-context.cpp.i
@@ -294,7 +294,7 @@ llama-context.i: llama-context.cpp.i
 
 # target to preprocess a source file
 llama-context.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-context.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-context.cpp.i
 .PHONY : llama-context.cpp.i
 
 llama-context.s: llama-context.cpp.s
@@ -302,7 +302,7 @@ llama-context.s: llama-context.cpp.s
 
 # target to generate assembly for a file
 llama-context.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-context.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-context.cpp.s
 .PHONY : llama-context.cpp.s
 
 llama-grammar.o: llama-grammar.cpp.o
@@ -310,7 +310,7 @@ llama-grammar.o: llama-grammar.cpp.o
 
 # target to build an object file
 llama-grammar.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-grammar.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-grammar.cpp.o
 .PHONY : llama-grammar.cpp.o
 
 llama-grammar.i: llama-grammar.cpp.i
@@ -318,7 +318,7 @@ llama-grammar.i: llama-grammar.cpp.i
 
 # target to preprocess a source file
 llama-grammar.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-grammar.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-grammar.cpp.i
 .PHONY : llama-grammar.cpp.i
 
 llama-grammar.s: llama-grammar.cpp.s
@@ -326,7 +326,7 @@ llama-grammar.s: llama-grammar.cpp.s
 
 # target to generate assembly for a file
 llama-grammar.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-grammar.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-grammar.cpp.s
 .PHONY : llama-grammar.cpp.s
 
 llama-hparams.o: llama-hparams.cpp.o
@@ -334,7 +334,7 @@ llama-hparams.o: llama-hparams.cpp.o
 
 # target to build an object file
 llama-hparams.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-hparams.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-hparams.cpp.o
 .PHONY : llama-hparams.cpp.o
 
 llama-hparams.i: llama-hparams.cpp.i
@@ -342,7 +342,7 @@ llama-hparams.i: llama-hparams.cpp.i
 
 # target to preprocess a source file
 llama-hparams.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-hparams.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-hparams.cpp.i
 .PHONY : llama-hparams.cpp.i
 
 llama-hparams.s: llama-hparams.cpp.s
@@ -350,7 +350,7 @@ llama-hparams.s: llama-hparams.cpp.s
 
 # target to generate assembly for a file
 llama-hparams.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-hparams.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-hparams.cpp.s
 .PHONY : llama-hparams.cpp.s
 
 llama-impl.o: llama-impl.cpp.o
@@ -358,7 +358,7 @@ llama-impl.o: llama-impl.cpp.o
 
 # target to build an object file
 llama-impl.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-impl.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-impl.cpp.o
 .PHONY : llama-impl.cpp.o
 
 llama-impl.i: llama-impl.cpp.i
@@ -366,7 +366,7 @@ llama-impl.i: llama-impl.cpp.i
 
 # target to preprocess a source file
 llama-impl.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-impl.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-impl.cpp.i
 .PHONY : llama-impl.cpp.i
 
 llama-impl.s: llama-impl.cpp.s
@@ -374,7 +374,7 @@ llama-impl.s: llama-impl.cpp.s
 
 # target to generate assembly for a file
 llama-impl.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-impl.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-impl.cpp.s
 .PHONY : llama-impl.cpp.s
 
 llama-kv-cache.o: llama-kv-cache.cpp.o
@@ -382,7 +382,7 @@ llama-kv-cache.o: llama-kv-cache.cpp.o
 
 # target to build an object file
 llama-kv-cache.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-kv-cache.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-kv-cache.cpp.o
 .PHONY : llama-kv-cache.cpp.o
 
 llama-kv-cache.i: llama-kv-cache.cpp.i
@@ -390,7 +390,7 @@ llama-kv-cache.i: llama-kv-cache.cpp.i
 
 # target to preprocess a source file
 llama-kv-cache.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-kv-cache.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-kv-cache.cpp.i
 .PHONY : llama-kv-cache.cpp.i
 
 llama-kv-cache.s: llama-kv-cache.cpp.s
@@ -398,7 +398,7 @@ llama-kv-cache.s: llama-kv-cache.cpp.s
 
 # target to generate assembly for a file
 llama-kv-cache.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-kv-cache.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-kv-cache.cpp.s
 .PHONY : llama-kv-cache.cpp.s
 
 llama-mmap.o: llama-mmap.cpp.o
@@ -406,7 +406,7 @@ llama-mmap.o: llama-mmap.cpp.o
 
 # target to build an object file
 llama-mmap.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-mmap.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-mmap.cpp.o
 .PHONY : llama-mmap.cpp.o
 
 llama-mmap.i: llama-mmap.cpp.i
@@ -414,7 +414,7 @@ llama-mmap.i: llama-mmap.cpp.i
 
 # target to preprocess a source file
 llama-mmap.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-mmap.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-mmap.cpp.i
 .PHONY : llama-mmap.cpp.i
 
 llama-mmap.s: llama-mmap.cpp.s
@@ -422,7 +422,7 @@ llama-mmap.s: llama-mmap.cpp.s
 
 # target to generate assembly for a file
 llama-mmap.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-mmap.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-mmap.cpp.s
 .PHONY : llama-mmap.cpp.s
 
 llama-model-loader.o: llama-model-loader.cpp.o
@@ -430,7 +430,7 @@ llama-model-loader.o: llama-model-loader.cpp.o
 
 # target to build an object file
 llama-model-loader.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
 .PHONY : llama-model-loader.cpp.o
 
 llama-model-loader.i: llama-model-loader.cpp.i
@@ -438,7 +438,7 @@ llama-model-loader.i: llama-model-loader.cpp.i
 
 # target to preprocess a source file
 llama-model-loader.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model-loader.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model-loader.cpp.i
 .PHONY : llama-model-loader.cpp.i
 
 llama-model-loader.s: llama-model-loader.cpp.s
@@ -446,7 +446,7 @@ llama-model-loader.s: llama-model-loader.cpp.s
 
 # target to generate assembly for a file
 llama-model-loader.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model-loader.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model-loader.cpp.s
 .PHONY : llama-model-loader.cpp.s
 
 llama-model.o: llama-model.cpp.o
@@ -454,7 +454,7 @@ llama-model.o: llama-model.cpp.o
 
 # target to build an object file
 llama-model.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model.cpp.o
 .PHONY : llama-model.cpp.o
 
 llama-model.i: llama-model.cpp.i
@@ -462,7 +462,7 @@ llama-model.i: llama-model.cpp.i
 
 # target to preprocess a source file
 llama-model.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model.cpp.i
 .PHONY : llama-model.cpp.i
 
 llama-model.s: llama-model.cpp.s
@@ -470,7 +470,7 @@ llama-model.s: llama-model.cpp.s
 
 # target to generate assembly for a file
 llama-model.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-model.cpp.s
 .PHONY : llama-model.cpp.s
 
 llama-quant.o: llama-quant.cpp.o
@@ -478,7 +478,7 @@ llama-quant.o: llama-quant.cpp.o
 
 # target to build an object file
 llama-quant.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-quant.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-quant.cpp.o
 .PHONY : llama-quant.cpp.o
 
 llama-quant.i: llama-quant.cpp.i
@@ -486,7 +486,7 @@ llama-quant.i: llama-quant.cpp.i
 
 # target to preprocess a source file
 llama-quant.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-quant.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-quant.cpp.i
 .PHONY : llama-quant.cpp.i
 
 llama-quant.s: llama-quant.cpp.s
@@ -494,7 +494,7 @@ llama-quant.s: llama-quant.cpp.s
 
 # target to generate assembly for a file
 llama-quant.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-quant.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-quant.cpp.s
 .PHONY : llama-quant.cpp.s
 
 llama-sampling.o: llama-sampling.cpp.o
@@ -502,7 +502,7 @@ llama-sampling.o: llama-sampling.cpp.o
 
 # target to build an object file
 llama-sampling.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-sampling.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-sampling.cpp.o
 .PHONY : llama-sampling.cpp.o
 
 llama-sampling.i: llama-sampling.cpp.i
@@ -510,7 +510,7 @@ llama-sampling.i: llama-sampling.cpp.i
 
 # target to preprocess a source file
 llama-sampling.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-sampling.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-sampling.cpp.i
 .PHONY : llama-sampling.cpp.i
 
 llama-sampling.s: llama-sampling.cpp.s
@@ -518,7 +518,7 @@ llama-sampling.s: llama-sampling.cpp.s
 
 # target to generate assembly for a file
 llama-sampling.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-sampling.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-sampling.cpp.s
 .PHONY : llama-sampling.cpp.s
 
 llama-vocab.o: llama-vocab.cpp.o
@@ -526,7 +526,7 @@ llama-vocab.o: llama-vocab.cpp.o
 
 # target to build an object file
 llama-vocab.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-vocab.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-vocab.cpp.o
 .PHONY : llama-vocab.cpp.o
 
 llama-vocab.i: llama-vocab.cpp.i
@@ -534,7 +534,7 @@ llama-vocab.i: llama-vocab.cpp.i
 
 # target to preprocess a source file
 llama-vocab.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-vocab.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-vocab.cpp.i
 .PHONY : llama-vocab.cpp.i
 
 llama-vocab.s: llama-vocab.cpp.s
@@ -542,7 +542,7 @@ llama-vocab.s: llama-vocab.cpp.s
 
 # target to generate assembly for a file
 llama-vocab.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-vocab.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama-vocab.cpp.s
 .PHONY : llama-vocab.cpp.s
 
 llama.o: llama.cpp.o
@@ -550,7 +550,7 @@ llama.o: llama.cpp.o
 
 # target to build an object file
 llama.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama.cpp.o
 .PHONY : llama.cpp.o
 
 llama.i: llama.cpp.i
@@ -558,7 +558,7 @@ llama.i: llama.cpp.i
 
 # target to preprocess a source file
 llama.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama.cpp.i
 .PHONY : llama.cpp.i
 
 llama.s: llama.cpp.s
@@ -566,7 +566,7 @@ llama.s: llama.cpp.s
 
 # target to generate assembly for a file
 llama.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/llama.cpp.s
 .PHONY : llama.cpp.s
 
 unicode-data.o: unicode-data.cpp.o
@@ -574,7 +574,7 @@ unicode-data.o: unicode-data.cpp.o
 
 # target to build an object file
 unicode-data.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode-data.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode-data.cpp.o
 .PHONY : unicode-data.cpp.o
 
 unicode-data.i: unicode-data.cpp.i
@@ -582,7 +582,7 @@ unicode-data.i: unicode-data.cpp.i
 
 # target to preprocess a source file
 unicode-data.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode-data.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode-data.cpp.i
 .PHONY : unicode-data.cpp.i
 
 unicode-data.s: unicode-data.cpp.s
@@ -590,7 +590,7 @@ unicode-data.s: unicode-data.cpp.s
 
 # target to generate assembly for a file
 unicode-data.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode-data.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode-data.cpp.s
 .PHONY : unicode-data.cpp.s
 
 unicode.o: unicode.cpp.o
@@ -598,7 +598,7 @@ unicode.o: unicode.cpp.o
 
 # target to build an object file
 unicode.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode.cpp.o
 .PHONY : unicode.cpp.o
 
 unicode.i: unicode.cpp.i
@@ -606,7 +606,7 @@ unicode.i: unicode.cpp.i
 
 # target to preprocess a source file
 unicode.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode.cpp.i
 .PHONY : unicode.cpp.i
 
 unicode.s: unicode.cpp.s
@@ -614,7 +614,7 @@ unicode.s: unicode.cpp.s
 
 # target to generate assembly for a file
 unicode.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/llama.dir/build.make src/CMakeFiles/llama.dir/unicode.cpp.s
 .PHONY : unicode.cpp.s
 
 # Help Target
@@ -696,6 +696,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

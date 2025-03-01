@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/examples/gguf-hash//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/gguf-hash//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/rule
 .PHONY : examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ llama-gguf-hash: examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/rule
 
 # fast build rule for target.
 llama-gguf-hash/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build.make examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build.make examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build
 .PHONY : llama-gguf-hash/fast
 
 # Convenience name for target.
 examples/gguf-hash/CMakeFiles/xxhash.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/CMakeFiles/xxhash.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/CMakeFiles/xxhash.dir/rule
 .PHONY : examples/gguf-hash/CMakeFiles/xxhash.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ xxhash: examples/gguf-hash/CMakeFiles/xxhash.dir/rule
 
 # fast build rule for target.
 xxhash/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/build
 .PHONY : xxhash/fast
 
 # Convenience name for target.
 examples/gguf-hash/CMakeFiles/sha1.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/CMakeFiles/sha1.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/CMakeFiles/sha1.dir/rule
 .PHONY : examples/gguf-hash/CMakeFiles/sha1.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ sha1: examples/gguf-hash/CMakeFiles/sha1.dir/rule
 
 # fast build rule for target.
 sha1/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/build
 .PHONY : sha1/fast
 
 # Convenience name for target.
 examples/gguf-hash/CMakeFiles/sha256.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/CMakeFiles/sha256.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/gguf-hash/CMakeFiles/sha256.dir/rule
 .PHONY : examples/gguf-hash/CMakeFiles/sha256.dir/rule
 
 # Convenience name for target.
@@ -224,7 +224,7 @@ sha256: examples/gguf-hash/CMakeFiles/sha256.dir/rule
 
 # fast build rule for target.
 sha256/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/build
 .PHONY : sha256/fast
 
 deps/sha1/sha1.o: deps/sha1/sha1.c.o
@@ -232,7 +232,7 @@ deps/sha1/sha1.o: deps/sha1/sha1.c.o
 
 # target to build an object file
 deps/sha1/sha1.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
 .PHONY : deps/sha1/sha1.c.o
 
 deps/sha1/sha1.i: deps/sha1/sha1.c.i
@@ -240,7 +240,7 @@ deps/sha1/sha1.i: deps/sha1/sha1.c.i
 
 # target to preprocess a source file
 deps/sha1/sha1.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.i
 .PHONY : deps/sha1/sha1.c.i
 
 deps/sha1/sha1.s: deps/sha1/sha1.c.s
@@ -248,7 +248,7 @@ deps/sha1/sha1.s: deps/sha1/sha1.c.s
 
 # target to generate assembly for a file
 deps/sha1/sha1.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha1.dir/build.make examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.s
 .PHONY : deps/sha1/sha1.c.s
 
 deps/sha256/sha256.o: deps/sha256/sha256.c.o
@@ -256,7 +256,7 @@ deps/sha256/sha256.o: deps/sha256/sha256.c.o
 
 # target to build an object file
 deps/sha256/sha256.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
 .PHONY : deps/sha256/sha256.c.o
 
 deps/sha256/sha256.i: deps/sha256/sha256.c.i
@@ -264,7 +264,7 @@ deps/sha256/sha256.i: deps/sha256/sha256.c.i
 
 # target to preprocess a source file
 deps/sha256/sha256.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.i
 .PHONY : deps/sha256/sha256.c.i
 
 deps/sha256/sha256.s: deps/sha256/sha256.c.s
@@ -272,7 +272,7 @@ deps/sha256/sha256.s: deps/sha256/sha256.c.s
 
 # target to generate assembly for a file
 deps/sha256/sha256.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/sha256.dir/build.make examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.s
 .PHONY : deps/sha256/sha256.c.s
 
 deps/xxhash/xxhash.o: deps/xxhash/xxhash.c.o
@@ -280,7 +280,7 @@ deps/xxhash/xxhash.o: deps/xxhash/xxhash.c.o
 
 # target to build an object file
 deps/xxhash/xxhash.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
 .PHONY : deps/xxhash/xxhash.c.o
 
 deps/xxhash/xxhash.i: deps/xxhash/xxhash.c.i
@@ -288,7 +288,7 @@ deps/xxhash/xxhash.i: deps/xxhash/xxhash.c.i
 
 # target to preprocess a source file
 deps/xxhash/xxhash.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.i
 .PHONY : deps/xxhash/xxhash.c.i
 
 deps/xxhash/xxhash.s: deps/xxhash/xxhash.c.s
@@ -296,7 +296,7 @@ deps/xxhash/xxhash.s: deps/xxhash/xxhash.c.s
 
 # target to generate assembly for a file
 deps/xxhash/xxhash.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/xxhash.dir/build.make examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.s
 .PHONY : deps/xxhash/xxhash.c.s
 
 gguf-hash.o: gguf-hash.cpp.o
@@ -304,7 +304,7 @@ gguf-hash.o: gguf-hash.cpp.o
 
 # target to build an object file
 gguf-hash.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build.make examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/gguf-hash.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build.make examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/gguf-hash.cpp.o
 .PHONY : gguf-hash.cpp.o
 
 gguf-hash.i: gguf-hash.cpp.i
@@ -312,7 +312,7 @@ gguf-hash.i: gguf-hash.cpp.i
 
 # target to preprocess a source file
 gguf-hash.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build.make examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/gguf-hash.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build.make examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/gguf-hash.cpp.i
 .PHONY : gguf-hash.cpp.i
 
 gguf-hash.s: gguf-hash.cpp.s
@@ -320,7 +320,7 @@ gguf-hash.s: gguf-hash.cpp.s
 
 # target to generate assembly for a file
 gguf-hash.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build.make examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/gguf-hash.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/build.make examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/gguf-hash.cpp.s
 .PHONY : gguf-hash.cpp.s
 
 # Help Target
@@ -363,6 +363,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

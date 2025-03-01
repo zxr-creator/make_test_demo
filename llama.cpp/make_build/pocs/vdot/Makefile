@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/pocs/vdot//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/pocs/vdot//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 pocs/vdot/CMakeFiles/llama-vdot.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/CMakeFiles/llama-vdot.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/CMakeFiles/llama-vdot.dir/rule
 .PHONY : pocs/vdot/CMakeFiles/llama-vdot.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ llama-vdot: pocs/vdot/CMakeFiles/llama-vdot.dir/rule
 
 # fast build rule for target.
 llama-vdot/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-vdot.dir/build.make pocs/vdot/CMakeFiles/llama-vdot.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-vdot.dir/build.make pocs/vdot/CMakeFiles/llama-vdot.dir/build
 .PHONY : llama-vdot/fast
 
 # Convenience name for target.
 pocs/vdot/CMakeFiles/llama-q8dot.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/CMakeFiles/llama-q8dot.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocs/vdot/CMakeFiles/llama-q8dot.dir/rule
 .PHONY : pocs/vdot/CMakeFiles/llama-q8dot.dir/rule
 
 # Convenience name for target.
@@ -196,7 +196,7 @@ llama-q8dot: pocs/vdot/CMakeFiles/llama-q8dot.dir/rule
 
 # fast build rule for target.
 llama-q8dot/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-q8dot.dir/build.make pocs/vdot/CMakeFiles/llama-q8dot.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-q8dot.dir/build.make pocs/vdot/CMakeFiles/llama-q8dot.dir/build
 .PHONY : llama-q8dot/fast
 
 q8dot.o: q8dot.cpp.o
@@ -204,7 +204,7 @@ q8dot.o: q8dot.cpp.o
 
 # target to build an object file
 q8dot.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-q8dot.dir/build.make pocs/vdot/CMakeFiles/llama-q8dot.dir/q8dot.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-q8dot.dir/build.make pocs/vdot/CMakeFiles/llama-q8dot.dir/q8dot.cpp.o
 .PHONY : q8dot.cpp.o
 
 q8dot.i: q8dot.cpp.i
@@ -212,7 +212,7 @@ q8dot.i: q8dot.cpp.i
 
 # target to preprocess a source file
 q8dot.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-q8dot.dir/build.make pocs/vdot/CMakeFiles/llama-q8dot.dir/q8dot.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-q8dot.dir/build.make pocs/vdot/CMakeFiles/llama-q8dot.dir/q8dot.cpp.i
 .PHONY : q8dot.cpp.i
 
 q8dot.s: q8dot.cpp.s
@@ -220,7 +220,7 @@ q8dot.s: q8dot.cpp.s
 
 # target to generate assembly for a file
 q8dot.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-q8dot.dir/build.make pocs/vdot/CMakeFiles/llama-q8dot.dir/q8dot.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-q8dot.dir/build.make pocs/vdot/CMakeFiles/llama-q8dot.dir/q8dot.cpp.s
 .PHONY : q8dot.cpp.s
 
 vdot.o: vdot.cpp.o
@@ -228,7 +228,7 @@ vdot.o: vdot.cpp.o
 
 # target to build an object file
 vdot.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-vdot.dir/build.make pocs/vdot/CMakeFiles/llama-vdot.dir/vdot.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-vdot.dir/build.make pocs/vdot/CMakeFiles/llama-vdot.dir/vdot.cpp.o
 .PHONY : vdot.cpp.o
 
 vdot.i: vdot.cpp.i
@@ -236,7 +236,7 @@ vdot.i: vdot.cpp.i
 
 # target to preprocess a source file
 vdot.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-vdot.dir/build.make pocs/vdot/CMakeFiles/llama-vdot.dir/vdot.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-vdot.dir/build.make pocs/vdot/CMakeFiles/llama-vdot.dir/vdot.cpp.i
 .PHONY : vdot.cpp.i
 
 vdot.s: vdot.cpp.s
@@ -244,7 +244,7 @@ vdot.s: vdot.cpp.s
 
 # target to generate assembly for a file
 vdot.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-vdot.dir/build.make pocs/vdot/CMakeFiles/llama-vdot.dir/vdot.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f pocs/vdot/CMakeFiles/llama-vdot.dir/build.make pocs/vdot/CMakeFiles/llama-vdot.dir/vdot.cpp.s
 .PHONY : vdot.cpp.s
 
 # Help Target
@@ -279,6 +279,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

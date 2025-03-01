@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/examples/batched-bench/batched-bench.cpp" "examples/batched-bench/CMakeFiles/llama-batched-bench.dir/batched-bench.cpp.o" "gcc" "examples/batched-bench/CMakeFiles/llama-batched-bench.dir/batched-bench.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/batched-bench/batched-bench.cpp" "examples/batched-bench/CMakeFiles/llama-batched-bench.dir/batched-bench.cpp.o" "gcc" "examples/batched-bench/CMakeFiles/llama-batched-bench.dir/batched-bench.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

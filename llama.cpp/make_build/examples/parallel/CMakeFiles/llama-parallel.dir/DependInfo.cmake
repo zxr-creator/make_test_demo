@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/examples/parallel/parallel.cpp" "examples/parallel/CMakeFiles/llama-parallel.dir/parallel.cpp.o" "gcc" "examples/parallel/CMakeFiles/llama-parallel.dir/parallel.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/parallel/parallel.cpp" "examples/parallel/CMakeFiles/llama-parallel.dir/parallel.cpp.o" "gcc" "examples/parallel/CMakeFiles/llama-parallel.dir/parallel.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

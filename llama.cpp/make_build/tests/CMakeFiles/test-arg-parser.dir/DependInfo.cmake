@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/tests/get-model.cpp" "tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.o" "gcc" "tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.o.d"
-  "/home/ued520/llama.cpp/tests/test-arg-parser.cpp" "tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.o" "gcc" "tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/tests/get-model.cpp" "tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.o" "gcc" "tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/tests/test-arg-parser.cpp" "tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.o" "gcc" "tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

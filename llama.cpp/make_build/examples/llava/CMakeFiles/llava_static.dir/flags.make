@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ued520/llama.cpp/examples
+CXX_INCLUDES = -I/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples
 
 CXX_FLAGS = -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi
 

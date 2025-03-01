@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/common//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/common//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 common/CMakeFiles/build_info.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/CMakeFiles/build_info.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/CMakeFiles/build_info.dir/rule
 .PHONY : common/CMakeFiles/build_info.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ build_info: common/CMakeFiles/build_info.dir/rule
 
 # fast build rule for target.
 build_info/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build
 .PHONY : build_info/fast
 
 # Convenience name for target.
 common/CMakeFiles/common.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/rule
 .PHONY : common/CMakeFiles/common.dir/rule
 
 # Convenience name for target.
@@ -196,7 +196,7 @@ common: common/CMakeFiles/common.dir/rule
 
 # fast build rule for target.
 common/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
 .PHONY : common/fast
 
 arg.o: arg.cpp.o
@@ -204,7 +204,7 @@ arg.o: arg.cpp.o
 
 # target to build an object file
 arg.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/arg.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/arg.cpp.o
 .PHONY : arg.cpp.o
 
 arg.i: arg.cpp.i
@@ -212,7 +212,7 @@ arg.i: arg.cpp.i
 
 # target to preprocess a source file
 arg.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/arg.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/arg.cpp.i
 .PHONY : arg.cpp.i
 
 arg.s: arg.cpp.s
@@ -220,7 +220,7 @@ arg.s: arg.cpp.s
 
 # target to generate assembly for a file
 arg.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/arg.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/arg.cpp.s
 .PHONY : arg.cpp.s
 
 build-info.o: build-info.cpp.o
@@ -228,7 +228,7 @@ build-info.o: build-info.cpp.o
 
 # target to build an object file
 build-info.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build-info.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build-info.cpp.o
 .PHONY : build-info.cpp.o
 
 build-info.i: build-info.cpp.i
@@ -236,7 +236,7 @@ build-info.i: build-info.cpp.i
 
 # target to preprocess a source file
 build-info.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build-info.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build-info.cpp.i
 .PHONY : build-info.cpp.i
 
 build-info.s: build-info.cpp.s
@@ -244,7 +244,7 @@ build-info.s: build-info.cpp.s
 
 # target to generate assembly for a file
 build-info.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build-info.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/build_info.dir/build.make common/CMakeFiles/build_info.dir/build-info.cpp.s
 .PHONY : build-info.cpp.s
 
 chat.o: chat.cpp.o
@@ -252,7 +252,7 @@ chat.o: chat.cpp.o
 
 # target to build an object file
 chat.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/chat.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/chat.cpp.o
 .PHONY : chat.cpp.o
 
 chat.i: chat.cpp.i
@@ -260,7 +260,7 @@ chat.i: chat.cpp.i
 
 # target to preprocess a source file
 chat.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/chat.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/chat.cpp.i
 .PHONY : chat.cpp.i
 
 chat.s: chat.cpp.s
@@ -268,7 +268,7 @@ chat.s: chat.cpp.s
 
 # target to generate assembly for a file
 chat.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/chat.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/chat.cpp.s
 .PHONY : chat.cpp.s
 
 common.o: common.cpp.o
@@ -276,7 +276,7 @@ common.o: common.cpp.o
 
 # target to build an object file
 common.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.o
 .PHONY : common.cpp.o
 
 common.i: common.cpp.i
@@ -284,7 +284,7 @@ common.i: common.cpp.i
 
 # target to preprocess a source file
 common.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.i
 .PHONY : common.cpp.i
 
 common.s: common.cpp.s
@@ -292,7 +292,7 @@ common.s: common.cpp.s
 
 # target to generate assembly for a file
 common.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/common.cpp.s
 .PHONY : common.cpp.s
 
 console.o: console.cpp.o
@@ -300,7 +300,7 @@ console.o: console.cpp.o
 
 # target to build an object file
 console.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/console.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/console.cpp.o
 .PHONY : console.cpp.o
 
 console.i: console.cpp.i
@@ -308,7 +308,7 @@ console.i: console.cpp.i
 
 # target to preprocess a source file
 console.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/console.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/console.cpp.i
 .PHONY : console.cpp.i
 
 console.s: console.cpp.s
@@ -316,7 +316,7 @@ console.s: console.cpp.s
 
 # target to generate assembly for a file
 console.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/console.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/console.cpp.s
 .PHONY : console.cpp.s
 
 json-schema-to-grammar.o: json-schema-to-grammar.cpp.o
@@ -324,7 +324,7 @@ json-schema-to-grammar.o: json-schema-to-grammar.cpp.o
 
 # target to build an object file
 json-schema-to-grammar.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.o
 .PHONY : json-schema-to-grammar.cpp.o
 
 json-schema-to-grammar.i: json-schema-to-grammar.cpp.i
@@ -332,7 +332,7 @@ json-schema-to-grammar.i: json-schema-to-grammar.cpp.i
 
 # target to preprocess a source file
 json-schema-to-grammar.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.i
 .PHONY : json-schema-to-grammar.cpp.i
 
 json-schema-to-grammar.s: json-schema-to-grammar.cpp.s
@@ -340,7 +340,7 @@ json-schema-to-grammar.s: json-schema-to-grammar.cpp.s
 
 # target to generate assembly for a file
 json-schema-to-grammar.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.s
 .PHONY : json-schema-to-grammar.cpp.s
 
 llguidance.o: llguidance.cpp.o
@@ -348,7 +348,7 @@ llguidance.o: llguidance.cpp.o
 
 # target to build an object file
 llguidance.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/llguidance.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/llguidance.cpp.o
 .PHONY : llguidance.cpp.o
 
 llguidance.i: llguidance.cpp.i
@@ -356,7 +356,7 @@ llguidance.i: llguidance.cpp.i
 
 # target to preprocess a source file
 llguidance.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/llguidance.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/llguidance.cpp.i
 .PHONY : llguidance.cpp.i
 
 llguidance.s: llguidance.cpp.s
@@ -364,7 +364,7 @@ llguidance.s: llguidance.cpp.s
 
 # target to generate assembly for a file
 llguidance.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/llguidance.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/llguidance.cpp.s
 .PHONY : llguidance.cpp.s
 
 log.o: log.cpp.o
@@ -372,7 +372,7 @@ log.o: log.cpp.o
 
 # target to build an object file
 log.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/log.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/log.cpp.o
 .PHONY : log.cpp.o
 
 log.i: log.cpp.i
@@ -380,7 +380,7 @@ log.i: log.cpp.i
 
 # target to preprocess a source file
 log.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/log.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/log.cpp.i
 .PHONY : log.cpp.i
 
 log.s: log.cpp.s
@@ -388,7 +388,7 @@ log.s: log.cpp.s
 
 # target to generate assembly for a file
 log.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/log.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/log.cpp.s
 .PHONY : log.cpp.s
 
 ngram-cache.o: ngram-cache.cpp.o
@@ -396,7 +396,7 @@ ngram-cache.o: ngram-cache.cpp.o
 
 # target to build an object file
 ngram-cache.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ngram-cache.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ngram-cache.cpp.o
 .PHONY : ngram-cache.cpp.o
 
 ngram-cache.i: ngram-cache.cpp.i
@@ -404,7 +404,7 @@ ngram-cache.i: ngram-cache.cpp.i
 
 # target to preprocess a source file
 ngram-cache.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ngram-cache.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ngram-cache.cpp.i
 .PHONY : ngram-cache.cpp.i
 
 ngram-cache.s: ngram-cache.cpp.s
@@ -412,7 +412,7 @@ ngram-cache.s: ngram-cache.cpp.s
 
 # target to generate assembly for a file
 ngram-cache.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ngram-cache.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/ngram-cache.cpp.s
 .PHONY : ngram-cache.cpp.s
 
 sampling.o: sampling.cpp.o
@@ -420,7 +420,7 @@ sampling.o: sampling.cpp.o
 
 # target to build an object file
 sampling.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sampling.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sampling.cpp.o
 .PHONY : sampling.cpp.o
 
 sampling.i: sampling.cpp.i
@@ -428,7 +428,7 @@ sampling.i: sampling.cpp.i
 
 # target to preprocess a source file
 sampling.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sampling.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sampling.cpp.i
 .PHONY : sampling.cpp.i
 
 sampling.s: sampling.cpp.s
@@ -436,7 +436,7 @@ sampling.s: sampling.cpp.s
 
 # target to generate assembly for a file
 sampling.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sampling.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sampling.cpp.s
 .PHONY : sampling.cpp.s
 
 speculative.o: speculative.cpp.o
@@ -444,7 +444,7 @@ speculative.o: speculative.cpp.o
 
 # target to build an object file
 speculative.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/speculative.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/speculative.cpp.o
 .PHONY : speculative.cpp.o
 
 speculative.i: speculative.cpp.i
@@ -452,7 +452,7 @@ speculative.i: speculative.cpp.i
 
 # target to preprocess a source file
 speculative.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/speculative.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/speculative.cpp.i
 .PHONY : speculative.cpp.i
 
 speculative.s: speculative.cpp.s
@@ -460,7 +460,7 @@ speculative.s: speculative.cpp.s
 
 # target to generate assembly for a file
 speculative.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/speculative.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/speculative.cpp.s
 .PHONY : speculative.cpp.s
 
 # Help Target
@@ -522,6 +522,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ued520/llama.cpp/examples/gguf-hash/deps/xxhash/xxhash.c" "examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o" "gcc" "examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o.d"
+  "/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/gguf-hash/deps/xxhash/xxhash.c" "examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o" "gcc" "examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

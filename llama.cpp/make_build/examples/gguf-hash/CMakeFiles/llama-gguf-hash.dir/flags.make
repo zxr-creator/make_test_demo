@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU
 
-C_INCLUDES = -I/home/ued520/llama.cpp/examples -I/home/ued520/llama.cpp/examples/gguf-hash/deps -I/home/ued520/llama.cpp/ggml/src/../include
+C_INCLUDES = -I/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples -I/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/gguf-hash/deps -I/home/ued520/makefile_ninja_benchmarks/llama.cpp/ggml/src/../include
 
 C_FLAGS = -O3 -DNDEBUG -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion
 
 CXX_DEFINES = -DGGML_BACKEND_SHARED -DGGML_SHARED -DGGML_USE_CPU
 
-CXX_INCLUDES = -I/home/ued520/llama.cpp/examples -I/home/ued520/llama.cpp/examples/gguf-hash/deps -I/home/ued520/llama.cpp/ggml/src/../include
+CXX_INCLUDES = -I/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples -I/home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/gguf-hash/deps -I/home/ued520/makefile_ninja_benchmarks/llama.cpp/ggml/src/../include
 
 CXX_FLAGS = -O3 -DNDEBUG -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wno-array-bounds -Wextra-semi
 

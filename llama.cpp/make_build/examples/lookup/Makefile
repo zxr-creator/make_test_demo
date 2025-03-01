@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/examples/lookup//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/lookup//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/lookup/CMakeFiles/llama-lookup.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/CMakeFiles/llama-lookup.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/CMakeFiles/llama-lookup.dir/rule
 .PHONY : examples/lookup/CMakeFiles/llama-lookup.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ llama-lookup: examples/lookup/CMakeFiles/llama-lookup.dir/rule
 
 # fast build rule for target.
 llama-lookup/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup.dir/build.make examples/lookup/CMakeFiles/llama-lookup.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup.dir/build.make examples/lookup/CMakeFiles/llama-lookup.dir/build
 .PHONY : llama-lookup/fast
 
 # Convenience name for target.
 examples/lookup/CMakeFiles/llama-lookup-create.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/CMakeFiles/llama-lookup-create.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/CMakeFiles/llama-lookup-create.dir/rule
 .PHONY : examples/lookup/CMakeFiles/llama-lookup-create.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ llama-lookup-create: examples/lookup/CMakeFiles/llama-lookup-create.dir/rule
 
 # fast build rule for target.
 llama-lookup-create/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-create.dir/build.make examples/lookup/CMakeFiles/llama-lookup-create.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-create.dir/build.make examples/lookup/CMakeFiles/llama-lookup-create.dir/build
 .PHONY : llama-lookup-create/fast
 
 # Convenience name for target.
 examples/lookup/CMakeFiles/llama-lookup-merge.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/CMakeFiles/llama-lookup-merge.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/CMakeFiles/llama-lookup-merge.dir/rule
 .PHONY : examples/lookup/CMakeFiles/llama-lookup-merge.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ llama-lookup-merge: examples/lookup/CMakeFiles/llama-lookup-merge.dir/rule
 
 # fast build rule for target.
 llama-lookup-merge/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-merge.dir/build.make examples/lookup/CMakeFiles/llama-lookup-merge.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-merge.dir/build.make examples/lookup/CMakeFiles/llama-lookup-merge.dir/build
 .PHONY : llama-lookup-merge/fast
 
 # Convenience name for target.
 examples/lookup/CMakeFiles/llama-lookup-stats.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/CMakeFiles/llama-lookup-stats.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lookup/CMakeFiles/llama-lookup-stats.dir/rule
 .PHONY : examples/lookup/CMakeFiles/llama-lookup-stats.dir/rule
 
 # Convenience name for target.
@@ -224,7 +224,7 @@ llama-lookup-stats: examples/lookup/CMakeFiles/llama-lookup-stats.dir/rule
 
 # fast build rule for target.
 llama-lookup-stats/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-stats.dir/build.make examples/lookup/CMakeFiles/llama-lookup-stats.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-stats.dir/build.make examples/lookup/CMakeFiles/llama-lookup-stats.dir/build
 .PHONY : llama-lookup-stats/fast
 
 lookup-create.o: lookup-create.cpp.o
@@ -232,7 +232,7 @@ lookup-create.o: lookup-create.cpp.o
 
 # target to build an object file
 lookup-create.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-create.dir/build.make examples/lookup/CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-create.dir/build.make examples/lookup/CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.o
 .PHONY : lookup-create.cpp.o
 
 lookup-create.i: lookup-create.cpp.i
@@ -240,7 +240,7 @@ lookup-create.i: lookup-create.cpp.i
 
 # target to preprocess a source file
 lookup-create.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-create.dir/build.make examples/lookup/CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-create.dir/build.make examples/lookup/CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.i
 .PHONY : lookup-create.cpp.i
 
 lookup-create.s: lookup-create.cpp.s
@@ -248,7 +248,7 @@ lookup-create.s: lookup-create.cpp.s
 
 # target to generate assembly for a file
 lookup-create.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-create.dir/build.make examples/lookup/CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-create.dir/build.make examples/lookup/CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.s
 .PHONY : lookup-create.cpp.s
 
 lookup-merge.o: lookup-merge.cpp.o
@@ -256,7 +256,7 @@ lookup-merge.o: lookup-merge.cpp.o
 
 # target to build an object file
 lookup-merge.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-merge.dir/build.make examples/lookup/CMakeFiles/llama-lookup-merge.dir/lookup-merge.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-merge.dir/build.make examples/lookup/CMakeFiles/llama-lookup-merge.dir/lookup-merge.cpp.o
 .PHONY : lookup-merge.cpp.o
 
 lookup-merge.i: lookup-merge.cpp.i
@@ -264,7 +264,7 @@ lookup-merge.i: lookup-merge.cpp.i
 
 # target to preprocess a source file
 lookup-merge.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-merge.dir/build.make examples/lookup/CMakeFiles/llama-lookup-merge.dir/lookup-merge.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-merge.dir/build.make examples/lookup/CMakeFiles/llama-lookup-merge.dir/lookup-merge.cpp.i
 .PHONY : lookup-merge.cpp.i
 
 lookup-merge.s: lookup-merge.cpp.s
@@ -272,7 +272,7 @@ lookup-merge.s: lookup-merge.cpp.s
 
 # target to generate assembly for a file
 lookup-merge.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-merge.dir/build.make examples/lookup/CMakeFiles/llama-lookup-merge.dir/lookup-merge.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-merge.dir/build.make examples/lookup/CMakeFiles/llama-lookup-merge.dir/lookup-merge.cpp.s
 .PHONY : lookup-merge.cpp.s
 
 lookup-stats.o: lookup-stats.cpp.o
@@ -280,7 +280,7 @@ lookup-stats.o: lookup-stats.cpp.o
 
 # target to build an object file
 lookup-stats.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-stats.dir/build.make examples/lookup/CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-stats.dir/build.make examples/lookup/CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.o
 .PHONY : lookup-stats.cpp.o
 
 lookup-stats.i: lookup-stats.cpp.i
@@ -288,7 +288,7 @@ lookup-stats.i: lookup-stats.cpp.i
 
 # target to preprocess a source file
 lookup-stats.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-stats.dir/build.make examples/lookup/CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-stats.dir/build.make examples/lookup/CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.i
 .PHONY : lookup-stats.cpp.i
 
 lookup-stats.s: lookup-stats.cpp.s
@@ -296,7 +296,7 @@ lookup-stats.s: lookup-stats.cpp.s
 
 # target to generate assembly for a file
 lookup-stats.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-stats.dir/build.make examples/lookup/CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup-stats.dir/build.make examples/lookup/CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.s
 .PHONY : lookup-stats.cpp.s
 
 lookup.o: lookup.cpp.o
@@ -304,7 +304,7 @@ lookup.o: lookup.cpp.o
 
 # target to build an object file
 lookup.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup.dir/build.make examples/lookup/CMakeFiles/llama-lookup.dir/lookup.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup.dir/build.make examples/lookup/CMakeFiles/llama-lookup.dir/lookup.cpp.o
 .PHONY : lookup.cpp.o
 
 lookup.i: lookup.cpp.i
@@ -312,7 +312,7 @@ lookup.i: lookup.cpp.i
 
 # target to preprocess a source file
 lookup.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup.dir/build.make examples/lookup/CMakeFiles/llama-lookup.dir/lookup.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup.dir/build.make examples/lookup/CMakeFiles/llama-lookup.dir/lookup.cpp.i
 .PHONY : lookup.cpp.i
 
 lookup.s: lookup.cpp.s
@@ -320,7 +320,7 @@ lookup.s: lookup.cpp.s
 
 # target to generate assembly for a file
 lookup.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup.dir/build.make examples/lookup/CMakeFiles/llama-lookup.dir/lookup.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f examples/lookup/CMakeFiles/llama-lookup.dir/build.make examples/lookup/CMakeFiles/llama-lookup.dir/lookup.cpp.s
 .PHONY : lookup.cpp.s
 
 # Help Target
@@ -363,6 +363,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

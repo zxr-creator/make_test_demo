@@ -310,9 +310,9 @@ build CMakeFiles/png_shared.dir/intel/filter_sse2_intrinsics.c.o: C_COMPILER__pn
 
 
 #############################################
-# Link the shared library libpng16.so.16.47.git
+# Link the shared library libpng16.so.16.48.git
 
-build libpng16.so.16.47.git: C_SHARED_LIBRARY_LINKER__png_shared_ CMakeFiles/png_shared.dir/png.c.o CMakeFiles/png_shared.dir/pngerror.c.o CMakeFiles/png_shared.dir/pngget.c.o CMakeFiles/png_shared.dir/pngmem.c.o CMakeFiles/png_shared.dir/pngpread.c.o CMakeFiles/png_shared.dir/pngread.c.o CMakeFiles/png_shared.dir/pngrio.c.o CMakeFiles/png_shared.dir/pngrtran.c.o CMakeFiles/png_shared.dir/pngrutil.c.o CMakeFiles/png_shared.dir/pngset.c.o CMakeFiles/png_shared.dir/pngtrans.c.o CMakeFiles/png_shared.dir/pngwio.c.o CMakeFiles/png_shared.dir/pngwrite.c.o CMakeFiles/png_shared.dir/pngwtran.c.o CMakeFiles/png_shared.dir/pngwutil.c.o CMakeFiles/png_shared.dir/intel/intel_init.c.o CMakeFiles/png_shared.dir/intel/filter_sse2_intrinsics.c.o | /usr/lib/x86_64-linux-gnu/libz.so || png_genfiles pnglibconf_c pnglibconf_out
+build libpng16.so.16.48.git: C_SHARED_LIBRARY_LINKER__png_shared_ CMakeFiles/png_shared.dir/png.c.o CMakeFiles/png_shared.dir/pngerror.c.o CMakeFiles/png_shared.dir/pngget.c.o CMakeFiles/png_shared.dir/pngmem.c.o CMakeFiles/png_shared.dir/pngpread.c.o CMakeFiles/png_shared.dir/pngread.c.o CMakeFiles/png_shared.dir/pngrio.c.o CMakeFiles/png_shared.dir/pngrtran.c.o CMakeFiles/png_shared.dir/pngrutil.c.o CMakeFiles/png_shared.dir/pngset.c.o CMakeFiles/png_shared.dir/pngtrans.c.o CMakeFiles/png_shared.dir/pngwio.c.o CMakeFiles/png_shared.dir/pngwrite.c.o CMakeFiles/png_shared.dir/pngwtran.c.o CMakeFiles/png_shared.dir/pngwutil.c.o CMakeFiles/png_shared.dir/intel/intel_init.c.o CMakeFiles/png_shared.dir/intel/filter_sse2_intrinsics.c.o | /usr/lib/x86_64-linux-gnu/libz.so || png_genfiles pnglibconf_c pnglibconf_out
   LINK_FLAGS = -Wl,--version-script='/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build/libpng.vers'
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libz.so  -lm
   OBJECT_DIR = CMakeFiles/png_shared.dir
@@ -321,7 +321,7 @@ build libpng16.so.16.47.git: C_SHARED_LIBRARY_LINKER__png_shared_ CMakeFiles/png
   SONAME = libpng16.so.16
   SONAME_FLAG = -Wl,-soname,
   TARGET_COMPILE_PDB = CMakeFiles/png_shared.dir/
-  TARGET_FILE = libpng16.so.16.47.git
+  TARGET_FILE = libpng16.so.16.48.git
   TARGET_IMPLIB = /home/ued520/makefile_ninja_benchmarks/libpng/ninja_build/
   TARGET_PDB = libpng16.pdb
 
@@ -329,7 +329,7 @@ build libpng16.so.16.47.git: C_SHARED_LIBRARY_LINKER__png_shared_ CMakeFiles/png
 #############################################
 # Create library symlink libpng16.so
 
-build libpng16.so.16 libpng16.so: CMAKE_SYMLINK_LIBRARY libpng16.so.16.47.git
+build libpng16.so.16 libpng16.so: CMAKE_SYMLINK_LIBRARY libpng16.so.16.48.git
   POST_BUILD = cd /home/ued520/makefile_ninja_benchmarks/libpng/ninja_build && /usr/bin/cmake -E create_symlink libpng16.so /home/ued520/makefile_ninja_benchmarks/libpng/ninja_build/libpng.so
 
 # =============================================================================
@@ -536,8 +536,8 @@ build CMakeFiles/pngtest.dir/pngtest.c.o: C_COMPILER__pngtest_unscanned_ /home/u
 #############################################
 # Link the executable pngtest
 
-build pngtest: C_EXECUTABLE_LINKER__pngtest_ CMakeFiles/pngtest.dir/pngtest.c.o | libpng16.so.16.47.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
-  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.47.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
+build pngtest: C_EXECUTABLE_LINKER__pngtest_ CMakeFiles/pngtest.dir/pngtest.c.o | libpng16.so.16.48.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.48.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
   OBJECT_DIR = CMakeFiles/pngtest.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -571,8 +571,8 @@ build CMakeFiles/pngvalid.dir/contrib/libtests/pngvalid.c.o: C_COMPILER__pngvali
 #############################################
 # Link the executable pngvalid
 
-build pngvalid: C_EXECUTABLE_LINKER__pngvalid_ CMakeFiles/pngvalid.dir/contrib/libtests/pngvalid.c.o | libpng16.so.16.47.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
-  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.47.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
+build pngvalid: C_EXECUTABLE_LINKER__pngvalid_ CMakeFiles/pngvalid.dir/contrib/libtests/pngvalid.c.o | libpng16.so.16.48.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.48.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
   OBJECT_DIR = CMakeFiles/pngvalid.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -606,8 +606,8 @@ build CMakeFiles/pngstest.dir/contrib/libtests/pngstest.c.o: C_COMPILER__pngstes
 #############################################
 # Link the executable pngstest
 
-build pngstest: C_EXECUTABLE_LINKER__pngstest_ CMakeFiles/pngstest.dir/contrib/libtests/pngstest.c.o | libpng16.so.16.47.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
-  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.47.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
+build pngstest: C_EXECUTABLE_LINKER__pngstest_ CMakeFiles/pngstest.dir/contrib/libtests/pngstest.c.o | libpng16.so.16.48.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.48.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
   OBJECT_DIR = CMakeFiles/pngstest.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -641,8 +641,8 @@ build CMakeFiles/pngunknown.dir/contrib/libtests/pngunknown.c.o: C_COMPILER__png
 #############################################
 # Link the executable pngunknown
 
-build pngunknown: C_EXECUTABLE_LINKER__pngunknown_ CMakeFiles/pngunknown.dir/contrib/libtests/pngunknown.c.o | libpng16.so.16.47.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
-  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.47.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
+build pngunknown: C_EXECUTABLE_LINKER__pngunknown_ CMakeFiles/pngunknown.dir/contrib/libtests/pngunknown.c.o | libpng16.so.16.48.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.48.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
   OBJECT_DIR = CMakeFiles/pngunknown.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -676,8 +676,8 @@ build CMakeFiles/pngimage.dir/contrib/libtests/pngimage.c.o: C_COMPILER__pngimag
 #############################################
 # Link the executable pngimage
 
-build pngimage: C_EXECUTABLE_LINKER__pngimage_ CMakeFiles/pngimage.dir/contrib/libtests/pngimage.c.o | libpng16.so.16.47.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
-  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.47.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
+build pngimage: C_EXECUTABLE_LINKER__pngimage_ CMakeFiles/pngimage.dir/contrib/libtests/pngimage.c.o | libpng16.so.16.48.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build  libpng16.so.16.48.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
   OBJECT_DIR = CMakeFiles/pngimage.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -711,8 +711,8 @@ build CMakeFiles/pngfix.dir/contrib/tools/pngfix.c.o: C_COMPILER__pngfix_unscann
 #############################################
 # Link the executable pngfix
 
-build pngfix: C_EXECUTABLE_LINKER__pngfix_ CMakeFiles/pngfix.dir/contrib/tools/pngfix.c.o | libpng16.so.16.47.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
-  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build:  libpng16.so.16.47.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
+build pngfix: C_EXECUTABLE_LINKER__pngfix_ CMakeFiles/pngfix.dir/contrib/tools/pngfix.c.o | libpng16.so.16.48.git /usr/lib/x86_64-linux-gnu/libz.so || libpng16.so libpng16.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/libpng/ninja_build:  libpng16.so.16.48.git  /usr/lib/x86_64-linux-gnu/libz.so  -lm
   OBJECT_DIR = CMakeFiles/pngfix.dir
   POST_BUILD = :
   PRE_LINK = :

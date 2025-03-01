@@ -1,8 +1,13 @@
 make -d -j4 > make_d_j4.txt
 make -Bnd | make2graph > dependencies.dot
-dot -Tpng dependencies.dot -o dependencies.png
+dot -Tsvg dependencies.dot -o dependencies.svg
 cat make_d_j2.txt | make2graph > dependencies.dot
-dot -Tpng dependencies.dot -o dependencies.png
+
+make -Bnd | make2graph > dependencies.dot
+dot -Tsvg dependencies.dot -o dependencies.svg
+
 grep -E '^\s*Considering target file|^\s*Pruning file' make_d_j2.txt | make2graph > dependencies.dot
+
+dot -Tsvg 1.dot -o 1.svg
 
  

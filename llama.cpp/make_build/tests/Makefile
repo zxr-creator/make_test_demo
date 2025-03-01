@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ued520/llama.cpp
+CMAKE_SOURCE_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ued520/llama.cpp/make_build
+CMAKE_BINARY_DIR = /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles /home/ued520/llama.cpp/make_build/tests//CMakeFiles/progress.marks
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/llama.cpp/make_build/CMakeFiles 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/tests//CMakeFiles/progress.marks
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/test-tokenizer-0.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-tokenizer-0.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-tokenizer-0.dir/rule
 .PHONY : tests/CMakeFiles/test-tokenizer-0.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ test-tokenizer-0: tests/CMakeFiles/test-tokenizer-0.dir/rule
 
 # fast build rule for target.
 test-tokenizer-0/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-0.dir/build.make tests/CMakeFiles/test-tokenizer-0.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-0.dir/build.make tests/CMakeFiles/test-tokenizer-0.dir/build
 .PHONY : test-tokenizer-0/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-sampling.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-sampling.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-sampling.dir/rule
 .PHONY : tests/CMakeFiles/test-sampling.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ test-sampling: tests/CMakeFiles/test-sampling.dir/rule
 
 # fast build rule for target.
 test-sampling/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/build
 .PHONY : test-sampling/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-grammar-parser.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-grammar-parser.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-grammar-parser.dir/rule
 .PHONY : tests/CMakeFiles/test-grammar-parser.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ test-grammar-parser: tests/CMakeFiles/test-grammar-parser.dir/rule
 
 # fast build rule for target.
 test-grammar-parser/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/build
 .PHONY : test-grammar-parser/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-grammar-integration.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-grammar-integration.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-grammar-integration.dir/rule
 .PHONY : tests/CMakeFiles/test-grammar-integration.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ test-grammar-integration: tests/CMakeFiles/test-grammar-integration.dir/rule
 
 # fast build rule for target.
 test-grammar-integration/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/build
 .PHONY : test-grammar-integration/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-llama-grammar.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-llama-grammar.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-llama-grammar.dir/rule
 .PHONY : tests/CMakeFiles/test-llama-grammar.dir/rule
 
 # Convenience name for target.
@@ -238,12 +238,12 @@ test-llama-grammar: tests/CMakeFiles/test-llama-grammar.dir/rule
 
 # fast build rule for target.
 test-llama-grammar/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/build
 .PHONY : test-llama-grammar/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-chat.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-chat.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-chat.dir/rule
 .PHONY : tests/CMakeFiles/test-chat.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ test-chat: tests/CMakeFiles/test-chat.dir/rule
 
 # fast build rule for target.
 test-chat/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/build
 .PHONY : test-chat/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-json-schema-to-grammar.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-json-schema-to-grammar.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-json-schema-to-grammar.dir/rule
 .PHONY : tests/CMakeFiles/test-json-schema-to-grammar.dir/rule
 
 # Convenience name for target.
@@ -266,12 +266,12 @@ test-json-schema-to-grammar: tests/CMakeFiles/test-json-schema-to-grammar.dir/ru
 
 # fast build rule for target.
 test-json-schema-to-grammar/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/build
 .PHONY : test-json-schema-to-grammar/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-tokenizer-1-bpe.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-tokenizer-1-bpe.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-tokenizer-1-bpe.dir/rule
 .PHONY : tests/CMakeFiles/test-tokenizer-1-bpe.dir/rule
 
 # Convenience name for target.
@@ -280,12 +280,12 @@ test-tokenizer-1-bpe: tests/CMakeFiles/test-tokenizer-1-bpe.dir/rule
 
 # fast build rule for target.
 test-tokenizer-1-bpe/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-bpe.dir/build.make tests/CMakeFiles/test-tokenizer-1-bpe.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-bpe.dir/build.make tests/CMakeFiles/test-tokenizer-1-bpe.dir/build
 .PHONY : test-tokenizer-1-bpe/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-tokenizer-1-spm.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-tokenizer-1-spm.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-tokenizer-1-spm.dir/rule
 .PHONY : tests/CMakeFiles/test-tokenizer-1-spm.dir/rule
 
 # Convenience name for target.
@@ -294,12 +294,12 @@ test-tokenizer-1-spm: tests/CMakeFiles/test-tokenizer-1-spm.dir/rule
 
 # fast build rule for target.
 test-tokenizer-1-spm/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-spm.dir/build.make tests/CMakeFiles/test-tokenizer-1-spm.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-spm.dir/build.make tests/CMakeFiles/test-tokenizer-1-spm.dir/build
 .PHONY : test-tokenizer-1-spm/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-log.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-log.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-log.dir/rule
 .PHONY : tests/CMakeFiles/test-log.dir/rule
 
 # Convenience name for target.
@@ -308,12 +308,12 @@ test-log: tests/CMakeFiles/test-log.dir/rule
 
 # fast build rule for target.
 test-log/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/build
 .PHONY : test-log/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-arg-parser.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-arg-parser.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-arg-parser.dir/rule
 .PHONY : tests/CMakeFiles/test-arg-parser.dir/rule
 
 # Convenience name for target.
@@ -322,12 +322,12 @@ test-arg-parser: tests/CMakeFiles/test-arg-parser.dir/rule
 
 # fast build rule for target.
 test-arg-parser/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/build
 .PHONY : test-arg-parser/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-chat-template.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-chat-template.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-chat-template.dir/rule
 .PHONY : tests/CMakeFiles/test-chat-template.dir/rule
 
 # Convenience name for target.
@@ -336,12 +336,12 @@ test-chat-template: tests/CMakeFiles/test-chat-template.dir/rule
 
 # fast build rule for target.
 test-chat-template/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/build
 .PHONY : test-chat-template/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-gguf.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-gguf.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-gguf.dir/rule
 .PHONY : tests/CMakeFiles/test-gguf.dir/rule
 
 # Convenience name for target.
@@ -350,12 +350,12 @@ test-gguf: tests/CMakeFiles/test-gguf.dir/rule
 
 # fast build rule for target.
 test-gguf/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/build
 .PHONY : test-gguf/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-backend-ops.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-backend-ops.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-backend-ops.dir/rule
 .PHONY : tests/CMakeFiles/test-backend-ops.dir/rule
 
 # Convenience name for target.
@@ -364,12 +364,12 @@ test-backend-ops: tests/CMakeFiles/test-backend-ops.dir/rule
 
 # fast build rule for target.
 test-backend-ops/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/build
 .PHONY : test-backend-ops/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-model-load-cancel.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-model-load-cancel.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-model-load-cancel.dir/rule
 .PHONY : tests/CMakeFiles/test-model-load-cancel.dir/rule
 
 # Convenience name for target.
@@ -378,12 +378,12 @@ test-model-load-cancel: tests/CMakeFiles/test-model-load-cancel.dir/rule
 
 # fast build rule for target.
 test-model-load-cancel/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/build
 .PHONY : test-model-load-cancel/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-autorelease.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-autorelease.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-autorelease.dir/rule
 .PHONY : tests/CMakeFiles/test-autorelease.dir/rule
 
 # Convenience name for target.
@@ -392,12 +392,12 @@ test-autorelease: tests/CMakeFiles/test-autorelease.dir/rule
 
 # fast build rule for target.
 test-autorelease/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/build
 .PHONY : test-autorelease/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-barrier.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-barrier.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-barrier.dir/rule
 .PHONY : tests/CMakeFiles/test-barrier.dir/rule
 
 # Convenience name for target.
@@ -406,12 +406,12 @@ test-barrier: tests/CMakeFiles/test-barrier.dir/rule
 
 # fast build rule for target.
 test-barrier/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/build
 .PHONY : test-barrier/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-quantize-fns.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-quantize-fns.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-quantize-fns.dir/rule
 .PHONY : tests/CMakeFiles/test-quantize-fns.dir/rule
 
 # Convenience name for target.
@@ -420,12 +420,12 @@ test-quantize-fns: tests/CMakeFiles/test-quantize-fns.dir/rule
 
 # fast build rule for target.
 test-quantize-fns/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/build
 .PHONY : test-quantize-fns/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-quantize-perf.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-quantize-perf.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-quantize-perf.dir/rule
 .PHONY : tests/CMakeFiles/test-quantize-perf.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ test-quantize-perf: tests/CMakeFiles/test-quantize-perf.dir/rule
 
 # fast build rule for target.
 test-quantize-perf/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/build
 .PHONY : test-quantize-perf/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-rope.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-rope.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-rope.dir/rule
 .PHONY : tests/CMakeFiles/test-rope.dir/rule
 
 # Convenience name for target.
@@ -448,12 +448,12 @@ test-rope: tests/CMakeFiles/test-rope.dir/rule
 
 # fast build rule for target.
 test-rope/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/build
 .PHONY : test-rope/fast
 
 # Convenience name for target.
 tests/CMakeFiles/test-c.dir/rule:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-c.dir/rule
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test-c.dir/rule
 .PHONY : tests/CMakeFiles/test-c.dir/rule
 
 # Convenience name for target.
@@ -462,7 +462,7 @@ test-c: tests/CMakeFiles/test-c.dir/rule
 
 # fast build rule for target.
 test-c/fast:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-c.dir/build.make tests/CMakeFiles/test-c.dir/build
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-c.dir/build.make tests/CMakeFiles/test-c.dir/build
 .PHONY : test-c/fast
 
 get-model.o: get-model.cpp.o
@@ -470,23 +470,23 @@ get-model.o: get-model.cpp.o
 
 # target to build an object file
 get-model.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/get-model.cpp.o
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/get-model.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/get-model.cpp.o
 .PHONY : get-model.cpp.o
 
 get-model.i: get-model.cpp.i
@@ -494,23 +494,23 @@ get-model.i: get-model.cpp.i
 
 # target to preprocess a source file
 get-model.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/get-model.cpp.i
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/get-model.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/get-model.cpp.i
 .PHONY : get-model.cpp.i
 
 get-model.s: get-model.cpp.s
@@ -518,23 +518,23 @@ get-model.s: get-model.cpp.s
 
 # target to generate assembly for a file
 get-model.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/get-model.cpp.s
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/get-model.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/get-model.cpp.s
 .PHONY : get-model.cpp.s
 
 test-arg-parser.o: test-arg-parser.cpp.o
@@ -542,7 +542,7 @@ test-arg-parser.o: test-arg-parser.cpp.o
 
 # target to build an object file
 test-arg-parser.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.o
 .PHONY : test-arg-parser.cpp.o
 
 test-arg-parser.i: test-arg-parser.cpp.i
@@ -550,7 +550,7 @@ test-arg-parser.i: test-arg-parser.cpp.i
 
 # target to preprocess a source file
 test-arg-parser.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.i
 .PHONY : test-arg-parser.cpp.i
 
 test-arg-parser.s: test-arg-parser.cpp.s
@@ -558,7 +558,7 @@ test-arg-parser.s: test-arg-parser.cpp.s
 
 # target to generate assembly for a file
 test-arg-parser.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-arg-parser.dir/build.make tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.s
 .PHONY : test-arg-parser.cpp.s
 
 test-autorelease.o: test-autorelease.cpp.o
@@ -566,7 +566,7 @@ test-autorelease.o: test-autorelease.cpp.o
 
 # target to build an object file
 test-autorelease.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/test-autorelease.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/test-autorelease.cpp.o
 .PHONY : test-autorelease.cpp.o
 
 test-autorelease.i: test-autorelease.cpp.i
@@ -574,7 +574,7 @@ test-autorelease.i: test-autorelease.cpp.i
 
 # target to preprocess a source file
 test-autorelease.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/test-autorelease.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/test-autorelease.cpp.i
 .PHONY : test-autorelease.cpp.i
 
 test-autorelease.s: test-autorelease.cpp.s
@@ -582,7 +582,7 @@ test-autorelease.s: test-autorelease.cpp.s
 
 # target to generate assembly for a file
 test-autorelease.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/test-autorelease.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-autorelease.dir/build.make tests/CMakeFiles/test-autorelease.dir/test-autorelease.cpp.s
 .PHONY : test-autorelease.cpp.s
 
 test-backend-ops.o: test-backend-ops.cpp.o
@@ -590,7 +590,7 @@ test-backend-ops.o: test-backend-ops.cpp.o
 
 # target to build an object file
 test-backend-ops.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/test-backend-ops.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/test-backend-ops.cpp.o
 .PHONY : test-backend-ops.cpp.o
 
 test-backend-ops.i: test-backend-ops.cpp.i
@@ -598,7 +598,7 @@ test-backend-ops.i: test-backend-ops.cpp.i
 
 # target to preprocess a source file
 test-backend-ops.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/test-backend-ops.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/test-backend-ops.cpp.i
 .PHONY : test-backend-ops.cpp.i
 
 test-backend-ops.s: test-backend-ops.cpp.s
@@ -606,7 +606,7 @@ test-backend-ops.s: test-backend-ops.cpp.s
 
 # target to generate assembly for a file
 test-backend-ops.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/test-backend-ops.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-backend-ops.dir/build.make tests/CMakeFiles/test-backend-ops.dir/test-backend-ops.cpp.s
 .PHONY : test-backend-ops.cpp.s
 
 test-barrier.o: test-barrier.cpp.o
@@ -614,7 +614,7 @@ test-barrier.o: test-barrier.cpp.o
 
 # target to build an object file
 test-barrier.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/test-barrier.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/test-barrier.cpp.o
 .PHONY : test-barrier.cpp.o
 
 test-barrier.i: test-barrier.cpp.i
@@ -622,7 +622,7 @@ test-barrier.i: test-barrier.cpp.i
 
 # target to preprocess a source file
 test-barrier.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/test-barrier.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/test-barrier.cpp.i
 .PHONY : test-barrier.cpp.i
 
 test-barrier.s: test-barrier.cpp.s
@@ -630,7 +630,7 @@ test-barrier.s: test-barrier.cpp.s
 
 # target to generate assembly for a file
 test-barrier.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/test-barrier.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-barrier.dir/build.make tests/CMakeFiles/test-barrier.dir/test-barrier.cpp.s
 .PHONY : test-barrier.cpp.s
 
 test-c.o: test-c.c.o
@@ -638,7 +638,7 @@ test-c.o: test-c.c.o
 
 # target to build an object file
 test-c.c.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-c.dir/build.make tests/CMakeFiles/test-c.dir/test-c.c.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-c.dir/build.make tests/CMakeFiles/test-c.dir/test-c.c.o
 .PHONY : test-c.c.o
 
 test-c.i: test-c.c.i
@@ -646,7 +646,7 @@ test-c.i: test-c.c.i
 
 # target to preprocess a source file
 test-c.c.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-c.dir/build.make tests/CMakeFiles/test-c.dir/test-c.c.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-c.dir/build.make tests/CMakeFiles/test-c.dir/test-c.c.i
 .PHONY : test-c.c.i
 
 test-c.s: test-c.c.s
@@ -654,7 +654,7 @@ test-c.s: test-c.c.s
 
 # target to generate assembly for a file
 test-c.c.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-c.dir/build.make tests/CMakeFiles/test-c.dir/test-c.c.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-c.dir/build.make tests/CMakeFiles/test-c.dir/test-c.c.s
 .PHONY : test-c.c.s
 
 test-chat-template.o: test-chat-template.cpp.o
@@ -662,7 +662,7 @@ test-chat-template.o: test-chat-template.cpp.o
 
 # target to build an object file
 test-chat-template.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/test-chat-template.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/test-chat-template.cpp.o
 .PHONY : test-chat-template.cpp.o
 
 test-chat-template.i: test-chat-template.cpp.i
@@ -670,7 +670,7 @@ test-chat-template.i: test-chat-template.cpp.i
 
 # target to preprocess a source file
 test-chat-template.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/test-chat-template.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/test-chat-template.cpp.i
 .PHONY : test-chat-template.cpp.i
 
 test-chat-template.s: test-chat-template.cpp.s
@@ -678,7 +678,7 @@ test-chat-template.s: test-chat-template.cpp.s
 
 # target to generate assembly for a file
 test-chat-template.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/test-chat-template.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat-template.dir/build.make tests/CMakeFiles/test-chat-template.dir/test-chat-template.cpp.s
 .PHONY : test-chat-template.cpp.s
 
 test-chat.o: test-chat.cpp.o
@@ -686,7 +686,7 @@ test-chat.o: test-chat.cpp.o
 
 # target to build an object file
 test-chat.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/test-chat.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/test-chat.cpp.o
 .PHONY : test-chat.cpp.o
 
 test-chat.i: test-chat.cpp.i
@@ -694,7 +694,7 @@ test-chat.i: test-chat.cpp.i
 
 # target to preprocess a source file
 test-chat.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/test-chat.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/test-chat.cpp.i
 .PHONY : test-chat.cpp.i
 
 test-chat.s: test-chat.cpp.s
@@ -702,7 +702,7 @@ test-chat.s: test-chat.cpp.s
 
 # target to generate assembly for a file
 test-chat.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/test-chat.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-chat.dir/build.make tests/CMakeFiles/test-chat.dir/test-chat.cpp.s
 .PHONY : test-chat.cpp.s
 
 test-gguf.o: test-gguf.cpp.o
@@ -710,7 +710,7 @@ test-gguf.o: test-gguf.cpp.o
 
 # target to build an object file
 test-gguf.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/test-gguf.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/test-gguf.cpp.o
 .PHONY : test-gguf.cpp.o
 
 test-gguf.i: test-gguf.cpp.i
@@ -718,7 +718,7 @@ test-gguf.i: test-gguf.cpp.i
 
 # target to preprocess a source file
 test-gguf.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/test-gguf.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/test-gguf.cpp.i
 .PHONY : test-gguf.cpp.i
 
 test-gguf.s: test-gguf.cpp.s
@@ -726,7 +726,7 @@ test-gguf.s: test-gguf.cpp.s
 
 # target to generate assembly for a file
 test-gguf.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/test-gguf.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-gguf.dir/build.make tests/CMakeFiles/test-gguf.dir/test-gguf.cpp.s
 .PHONY : test-gguf.cpp.s
 
 test-grammar-integration.o: test-grammar-integration.cpp.o
@@ -734,7 +734,7 @@ test-grammar-integration.o: test-grammar-integration.cpp.o
 
 # target to build an object file
 test-grammar-integration.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/test-grammar-integration.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/test-grammar-integration.cpp.o
 .PHONY : test-grammar-integration.cpp.o
 
 test-grammar-integration.i: test-grammar-integration.cpp.i
@@ -742,7 +742,7 @@ test-grammar-integration.i: test-grammar-integration.cpp.i
 
 # target to preprocess a source file
 test-grammar-integration.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/test-grammar-integration.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/test-grammar-integration.cpp.i
 .PHONY : test-grammar-integration.cpp.i
 
 test-grammar-integration.s: test-grammar-integration.cpp.s
@@ -750,7 +750,7 @@ test-grammar-integration.s: test-grammar-integration.cpp.s
 
 # target to generate assembly for a file
 test-grammar-integration.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/test-grammar-integration.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-integration.dir/build.make tests/CMakeFiles/test-grammar-integration.dir/test-grammar-integration.cpp.s
 .PHONY : test-grammar-integration.cpp.s
 
 test-grammar-parser.o: test-grammar-parser.cpp.o
@@ -758,7 +758,7 @@ test-grammar-parser.o: test-grammar-parser.cpp.o
 
 # target to build an object file
 test-grammar-parser.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/test-grammar-parser.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/test-grammar-parser.cpp.o
 .PHONY : test-grammar-parser.cpp.o
 
 test-grammar-parser.i: test-grammar-parser.cpp.i
@@ -766,7 +766,7 @@ test-grammar-parser.i: test-grammar-parser.cpp.i
 
 # target to preprocess a source file
 test-grammar-parser.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/test-grammar-parser.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/test-grammar-parser.cpp.i
 .PHONY : test-grammar-parser.cpp.i
 
 test-grammar-parser.s: test-grammar-parser.cpp.s
@@ -774,7 +774,7 @@ test-grammar-parser.s: test-grammar-parser.cpp.s
 
 # target to generate assembly for a file
 test-grammar-parser.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/test-grammar-parser.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-grammar-parser.dir/build.make tests/CMakeFiles/test-grammar-parser.dir/test-grammar-parser.cpp.s
 .PHONY : test-grammar-parser.cpp.s
 
 test-json-schema-to-grammar.o: test-json-schema-to-grammar.cpp.o
@@ -782,7 +782,7 @@ test-json-schema-to-grammar.o: test-json-schema-to-grammar.cpp.o
 
 # target to build an object file
 test-json-schema-to-grammar.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/test-json-schema-to-grammar.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/test-json-schema-to-grammar.cpp.o
 .PHONY : test-json-schema-to-grammar.cpp.o
 
 test-json-schema-to-grammar.i: test-json-schema-to-grammar.cpp.i
@@ -790,7 +790,7 @@ test-json-schema-to-grammar.i: test-json-schema-to-grammar.cpp.i
 
 # target to preprocess a source file
 test-json-schema-to-grammar.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/test-json-schema-to-grammar.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/test-json-schema-to-grammar.cpp.i
 .PHONY : test-json-schema-to-grammar.cpp.i
 
 test-json-schema-to-grammar.s: test-json-schema-to-grammar.cpp.s
@@ -798,7 +798,7 @@ test-json-schema-to-grammar.s: test-json-schema-to-grammar.cpp.s
 
 # target to generate assembly for a file
 test-json-schema-to-grammar.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/test-json-schema-to-grammar.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-json-schema-to-grammar.dir/build.make tests/CMakeFiles/test-json-schema-to-grammar.dir/test-json-schema-to-grammar.cpp.s
 .PHONY : test-json-schema-to-grammar.cpp.s
 
 test-llama-grammar.o: test-llama-grammar.cpp.o
@@ -806,7 +806,7 @@ test-llama-grammar.o: test-llama-grammar.cpp.o
 
 # target to build an object file
 test-llama-grammar.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/test-llama-grammar.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/test-llama-grammar.cpp.o
 .PHONY : test-llama-grammar.cpp.o
 
 test-llama-grammar.i: test-llama-grammar.cpp.i
@@ -814,7 +814,7 @@ test-llama-grammar.i: test-llama-grammar.cpp.i
 
 # target to preprocess a source file
 test-llama-grammar.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/test-llama-grammar.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/test-llama-grammar.cpp.i
 .PHONY : test-llama-grammar.cpp.i
 
 test-llama-grammar.s: test-llama-grammar.cpp.s
@@ -822,7 +822,7 @@ test-llama-grammar.s: test-llama-grammar.cpp.s
 
 # target to generate assembly for a file
 test-llama-grammar.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/test-llama-grammar.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-llama-grammar.dir/build.make tests/CMakeFiles/test-llama-grammar.dir/test-llama-grammar.cpp.s
 .PHONY : test-llama-grammar.cpp.s
 
 test-log.o: test-log.cpp.o
@@ -830,7 +830,7 @@ test-log.o: test-log.cpp.o
 
 # target to build an object file
 test-log.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/test-log.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/test-log.cpp.o
 .PHONY : test-log.cpp.o
 
 test-log.i: test-log.cpp.i
@@ -838,7 +838,7 @@ test-log.i: test-log.cpp.i
 
 # target to preprocess a source file
 test-log.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/test-log.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/test-log.cpp.i
 .PHONY : test-log.cpp.i
 
 test-log.s: test-log.cpp.s
@@ -846,7 +846,7 @@ test-log.s: test-log.cpp.s
 
 # target to generate assembly for a file
 test-log.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/test-log.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-log.dir/build.make tests/CMakeFiles/test-log.dir/test-log.cpp.s
 .PHONY : test-log.cpp.s
 
 test-model-load-cancel.o: test-model-load-cancel.cpp.o
@@ -854,7 +854,7 @@ test-model-load-cancel.o: test-model-load-cancel.cpp.o
 
 # target to build an object file
 test-model-load-cancel.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/test-model-load-cancel.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/test-model-load-cancel.cpp.o
 .PHONY : test-model-load-cancel.cpp.o
 
 test-model-load-cancel.i: test-model-load-cancel.cpp.i
@@ -862,7 +862,7 @@ test-model-load-cancel.i: test-model-load-cancel.cpp.i
 
 # target to preprocess a source file
 test-model-load-cancel.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/test-model-load-cancel.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/test-model-load-cancel.cpp.i
 .PHONY : test-model-load-cancel.cpp.i
 
 test-model-load-cancel.s: test-model-load-cancel.cpp.s
@@ -870,7 +870,7 @@ test-model-load-cancel.s: test-model-load-cancel.cpp.s
 
 # target to generate assembly for a file
 test-model-load-cancel.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/test-model-load-cancel.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-model-load-cancel.dir/build.make tests/CMakeFiles/test-model-load-cancel.dir/test-model-load-cancel.cpp.s
 .PHONY : test-model-load-cancel.cpp.s
 
 test-quantize-fns.o: test-quantize-fns.cpp.o
@@ -878,7 +878,7 @@ test-quantize-fns.o: test-quantize-fns.cpp.o
 
 # target to build an object file
 test-quantize-fns.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/test-quantize-fns.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/test-quantize-fns.cpp.o
 .PHONY : test-quantize-fns.cpp.o
 
 test-quantize-fns.i: test-quantize-fns.cpp.i
@@ -886,7 +886,7 @@ test-quantize-fns.i: test-quantize-fns.cpp.i
 
 # target to preprocess a source file
 test-quantize-fns.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/test-quantize-fns.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/test-quantize-fns.cpp.i
 .PHONY : test-quantize-fns.cpp.i
 
 test-quantize-fns.s: test-quantize-fns.cpp.s
@@ -894,7 +894,7 @@ test-quantize-fns.s: test-quantize-fns.cpp.s
 
 # target to generate assembly for a file
 test-quantize-fns.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/test-quantize-fns.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-fns.dir/build.make tests/CMakeFiles/test-quantize-fns.dir/test-quantize-fns.cpp.s
 .PHONY : test-quantize-fns.cpp.s
 
 test-quantize-perf.o: test-quantize-perf.cpp.o
@@ -902,7 +902,7 @@ test-quantize-perf.o: test-quantize-perf.cpp.o
 
 # target to build an object file
 test-quantize-perf.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/test-quantize-perf.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/test-quantize-perf.cpp.o
 .PHONY : test-quantize-perf.cpp.o
 
 test-quantize-perf.i: test-quantize-perf.cpp.i
@@ -910,7 +910,7 @@ test-quantize-perf.i: test-quantize-perf.cpp.i
 
 # target to preprocess a source file
 test-quantize-perf.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/test-quantize-perf.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/test-quantize-perf.cpp.i
 .PHONY : test-quantize-perf.cpp.i
 
 test-quantize-perf.s: test-quantize-perf.cpp.s
@@ -918,7 +918,7 @@ test-quantize-perf.s: test-quantize-perf.cpp.s
 
 # target to generate assembly for a file
 test-quantize-perf.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/test-quantize-perf.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-quantize-perf.dir/build.make tests/CMakeFiles/test-quantize-perf.dir/test-quantize-perf.cpp.s
 .PHONY : test-quantize-perf.cpp.s
 
 test-rope.o: test-rope.cpp.o
@@ -926,7 +926,7 @@ test-rope.o: test-rope.cpp.o
 
 # target to build an object file
 test-rope.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/test-rope.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/test-rope.cpp.o
 .PHONY : test-rope.cpp.o
 
 test-rope.i: test-rope.cpp.i
@@ -934,7 +934,7 @@ test-rope.i: test-rope.cpp.i
 
 # target to preprocess a source file
 test-rope.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/test-rope.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/test-rope.cpp.i
 .PHONY : test-rope.cpp.i
 
 test-rope.s: test-rope.cpp.s
@@ -942,7 +942,7 @@ test-rope.s: test-rope.cpp.s
 
 # target to generate assembly for a file
 test-rope.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/test-rope.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-rope.dir/build.make tests/CMakeFiles/test-rope.dir/test-rope.cpp.s
 .PHONY : test-rope.cpp.s
 
 test-sampling.o: test-sampling.cpp.o
@@ -950,7 +950,7 @@ test-sampling.o: test-sampling.cpp.o
 
 # target to build an object file
 test-sampling.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/test-sampling.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/test-sampling.cpp.o
 .PHONY : test-sampling.cpp.o
 
 test-sampling.i: test-sampling.cpp.i
@@ -958,7 +958,7 @@ test-sampling.i: test-sampling.cpp.i
 
 # target to preprocess a source file
 test-sampling.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/test-sampling.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/test-sampling.cpp.i
 .PHONY : test-sampling.cpp.i
 
 test-sampling.s: test-sampling.cpp.s
@@ -966,7 +966,7 @@ test-sampling.s: test-sampling.cpp.s
 
 # target to generate assembly for a file
 test-sampling.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/test-sampling.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-sampling.dir/build.make tests/CMakeFiles/test-sampling.dir/test-sampling.cpp.s
 .PHONY : test-sampling.cpp.s
 
 test-tokenizer-0.o: test-tokenizer-0.cpp.o
@@ -974,7 +974,7 @@ test-tokenizer-0.o: test-tokenizer-0.cpp.o
 
 # target to build an object file
 test-tokenizer-0.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-0.dir/build.make tests/CMakeFiles/test-tokenizer-0.dir/test-tokenizer-0.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-0.dir/build.make tests/CMakeFiles/test-tokenizer-0.dir/test-tokenizer-0.cpp.o
 .PHONY : test-tokenizer-0.cpp.o
 
 test-tokenizer-0.i: test-tokenizer-0.cpp.i
@@ -982,7 +982,7 @@ test-tokenizer-0.i: test-tokenizer-0.cpp.i
 
 # target to preprocess a source file
 test-tokenizer-0.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-0.dir/build.make tests/CMakeFiles/test-tokenizer-0.dir/test-tokenizer-0.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-0.dir/build.make tests/CMakeFiles/test-tokenizer-0.dir/test-tokenizer-0.cpp.i
 .PHONY : test-tokenizer-0.cpp.i
 
 test-tokenizer-0.s: test-tokenizer-0.cpp.s
@@ -990,7 +990,7 @@ test-tokenizer-0.s: test-tokenizer-0.cpp.s
 
 # target to generate assembly for a file
 test-tokenizer-0.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-0.dir/build.make tests/CMakeFiles/test-tokenizer-0.dir/test-tokenizer-0.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-0.dir/build.make tests/CMakeFiles/test-tokenizer-0.dir/test-tokenizer-0.cpp.s
 .PHONY : test-tokenizer-0.cpp.s
 
 test-tokenizer-1-bpe.o: test-tokenizer-1-bpe.cpp.o
@@ -998,7 +998,7 @@ test-tokenizer-1-bpe.o: test-tokenizer-1-bpe.cpp.o
 
 # target to build an object file
 test-tokenizer-1-bpe.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-bpe.dir/build.make tests/CMakeFiles/test-tokenizer-1-bpe.dir/test-tokenizer-1-bpe.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-bpe.dir/build.make tests/CMakeFiles/test-tokenizer-1-bpe.dir/test-tokenizer-1-bpe.cpp.o
 .PHONY : test-tokenizer-1-bpe.cpp.o
 
 test-tokenizer-1-bpe.i: test-tokenizer-1-bpe.cpp.i
@@ -1006,7 +1006,7 @@ test-tokenizer-1-bpe.i: test-tokenizer-1-bpe.cpp.i
 
 # target to preprocess a source file
 test-tokenizer-1-bpe.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-bpe.dir/build.make tests/CMakeFiles/test-tokenizer-1-bpe.dir/test-tokenizer-1-bpe.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-bpe.dir/build.make tests/CMakeFiles/test-tokenizer-1-bpe.dir/test-tokenizer-1-bpe.cpp.i
 .PHONY : test-tokenizer-1-bpe.cpp.i
 
 test-tokenizer-1-bpe.s: test-tokenizer-1-bpe.cpp.s
@@ -1014,7 +1014,7 @@ test-tokenizer-1-bpe.s: test-tokenizer-1-bpe.cpp.s
 
 # target to generate assembly for a file
 test-tokenizer-1-bpe.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-bpe.dir/build.make tests/CMakeFiles/test-tokenizer-1-bpe.dir/test-tokenizer-1-bpe.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-bpe.dir/build.make tests/CMakeFiles/test-tokenizer-1-bpe.dir/test-tokenizer-1-bpe.cpp.s
 .PHONY : test-tokenizer-1-bpe.cpp.s
 
 test-tokenizer-1-spm.o: test-tokenizer-1-spm.cpp.o
@@ -1022,7 +1022,7 @@ test-tokenizer-1-spm.o: test-tokenizer-1-spm.cpp.o
 
 # target to build an object file
 test-tokenizer-1-spm.cpp.o:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-spm.dir/build.make tests/CMakeFiles/test-tokenizer-1-spm.dir/test-tokenizer-1-spm.cpp.o
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-spm.dir/build.make tests/CMakeFiles/test-tokenizer-1-spm.dir/test-tokenizer-1-spm.cpp.o
 .PHONY : test-tokenizer-1-spm.cpp.o
 
 test-tokenizer-1-spm.i: test-tokenizer-1-spm.cpp.i
@@ -1030,7 +1030,7 @@ test-tokenizer-1-spm.i: test-tokenizer-1-spm.cpp.i
 
 # target to preprocess a source file
 test-tokenizer-1-spm.cpp.i:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-spm.dir/build.make tests/CMakeFiles/test-tokenizer-1-spm.dir/test-tokenizer-1-spm.cpp.i
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-spm.dir/build.make tests/CMakeFiles/test-tokenizer-1-spm.dir/test-tokenizer-1-spm.cpp.i
 .PHONY : test-tokenizer-1-spm.cpp.i
 
 test-tokenizer-1-spm.s: test-tokenizer-1-spm.cpp.s
@@ -1038,7 +1038,7 @@ test-tokenizer-1-spm.s: test-tokenizer-1-spm.cpp.s
 
 # target to generate assembly for a file
 test-tokenizer-1-spm.cpp.s:
-	cd /home/ued520/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-spm.dir/build.make tests/CMakeFiles/test-tokenizer-1-spm.dir/test-tokenizer-1-spm.cpp.s
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test-tokenizer-1-spm.dir/build.make tests/CMakeFiles/test-tokenizer-1-spm.dir/test-tokenizer-1-spm.cpp.s
 .PHONY : test-tokenizer-1-spm.cpp.s
 
 # Help Target
@@ -1152,6 +1152,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ued520/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

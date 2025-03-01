@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/llama.cpp/examples
+# Install script for directory: /home/ued520/makefile_ninja_benchmarks/llama.cpp/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,176 +44,176 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/batched-bench/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/batched-bench/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/batched/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/batched/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/embedding/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/embedding/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/eval-callback/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/eval-callback/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/gbnf-validator/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/gbnf-validator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/gguf-hash/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/gguf-hash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/gguf-split/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/gguf-split/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/gguf/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/gguf/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/gritlm/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/gritlm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/imatrix/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/imatrix/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/infill/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/infill/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/llama-bench/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/llama-bench/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/lookahead/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/lookahead/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/lookup/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/lookup/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/main/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/main/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/parallel/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/parallel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/passkey/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/passkey/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/perplexity/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/perplexity/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/quantize/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/quantize/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/retrieval/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/retrieval/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/server/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/server/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/save-load-state/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/save-load-state/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/run/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/run/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/simple/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/simple/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/simple-chat/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/simple-chat/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/speculative/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/speculative/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/speculative-simple/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/speculative-simple/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/tokenize/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/tokenize/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/tts/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/tts/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/gen-docs/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/gen-docs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/convert-llama2c-to-ggml/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/convert-llama2c-to-ggml/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/cvector-generator/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/cvector-generator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/export-lora/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/export-lora/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/quantize-stats/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/quantize-stats/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/make_build/examples/llava/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/examples/llava/cmake_install.cmake")
 endif()
 

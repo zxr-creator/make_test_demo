@@ -8,3 +8,48 @@ cd /home/ued520/makefile_ninja_benchmarks/demo_project
 
 mkdir build_ninja
 /home/ued520/makefile_ninja_benchmarks/ninja/ninja 
+
+ninja -t graph > llama_ninja_graph.dot
+dot -Tsvg llama_ninja_graph.dot -o llama_ninja_graph.svg
+
+make -d -j4 > make_d_j4.txt
+make -Bnd | make2graph > dependencies.dot
+
+dot -Tsvg dependencies.dot -o dependencies.svg
+cat make_d_j2.txt | make2graph > dependencies.dot
+
+make -Bnd | make2graph > dependencies.dot
+dot -Tsvg dependencies.dot -o dependencies.svg
+
+grep -E '^\s*Considering target file|^\s*Pruning file' make_d_j2.txt | make2graph > dependencies.dot
+
+dot -Tsvg 1.dot -o 1.svg
+
+libpng:
+sudo make -Bnd | make2graph > libpng_make_graph.dot
+dot -Tsvg libpng_make_graph.dot -o libpng_make_graph.svg
+
+./configure --enable-maintainer-mode
+make maintainer-clean
+./autogen.sh --maintainer --clean
+./autogen.sh --maintainer
+./configure [--prefix=/path] [other options]
+sudo make
+
+cd ninja_build
+cmake -G Ninja ..
+ninja -t graph > libpng_ninja_graph.dot
+dot -Tsvg libpng_ninja_graph.dot -o libpng_ninja_graph.svg
+
+python node_stat.py
+
+llama.cpp:
+cd ..
+mkdir make_build
+cd make_build
+cmake ..
+make -Bnd | make2graph > llama_make_graph.dot
+dot -Tsvg libpng_make_graph.dot -o llama_make_graph.svg
+ninja -t graph > llama_ninja_graph.dot
+dot -Tsvg llama_ninja_graph.dot -o llama_ninja_graph.svg
+python node_stat.py

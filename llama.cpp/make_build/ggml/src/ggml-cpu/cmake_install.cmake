@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/llama.cpp/ggml/src/ggml-cpu
+# Install script for directory: /home/ued520/makefile_ninja_benchmarks/llama.cpp/ggml/src/ggml-cpu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

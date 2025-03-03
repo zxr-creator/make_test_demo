@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/llama.cpp/ggml/src
+# Install script for directory: /home/ued520/makefile_ninja_benchmarks/llama.cpp/ggml/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/ninja_build/ggml/src/ggml-cpu/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/ggml/src/ggml-cpu/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,12 +54,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libggml-cpu.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ued520/llama.cpp/ninja_build/bin/libggml-cpu.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/bin/libggml-cpu.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libggml-cpu.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libggml-cpu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libggml-cpu.so"
-         OLD_RPATH "/home/ued520/llama.cpp/ninja_build/bin:"
+         OLD_RPATH "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/bin:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libggml-cpu.so")

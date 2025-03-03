@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/llama.cpp/examples/gguf-split
+# Install script for directory: /home/ued520/makefile_ninja_benchmarks/llama.cpp/examples/gguf-split
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,12 +49,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-gguf-split"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ued520/llama.cpp/ninja_build/bin/llama-gguf-split")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/bin/llama-gguf-split")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-gguf-split" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-gguf-split")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-gguf-split"
-         OLD_RPATH "/home/ued520/llama.cpp/ninja_build/bin:"
+         OLD_RPATH "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/bin:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/llama-gguf-split")

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/llama.cpp/pocs
+# Install script for directory: /home/ued520/makefile_ninja_benchmarks/llama.cpp/pocs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/ninja_build/pocs/vdot/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/pocs/vdot/cmake_install.cmake")
 endif()
 

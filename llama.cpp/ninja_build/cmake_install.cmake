@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/llama.cpp
+# Install script for directory: /home/ued520/makefile_ninja_benchmarks/llama.cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,32 +44,32 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/ninja_build/ggml/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/ggml/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/ninja_build/src/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/ninja_build/common/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/ninja_build/tests/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/tests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/ninja_build/examples/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/examples/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ued520/llama.cpp/ninja_build/pocs/cmake_install.cmake")
+  include("/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/pocs/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -79,12 +79,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libllama.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ued520/llama.cpp/ninja_build/bin/libllama.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/bin/libllama.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libllama.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libllama.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libllama.so"
-         OLD_RPATH "/home/ued520/llama.cpp/ninja_build/bin:"
+         OLD_RPATH "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/bin:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libllama.so")
@@ -97,24 +97,24 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/ued520/llama.cpp/include/llama.h"
-    "/home/ued520/llama.cpp/include/llama-cpp.h"
+    "/home/ued520/makefile_ninja_benchmarks/llama.cpp/include/llama.h"
+    "/home/ued520/makefile_ninja_benchmarks/llama.cpp/include/llama-cpp.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/llama" TYPE FILE FILES
-    "/home/ued520/llama.cpp/ninja_build/llama-config.cmake"
-    "/home/ued520/llama.cpp/ninja_build/llama-version.cmake"
+    "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/llama-config.cmake"
+    "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/llama-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/home/ued520/llama.cpp/convert_hf_to_gguf.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/home/ued520/makefile_ninja_benchmarks/llama.cpp/convert_hf_to_gguf.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ued520/llama.cpp/ninja_build/llama.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/llama.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -125,5 +125,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ued520/llama.cpp/ninja_build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

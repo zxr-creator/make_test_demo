@@ -47,9 +47,17 @@ llama.cpp:
 cd ..
 mkdir make_build
 cd make_build
-cmake ..
-make -Bnd | make2graph > llama_make_graph.dot
+
+cmake .. -DBUILD_SHARED_LIBS=ON -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=bin
+make -Bnd llama| make2graph > llama_make_graph.dot
 dot -Tsvg libpng_make_graph.dot -o llama_make_graph.svg
+
+make -Bnd llama| make2graph > llama_make_graph.dot
+dot -Tsvg libpng_make_graph.dot -o llama_make_graph.svg
+
+cmake -G Ninja ..
 ninja -t graph > llama_ninja_graph.dot
 dot -Tsvg llama_ninja_graph.dot -o llama_ninja_graph.svg
 python node_stat.py
+
+cmake -DGGML_BLAS=ON ..

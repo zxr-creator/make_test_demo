@@ -1422,7 +1422,7 @@ rule CXX_EXECUTABLE_LINKER__llama-q8dot_Release
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/ued520/llama.cpp -B/home/ued520/llama.cpp/ninja_build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/ued520/makefile_ninja_benchmarks/llama.cpp -B/home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build
   description = Re-running CMake...
   generator = 1
 

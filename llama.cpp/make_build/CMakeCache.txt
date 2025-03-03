@@ -159,6 +159,9 @@ CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
 //Read-only single-machine data (etc)
 CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
+//No help, variable specified on the command line.
+CMAKE_LIBRARY_OUTPUT_DIRECTORY:UNINITIALIZED=bin
+
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
@@ -543,6 +546,9 @@ GGML_VULKAN_VALIDATE:BOOL=OFF
 GGML_VXE:BOOL=ON
 
 //Path to a program.
+GITCOMMAND:FILEPATH=/usr/bin/git
+
+//Path to a program.
 GIT_EXE:FILEPATH=/usr/bin/git
 
 //Git command line client
@@ -858,6 +864,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //List of backends for cmake package
 GGML_AVAILABLE_BACKENDS:INTERNAL=ggml-cpu
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND

@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/ued520/llama.cpp
-BuildDirectory: /home/ued520/llama.cpp/ninja_build
+SourceDirectory: /home/ued520/makefile_ninja_benchmarks/llama.cpp
+BuildDirectory: /home/ued520/makefile_ninja_benchmarks/llama.cpp/ninja_build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/ued520/llama.cpp"
+ConfigureCommand: "/usr/bin/cmake" "/home/ued520/makefile_ninja_benchmarks/llama.cpp"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

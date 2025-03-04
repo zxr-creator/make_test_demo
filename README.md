@@ -7,3 +7,8 @@ The location of the process_mark.py for each benchmark:
 - redis/process_mark.py
 - zlib/process_mark.py
 2. add logs to show running time of each part in ninja/make.
+3. Alternative projects:
+- OpenCV https://github.com/opencv/opencv
+- Blender https://github.com/blender/blender
+- LLVM https://github.com/llvm/llvm-project
+- MySQL https://github.com/mysql/mysql-server

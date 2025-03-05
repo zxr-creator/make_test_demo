@@ -2145,13 +2145,15 @@ start_waiting_jobs (void)
 
   do
     {
+      profiler_operation_start(4,"Start jobs that are waiting for the load to go down");
       /* Check for recently deceased descendants.  */
       reap_children (0, 0);
-
+      profiler_operation_end(4,"Start jobs that are waiting for the load to go down");
       /* Take a job off the waiting list.  */
+      profiler_operation_start(4,"Take a job off the waiting list");
       job = waiting_jobs;
       waiting_jobs = job->next;
-
+      profiler_operation_end(4,"Take a job off the waiting list");
       /* Try to start that job.  We break out of the loop as soon
          as start_waiting_job puts one back on the waiting list.  */
     }

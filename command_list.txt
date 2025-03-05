@@ -61,3 +61,7 @@ dot -Tsvg llama_ninja_graph.dot -o llama_ninja_graph.svg
 python node_stat.py
 
 cmake -DGGML_BLAS=ON ..
+
+
+
+1. 

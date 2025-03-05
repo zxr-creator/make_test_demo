@@ -2,6 +2,7 @@
 *.tmp
 *.bak
 *.swp
+*.o
 
 # 日志文件
 *.log

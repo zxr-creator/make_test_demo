@@ -499,16 +499,16 @@ copy_dep_chain (const struct dep *d)
 void
 free_ns_chain (struct nameseq *ns)
 {
-  profiler_operation_start(3, "Free a chain of struct nameseq.");
+  profiler_operation_start(2, "Free a chain of struct nameseq.");
   while (ns != 0)
     {
       struct nameseq *t = ns;
       ns = ns->next;
-      profiler_operation_start(4, "free_ns.");
+      profiler_operation_start(3, "free_ns");
       free_ns (t);
-      profiler_operation_end(4, "free_ns.");
+      profiler_operation_end(3, "free_ns");
     }
-  profiler_operation_end(3, "Free a chain of struct nameseq.");
+  profiler_operation_end(2, "Free a chain of struct nameseq.");
 }
 
 

@@ -1161,7 +1161,8 @@ int
 main (int argc, char **argv, char **envp)
 #endif
 {
-  
+  profiler_root_start();
+  profiler_operation_start(0, "Initialization");
   int makefile_status = MAKE_SUCCESS;
   struct goaldep *read_files;
   PATH_VAR (current_directory);
@@ -1179,8 +1180,7 @@ main (int argc, char **argv, char **envp)
   no_default_sh_exe = 1;
 #endif
 
-profiler_root_start();
-profiler_operation_start(1, "Initialization");
+
   initialize_variable_output ();
 
   /* Useful for attaching debuggers, etc.  */
@@ -1575,9 +1575,9 @@ profiler_operation_start(1, "Initialization");
   }
 #endif
 
-profiler_operation_end(1, "Initialization");
+profiler_operation_end(0, "Initialization");
+profiler_operation_start(0, "Argument Parsing");
 
-profiler_operation_start(1, "Argument Parsing");
   /* Decode the switches.  */
   if (lookup_variable (STRING_SIZE_TUPLE (GNUMAKEFLAGS_NAME)))
     {
@@ -1624,7 +1624,8 @@ profiler_operation_start(1, "Argument Parsing");
       print_version ();
       die (MAKE_SUCCESS);
     }
-profiler_operation_end(1, "Argument Parsing");
+profiler_operation_end(0, "Argument Parsing");
+profiler_operation_start(0, "Manifest Parsing and Rebuilding");
   /* Now that we know we'll be running, force stdout to be line-buffered.  */
 #ifdef HAVE_SETVBUF
   setvbuf (stdout, 0, _IOLBF, BUFSIZ);
@@ -1633,6 +1634,7 @@ profiler_operation_end(1, "Argument Parsing");
 #endif
 
   /* Handle shuffle mode argument.  */
+  profiler_operation_start(1, "Handle shuffle mode argument and set variables");
   if (shuffle_mode)
     {
       const char *effective_mode;
@@ -1647,7 +1649,7 @@ profiler_operation_end(1, "Argument Parsing");
       else
         shuffle_mode = NULL;
     }
-
+    
   /* Set a variable specifying whether stdout/stdin is hooked to a TTY.  */
 #ifdef HAVE_ISATTY
   if (isatty (fileno (stdout)))
@@ -1675,7 +1677,10 @@ profiler_operation_end(1, "Argument Parsing");
 
   make_sync.syncout = syncing;
   OUTPUT_SET (&make_sync);
-
+  profiler_operation_end(1, "Handle shuffle mode argument and set variables");  
+  profiler_operation_start(1, "The whole process of reading the makefile");
+  profiler_operation_start(2, "Set MAKE_COMMAND variable");
+ 
   /* Figure out the level of recursion.  */
   {
     struct variable *v = lookup_variable (STRING_SIZE_TUPLE (MAKELEVEL_NAME));
@@ -1825,7 +1830,8 @@ profiler_operation_end(1, "Argument Parsing");
      users get an accurate value in their makefiles.
      At this point arg_job_slots is the argv setting, if there is one, else
      the MAKEFLAGS env setting, if there is one.  */
-
+  profiler_operation_end(2, "Set MAKE_COMMAND variable");   
+  profiler_operation_start(2, "Setup jobservers"); 
   if (jobserver_auth)
     {
       /* We're a child in an existing jobserver group.  */
@@ -1853,10 +1859,11 @@ profiler_operation_end(1, "Argument Parsing");
     }
 
  job_setup_complete:
-
   /* The extra indirection through $(MAKE_COMMAND) is done
      for hysterical raisins.  */
-
+  profiler_operation_end(2, "Setup jobservers"); 
+  profiler_operation_start(2, "Set varibles and Read makefiles into temporary files"); 
+  profiler_operation_start(3, "Set varibles for makefile reading"); 
 #ifdef VMS
   if (vms_use_mcr_command)
     define_variable_cname ("MAKE_COMMAND", vms_command (argv[0]), o_default, 0);
@@ -1917,9 +1924,9 @@ profiler_operation_end(1, "Argument Parsing");
       vms_export_dcl_symbol ("MAKEOVERRIDES", "${-*-command-variables-*-}");
 #endif
     }
-
+  profiler_operation_end(3, "Set varibles for makefile reading"); 
   /* Read any stdin makefiles into temporary files.  */
-
+  profiler_operation_start(3, "Read any stdin makefiles into temporary files"); 
   if (makefiles != 0)
     {
       unsigned int i;
@@ -2072,7 +2079,7 @@ profiler_operation_end(1, "Argument Parsing");
     int old_builtin_variables_flag = no_builtin_variables_flag;
     int old_arg_job_slots = arg_job_slots;
 
-    profiler_operation_start(1, "Makefile Reading");
+    profiler_operation_start(4, "Read all makefiles and decode"); 
     /* Read all the makefiles.  */
     read_files = read_all_makefiles (makefiles == 0 ? 0 : makefiles->list);
 
@@ -2088,7 +2095,9 @@ profiler_operation_end(1, "Argument Parsing");
 #if 0
     decode_env_switches (STRING_SIZE_TUPLE ("MFLAGS"));
 #endif
-
+profiler_operation_end(4, "Read all makefiles and decode"); 
+profiler_operation_end(3, "Read any stdin makefiles into temporary files"); 
+profiler_operation_start(3, "Manage jobs"); 
     /* If -j is not set in the makefile, or it was set on the command line,
        reset to use the previous value.  */
     if (arg_job_slots == INVALID_JOB_SLOTS || argv_slots != INVALID_JOB_SLOTS)
@@ -2271,7 +2280,9 @@ profiler_operation_end(1, "Argument Parsing");
 
   /* Make each 'struct goaldep' point at the 'struct file' for the file
      depended on.  Also do magic for special targets.  */
-
+  profiler_operation_end(3, "Manage jobs");    
+  profiler_operation_end(2, "Set varibles and Read makefiles into temporary files");    
+  profiler_operation_end(1, "The whole process of reading the makefile");   
   profiler_operation_start(1, "Dependency Graph Construction");   
   snap_deps ();
 
@@ -2821,8 +2832,8 @@ profiler_operation_end(1, "Argument Parsing");
     }
 
 
-  profiler_operation_end(1, "Makefile Reading");
-  profiler_operation_start(1, "Execution Preparation");
+  profiler_operation_end(0, "Manifest Parsing and Rebuilding");
+  profiler_operation_start(0, "Execution Preparation");
   /* Set up 'MAKEFLAGS' again for the normal targets.  */
   define_makeflags (1, 0);
 
@@ -2909,10 +2920,10 @@ profiler_operation_end(1, "Argument Parsing");
   /* Update the goals.  */
 
   DB (DB_BASIC, (_("Updating goal targets....\n")));
-  profiler_operation_end(1, "Execution Preparation");
-  profiler_operation_start(1, "Build Target");
+  profiler_operation_end(0, "Execution Preparation");
+  profiler_operation_start(0, "Run Build");
   {
-    
+    profiler_operation_start(1, "Update goal chain");
     switch (update_goal_chain (goals))
     {
       case us_none:
@@ -2930,13 +2941,14 @@ profiler_operation_end(1, "Argument Parsing");
         makefile_status = MAKE_FAILURE;
         break;
     }
-
+    profiler_operation_end(1, "Update goal chain");
     /* If we detected some clock skew, generate one last warning */
+    profiler_operation_start(1, "Detect clock skew and generate warning");
     if (clock_skew_detected)
       O (error, NILF,
          _("warning:  Clock skew detected.  Your build may be incomplete."));
-
-    profiler_operation_end(1, "Build Target");
+    profiler_operation_end(1, "Detect clock skew and generate warning");        
+    profiler_operation_end(0, "Run Build");
     profiler_root_end();
     /* Exit.  */
     die (makefile_status);

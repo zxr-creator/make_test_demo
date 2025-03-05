@@ -1,0 +1,39 @@
+# 临时文件
+*.tmp
+*.bak
+*.swp
+
+# 日志文件
+*.log
+logs/
+log/
+
+# 构建输出
+build/
+build_make/
+build_ninja/
+dist/
+out/
+
+# 依赖目录
+node_modules/
+vendor/
+
+# IDE/编辑器文件
+.idea/          # IntelliJ IDEA
+*.iml
+.vscode/        # Visual Studio Code
+*.sublime-*     # Sublime Text
+.DS_Store       # macOS
+
+# 系统文件
+Thumbs.db       # Windows
+
+# 环境配置文件
+.env
+.env.local
+
+
+__pycache__/
+*.pyc
+

@@ -42,25 +42,40 @@ void RealCommandRunner::Abort() {
   subprocs_.Clear();
 }
 
+// 配置中设定的最大并行任务数（config_.parallelism）。
+
+// 当前已经在跑或已完成的任务数（subprocs_.running_ 和 subprocs_.finished_）。
+
+// 系统当前的负载情况（通过 GetLoadAverage() 获取）和配置中的最大负载限制（config_.max_load_average）。
+
+// 特殊情况：如果没任务在跑，至少允许跑一个任务。
 size_t RealCommandRunner::CanRunMore() const {
   size_t subproc_number =
       subprocs_.running_.size() + subprocs_.finished_.size();
 
   int64_t capacity = config_.parallelism - subproc_number;
 
+  // 设置了最大负载上限
   if (config_.max_load_average > 0.0f) {
     int load_capacity = config_.max_load_average - GetLoadAverage();
+    std::cout << "Load capacity: " << load_capacity << std::endl;
+    // 实际的比可用的好
     if (load_capacity < capacity)
       capacity = load_capacity;
   }
 
-  if (capacity < 0)
+  if (capacity < 0) {
+    std::cout << "Capacity adjusted to 0 from: " << capacity << std::endl;
     capacity = 0;
+  }
 
-  if (capacity == 0 && subprocs_.running_.empty())
+  if (capacity == 0 && subprocs_.running_.empty()) {
     // Ensure that we make progress.
     capacity = 1;
+    std::cout << "Capacity forced to 1 when running is empty" << std::endl;
+  }
 
+  std::cout << "Final capacity: " << capacity << std::endl;
   return capacity;
 }
 

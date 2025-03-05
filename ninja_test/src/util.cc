@@ -751,6 +751,11 @@ int ParseCPUFromCGroup() {
 }
 #endif
 
+// Windows：先试复杂方法（32 位超 64 核），不行用简单方法，再调整 CPU 使用率限制。
+
+// 非 Windows：查 cgroup（容器限制）、调度器（线程限制），综合判断，兜底问系统。
+
+// 目的：尽量返回一个“真实可用”的核心数，而不是硬件上的总数。
 int GetProcessorCount() {
 #ifdef _WIN32
   DWORD cpuCount = 0;
@@ -918,13 +923,13 @@ double GetLoadAverage() {
 }
 #else
 double GetLoadAverage() {
-  double loadavg[3] = { 0.0f, 0.0f, 0.0f };
-  if (getloadavg(loadavg, 3) < 0) {
-    // Maybe we should return an error here or the availability of
-    // getloadavg(3) should be checked when ninja is configured.
+  double loadavg[3] = { 0.0f, 0.0f, 0.0f };  // 定义一个数组，存 3 个负载值，初始为 0
+  if (getloadavg(loadavg, 3) < 0) {          // 调用 getloadavg，尝试获取 3 个负载值
+    // 如果失败了（返回负数），可能是系统不支持这个函数
+    // 这里简单返回 -0.0，表示出错
     return -0.0f;
   }
-  return loadavg[0];
+  return loadavg[0];  // 成功的话，返回 1 分钟的负载值
 }
 #endif // _WIN32
 

@@ -13,6 +13,7 @@
 // limitations under the License.
 
 #include <errno.h>
+#include <iostream>
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -247,6 +248,13 @@ void Usage(const BuildConfig& config) {
 }
 
 /// Choose a default value for the -j (parallelism) flag.
+//返回值是基于处理器数量的某种启发式（heuristic）计算结果，具体规则如下：
+// 如果处理器数为 0 或 1，返回 2。
+
+// 如果处理器数为 2，返回 3。
+
+// 如果处理器数大于 2，返回 processors + 2。
+
 int GuessParallelism() {
   switch (int processors = GetProcessorCount()) {
   case 0:
@@ -1655,6 +1663,7 @@ class DeferGuessParallelism {
     if (needGuess) {
       needGuess = false;
       config->parallelism = GuessParallelism();
+      std::cout << "Initial capacity: " << config->parallelism << std::endl;
     }
   }
   ~DeferGuessParallelism() { Refresh(); }
@@ -1745,6 +1754,7 @@ int ReadFlags(int* argc, char*** argv,
         return 0;
       case 'h':
       default:
+      // 没有就只能自己猜测
         deferGuessParallelism.Refresh();
         Usage(*config);
         return 1;
@@ -1769,21 +1779,15 @@ NORETURN void real_main(int argc, char** argv) {
 
   setvbuf(stdout, NULL, _IOLBF, BUFSIZ);
   const char* ninja_command = argv[0];
-  profiler.end();
 
   // 解析命令行参数
-  profiler.start("Read Flags");
   int exit_code = ReadFlags(&argc, &argv, &options, &config);
   if (exit_code >= 0)
     exit(exit_code);
-  profiler.end();
 
-  profiler.start("Status Setup");
   Status* status = Status::factory(config);
-  profiler.end();
 
   // 处理工作目录
-  profiler.start("Working Directory Setup");
   if (options.working_dir) {
     // The formatting of this string, complete with funny quotes, is
     // so Emacs can properly identify that the cwd has changed for
@@ -1796,10 +1800,8 @@ NORETURN void real_main(int argc, char** argv) {
       Fatal("chdir to '%s' - %s", options.working_dir, strerror(errno));
     }
   }
-  profiler.end();
 
   // 处理 RUN_AFTER_FLAGS 工具
-  profiler.start("Tool After Flags");
   if (options.tool && options.tool->when == Tool::RUN_AFTER_FLAGS) {
     // None of the RUN_AFTER_FLAGS actually use a NinjaMain, but it's needed
     // by other tools.
@@ -1811,14 +1813,11 @@ NORETURN void real_main(int argc, char** argv) {
   // Limit number of rebuilds, to prevent infinite loops.
   const int kCycleLimit = 1;
   for (int cycle = 1; cycle <= kCycleLimit; ++cycle) {
-    profiler.start("Build Cycle " + std::to_string(cycle));
+    profiler.start("Manifest Parsing and Rebuilding");
 
-    profiler.start("Ninja Setup");
     NinjaMain ninja(ninja_command, config);
-    profiler.end();
 
     // 解析manifest
-    profiler.start("Manifest Parsing");
     ManifestParserOptions parser_opts;
     if (options.phony_cycle_should_err) {
       parser_opts.phony_cycle_action_ = kPhonyCycleActionError;
@@ -1829,34 +1828,24 @@ NORETURN void real_main(int argc, char** argv) {
       status->Error("%s", err.c_str());
       exit(1);
     }
-    profiler.end();
 
     // RUN_AFTER_LOAD 工具
-    profiler.start("Tool After Load");
     if (options.tool && options.tool->when == Tool::RUN_AFTER_LOAD)
       exit((ninja.*options.tool->func)(&options, argc, argv));
-    profiler.end();
 
     // 确保构建目录存在
-    profiler.start("Ensure Build Dir");
     if (!ninja.EnsureBuildDirExists())
       exit(1);
-    profiler.end();
 
     // 打开日志
-    profiler.start("Open Logs");
     if (!ninja.OpenBuildLog() || !ninja.OpenDepsLog())
       exit(1);
-    profiler.end();
 
     // RUN_AFTER_LOGS 工具
-    profiler.start("Tool After Logs");
     if (options.tool && options.tool->when == Tool::RUN_AFTER_LOGS)
       exit((ninja.*options.tool->func)(&options, argc, argv));
-    profiler.end();
 
     // Attempt to rebuild the manifest before building anything else
-    profiler.start("Rebuild Manifest");
     if (ninja.RebuildManifest(options.input_file, &err, status)) {
       // In dry_run mode the regeneration will succeed without changing the
       // manifest forever. Better to return immediately.
@@ -1868,11 +1857,9 @@ NORETURN void real_main(int argc, char** argv) {
       
       // 这会导致无限循环，所以代码在检测到这种情况时直接返回成功（exit(0)），避免无谓的循环。
       if (config.dry_run) {
-        profiler.end();  // Rebuild Manifest
         profiler.end();  // Build Cycle
         exit(0);
       }
-      profiler.end();  // Rebuild Manifest
       profiler.end();  // Build Cycle
       // Start the build over with the new manifest.
       continue;
@@ -1880,23 +1867,17 @@ NORETURN void real_main(int argc, char** argv) {
       status->Error("rebuilding '%s': %s", options.input_file, err.c_str());
       exit(1);
     }
-    profiler.end();  // Rebuild Manifest
 
     // 解析之前的时间
-    profiler.start("Parse Previous Times");
     ninja.ParsePreviousElapsedTimes();
     profiler.end();
 
     // 执行构建
     profiler.start("Run Build");
     ExitStatus result = ninja.RunBuild(argc, argv, status);
-    profiler.end();
 
-    // 输出metrics
-    profiler.start("Dump Metrics");
     if (g_metrics)
       ninja.DumpMetrics();
-    profiler.end();
 
     profiler.end();  // Build Cycle
     profiler.rootEnd();

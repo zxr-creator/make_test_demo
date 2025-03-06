@@ -27,7 +27,11 @@ uname -v = #1 SMP Tue Nov 5 00:21:55 UTC 2024
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/ued520/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/bin/remote-cli/
+PATH: /home/ued520/.vscode-server/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/
+PATH: /home/ued520/assign3_venv/bin/
+PATH: /home/ued520/.vscode-server/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/
+PATH: /home/ued520/assign3_venv/bin/
+PATH: /home/ued520/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/bin/remote-cli/
 PATH: /home/ued520/miniconda3/bin/
 PATH: /home/ued520/miniconda3/condabin/
 PATH: /usr/local/sbin/
@@ -73,7 +77,6 @@ PATH: /mnt/c/Users/XR ZHONG/AppData/Roaming/npm/
 PATH: /mnt/c/Program Files/heroku/bin/
 PATH: /mnt/c/Users/XR ZHONG/AppData/Local/GitHubDesktop/bin/
 PATH: /snap/bin/
-PATH: /home/ued520/.vscode-server/extensions/ms-python.debugpy-2025.0.1-linux-x64/bundled/scripts/noConfigScripts/
 
 
 ## ----------- ##
@@ -2328,8 +2331,8 @@ configure:12604: $? = 0
 configure:12604: result: yes
 configure:12610: checking for mktemp
 configure:12610: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccATX2yD.o: in function `main':
-/home/ued520/makefile_ninja_benchmarks/make/conftest.c:112:(.text.startup+0xb): warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+/usr/bin/ld: /tmp/ccyNNSDn.o: in function `main':
+/home/ued520/makefile_ninja_benchmarks/make_new/conftest.c:112:(.text.startup+0xb): warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
 configure:12610: $? = 0
 configure:12610: result: yes
 configure:12616: checking for fdopen
@@ -2620,8 +2623,8 @@ configure:13039: $? = 0
 configure:13039: result: yes
 configure:13045: checking for strcmpi
 configure:13045: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccmyGGFd.o: in function `main':
-/home/ued520/makefile_ninja_benchmarks/make/conftest.c:148:(.text.startup+0xb): undefined reference to `strcmpi'
+/usr/bin/ld: /tmp/cc79Q2hw.o: in function `main':
+/home/ued520/makefile_ninja_benchmarks/make_new/conftest.c:148:(.text.startup+0xb): undefined reference to `strcmpi'
 collect2: error: ld returned 1 exit status
 configure:13045: $? = 1
 configure: failed program was:
@@ -2779,8 +2782,8 @@ configure: failed program was:
 configure:13045: result: no
 configure:13051: checking for strncmpi
 configure:13051: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccTntpwz.o: in function `main':
-/home/ued520/makefile_ninja_benchmarks/make/conftest.c:148:(.text.startup+0xb): undefined reference to `strncmpi'
+/usr/bin/ld: /tmp/ccF8WnIp.o: in function `main':
+/home/ued520/makefile_ninja_benchmarks/make_new/conftest.c:148:(.text.startup+0xb): undefined reference to `strncmpi'
 collect2: error: ld returned 1 exit status
 configure:13051: $? = 1
 configure: failed program was:
@@ -2938,8 +2941,8 @@ configure: failed program was:
 configure:13051: result: no
 configure:13057: checking for stricmp
 configure:13057: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccfPcoKa.o: in function `main':
-/home/ued520/makefile_ninja_benchmarks/make/conftest.c:148:(.text.startup+0xb): undefined reference to `stricmp'
+/usr/bin/ld: /tmp/cc9E0FJG.o: in function `main':
+/home/ued520/makefile_ninja_benchmarks/make_new/conftest.c:148:(.text.startup+0xb): undefined reference to `stricmp'
 collect2: error: ld returned 1 exit status
 configure:13057: $? = 1
 configure: failed program was:
@@ -3097,8 +3100,8 @@ configure: failed program was:
 configure:13057: result: no
 configure:13063: checking for strnicmp
 configure:13063: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccoXTfU0.o: in function `main':
-/home/ued520/makefile_ninja_benchmarks/make/conftest.c:148:(.text.startup+0xb): undefined reference to `strnicmp'
+/usr/bin/ld: /tmp/ccyaTP3M.o: in function `main':
+/home/ued520/makefile_ninja_benchmarks/make_new/conftest.c:148:(.text.startup+0xb): undefined reference to `strnicmp'
 collect2: error: ld returned 1 exit status
 configure:13063: $? = 1
 configure: failed program was:
@@ -4073,10 +4076,8 @@ config.status:1092: creating lib/Makefile
 config.status:1092: creating doc/Makefile
 config.status:1092: creating po/Makefile.in
 config.status:1092: creating src/config.h
-config.status:1278: src/config.h is unchanged
 config.status:1357: executing depfiles commands
 config.status:1434: cd .       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
-make: Nothing to be done for 'am--depfiles'.
 config.status:1439: $? = 0
 config.status:1434: cd lib       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 config.status:1439: $? = 0
@@ -4294,7 +4295,7 @@ make_cv_union_wait=no
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make/build-aux/missing'\'' aclocal-1.16'
+ACLOCAL='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' aclocal-1.16'
 ALLOCA=''
 ALLOCA_H='alloca.h'
 AMDEPBACKSLASH='\'
@@ -4308,9 +4309,9 @@ AM_LDFLAGS='-Wl,--export-dynamic'
 AM_V='$(V)'
 AR='ar'
 ARFLAGS='cr'
-AUTOCONF='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make/build-aux/missing'\'' autoconf'
-AUTOHEADER='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make/build-aux/missing'\'' autoheader'
-AUTOMAKE='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make/build-aux/missing'\'' automake-1.16'
+AUTOCONF='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' autoconf'
+AUTOHEADER='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' autoheader'
+AUTOMAKE='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' automake-1.16'
 AWK='gawk'
 CC='gcc'
 CCDEPMODE='depmode=gcc3'
@@ -4371,7 +4372,7 @@ LIBS=''
 LTLIBICONV='-liconv'
 LTLIBINTL=''
 LTLIBOBJS=''
-MAKEINFO='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make/build-aux/missing'\'' makeinfo'
+MAKEINFO='${SHELL} '\''/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' makeinfo'
 MAKE_HOST='x86_64-pc-linux-gnu'
 MKDIR_P='/usr/bin/mkdir -p'
 MSGFMT=':'
@@ -4448,7 +4449,7 @@ host_vendor='pc'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/ued520/makefile_ninja_benchmarks/make/build-aux/install-sh'
+install_sh='${SHELL} /home/ued520/makefile_ninja_benchmarks/make_new/build-aux/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'

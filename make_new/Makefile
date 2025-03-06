@@ -176,7 +176,7 @@ am__objects_1 = src/ar.$(OBJEXT) src/arscan.$(OBJEXT) \
 	src/remake.$(OBJEXT) src/rule.$(OBJEXT) src/shuffle.$(OBJEXT) \
 	src/signame.$(OBJEXT) src/strcache.$(OBJEXT) \
 	src/variable.$(OBJEXT) src/version.$(OBJEXT) \
-	src/vpath.$(OBJEXT) src/profiler.$(OBJEXT)
+	src/vpath.$(OBJEXT)
 am__objects_2 = src/w32/pathstuff.$(OBJEXT) src/w32/w32os.$(OBJEXT) \
 	src/w32/compat/dirent.$(OBJEXT) \
 	src/w32/compat/posixfcn.$(OBJEXT) \
@@ -242,7 +242,7 @@ am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))
 am__v_CC_0 = @echo "  CC      " $@;
 am__v_CC_1 = 
 CCLD = $(CC)
-LINK = $(CXX) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
@@ -390,8 +390,6 @@ AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CXX = g++
-CXXFLAGS = -std=c++14
 CPP = gcc -E
 CPPFLAGS = 
 CSCOPE = cscope
@@ -828,8 +826,6 @@ src/vmsfunctions.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 src/vmsify.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
-src/profiler.o: src/profiler.cpp src/profiler.h
-	$(CXX) $(CXXFLAGS) $(AM_CPPFLAGS) $(CPPFLAGS) -c src/profiler.cpp -o src/profiler.o
 
 make$(EXEEXT): $(make_OBJECTS) $(make_DEPENDENCIES) $(EXTRA_make_DEPENDENCIES) 
 	@rm -f make$(EXEEXT)

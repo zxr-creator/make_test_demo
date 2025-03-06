@@ -1576,7 +1576,8 @@ main (int argc, char **argv, char **envp)
 #endif
 
 profiler_operation_end(0, "Initialization");
-profiler_operation_start(0, "Argument Parsing");
+profiler_operation_start(0, "Manifest Parsing and Rebuilding");
+profiler_operation_start(1, "Argument Parsing");
 
   /* Decode the switches.  */
   if (lookup_variable (STRING_SIZE_TUPLE (GNUMAKEFLAGS_NAME)))
@@ -1624,8 +1625,8 @@ profiler_operation_start(0, "Argument Parsing");
       print_version ();
       die (MAKE_SUCCESS);
     }
-profiler_operation_end(0, "Argument Parsing");
-profiler_operation_start(0, "Manifest Parsing and Rebuilding");
+
+
   /* Now that we know we'll be running, force stdout to be line-buffered.  */
 #ifdef HAVE_SETVBUF
   setvbuf (stdout, 0, _IOLBF, BUFSIZ);
@@ -1634,6 +1635,7 @@ profiler_operation_start(0, "Manifest Parsing and Rebuilding");
 #endif
 
   /* Handle shuffle mode argument.  */
+  profiler_operation_end(1, "Argument Parsing");
   profiler_operation_start(1, "Handle shuffle mode argument and set variables");
   if (shuffle_mode)
     {

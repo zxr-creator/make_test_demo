@@ -6,8 +6,8 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-PROJECT_PATH="$1"
-NINJA_PATH="$2"
+PROJECT_PATH="/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/libpng"
+NINJA_PATH="/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja"
 
 # Change to project directory
 cd "$PROJECT_PATH" || {
@@ -29,7 +29,7 @@ cd build_ninja
 
 # Run cmake and measure precise time
 # Using `time` command directly and capturing its output
-CMAKE_OUTPUT=$( { /usr/bin/time -p cmake .. 2>&1 | tee /dev/tty; } )
+CMAKE_OUTPUT=$( { /usr/bin/time -p cmake -G Ninja .. 2>&1 | tee /dev/tty; } )
 
 # 使用 grep 提取以 "real" 开头的行，并用 awk 取出时间数值
 CMAKE_TIME=$(echo "$CMAKE_OUTPUT" | grep '^real' | awk '{print $2}')
@@ -81,7 +81,9 @@ INIT_RATIO=$(echo "scale=2; $INIT_TIME / $TOTAL_TIME * 100" | bc)
 
 # Step 3: Generate dependency graph using ninja
 "$NINJA_PATH" -t graph > "$GRAPH_DOT"
+sed -i '1,2d' "$GRAPH_DOT"
 dot -Tsvg "$GRAPH_DOT" -o "$GRAPH_SVG"
 
 # Return to root directory
+cd ..
 cd ..

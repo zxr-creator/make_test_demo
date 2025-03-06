@@ -149,14 +149,16 @@ update_goal_chain (struct goaldep *goaldeps)
       profiler_operation_start(2, "Iterate over all double-colon entries for this file");
       while (gu != 0)
         {
+          profiler_operation_start(3, "Ensuring that build targets are checked and updated properly");
           /* Iterate over all double-colon entries for this file.  */
+
           struct file *file;
           int stop = 0, any_not_updated = 0;
 
           g = gu->shuf ? gu->shuf : gu;
 
           goal_dep = g;
-          profiler_operation_start(3, "Ensuring that build targets are checked and updated properly");
+          
           for (file = g->file->double_colon ? g->file->double_colon : g->file;
                file != NULL;
                file = file->prev)
@@ -232,17 +234,19 @@ update_goal_chain (struct goaldep *goaldeps)
                         }
                     }
                 }
-
+                profiler_operation_end(4, "Set the goal's 'changed' flag");  
               /* Keep track if any double-colon entry is not finished.
                  When they are all finished, the goal is finished.  */
+              profiler_operation_start(4, "Keep track if any double-colon entry is not finished");     
               any_not_updated |= !file->updated;
 
               file->dontcare = 0;
 
               if (stop)
                 break;
+              profiler_operation_end(4, "Keep track if any double-colon entry is not finished");    
             }
-            profiler_operation_end(4, "Set the goal's 'changed' flag");
+            
             profiler_operation_end(3, "Ensuring that build targets are checked and updated properly");
             profiler_operation_start(3, "Ensuring that build targets are checked and updated properly");
           /* Reset FILE since it is null at the end of the loop.  */

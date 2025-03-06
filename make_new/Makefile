@@ -129,12 +129,11 @@ am__aclocal_m4_deps = $(top_srcdir)/m4/00gnulib.m4 \
 	$(top_srcdir)/m4/host-cpu-c-abi.m4 $(top_srcdir)/m4/iconv.m4 \
 	$(top_srcdir)/m4/intlmacosx.m4 $(top_srcdir)/m4/largefile.m4 \
 	$(top_srcdir)/m4/lib-ld.m4 $(top_srcdir)/m4/lib-link.m4 \
-	$(top_srcdir)/m4/lib-prefix.m4 $(top_srcdir)/m4/longlong.m4 \
-	$(top_srcdir)/m4/nls.m4 $(top_srcdir)/m4/po.m4 \
-	$(top_srcdir)/m4/progtest.m4 $(top_srcdir)/m4/sig_atomic_t.m4 \
-	$(top_srcdir)/m4/stdbool.m4 $(top_srcdir)/m4/warn-on-use.m4 \
-	$(top_srcdir)/m4/year2038.m4 $(top_srcdir)/m4/zzgnulib.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/lib-prefix.m4 $(top_srcdir)/m4/nls.m4 \
+	$(top_srcdir)/m4/po.m4 $(top_srcdir)/m4/progtest.m4 \
+	$(top_srcdir)/m4/sig_atomic_t.m4 $(top_srcdir)/m4/stdbool.m4 \
+	$(top_srcdir)/m4/warn-on-use.m4 $(top_srcdir)/m4/year2038.m4 \
+	$(top_srcdir)/m4/zzgnulib.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(top_srcdir)/configure \
@@ -176,7 +175,7 @@ am__objects_1 = src/ar.$(OBJEXT) src/arscan.$(OBJEXT) \
 	src/remake.$(OBJEXT) src/rule.$(OBJEXT) src/shuffle.$(OBJEXT) \
 	src/signame.$(OBJEXT) src/strcache.$(OBJEXT) \
 	src/variable.$(OBJEXT) src/version.$(OBJEXT) \
-	src/vpath.$(OBJEXT)
+	src/vpath.$(OBJEXT) src/profiler.$(OBJEXT)
 am__objects_2 = src/w32/pathstuff.$(OBJEXT) src/w32/w32os.$(OBJEXT) \
 	src/w32/compat/dirent.$(OBJEXT) \
 	src/w32/compat/posixfcn.$(OBJEXT) \
@@ -242,7 +241,7 @@ am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))
 am__v_CC_0 = @echo "  CC      " $@;
 am__v_CC_1 = 
 CCLD = $(CC)
-LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+LINK = $(CXX) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
@@ -328,9 +327,10 @@ am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/build.cfg.in \
 	$(top_srcdir)/build-aux/install-sh \
 	$(top_srcdir)/build-aux/missing $(top_srcdir)/src/config.h.in \
 	$(top_srcdir)/tests/config-flags.pm.in ABOUT-NLS AUTHORS \
-	COPYING NEWS README build-aux/compile build-aux/config.guess \
-	build-aux/config.rpath build-aux/config.sub build-aux/depcomp \
-	build-aux/install-sh build-aux/missing
+	COPYING ChangeLog INSTALL NEWS README build-aux/compile \
+	build-aux/config.guess build-aux/config.rpath \
+	build-aux/config.sub build-aux/depcomp build-aux/install-sh \
+	build-aux/mdate-sh build-aux/missing build-aux/texinfo.tex
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -375,7 +375,7 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} '/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing' aclocal-1.16
+ACLOCAL = ${SHELL} '/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing' aclocal-1.16
 ALLOCA = 
 ALLOCA_H = alloca.h
 AMTAR = $${TAR-tar}
@@ -383,13 +383,15 @@ AM_DEFAULT_VERBOSITY = 1
 AM_LDFLAGS = -Wl,--export-dynamic
 AR = ar
 ARFLAGS = cr
-AUTOCONF = ${SHELL} '/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing' autoconf
-AUTOHEADER = ${SHELL} '/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing' autoheader
-AUTOMAKE = ${SHELL} '/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing' automake-1.16
+AUTOCONF = ${SHELL} '/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing' autoconf
+AUTOHEADER = ${SHELL} '/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing' autoheader
+AUTOMAKE = ${SHELL} '/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing' automake-1.16
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
+CXX = g++
+CXXFLAGS = -std=c++14
 CPP = gcc -E
 CPPFLAGS = 
 CSCOPE = cscope
@@ -408,8 +410,8 @@ GETTEXT_MACRO_VERSION = 0.19
 GL_CFLAG_ALLOW_WARNINGS = -Wno-error
 GL_CFLAG_GNULIB_WARNINGS =  -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unsuffixed-float-constants
 GL_GNULIB_GETLOADAVG = 1
-GMSGFMT = :
-GMSGFMT_015 = :
+GMSGFMT = /usr/bin/msgfmt
+GMSGFMT_015 = /usr/bin/msgfmt
 GREP = /usr/bin/grep
 GUILE_CFLAGS = 
 GUILE_LIBS = 
@@ -435,12 +437,12 @@ LIBS =
 LTLIBICONV = -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} '/home/ued520/makefile_ninja_benchmarks/make_new/build-aux/missing' makeinfo
+MAKEINFO = ${SHELL} '/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing' makeinfo
 MAKE_HOST = x86_64-pc-linux-gnu
 MKDIR_P = /usr/bin/mkdir -p
-MSGFMT = :
-MSGFMT_015 = :
-MSGMERGE = :
+MSGFMT = /usr/bin/msgfmt
+MSGFMT_015 = /usr/bin/msgfmt
+MSGMERGE = /usr/bin/msgmerge
 OBJEXT = o
 PACKAGE = make
 PACKAGE_BUGREPORT = bug-make@gnu.org
@@ -451,7 +453,7 @@ PACKAGE_URL = https://www.gnu.org/software/make/
 PACKAGE_VERSION = 4.4
 PATH_SEPARATOR = :
 PERL = perl
-PKG_CONFIG = 
+PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
 PKG_CONFIG_PATH = 
 POSUB = po
@@ -465,13 +467,13 @@ STRIP =
 USE_NLS = yes
 USE_SYSTEM_GLOB = yes
 VERSION = 4.4
-XGETTEXT = :
-XGETTEXT_015 = :
+XGETTEXT = /usr/bin/xgettext
+XGETTEXT_015 = /usr/bin/xgettext
 XGETTEXT_EXTRA_OPTIONS = 
-abs_builddir = /home/ued520/makefile_ninja_benchmarks/make_new
-abs_srcdir = /home/ued520/makefile_ninja_benchmarks/make_new
-abs_top_builddir = /home/ued520/makefile_ninja_benchmarks/make_new
-abs_top_srcdir = /home/ued520/makefile_ninja_benchmarks/make_new
+abs_builddir = /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new
+abs_srcdir = /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new
+abs_top_builddir = /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new
+abs_top_srcdir = /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -505,7 +507,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/ued520/makefile_ninja_benchmarks/make_new/build-aux/install-sh
+install_sh = ${SHELL} /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = $(datadir)/locale
@@ -826,6 +828,8 @@ src/vmsfunctions.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 src/vmsify.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
+src/profiler.o: src/profiler.cpp src/profiler.h
+	$(CXX) $(CXXFLAGS) $(AM_CPPFLAGS) $(CPPFLAGS) -c src/profiler.cpp -o src/profiler.o
 
 make$(EXEEXT): $(make_OBJECTS) $(make_DEPENDENCIES) $(EXTRA_make_DEPENDENCIES) 
 	@rm -f make$(EXEEXT)

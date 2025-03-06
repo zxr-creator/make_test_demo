@@ -8,7 +8,7 @@ libgnu_a-concat-filename.o: concat-filename.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -35,7 +35,6 @@ libgnu_a-concat-filename.o: concat-filename.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/bits/select-decl.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -65,7 +64,7 @@ concat-filename.h:
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -93,7 +92,6 @@ concat-filename.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 /usr/include/x86_64-linux-gnu/bits/select2.h:
-/usr/include/x86_64-linux-gnu/bits/select-decl.h:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:

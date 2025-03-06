@@ -1,0 +1,28 @@
+{ 
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Ninja",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/scorpio/home/shenao/myProject/makefile_ninja_benchmarks/ninja_test/ninja",
+            "args": ["-C", "/scorpio/home/shenao/myProject/makefile_ninja_benchmarks/llama.cpp/build_ninja",
+            "-p", "default"],
+            "cwd": "/scorpio/home/shenao/myProject/makefile_ninja_benchmarks/ninja_test",  // 修改为ninja源码所在目录
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+        },
+        {
+            "name": "Debug Make",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/scorpio/home/shenao/myProject/makefile_ninja_benchmarks/make_new/make",
+            "args": ["-C", "/scorpio/home/shenao/myProject/makefile_ninja_benchmarks/llama.cpp/build_make"],
+            "cwd": "/scorpio/home/shenao/myProject/makefile_ninja_benchmarks/make_new",  // 修改为ninja源码所在目录
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+        }
+    ]
+}       

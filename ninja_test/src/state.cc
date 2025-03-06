@@ -63,12 +63,14 @@ void Pool::RetrieveReadyEdges(EdgePriorityQueue* ready_queue) {
   DelayedEdges::iterator it = delayed_.begin();
   while (it != delayed_.end()) {
     Edge* edge = *it;
+    /// TODO: 验证一下这个抽象，真的会被权重总量限制所限制吗
     if (current_use_ + edge->weight() > depth_)
       break;
     ready_queue->push(edge);
     EdgeScheduled(*edge);
     ++it;
   }
+  // 删除从开始到当前迭代器的所有元素，因为这些 Edge 已经被放入 ready_queue。
   delayed_.erase(delayed_.begin(), it);
 }
 

@@ -23,6 +23,9 @@
 #include <climits>
 #include <functional>
 #include <unordered_set>
+#include <random> // 需要包含这个头文件
+#include <cstdlib>  // for rand()
+#include <ctime>    // for time()
 
 #if defined(__SVR4) && defined(__sun)
 #include <sys/termios.h>
@@ -139,6 +142,7 @@ bool Plan::AddSubTarget(const Node* node, const Node* dependent, string* err,
   // If an entry in want_ does not already exist for edge, create an entry which
   // maps to kWantNothing, indicating that we do not want to build this entry itself.
   // edge 加到 want_，默认 kWantNothing。
+  /// NOTE: want_的增加
   pair<map<Edge*, Want>::iterator, bool> want_ins =
     want_.insert(make_pair(edge, kWantNothing));
   Want& want = want_ins.first->second;
@@ -254,6 +258,7 @@ bool Plan::EdgeFinished(Edge* edge, EdgeResult result, string* err) {
     edge->pool()->EdgeFinished(*edge);
 // 做什么：放能跑的等待活。  
 // 例子：等待的 edge2 加到 ready_。
+// 而且是这个edge对应的pool，因为这个edge空出来位置了
   edge->pool()->RetrieveReadyEdges(&ready_);
 
   // The rest of this function only applies to successful commands.
@@ -266,11 +271,12 @@ bool Plan::EdgeFinished(Edge* edge, EdgeResult result, string* err) {
     --wanted_edges_;
     // 做什么：删状态，标记输出完成。  
     // 例子：edge 从 want_ 删掉，outputs_ready_ = true。
+  /// NOTE: want_ 的减少, 只有这里
   want_.erase(e);
   edge->outputs_ready_ = true;
 
   // Check off any nodes we were waiting for with this edge.
-  // 做什么：处理每个输出。  
+  // 做什么：处理每个输出, 然后就可以启动want_ 里面， 等待这个node的那些edge
   for (vector<Node*>::iterator o = edge->outputs_.begin();
        o != edge->outputs_.end(); ++o) {
     if (!NodeFinished(*o, err))
@@ -338,7 +344,7 @@ bool Plan::CleanNode(DependencyScan* scan, Node* node, string* err) {
 
   for (vector<Edge*>::const_iterator oe = node->out_edges().begin();
        oe != node->out_edges().end(); ++oe) {
-    // Don't process edges that we don't actually want.
+    // Don't process edges that we don't actually want， 不在want_里面的.
     map<Edge*, Want>::iterator want_e = want_.find(*oe);
     if (want_e == want_.end() || want_e->second == kWantNothing)
       continue;
@@ -451,6 +457,7 @@ bool Plan::DyndepsLoaded(DependencyScan* scan, const Node* node,
   }
 
   // See if any encountered edges are now ready.
+  // 动态依赖好了也会trigger一部分edges的ready
   for (set<Edge*>::iterator wi = dyndep_walk.begin();
        wi != dyndep_walk.end(); ++wi) {
     map<Edge*, Want>::iterator want_e = want_.find(*wi);
@@ -488,6 +495,7 @@ bool Plan::RefreshDyndepDependents(DependencyScan* scan, const Node* node,
          v != validation_nodes.end(); ++v) {
       if (Edge* in_edge = (*v)->in_edge()) {
         if (!in_edge->outputs_ready() &&
+        /// TODO: 要看一下什么时候会从这里调用
             !AddTarget(*v, err)) {
           return false;
         }
@@ -532,14 +540,27 @@ void Plan::UnmarkDependents(const Node* node, set<Node*>* dependents) {
     }
   }
 }
-#include <random> // 需要包含这个头文件
+
 namespace {
 
 // Heuristic for edge priority weighting.
 // Phony edges are free (0 cost), all other edges are weighted equally.
 // 最小的抽象粒度就是在这里改了，根据edge自带的信息
-int64_t EdgeWeightHeuristic(Edge *edge) {
-  return edge->is_phony() ? 0 : edge->prev_elapsed_time_millis;
+int64_t EdgeWeightHeuristic(Edge* edge, const PriorityMode mode) {
+  if (edge->is_phony()) {
+    return 0;  // phony 边始终返回 0
+  }
+
+  switch (mode) {
+    case PRIORITY_RANDOM: {
+      // 生成 1-10 的随机数
+      return 1 + (rand() % 10);  // rand() % 10 生成 0-9，加上 1 得到 1-10
+    }
+    case PRIORITY_DEFAULT:
+    default: {
+      return 1;  // 默认返回 1
+    }
+  }
 }
 
 }  // namespace
@@ -560,6 +581,10 @@ void Plan::ComputeCriticalPath() {
   //    i.e. the edges producing its inputs, in the list.
   //
   // 例子：main.c -> main.o -> main.exe，排序成 [compile main.c, link main.o]。
+
+//   时间复杂度：O(V + E)，其中 V 是节点数，E 是边数。
+// 空间复杂度：O(E)，用于存储 visited_set_ 和 sorted_edges_。
+
 // 做什么：从后往前更新权重。  
 // edge_weight：当前规则权重。  
 // candidate_weight：当前权重 + 输入规则的初始权重。  
@@ -587,17 +612,32 @@ void Plan::ComputeCriticalPath() {
     // - Since the graph cannot have any cycles, temporary marks
     //   are not necessary, and a simple set is used to record
     //   which edges have already been visited.
-    //
+    //目标是遍历这个图，从根节点开始，生成一个边的线性排序序列（sorted_edges_），满足拓扑排序的要求：如果 A 依赖 B，则 B 在排序中出现在 A 之前
     void Visit(Edge* edge) {
+// 检查是否已访问：
+// visited_set_.emplace(edge)：尝试将当前边插入 visited_set_。
+// 返回值 insertion 是一个 pair，其中 insertion.second 表示插入是否成功（true 表示新插入，false 表示已存在）。
+// 如果边已被访问（!insertion.second），直接返回，避免重复处理。
       auto insertion = visited_set_.emplace(edge);
       if (!insertion.second)
         return;
-
+        // 递归处理依赖：
+        // edge->inputs_ 是这条边的输入节点集合。
+        
+        // 对于每个输入节点 input：
+        // 调用 input->in_edge() 获取它的输入边（producer）。
+        
+        // 如果存在输入边（producer 不为空），递归调用 Visit(producer)。
+        
+        // 这确保了所有依赖（上游边）都被处理
       for (const Node* input : edge->inputs_) {
         Edge* producer = input->in_edge();
         if (producer)
           Visit(producer);
       }
+    // 添加当前边到结果：
+    // 当所有依赖递归完成后，将当前边 edge 添加到 sorted_edges_。
+    // 由于是深度优先搜索，边的添加顺序是从最深的依赖到当前边，符合拓扑排序的要求
       sorted_edges_.push_back(edge);
     }
 
@@ -613,26 +653,40 @@ void Plan::ComputeCriticalPath() {
   const auto& sorted_edges = topo_sort.result();
 
   // First, reset all weights to 1.
-  for (Edge* edge : sorted_edges)
-    edge->set_critical_path_weight(EdgeWeightHeuristic(edge));
+  if (builder_->config_.priority_mode == PRIORITY_ORACLE) {
+    for (std::map<Edge*, Plan::Want>::iterator it = want_.begin(),
+          end = want_.end(); it != end; ++it) {
+      Edge* edge = it->first;
+      edge->set_critical_path_weight(edge->prev_elapsed_time_millis);
+    }
+  }
+  else {
+    for (Edge* edge : sorted_edges)
+      edge->set_critical_path_weight(EdgeWeightHeuristic(edge, builder_->config_.priority_mode));
 
-  // Second propagate / increment weights from
-  // children to parents. Scan the list
-  // in reverse order to do so.
-  for (auto reverse_it = sorted_edges.rbegin();
-       reverse_it != sorted_edges.rend(); ++reverse_it) {
-    Edge* edge = *reverse_it;
-    int64_t edge_weight = edge->critical_path_weight();
+    // Second propagate / increment weights from
+    // children to parents. Scan the list
+    // in reverse order to do so.
+    // 逆序遍历：
+    // 使用 rbegin() 和 rend() 创建反向迭代器，从 sorted_edges 的最后一条边开始。
+    // 逆序遍历的原因是要从“下游”（子节点）向“上游”（父节点）传播权重。
+    for (auto reverse_it = sorted_edges.rbegin();
+        reverse_it != sorted_edges.rend(); ++reverse_it) {
+      Edge* edge = *reverse_it;
+      int64_t edge_weight = edge->critical_path_weight();
 
-    for (const Node* input : edge->inputs_) {
-      Edge* producer = input->in_edge();
-      if (!producer)
-        continue;
 
-      int64_t producer_weight = producer->critical_path_weight();
-      int64_t candidate_weight = edge_weight + EdgeWeightHeuristic(producer);
-      if (candidate_weight > producer_weight)
-        producer->set_critical_path_weight(candidate_weight);
+      // 传播权重到生产者（父边），只是简单增加权重，子权重等于子权重+父权重
+      for (const Node* input : edge->inputs_) {
+        Edge* producer = input->in_edge();
+        if (!producer)
+          continue;
+
+        int64_t producer_weight = producer->critical_path_weight();
+        int64_t candidate_weight = edge_weight + EdgeWeightHeuristic(producer, builder_->config_.priority_mode);
+        if (candidate_weight > producer_weight)
+          producer->set_critical_path_weight(candidate_weight);
+      }
     }
   }
 }
@@ -648,8 +702,13 @@ void Plan::ScheduleInitialEdges() {
            end = want_.end(); it != end; ++it) {
     Edge* edge = it->first;
     Plan::Want want = it->second;
+    // 如果条件满足，这个 Edge 理论上可以调度
     if (want == kWantToStart && edge->AllInputsReady()) {
       Pool* pool = edge->pool();
+//       edge->pool()：获取该 Edge 所属的资源池（Pool），每个 Edge 可能受限于某个资源（比如 CPU 或磁盘 I/O）。
+// pool->ShouldDelayEdge()：检查这个资源池容量是不是无限，如果不是，那就在最后每一个pool自己单独进行调度。否则就统一调度
+// depth_ == 0 表示该资源池是无限容量，永远不会延迟任务。
+// depth_ != 0 表示该资源池的容量是有限的，可能需要延迟任务。
       if (pool->ShouldDelayEdge()) {
         pool->DelayEdge(edge);
         pools.insert(pool);
@@ -865,7 +924,7 @@ ExitStatus Builder::Build(string* err) {
           profiler.end();  // Finish Phony Edge
         } else {
           ++pending_commands;
-
+          // 只是减一，不是减权重
           --capacity;
 
           // Re-evaluate capacity.

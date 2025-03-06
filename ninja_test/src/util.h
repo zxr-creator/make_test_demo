@@ -272,4 +272,11 @@ private:
 
 extern Profiler profiler;
 
+// 添加任务权重策略枚举
+enum PriorityMode {
+    PRIORITY_DEFAULT,  // 默认权重策略
+    PRIORITY_ORACLE,   // oracle 权重策略
+    PRIORITY_RANDOM    // 随机权重策略
+};
+
 #endif  // NINJA_UTIL_H_

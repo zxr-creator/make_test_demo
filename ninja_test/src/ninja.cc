@@ -1686,7 +1686,7 @@ int ReadFlags(int* argc, char*** argv,
 
   int opt;
   while (!options->tool &&
-         (opt = getopt_long(*argc, *argv, "d:f:j:k:l:nt:vw:C:h", kLongOptions,
+         (opt = getopt_long(*argc, *argv, "d:f:j:k:l:nt:vw:C:h:p:", kLongOptions,
                             NULL)) != -1) {
     switch (opt) {
       case 'd':
@@ -1752,6 +1752,18 @@ int ReadFlags(int* argc, char*** argv,
       case OPT_VERSION:
         printf("%s\n", kNinjaVersion);
         return 0;
+      case 'p': {  // 处理新的 priority 选项
+        if (strcmp(optarg, "default") == 0) {
+          config->priority_mode = PRIORITY_DEFAULT;
+        } else if (strcmp(optarg, "oracle") == 0) {
+          config->priority_mode = PRIORITY_ORACLE;
+        } else if (strcmp(optarg, "random") == 0) {
+          config->priority_mode = PRIORITY_RANDOM;
+        } else {
+          Fatal("invalid -p parameter: must be 'default', 'oracle', or 'random'");
+        }
+        break;
+      }
       case 'h':
       default:
       // 没有就只能自己猜测

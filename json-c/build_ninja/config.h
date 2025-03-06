@@ -78,7 +78,7 @@
 /* #undef HAVE_BSD_STDLIB_H */
 
 /* Define to 1 if you have `arc4random' */
-#define HAVE_ARC4RANDOM
+/* #undef HAVE_ARC4RANDOM */
 
 /* Define to 1 if you don't have `vprintf' but do have `_doprnt.' */
 /* #undef HAVE_DOPRNT */

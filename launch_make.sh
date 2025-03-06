@@ -6,8 +6,8 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-PROJECT_PATH="/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/libpng"
-MAKE_PATH="/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/make"
+PROJECT_PATH="$1"
+MAKE_PATH="$2"
 
 # Change to project directory
 cd "$PROJECT_PATH" || {
@@ -33,6 +33,8 @@ CMAKE_OUTPUT=$( { /usr/bin/time -p cmake .. 2>&1 | tee /dev/tty; } )
 # 使用 grep 提取以 "real" 开头的行，并用 awk 取出时间数值
 CMAKE_TIME=$(echo "$CMAKE_OUTPUT" | grep '^real' | awk '{print $2}')
 
+# Make clean first
+make clean
 # Run make and append output to log file
 "$MAKE_PATH" -j$(nproc) -l$(nproc) 2>&1 | tee -a "$LOG_FILE"
 

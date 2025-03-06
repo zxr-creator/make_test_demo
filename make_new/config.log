@@ -45,7 +45,6 @@ PATH: /bin/
 PATH: /usr/games/
 PATH: /usr/local/games/
 PATH: /snap/bin/
-PATH: /home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2025.4.0-linux-x64/bundled/scripts/noConfigScripts/
 
 
 ## ----------- ##
@@ -2305,8 +2304,8 @@ configure:12608: $? = 0
 configure:12608: result: yes
 configure:12614: checking for mktemp
 configure:12614: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/cc4zbDhF.o: in function `main':
-/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:112: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+/usr/bin/ld: /tmp/ccxdlMvH.o: in function `main':
+/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:112: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
 configure:12614: $? = 0
 configure:12614: result: yes
 configure:12620: checking for fdopen
@@ -2597,8 +2596,8 @@ configure:13043: $? = 0
 configure:13043: result: yes
 configure:13049: checking for strcmpi
 configure:13049: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccMZUxr9.o: in function `main':
-/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:148: undefined reference to `strcmpi'
+/usr/bin/ld: /tmp/cczJe9YT.o: in function `main':
+/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:148: undefined reference to `strcmpi'
 collect2: error: ld returned 1 exit status
 configure:13049: $? = 1
 configure: failed program was:
@@ -2756,8 +2755,8 @@ configure: failed program was:
 configure:13049: result: no
 configure:13055: checking for strncmpi
 configure:13055: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccgA5S2l.o: in function `main':
-/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:148: undefined reference to `strncmpi'
+/usr/bin/ld: /tmp/ccq2Ux5m.o: in function `main':
+/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:148: undefined reference to `strncmpi'
 collect2: error: ld returned 1 exit status
 configure:13055: $? = 1
 configure: failed program was:
@@ -2915,8 +2914,8 @@ configure: failed program was:
 configure:13055: result: no
 configure:13061: checking for stricmp
 configure:13061: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccUPVCs8.o: in function `main':
-/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:148: undefined reference to `stricmp'
+/usr/bin/ld: /tmp/ccahY59d.o: in function `main':
+/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:148: undefined reference to `stricmp'
 collect2: error: ld returned 1 exit status
 configure:13061: $? = 1
 configure: failed program was:
@@ -3074,8 +3073,8 @@ configure: failed program was:
 configure:13061: result: no
 configure:13067: checking for strnicmp
 configure:13067: gcc -o conftest -g -O2   conftest.c  >&5
-/usr/bin/ld: /tmp/ccqDtpyc.o: in function `main':
-/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:148: undefined reference to `strnicmp'
+/usr/bin/ld: /tmp/ccUhYVca.o: in function `main':
+/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/conftest.c:148: undefined reference to `strnicmp'
 collect2: error: ld returned 1 exit status
 configure:13067: $? = 1
 configure: failed program was:
@@ -4291,7 +4290,7 @@ make_cv_union_wait=no
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} '\''/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' aclocal-1.16'
+ACLOCAL='${SHELL} '\''/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' aclocal-1.16'
 ALLOCA=''
 ALLOCA_H='alloca.h'
 AMDEPBACKSLASH='\'
@@ -4305,9 +4304,9 @@ AM_LDFLAGS='-Wl,--export-dynamic'
 AM_V='$(V)'
 AR='ar'
 ARFLAGS='cr'
-AUTOCONF='${SHELL} '\''/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' autoconf'
-AUTOHEADER='${SHELL} '\''/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' autoheader'
-AUTOMAKE='${SHELL} '\''/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' automake-1.16'
+AUTOCONF='${SHELL} '\''/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' autoconf'
+AUTOHEADER='${SHELL} '\''/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' autoheader'
+AUTOMAKE='${SHELL} '\''/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' automake-1.16'
 AWK='gawk'
 CC='gcc'
 CCDEPMODE='depmode=gcc3'
@@ -4368,7 +4367,7 @@ LIBS=''
 LTLIBICONV='-liconv'
 LTLIBINTL=''
 LTLIBOBJS=''
-MAKEINFO='${SHELL} '\''/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' makeinfo'
+MAKEINFO='${SHELL} '\''/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/missing'\'' makeinfo'
 MAKE_HOST='x86_64-pc-linux-gnu'
 MKDIR_P='/usr/bin/mkdir -p'
 MSGFMT='/usr/bin/msgfmt'
@@ -4445,7 +4444,7 @@ host_vendor='pc'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/install-sh'
+install_sh='${SHELL} /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/build-aux/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'

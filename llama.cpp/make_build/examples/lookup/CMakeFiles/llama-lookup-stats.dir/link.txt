@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.o" -o ../../bin/llama-lookup-stats  -Wl,-rpath,/home/ued520/makefile_ninja_benchmarks/llama.cpp/make_build/bin: ../../common/libcommon.a ../../bin/libllama.so ../../bin/libggml.so ../../bin/libggml-cpu.so ../../bin/libggml-base.so 

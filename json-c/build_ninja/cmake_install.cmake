@@ -1,4 +1,4 @@
-# Install script for directory: /home/ued520/makefile_ninja_benchmarks/json-c
+# Install script for directory: /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,7 +47,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so.5.4.0"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so.5"
@@ -60,8 +60,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/libjson-c.so.5.4.0"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/libjson-c.so.5"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/libjson-c.so.5.4.0"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/libjson-c.so.5"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so.5.4.0"
@@ -76,46 +76,54 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   endforeach()
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/libjson-c.so")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/libjson-c.a")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets.cmake")
-    file(DIFFERENT _cmake_export_file_changed FILES
-         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets.cmake"
-         "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/CMakeFiles/Export/c72427da9e5c73ebf6c111c2977a0759/json-c-targets.cmake")
-    if(_cmake_export_file_changed)
-      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets-*.cmake")
-      if(_cmake_old_config_files)
-        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
-        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
-        unset(_cmake_old_config_files_text)
-        file(REMOVE ${_cmake_old_config_files})
-      endif()
-      unset(_cmake_old_config_files)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/libjson-c.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjson-c.so")
     endif()
-    unset(_cmake_export_file_changed)
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/CMakeFiles/Export/c72427da9e5c73ebf6c111c2977a0759/json-c-targets.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/CMakeFiles/Export/c72427da9e5c73ebf6c111c2977a0759/json-c-targets-debug.cmake")
   endif()
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/json-c-config.cmake")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/libjson-c.a")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/json-c.pc")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets.cmake"
+         "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/CMakeFiles/Export/lib/cmake/json-c/json-c-targets.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c/json-c-targets.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/CMakeFiles/Export/lib/cmake/json-c/json-c-targets.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/CMakeFiles/Export/lib/cmake/json-c/json-c-targets-debug.cmake")
+  endif()
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/json-c" TYPE FILE FILES "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/json-c-config.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/json-c.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/usr/local/include/json-c/json_config.h;/usr/local/include/json-c/json.h;/usr/local/include/json-c/arraylist.h;/usr/local/include/json-c/debug.h;/usr/local/include/json-c/json_c_version.h;/usr/local/include/json-c/json_inttypes.h;/usr/local/include/json-c/json_object.h;/usr/local/include/json-c/json_object_iterator.h;/usr/local/include/json-c/json_tokener.h;/usr/local/include/json-c/json_types.h;/usr/local/include/json-c/json_util.h;/usr/local/include/json-c/json_visit.h;/usr/local/include/json-c/linkhash.h;/usr/local/include/json-c/printbuf.h;/usr/local/include/json-c/json_pointer.h;/usr/local/include/json-c/json_patch.h")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -125,30 +133,30 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/usr/local/include/json-c" TYPE FILE FILES
-    "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/json_config.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/json.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/arraylist.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/debug.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_c_version.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_inttypes.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_object.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_object_iterator.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_tokener.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_types.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_util.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_visit.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/linkhash.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/printbuf.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_pointer.h"
-    "/home/ued520/makefile_ninja_benchmarks/json-c/json_patch.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/json_config.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/json.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/arraylist.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/debug.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_c_version.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_inttypes.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object_iterator.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_tokener.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_types.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_util.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_visit.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/linkhash.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/printbuf.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_pointer.h"
+    "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_patch.h"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/doc/cmake_install.cmake")
-  include("/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/tests/cmake_install.cmake")
-  include("/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/apps/cmake_install.cmake")
+  include("/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/doc/cmake_install.cmake")
+  include("/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/tests/cmake_install.cmake")
+  include("/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/apps/cmake_install.cmake")
 
 endif()
 
@@ -160,5 +168,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ued520/makefile_ninja_benchmarks/json-c/build_ninja/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

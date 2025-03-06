@@ -6,8 +6,8 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-PROJECT_PATH="/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/libpng"
-NINJA_PATH="/home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja"
+PROJECT_PATH="$1"
+NINJA_PATH="$2"
 
 # Change to project directory
 cd "$PROJECT_PATH" || {

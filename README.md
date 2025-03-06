@@ -25,31 +25,21 @@ This specifies g++ as the C++ compiler and sets the C++11 standard, which is a r
 - Step 2: Add Compilation Rule for timetracker.o
 Since timetracker.cpp and timetracker.h are likely in the src/ directory (consistent with other source files in this Makefile), you need a rule to compile timetracker.cpp into src/timetracker.o. This rule should use the C++ compiler and include necessary preprocessor flags from the existing build system.
 
-Where to Add: After the existing object file rules, around line 1500-1600, before the make$(EXEEXT) target definition. This keeps it with other compilation rules.
+Where to Add: After the existing object file rules, before the make$(EXEEXT) target definition. This keeps it with other compilation rules.
 What to Add:
-src/timetracker.o: src/timetracker.cpp src/timetracker.h
-	$(CXX) $(CXXFLAGS) $(AM_CPPFLAGS) $(CPPFLAGS) -c src/timetracker.cpp -o src/timetracker.o
-
-Explanation:
-src/timetracker.o: src/timetracker.cpp src/timetracker.h specifies the target and its dependencies.
-$(CXX) uses the C++ compiler defined earlier (g++).
-$(CXXFLAGS) applies the C++ flags (-std=c++11).
-$(AM_CPPFLAGS) includes existing include paths (e.g., -Isrc -Ilib), ensuring timetracker.cpp can find headers.
-$(CPPFLAGS) allows for additional preprocessor flags if defined.
--c compiles the source file into an object file without linking.
--o src/timetracker.o specifies the output object file.
-If timetracker.cpp and timetracker.h are not in src/, adjust the paths accordingly (e.g., timetracker.o: timetracker.cpp timetracker.h if they’re in the root directory).
+src/profiler.o: src/profiler.cpp src/profiler.h
+	$(CXX) $(CXXFLAGS) $(AM_CPPFLAGS) $(CPPFLAGS) -c src/profiler.cpp -o src/profiler.o
 
 - Step 3: Update the Object List
-The make executable is built from the objects listed in make_OBJECTS, which is derived from am_make_OBJECTS. The am__objects_1 variable contains the object files from make_SRCS, which includes most of the core source files. You need to add src/timetracker.o to this list.
+The make executable is built from the objects listed in make_OBJECTS, which is derived from am_make_OBJECTS. The am__objects_1 variable contains the object files from make_SRCS, which includes most of the core source files. You need to add src/profiler.o to this list.
 
-Where to Find: Search for am__objects_1 = around line 500-550.
+Where to Find: Search for am__objects_1 =.
 
 am__objects_1 = src/ar.$(OBJEXT) src/arscan.$(OBJEXT) src/commands.$(OBJEXT) ...
-What to Modify: Append src/timetracker.o to the end of am__objects_1. Since $(OBJEXT) is defined as o in this Makefile, use src/timetracker.o.
+What to Modify: Append src/timetracker.o to the end of am__objects_1. Since $(OBJEXT) is defined as o in this Makefile, use src/profiler.o.
 Modified Line (partial excerpt):
 
-am__objects_1 = src/ar.o src/arscan.o src/commands.o ... src/timetracker.o
+am__objects_1 = src/ar.o src/arscan.o src/commands.o ... src/profiler.$(OBJEXT)
 
 Explanation:
 Adding src/timetracker.o ensures it’s included in am_make_OBJECTS, which feeds into make_OBJECTS.
@@ -59,23 +49,12 @@ Since timetracker.o is a C++ object file, the final linking step must use the C+
 
 Where to Find: Search for LINK = around line 620-630, just after CCLD = $(CC).
 Original Line:
-makefile
 
-Collapse
-
-Wrap
-
-Copy
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+
 What to Modify: Replace it to use $(CXX) and remove C-specific flags that aren’t needed for linking, relying on linker flags instead.
 Modified Line:
-makefile
 
-Collapse
-
-Wrap
-
-Copy
 LINK = $(CXX) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 
 - cd ./make_new
@@ -89,15 +68,16 @@ or
 - make clean
 - make
 - cd ..
-- sh launch_make.sh /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/libpng /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/make
+- sh launch_make.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/llama.cpp /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
 
 4. Compile the custom ninja
 - python configure.py --bootstrap
 - cd ..
-- sh launch_ninja.sh /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/libpng /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
+- sh launch_ninja.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/llama.cpp /home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
 
 5. Alternative projects:
 - OpenCV https://github.com/opencv/opencv
 - Blender https://github.com/blender/blender
 - LLVM https://github.com/llvm/llvm-project
 - MySQL https://github.com/mysql/mysql-server
+- Catalyst https://github.com/catalyst-team/catalyst

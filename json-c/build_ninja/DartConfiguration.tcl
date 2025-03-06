@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/ued520/makefile_ninja_benchmarks/json-c
-BuildDirectory: /home/ued520/makefile_ninja_benchmarks/json-c/build_ninja
+SourceDirectory: /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c
+BuildDirectory: /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/build_ninja
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: LAPTOP-RVQ6M64E
+Site: ip-172-31-40-144
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-cc
@@ -21,13 +21,12 @@ LabelsForSubprojects:
 
 # Submission information
 SubmitURL: http://
-SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/ued520/makefile_ninja_benchmarks/json-c"
+ConfigureCommand: "/usr/bin/cmake" "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
@@ -76,7 +75,7 @@ CudaSanitizerCommand:
 CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
+MemoryCheckCommand: /usr/local/cuda/bin/compute-sanitizer
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 

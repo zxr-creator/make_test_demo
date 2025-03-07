@@ -1,0 +1,1922 @@
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 10074 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9449 微秒 (93.7959%)
+[DEBUG]   Manifest Parsing and Rebuilding: 316 微秒 (3.13679%)
+[DEBUG]   Initialization: 258 微秒 (2.56105%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00992654%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9465 微秒 (93.9547%)
+[DEBUG]   Update goal chain: 9443 微秒 (93.7364%)
+[DEBUG]   The whole process of reading the makefile: 208 微秒 (2.06472%)
+[DEBUG]   Argument Parsing: 24 微秒 (0.238237%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.228311%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 9185 微秒 (91.1753%)
+[DEBUG]   Iterate over all double-colon entries for this file: 269 微秒 (2.67024%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 194 微秒 (1.92575%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.337502%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0694858%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 9174 微秒 (91.0661%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 259 微秒 (2.57097%)
+[DEBUG]   Read any stdin makefiles into temporary files: 185 微秒 (1.83641%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0198531%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 238 微秒 (2.36252%)
+[DEBUG]   Read all makefiles and decode: 123 微秒 (1.22096%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 9666 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9037 微秒 (93.4927%)
+[DEBUG]   Manifest Parsing and Rebuilding: 316 微秒 (3.26919%)
+[DEBUG]   Initialization: 260 微秒 (2.68984%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0103455%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9052 微秒 (93.6478%)
+[DEBUG]   Update goal chain: 9031 微秒 (93.4306%)
+[DEBUG]   The whole process of reading the makefile: 209 微秒 (2.16222%)
+[DEBUG]   Argument Parsing: 25 微秒 (0.258639%)
+[DEBUG]   Dependency Graph Construction: 24 微秒 (0.248293%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8743 微秒 (90.4511%)
+[DEBUG]   Iterate over all double-colon entries for this file: 299 微秒 (3.09332%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 195 微秒 (2.01738%)
+[DEBUG]   Free a chain of struct nameseq.: 33 微秒 (0.341403%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0724188%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8733 微秒 (90.3476%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 288 微秒 (2.97952%)
+[DEBUG]   Read any stdin makefiles into temporary files: 185 微秒 (1.91393%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0206911%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 266 微秒 (2.75191%)
+[DEBUG]   Read all makefiles and decode: 122 微秒 (1.26216%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+*******************************************************************************
+[DEBUG] 总耗时: 9601 微秒
+[DEBUG] 总耗时: 10036 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 8951 微秒 (93.2299%)
+[DEBUG]   Manifest Parsing and Rebuilding: 351 微秒 (3.65587%)
+[DEBUG]   Initialization: 252 微秒 (2.62473%)
+[DEBUG]   Run Build: 9421 微秒 (93.8721%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0104156%)
+[DEBUG]   Manifest Parsing and Rebuilding: 313 微秒 (3.11877%)
+[DEBUG]   Initialization: 260 微秒 (2.59067%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Execution Preparation: 1 微秒 (0.00996413%)
+[DEBUG]   Update all the goals: 8969 微秒 (93.4174%)
+[DEBUG]   Update goal chain: 8946 微秒 (93.1778%)
+[DEBUG]   The whole process of reading the makefile: 236 微秒 (2.45808%)
+
+[DEBUG]   Argument Parsing: 31 微秒 (0.322883%)
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Dependency Graph Construction: 25 微秒 (0.26039%)
+[DEBUG]   Update all the goals: 9437 微秒 (94.0315%)
+
+[DEBUG]   Update goal chain: 9415 微秒 (93.8123%)
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   The whole process of reading the makefile: 208 微秒 (2.07254%)
+[DEBUG]   Variable initalzation: 8707 微秒 (90.6885%)
+[DEBUG]   Iterate over all double-colon entries for this file: 253 微秒 (2.63514%)
+[DEBUG]   Argument Parsing: 25 微秒 (0.249103%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 221 微秒 (2.30184%)
+[DEBUG]   Dependency Graph Construction: 22 微秒 (0.219211%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.35413%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0729091%)
+
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8697 微秒 (90.5843%)
+[DEBUG]   Variable initalzation: 9088 微秒 (90.554%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 241 微秒 (2.51016%)
+[DEBUG]   Iterate over all double-colon entries for this file: 339 微秒 (3.37784%)
+[DEBUG]   Read any stdin makefiles into temporary files: 200 微秒 (2.08312%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 195 微秒 (1.94301%)
+[DEBUG]   Manage jobs: 14 微秒 (0.145818%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.33878%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0697489%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+
+[DEBUG]   Save the old value of 'commands_started': 220 微秒 (2.29143%)
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Read all makefiles and decode: 121 微秒 (1.26029%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Wait for a child to die: 9078 微秒 (90.4544%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 326 微秒 (3.24831%)
+[DEBUG]   Read any stdin makefiles into temporary files: 187 微秒 (1.86329%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0199283%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 307 微秒 (3.05899%)
+[DEBUG]   Read all makefiles and decode: 123 微秒 (1.22559%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 9913 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9236 微秒 (93.1706%)
+[DEBUG]   Manifest Parsing and Rebuilding: 366 微秒 (3.69212%)
+[DEBUG]   Initialization: 267 微秒 (2.69343%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0100878%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9258 微秒 (93.3925%)
+[DEBUG]   Update goal chain: 9231 微秒 (93.1201%)
+[DEBUG]   The whole process of reading the makefile: 249 微秒 (2.51185%)
+[DEBUG]   Argument Parsing: 24 微秒 (0.242106%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.232019%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8995 微秒 (90.7394%)
+[DEBUG]   Iterate over all double-colon entries for this file: 252 微秒 (2.54212%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 236 微秒 (2.38071%)
+[DEBUG]   Free a chain of struct nameseq.: 38 微秒 (0.383335%)
+[DEBUG]   Setup jobservers: 6 微秒 (0.0605266%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8984 微秒 (90.6285%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 238 微秒 (2.40089%)
+[DEBUG]   Read any stdin makefiles into temporary files: 228 微秒 (2.30001%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0201755%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 214 微秒 (2.15878%)
+[DEBUG]   Read all makefiles and decode: 152 微秒 (1.53334%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[  1%] Generating pnglibconf.c
+[  2%] Generating pngprefix.h
+[  3%] Generating scripts/symbols.out
+[  4%] Generating scripts/pnglibconf.c
+[  5%] Building C object CMakeFiles/png-fix-itxt.dir/contrib/tools/png-fix-itxt.c.o
+*******************************************************************************
+[DEBUG] 总耗时: 17629 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 17012 微秒 (96.5001%)
+[DEBUG]   Manifest Parsing and Rebuilding: 307 微秒 (1.74145%)
+[DEBUG]   Initialization: 260 微秒 (1.47484%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00567247%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 17027 微秒 (96.5852%)
+[DEBUG]   Update goal chain: 17006 微秒 (96.4661%)
+[DEBUG]   The whole process of reading the makefile: 200 微秒 (1.13449%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.158829%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.130467%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 16768 微秒 (95.116%)
+[DEBUG]   Iterate over all double-colon entries for this file: 249 微秒 (1.41245%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 186 微秒 (1.05508%)
+[DEBUG]   Free a chain of struct nameseq.: 33 微秒 (0.187192%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0397073%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 16757 微秒 (95.0536%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 238 微秒 (1.35005%)
+[DEBUG]   Read any stdin makefiles into temporary files: 177 微秒 (1.00403%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0113449%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 216 微秒 (1.22525%)
+[DEBUG]   Read all makefiles and decode: 118 微秒 (0.669352%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[  5%] Built target pngprefix_h
+*******************************************************************************
+[DEBUG] 总耗时: 32768 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 32133 微秒 (98.0621%)
+[DEBUG]   Manifest Parsing and Rebuilding: 317 微秒 (0.967407%)
+[DEBUG]   Initialization: 269 微秒 (0.820923%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00305176%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 32148 微秒 (98.1079%)
+[DEBUG]   Update goal chain: 32126 微秒 (98.0408%)
+[DEBUG]   The whole process of reading the makefile: 204 微秒 (0.622559%)
+[DEBUG]   Argument Parsing: 30 微秒 (0.0915527%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0701904%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 31849 微秒 (97.1954%)
+[DEBUG]   Iterate over all double-colon entries for this file: 288 微秒 (0.878906%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 191 微秒 (0.582886%)
+[DEBUG]   Free a chain of struct nameseq.: 35 微秒 (0.106812%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0213623%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 31837 微秒 (97.1588%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 275 微秒 (0.839233%)
+[DEBUG]   Read any stdin makefiles into temporary files: 182 微秒 (0.55542%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00610352%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 254 微秒 (0.775146%)
+[DEBUG]   Read all makefiles and decode: 121 微秒 (0.369263%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 37718 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 37087 微秒 (98.3271%)
+[DEBUG]   Manifest Parsing and Rebuilding: 334 微秒 (0.885519%)
+[DEBUG]   Initialization: 252 微秒 (0.668116%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00265125%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 37100 微秒 (98.3615%)
+[DEBUG]   Update goal chain: 37080 微秒 (98.3085%)
+[DEBUG]   The whole process of reading the makefile: 227 微秒 (0.601835%)
+[DEBUG]   Argument Parsing: 24 微秒 (0.0636301%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0609788%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 36799 微秒 (97.5635%)
+[DEBUG]   Iterate over all double-colon entries for this file: 292 微秒 (0.774166%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 213 微秒 (0.564717%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.0901426%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0185588%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 36788 微秒 (97.5343%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 278 微秒 (0.737049%)
+[DEBUG]   Read any stdin makefiles into temporary files: 203 微秒 (0.538205%)
+[DEBUG]   Manage jobs: 3 微秒 (0.00795376%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 256 微秒 (0.678721%)
+[DEBUG]   Read all makefiles and decode: 143 微秒 (0.379129%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[  5%] Built target pnglibconf_c
+*******************************************************************************
+[DEBUG] 总耗时: 41968 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 41328 微秒 (98.475%)
+[DEBUG]   Manifest Parsing and Rebuilding: 314 微秒 (0.748189%)
+[DEBUG]   Initialization: 280 微秒 (0.667175%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00238277%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 41343 微秒 (98.5108%)
+[DEBUG]   Update goal chain: 41322 微秒 (98.4607%)
+[DEBUG]   The whole process of reading the makefile: 204 微秒 (0.486085%)
+[DEBUG]   Argument Parsing: 30 微秒 (0.071483%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0548037%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 40974 微秒 (97.6315%)
+[DEBUG]   Iterate over all double-colon entries for this file: 357 微秒 (0.850648%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 190 微秒 (0.452726%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.0857796%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0166794%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 40962 微秒 (97.6029%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 346 微秒 (0.824438%)
+[DEBUG]   Read any stdin makefiles into temporary files: 182 微秒 (0.433664%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00476554%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 321 微秒 (0.764868%)
+[DEBUG]   Read all makefiles and decode: 122 微秒 (0.290698%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[  6%] Linking C executable png-fix-itxt
+[DEBUG] starting profiling
+[  6%] Built target png_scripts_pnglibconf_c
+[  6%] Built target png_scripts_symbols_out
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 9625 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 8973 微秒 (93.226%)
+[DEBUG]   Manifest Parsing and Rebuilding: 351 微秒 (3.64675%)
+[DEBUG]   Initialization: 250 微秒 (2.5974%)
+[DEBUG]   Execution Preparation: 2 微秒 (0.0207792%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 8995 微秒 (93.4545%)
+[DEBUG]   Update goal chain: 8950 微秒 (92.987%)
+[DEBUG]   The whole process of reading the makefile: 218 微秒 (2.26494%)
+[DEBUG]   Argument Parsing: 27 微秒 (0.280519%)
+[DEBUG]   Dependency Graph Construction: 25 微秒 (0.25974%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8698 微秒 (90.3688%)
+[DEBUG]   Iterate over all double-colon entries for this file: 287 微秒 (2.98182%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 204 微秒 (2.11948%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.374026%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0727273%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8688 微秒 (90.2649%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 275 微秒 (2.85714%)
+[DEBUG]   Read any stdin makefiles into temporary files: 196 微秒 (2.03636%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0207792%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 230 微秒 (2.38961%)
+[DEBUG]   Read all makefiles and decode: 130 微秒 (1.35065%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 9809 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9118 微秒 (92.9554%)
+[DEBUG]   Manifest Parsing and Rebuilding: 356 微秒 (3.62932%)
+[DEBUG]   Initialization: 287 微秒 (2.92588%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0101947%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9131 微秒 (93.088%)
+[DEBUG]   Update goal chain: 9112 微秒 (92.8943%)
+[DEBUG]   The whole process of reading the makefile: 240 微秒 (2.44673%)
+[DEBUG]   Argument Parsing: 34 微秒 (0.34662%)
+[DEBUG]   Dependency Graph Construction: 25 微秒 (0.254868%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8863 微秒 (90.3558%)
+[DEBUG]   Iterate over all double-colon entries for this file: 259 微秒 (2.64043%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 217 微秒 (2.21225%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.34662%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.071363%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8852 微秒 (90.2437%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 248 微秒 (2.52829%)
+[DEBUG]   Read any stdin makefiles into temporary files: 208 微秒 (2.1205%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0203894%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 228 微秒 (2.3244%)
+[DEBUG]   Read all makefiles and decode: 139 微秒 (1.41707%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[  7%] Generating pnglibconf.out
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 72076 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 71377 微秒 (99.0302%)
+[DEBUG]   Manifest Parsing and Rebuilding: 369 微秒 (0.51196%)
+[DEBUG]   Initialization: 284 微秒 (0.394029%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00138742%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 71397 微秒 (99.0579%)
+[DEBUG]   Update goal chain: 71371 微秒 (99.0219%)
+[DEBUG]   The whole process of reading the makefile: 251 微秒 (0.348244%)
+[DEBUG]   Argument Parsing: 26 微秒 (0.036073%)
+[DEBUG]   Dependency Graph Construction: 25 微秒 (0.0346856%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 70763 微秒 (98.1783%)
+[DEBUG]   Iterate over all double-colon entries for this file: 618 微秒 (0.857428%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 237 微秒 (0.32882%)
+[  8%] Generating scripts/symbols.chk
+[DEBUG]   Free a chain of struct nameseq.: 38 微秒 (0.0527221%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.00971197%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 70744 微秒 (98.152%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 600 微秒 (0.832455%)
+[DEBUG]   Read any stdin makefiles into temporary files: 229 微秒 (0.31772%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00277485%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 567 微秒 (0.78667%)
+[DEBUG]   Read all makefiles and decode: 153 微秒 (0.212276%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[  8%] Built target png-fix-itxt
+*******************************************************************************
+[DEBUG] 总耗时: 22147 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 21498 微秒 (97.0696%)
+[DEBUG]   Manifest Parsing and Rebuilding: 357 微秒 (1.61196%)
+[DEBUG]   Initialization: 247 微秒 (1.11528%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00451528%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 21512 微秒 (97.1328%)
+[DEBUG]   Update goal chain: 21491 微秒 (97.038%)
+[DEBUG]   The whole process of reading the makefile: 247 微秒 (1.11528%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.126428%)
+[DEBUG]   Dependency Graph Construction: 24 微秒 (0.108367%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 21149 微秒 (95.4937%)
+[DEBUG]   Iterate over all double-colon entries for this file: 354 微秒 (1.59841%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 233 微秒 (1.05206%)
+[DEBUG]   Free a chain of struct nameseq.: 35 微秒 (0.158035%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.031607%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 21138 微秒 (95.4441%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 342 微秒 (1.54423%)
+[DEBUG]   Read any stdin makefiles into temporary files: 224 微秒 (1.01142%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00903057%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 320 微秒 (1.44489%)
+[DEBUG]   Read all makefiles and decode: 143 微秒 (0.645686%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[  9%] Built target png_scripts_symbols_chk
+*******************************************************************************
+[DEBUG] 总耗时: 42722 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 42093 微秒 (98.5277%)
+[DEBUG]   Manifest Parsing and Rebuilding: 315 微秒 (0.737325%)
+[DEBUG]   Initialization: 269 微秒 (0.629652%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00234071%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 42096 微秒 (98.5347%)
+[DEBUG]   Update goal chain: 42082 微秒 (98.5019%)
+[DEBUG]   The whole process of reading the makefile: 211 微秒 (0.493891%)
+[DEBUG]   Argument Parsing: 24 微秒 (0.0561771%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0538364%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 41776 微秒 (97.7857%)
+[DEBUG]   Iterate over all double-colon entries for this file: 306 微秒 (0.716259%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 196 微秒 (0.45878%)
+[DEBUG]   Free a chain of struct nameseq.: 35 微秒 (0.081925%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.016385%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 41760 微秒 (97.7482%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 293 微秒 (0.685829%)
+[DEBUG]   Read any stdin makefiles into temporary files: 188 微秒 (0.440054%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00468143%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 269 微秒 (0.629652%)
+[DEBUG]   Read all makefiles and decode: 125 微秒 (0.292589%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 10%] Built target pnglibconf_out
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 9873 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9224 微秒 (93.4265%)
+[DEBUG]   Manifest Parsing and Rebuilding: 324 微秒 (3.28168%)
+[DEBUG]   Initialization: 276 微秒 (2.7955%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0101286%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9238 微秒 (93.5683%)
+[DEBUG]   Update goal chain: 9218 微秒 (93.3657%)
+[DEBUG]   The whole process of reading the makefile: 217 微秒 (2.19791%)
+[DEBUG]   Argument Parsing: 27 微秒 (0.273473%)
+[DEBUG]   Dependency Graph Construction: 24 微秒 (0.243087%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8970 微秒 (90.8538%)
+[DEBUG]   Iterate over all double-colon entries for this file: 258 微秒 (2.61319%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 203 微秒 (2.05611%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.344374%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0709004%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8961 微秒 (90.7627%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 245 微秒 (2.48152%)
+[DEBUG]   Read any stdin makefiles into temporary files: 195 微秒 (1.97508%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0202573%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 225 微秒 (2.27894%)
+[DEBUG]   Read all makefiles and decode: 132 微秒 (1.33698%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 9838 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9197 微秒 (93.4844%)
+[DEBUG]   Manifest Parsing and Rebuilding: 328 微秒 (3.33401%)
+[DEBUG]   Initialization: 263 微秒 (2.67331%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0101647%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9210 微秒 (93.6166%)
+[DEBUG]   Update goal chain: 9190 微秒 (93.4133%)
+[DEBUG]   The whole process of reading the makefile: 217 微秒 (2.20573%)
+[DEBUG]   Argument Parsing: 31 微秒 (0.315105%)
+[DEBUG]   Dependency Graph Construction: 24 微秒 (0.243952%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8930 微秒 (90.7705%)
+[DEBUG]   Iterate over all double-colon entries for this file: 271 微秒 (2.75462%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 203 微秒 (2.06343%)
+[DEBUG]   Free a chain of struct nameseq.: 33 微秒 (0.335434%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0711527%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8920 微秒 (90.6688%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 259 微秒 (2.63265%)
+[DEBUG]   Read any stdin makefiles into temporary files: 195 微秒 (1.98211%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0203293%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 240 微秒 (2.43952%)
+[DEBUG]   Read all makefiles and decode: 137 微秒 (1.39256%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[ 12%] Generating scripts/prefix.out
+[ 12%] Generating pnglibconf.h
+*******************************************************************************
+[DEBUG] 总耗时: 27023 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 26316 微秒 (97.3837%)
+[DEBUG]   Manifest Parsing and Rebuilding: 331 微秒 (1.22488%)
+[DEBUG]   Initialization: 326 微秒 (1.20638%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00370055%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 26329 微秒 (97.4318%)
+[DEBUG]   Update goal chain: 26310 微秒 (97.3615%)
+[DEBUG]   The whole process of reading the makefile: 222 微秒 (0.821522%)
+[DEBUG]   Argument Parsing: 30 微秒 (0.111017%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0851127%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 26053 微秒 (96.4105%)
+[DEBUG]   Iterate over all double-colon entries for this file: 265 微秒 (0.980646%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 201 微秒 (0.743811%)
+[DEBUG]   Free a chain of struct nameseq.: 33 微秒 (0.122118%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0259039%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 26041 微秒 (96.3661%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 252 微秒 (0.932539%)
+[DEBUG]   Read any stdin makefiles into temporary files: 193 微秒 (0.714206%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0074011%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 231 微秒 (0.854827%)
+[DEBUG]   Read all makefiles and decode: 129 微秒 (0.477371%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 14%] Built target pnglibconf_h
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 39121 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 38467 微秒 (98.3283%)
+[DEBUG]   Manifest Parsing and Rebuilding: 321 微秒 (0.820531%)
+[DEBUG]   Initialization: 281 微秒 (0.718284%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00255617%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 38481 微秒 (98.364%)
+[DEBUG]   Update goal chain: 38461 微秒 (98.3129%)
+[DEBUG]   The whole process of reading the makefile: 216 微秒 (0.552133%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.0715728%)
+[DEBUG]   Dependency Graph Construction: 22 微秒 (0.0562358%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 38143 微秒 (97.5001%)
+[DEBUG]   Iterate over all double-colon entries for this file: 327 微秒 (0.835868%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 203 微秒 (0.518903%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.0920222%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0178932%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 38133 微秒 (97.4745%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 316 微秒 (0.80775%)
+[DEBUG]   Read any stdin makefiles into temporary files: 194 微秒 (0.495897%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00511234%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 296 微秒 (0.756627%)
+[DEBUG]   Read all makefiles and decode: 134 微秒 (0.342527%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 16%] Built target png_scripts_prefix_out
+*******************************************************************************
+*******************************************************************************
+[DEBUG] 总耗时: 9952 微秒
+[DEBUG] 总耗时: 9754 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+[DEBUG] finish profiling
+
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9096 微秒 (93.254%)
+[DEBUG]   Run Build: 9296 微秒 (93.4084%)
+[DEBUG]   Manifest Parsing and Rebuilding: 343 微秒 (3.51651%)
+[DEBUG]   Manifest Parsing and Rebuilding: 335 微秒 (3.36616%)
+[DEBUG]   Initialization: 278 微秒 (2.79341%)
+[DEBUG]   Initialization: 274 微秒 (2.8091%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0100482%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0102522%)
+
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9316 微秒 (93.6093%)
+[DEBUG]   Update all the goals: 9116 微秒 (93.4591%)
+[DEBUG]   Update goal chain: 9291 微秒 (93.3581%)
+[DEBUG]   Update goal chain: 9091 微秒 (93.2028%)
+[DEBUG]   The whole process of reading the makefile: 219 微秒 (2.20056%)
+[DEBUG]   The whole process of reading the makefile: 227 微秒 (2.32725%)
+[DEBUG]   Argument Parsing: 33 微秒 (0.331592%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.297314%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.231109%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.235801%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+
+[DEBUG]   Variable initalzation: 9055 微秒 (90.9867%)
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Iterate over all double-colon entries for this file: 251 微秒 (2.52211%)
+[DEBUG]   Variable initalzation: 8857 微秒 (90.8038%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 205 微秒 (2.05989%)
+[DEBUG]   Iterate over all double-colon entries for this file: 249 微秒 (2.5528%)
+[DEBUG]   Free a chain of struct nameseq.: 35 微秒 (0.351688%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 212 微秒 (2.17347%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0703376%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.348575%)
+[DEBUG]   Setup jobservers: 8 微秒 (0.0820176%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+
+[DEBUG]   Wait for a child to die: 9044 微秒 (90.8762%)
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Ensuring that build targets are checked and updated properly: 240 微秒 (2.41158%)
+[DEBUG]   Wait for a child to die: 8846 微秒 (90.691%)
+[DEBUG]   Read any stdin makefiles into temporary files: 196 微秒 (1.96945%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 235 微秒 (2.40927%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0200965%)
+[DEBUG]   Read any stdin makefiles into temporary files: 204 微秒 (2.09145%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0205044%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+
+[DEBUG]   Save the old value of 'commands_started': 219 微秒 (2.20056%)
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Read all makefiles and decode: 138 微秒 (1.38666%)
+[DEBUG]   Save the old value of 'commands_started': 216 微秒 (2.21448%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Read all makefiles and decode: 139 微秒 (1.42506%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 9849 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9229 微秒 (93.7049%)
+[DEBUG]   Manifest Parsing and Rebuilding: 324 微秒 (3.28967%)
+[DEBUG]   Initialization: 245 微秒 (2.48756%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0101533%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9245 微秒 (93.8674%)
+[DEBUG]   Update goal chain: 9223 微秒 (93.644%)
+[DEBUG]   The whole process of reading the makefile: 217 微秒 (2.20327%)
+[DEBUG]   Argument Parsing: 27 微秒 (0.27414%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.233526%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8972 微秒 (91.0955%)
+[DEBUG]   Iterate over all double-colon entries for this file: 261 微秒 (2.65002%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 204 微秒 (2.07128%)
+[DEBUG]   Free a chain of struct nameseq.: 35 微秒 (0.355366%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0710732%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8961 微秒 (90.9839%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 251 微秒 (2.54848%)
+[DEBUG]   Read any stdin makefiles into temporary files: 195 微秒 (1.9799%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0203066%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 231 微秒 (2.34542%)
+[DEBUG]   Read all makefiles and decode: 137 微秒 (1.391%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[ 17%] Generating scripts/intprefix.out
+[ 19%] Generating scripts/sym.out
+[ 19%] Generating scripts/vers.out
+*******************************************************************************
+[DEBUG] 总耗时: 33057 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 32446 微秒 (98.1517%)
+[DEBUG]   Manifest Parsing and Rebuilding: 324 微秒 (0.980125%)
+[DEBUG]   Initialization: 243 微秒 (0.735094%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00302508%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 32461 微秒 (98.1971%)
+[DEBUG]   Update goal chain: 32439 微秒 (98.1305%)
+[DEBUG]   The whole process of reading the makefile: 216 微秒 (0.653417%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.0877273%)
+[DEBUG]   Dependency Graph Construction: 22 微秒 (0.0665517%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 32128 微秒 (97.1897%)
+[DEBUG]   Iterate over all double-colon entries for this file: 320 微秒 (0.968025%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 202 微秒 (0.611066%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.108903%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0211755%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 32116 微秒 (97.1534%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 309 微秒 (0.934749%)
+[DEBUG]   Read any stdin makefiles into temporary files: 194 微秒 (0.586865%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00605016%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 289 微秒 (0.874248%)
+[DEBUG]   Read all makefiles and decode: 138 微秒 (0.417461%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 33625 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 32981 微秒 (98.0848%)
+[DEBUG]   Manifest Parsing and Rebuilding: 326 微秒 (0.969517%)
+[DEBUG]   Initialization: 271 微秒 (0.805948%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00297398%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 32998 微秒 (98.1353%)
+[DEBUG]   Update goal chain: 32975 微秒 (98.0669%)
+[DEBUG]   The whole process of reading the makefile: 214 微秒 (0.636431%)
+[DEBUG]   Argument Parsing: 31 微秒 (0.0921933%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0684015%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 32634 微秒 (97.0528%)
+[DEBUG]   Iterate over all double-colon entries for this file: 354 微秒 (1.05279%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 200 微秒 (0.594796%)
+[DEBUG]   Free a chain of struct nameseq.: 35 微秒 (0.104089%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0208178%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 32623 微秒 (97.0201%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 343 微秒 (1.02007%)
+[DEBUG]   Read any stdin makefiles into temporary files: 190 微秒 (0.565056%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00594796%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 321 微秒 (0.954647%)
+[DEBUG]   Read all makefiles and decode: 135 微秒 (0.401487%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 22%] Built target png_scripts_sym_out
+[ 25%] Built target png_scripts_vers_out
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 47261 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 46612 微秒 (98.6268%)
+[DEBUG]   Manifest Parsing and Rebuilding: 328 微秒 (0.694018%)
+[DEBUG]   Initialization: 268 微秒 (0.567064%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00211591%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 46627 微秒 (98.6585%)
+[DEBUG]   Update goal chain: 46606 微秒 (98.6141%)
+[DEBUG]   The whole process of reading the makefile: 218 微秒 (0.461268%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.0613614%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0486659%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 46293 微秒 (97.9518%)
+[DEBUG]   Iterate over all double-colon entries for this file: 323 微秒 (0.683439%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 205 微秒 (0.433761%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.0761727%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0148114%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 46281 微秒 (97.9264%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 310 微秒 (0.655932%)
+[DEBUG]   Read any stdin makefiles into temporary files: 196 微秒 (0.414718%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00423182%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 290 微秒 (0.613614%)
+[DEBUG]   Read all makefiles and decode: 137 微秒 (0.28988%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+*******************************************************************************
+[DEBUG] 总耗时: 9259 微秒
+[DEBUG] 总耗时: 9462 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 8646 微秒 (93.3794%)
+[DEBUG]   Manifest Parsing and Rebuilding: 313 微秒 (3.38049%)
+[DEBUG]   Run Build: 8815 微秒 (93.1621%)
+[DEBUG]   Initialization: 253 微秒 (2.73248%)
+[DEBUG]   Manifest Parsing and Rebuilding: 314 微秒 (3.31854%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0108003%)
+[DEBUG]   Initialization: 285 微秒 (3.01205%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0105686%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+
+[DEBUG]   Update all the goals: 8662 微秒 (93.5522%)
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update goal chain: 8641 微秒 (93.3254%)
+[DEBUG]   Update all the goals: 8830 微秒 (93.3207%)
+[DEBUG]   The whole process of reading the makefile: 202 微秒 (2.18166%)
+[DEBUG]   Update goal chain: 8809 微秒 (93.0987%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.313209%)
+[DEBUG]   The whole process of reading the makefile: 203 微秒 (2.14542%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.248407%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.306489%)
+[DEBUG]   Dependency Graph Construction: 24 微秒 (0.253646%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8409 微秒 (90.8197%)
+
+[DEBUG]   Iterate over all double-colon entries for this file: 244 微秒 (2.63527%)
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Set varibles and Read makefiles into temporary files: 188 微秒 (2.03046%)
+[DEBUG]   Variable initalzation: 8573 微秒 (90.6045%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.36721%)
+[DEBUG]   Iterate over all double-colon entries for this file: 246 微秒 (2.59987%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0756021%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 189 微秒 (1.99746%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.359332%)
+
+[DEBUG]   Setup jobservers: 7 微秒 (0.0739801%)
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8399 微秒 (90.7117%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 232 微秒 (2.50567%)
+
+[DEBUG]   Read any stdin makefiles into temporary files: 179 微秒 (1.93325%)
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Manage jobs: 2 微秒 (0.0216006%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+[DEBUG]   Wait for a child to die: 8562 微秒 (90.4883%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Ensuring that build targets are checked and updated properly: 236 微秒 (2.49419%)
+[DEBUG]   Save the old value of 'commands_started': 210 微秒 (2.26806%)
+[DEBUG]   Read all makefiles and decode: 118 微秒 (1.27444%)
+[DEBUG]   Read any stdin makefiles into temporary files: 179 微秒 (1.89178%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0211372%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 214 微秒 (2.26168%)
+[DEBUG]   Read all makefiles and decode: 117 微秒 (1.23653%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG] starting profiling
+[ 28%] Built target png_scripts_intprefix_out
+[DEBUG] starting profiling
+[ 30%] Generating libpng.sym
+[ 30%] Generating libpng.vers
+*******************************************************************************
+[DEBUG] 总耗时: 25270 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 24618 微秒 (97.4199%)
+[DEBUG]   Manifest Parsing and Rebuilding: 326 微秒 (1.29007%)
+[DEBUG]   Initialization: 259 微秒 (1.02493%)
+[DEBUG]   Execution Preparation: 20 微秒 (0.0791452%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 24634 微秒 (97.4832%)
+[DEBUG]   Update goal chain: 24612 微秒 (97.3961%)
+[DEBUG]   The whole process of reading the makefile: 211 微秒 (0.834982%)
+[DEBUG]   Argument Parsing: 31 微秒 (0.122675%)
+[DEBUG]   Dependency Graph Construction: 22 微秒 (0.0870598%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 24367 微秒 (96.4266%)
+[DEBUG]   Iterate over all double-colon entries for this file: 256 微秒 (1.01306%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 192 微秒 (0.759794%)
+[DEBUG]   Free a chain of struct nameseq.: 33 微秒 (0.13059%)
+[DEBUG]   Setup jobservers: 10 微秒 (0.0395726%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 24357 微秒 (96.387%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 245 微秒 (0.969529%)
+[DEBUG]   Read any stdin makefiles into temporary files: 182 微秒 (0.720222%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00791452%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 223 微秒 (0.882469%)
+[DEBUG]   Read all makefiles and decode: 120 微秒 (0.474871%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 25558 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 24931 微秒 (97.5468%)
+[DEBUG]   Manifest Parsing and Rebuilding: 332 微秒 (1.29901%)
+[DEBUG]   Initialization: 247 微秒 (0.966429%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00391267%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 24947 微秒 (97.6094%)
+[DEBUG]   Update goal chain: 24925 微秒 (97.5233%)
+[DEBUG]   The whole process of reading the makefile: 219 微秒 (0.856875%)
+[DEBUG]   Argument Parsing: 31 微秒 (0.121293%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0899914%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 24683 微秒 (96.5764%)
+[DEBUG]   Iterate over all double-colon entries for this file: 255 微秒 (0.997731%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 205 微秒 (0.802097%)
+[DEBUG]   Free a chain of struct nameseq.: 35 微秒 (0.136943%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0273887%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 24673 微秒 (96.5373%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 243 微秒 (0.950779%)
+[DEBUG]   Read any stdin makefiles into temporary files: 197 微秒 (0.770796%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00782534%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 220 微秒 (0.860787%)
+[DEBUG]   Read all makefiles and decode: 120 微秒 (0.46952%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 30%] Built target png_gensym
+[ 30%] Built target png_genvers
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 9937 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9240 微秒 (92.9858%)
+[DEBUG]   Manifest Parsing and Rebuilding: 384 微秒 (3.86435%)
+[DEBUG]   Initialization: 268 微秒 (2.69699%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0100634%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9255 微秒 (93.1368%)
+[DEBUG]   Update goal chain: 9235 微秒 (92.9355%)
+[DEBUG]   The whole process of reading the makefile: 275 微秒 (2.76743%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.281775%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.231458%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8866 微秒 (89.2221%)
+[DEBUG]   Iterate over all double-colon entries for this file: 378 微秒 (3.80396%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 260 微秒 (2.61648%)
+[DEBUG]   Free a chain of struct nameseq.: 34 微秒 (0.342156%)
+[DEBUG]   Setup jobservers: 8 微秒 (0.0805072%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8855 微秒 (89.1114%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 368 微秒 (3.70333%)
+[DEBUG]   Read any stdin makefiles into temporary files: 252 微秒 (2.53598%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0201268%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 349 微秒 (3.51213%)
+[DEBUG]   Read all makefiles and decode: 192 微秒 (1.93217%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 834 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Manifest Parsing and Rebuilding: 378 微秒 (45.3237%)
+[DEBUG]   Initialization: 260 微秒 (31.1751%)
+[DEBUG]   Run Build: 152 微秒 (18.2254%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.119904%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   The whole process of reading the makefile: 272 微秒 (32.6139%)
+[DEBUG]   Update all the goals: 169 微秒 (20.2638%)
+[DEBUG]   Update goal chain: 148 微秒 (17.7458%)
+[DEBUG]   Argument Parsing: 28 微秒 (3.35731%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (2.75779%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Set varibles and Read makefiles into temporary files: 258 微秒 (30.9353%)
+[DEBUG]   Iterate over all double-colon entries for this file: 157 微秒 (18.8249%)
+[DEBUG]   Free a chain of struct nameseq.: 39 微秒 (4.67626%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.839329%)
+[DEBUG]   Variable initalzation: 6 微秒 (0.719424%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Read any stdin makefiles into temporary files: 250 微秒 (29.976%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 149 微秒 (17.8657%)
+[DEBUG]   Manage jobs: 2 微秒 (0.239808%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+[DEBUG]   Start jobs that are waiting for the load to go down: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Read all makefiles and decode: 190 微秒 (22.7818%)
+[DEBUG]   Save the old value of 'commands_started': 135 微秒 (16.1871%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 43%] Built target png_genfiles
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 10131 微秒
+*******************************************************************************
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+[DEBUG] 总耗时: 10155 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9318 微秒 (91.7578%)
+[DEBUG]   Run Build: 9288 微秒 (91.679%)
+[DEBUG]   Manifest Parsing and Rebuilding: 537 微秒 (5.28804%)
+[DEBUG]   Manifest Parsing and Rebuilding: 539 微秒 (5.3203%)
+[DEBUG]   Initialization: 250 微秒 (2.46184%)
+[DEBUG]   Initialization: 263 微秒 (2.59599%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00984737%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00987069%)
+
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9340 微秒 (91.9744%)
+[DEBUG]   Update all the goals: 9317 微秒 (91.9653%)
+[DEBUG]   Update goal chain: 9312 微秒 (91.6987%)
+[DEBUG]   Update goal chain: 9282 微秒 (91.6198%)
+[DEBUG]   The whole process of reading the makefile: 416 微秒 (4.0965%)
+[DEBUG]   The whole process of reading the makefile: 410 微秒 (4.04698%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.285574%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.28625%)
+[DEBUG]   Dependency Graph Construction: 24 微秒 (0.236337%)
+[DEBUG]   Dependency Graph Construction: 25 微秒 (0.246767%)
+
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8882 微秒 (87.4643%)
+[DEBUG]   Variable initalzation: 9010 微秒 (88.935%)
+[DEBUG]   Iterate over all double-colon entries for this file: 448 微秒 (4.41162%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 397 微秒 (3.91867%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 402 微秒 (3.95864%)
+[DEBUG]   Iterate over all double-colon entries for this file: 297 微秒 (2.9316%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.354505%)
+[DEBUG]   Free a chain of struct nameseq.: 37 微秒 (0.365216%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0689316%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0690949%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8872 微秒 (87.3658%)
+[DEBUG]   Wait for a child to die: 9001 微秒 (88.8461%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 435 微秒 (4.2836%)
+[DEBUG]   Read any stdin makefiles into temporary files: 388 微秒 (3.82983%)
+[DEBUG]   Read any stdin makefiles into temporary files: 393 微秒 (3.87001%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 282 微秒 (2.78354%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0196947%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0197414%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 410 微秒 (4.03742%)
+[DEBUG]   Read all makefiles and decode: 327 微秒 (3.22772%)
+[DEBUG]   Read all makefiles and decode: 335 微秒 (3.29887%)
+[DEBUG]   Save the old value of 'commands_started': 258 微秒 (2.54664%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[ 45%] Building C object CMakeFiles/png_static.dir/png.c.o
+[ 45%] Building C object CMakeFiles/png_shared.dir/pngget.c.o
+[ 46%] Building C object CMakeFiles/png_static.dir/pngerror.c.o
+[ 48%] Building C object CMakeFiles/png_shared.dir/pngerror.c.o
+[ 48%] Building C object CMakeFiles/png_static.dir/pngmem.c.o
+[ 49%] Building C object CMakeFiles/png_shared.dir/png.c.o
+[ 51%] Building C object CMakeFiles/png_shared.dir/pngmem.c.o
+[ 51%] Building C object CMakeFiles/png_static.dir/pngget.c.o
+[ 52%] Building C object CMakeFiles/png_shared.dir/pngrtran.c.o
+[ 53%] Building C object CMakeFiles/png_static.dir/pngpread.c.o
+[ 54%] Building C object CMakeFiles/png_static.dir/pngrio.c.o
+[ 56%] Building C object CMakeFiles/png_shared.dir/pngpread.c.o
+[ 56%] Building C object CMakeFiles/png_static.dir/pngread.c.o
+[ 58%] Building C object CMakeFiles/png_shared.dir/pngrio.c.o
+[ 58%] Building C object CMakeFiles/png_shared.dir/pngread.c.o
+[ 60%] Building C object CMakeFiles/png_static.dir/pngrtran.c.o
+[ 60%] Building C object CMakeFiles/png_static.dir/pngrutil.c.o
+[ 62%] Building C object CMakeFiles/png_shared.dir/pngset.c.o
+[ 63%] Building C object CMakeFiles/png_static.dir/pngset.c.o
+[ 63%] Building C object CMakeFiles/png_shared.dir/pngrutil.c.o
+[ 64%] Building C object CMakeFiles/png_static.dir/pngtrans.c.o
+[ 65%] Building C object CMakeFiles/png_static.dir/pngwrite.c.o
+[ 66%] Building C object CMakeFiles/png_shared.dir/pngtrans.c.o
+[ 68%] Building C object CMakeFiles/png_shared.dir/pngwrite.c.o
+[ 68%] Building C object CMakeFiles/png_static.dir/pngwtran.c.o
+[ 69%] Building C object CMakeFiles/png_static.dir/pngwio.c.o
+[ 71%] Building C object CMakeFiles/png_static.dir/pngwutil.c.o
+[ 71%] Building C object CMakeFiles/png_shared.dir/pngwio.c.o
+[ 72%] Building C object CMakeFiles/png_shared.dir/pngwtran.c.o
+[ 73%] Building C object CMakeFiles/png_static.dir/intel/intel_init.c.o
+[ 74%] Building C object CMakeFiles/png_shared.dir/pngwutil.c.o
+[ 75%] Building C object CMakeFiles/png_static.dir/intel/filter_sse2_intrinsics.c.o
+[ 76%] Building C object CMakeFiles/png_shared.dir/intel/filter_sse2_intrinsics.c.o
+[ 77%] Building C object CMakeFiles/png_shared.dir/intel/intel_init.c.o
+[ 78%] Linking C shared library libpng16.so
+[ 79%] Linking C static library libpng16.a
+*******************************************************************************
+[DEBUG] 总耗时: 347072 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 346233 微秒 (99.7583%)
+[DEBUG]   Manifest Parsing and Rebuilding: 550 微秒 (0.158469%)
+[DEBUG]   Initialization: 240 微秒 (0.0691499%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.000288125%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 346257 微秒 (99.7652%)
+[DEBUG]   Update goal chain: 346226 微秒 (99.7562%)
+[DEBUG]   The whole process of reading the makefile: 424 微秒 (0.122165%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.00806749%)
+[DEBUG]   Dependency Graph Construction: 24 微秒 (0.00691499%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 339980 微秒 (97.9566%)
+[DEBUG]   Iterate over all double-colon entries for this file: 6189 微秒 (1.7832%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 410 微秒 (0.118131%)
+[DEBUG]   Free a chain of struct nameseq.: 93 微秒 (0.0267956%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.00201687%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 339523 微秒 (97.8249%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 6124 微秒 (1.76448%)
+[DEBUG]   Read any stdin makefiles into temporary files: 401 微秒 (0.115538%)
+[DEBUG]   Start jobs that are waiting for the load to go down: 319 微秒 (0.0919118%)
+[DEBUG]   Manage jobs: 2 微秒 (0.000576249%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 6010 微秒 (1.73163%)
+[DEBUG]   Read all makefiles and decode: 341 微秒 (0.0982505%)
+[DEBUG]   Start jobs that are waiting for the load to go down: 4 微秒 (0.0011525%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 350269 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 349422 微秒 (99.7582%)
+[DEBUG]   Manifest Parsing and Rebuilding: 531 微秒 (0.151598%)
+[DEBUG]   Initialization: 269 微秒 (0.0767981%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.000285495%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 349441 微秒 (99.7636%)
+[DEBUG]   Update goal chain: 349416 微秒 (99.7565%)
+[DEBUG]   The whole process of reading the makefile: 412 微秒 (0.117624%)
+[DEBUG]   Argument Parsing: 27 微秒 (0.00770836%)
+[DEBUG]   Dependency Graph Construction: 24 微秒 (0.00685188%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 282453 微秒 (80.6389%)
+[DEBUG]   Iterate over all double-colon entries for this file: 66895 微秒 (19.0982%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 398 微秒 (0.113627%)
+[DEBUG]   Free a chain of struct nameseq.: 110 微秒 (0.0314044%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.00199846%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 281754 微秒 (80.4393%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 66834 微秒 (19.0808%)
+[DEBUG]   Start jobs that are waiting for the load to go down: 555 微秒 (0.15845%)
+[DEBUG]   Read any stdin makefiles into temporary files: 390 微秒 (0.111343%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00057099%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 66723 微秒 (19.0491%)
+[DEBUG]   Read all makefiles and decode: 330 微秒 (0.0942133%)
+[DEBUG]   Start jobs that are waiting for the load to go down: 10 微秒 (0.00285495%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 83%] Built target png_static
+[ 87%] Built target png_shared
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+*******************************************************************************
+[DEBUG] 总耗时: 10110 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9415 微秒 (93.1256%)
+[DEBUG]   Manifest Parsing and Rebuilding: 373 微秒 (3.68942%)
+[DEBUG]   Initialization: 271 微秒 (2.68051%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0098912%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9439 微秒 (93.363%)
+[DEBUG]   Update goal chain: 9409 微秒 (93.0663%)
+[DEBUG]   The whole process of reading the makefile: 243 微秒 (2.40356%)
+[DEBUG]   Argument Parsing: 34 微秒 (0.336301%)
+[DEBUG]   Dependency Graph Construction: 25 微秒 (0.24728%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8832 微秒 (87.3591%)
+[DEBUG]   Iterate over all double-colon entries for this file: 597 微秒 (5.90504%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 228 微秒 (2.25519%)
+[DEBUG]   Free a chain of struct nameseq.: 37 微秒 (0.365974%)
+[DEBUG]   Setup jobservers: 8 微秒 (0.0791296%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8821 微秒 (87.2502%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 582 微秒 (5.75668%)
+[DEBUG]   Read any stdin makefiles into temporary files: 219 微秒 (2.16617%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0197824%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 553 微秒 (5.46983%)
+[DEBUG]   Read all makefiles and decode: 154 微秒 (1.52324%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 10146 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9450 微秒 (93.1402%)
+[DEBUG]   Manifest Parsing and Rebuilding: 391 微秒 (3.85374%)
+[DEBUG]   Initialization: 259 微秒 (2.55273%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0098561%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9476 微秒 (93.3964%)
+[DEBUG]   Update goal chain: 9444 微秒 (93.081%)
+[DEBUG]   The whole process of reading the makefile: 259 微秒 (2.55273%)
+[DEBUG]   Argument Parsing: 34 微秒 (0.335107%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.22669%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 9171 微秒 (90.3903%)
+[DEBUG]   Iterate over all double-colon entries for this file: 296 微秒 (2.91741%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 245 微秒 (2.41474%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.35482%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0689927%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 9161 微秒 (90.2917%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 280 微秒 (2.75971%)
+[DEBUG]   Read any stdin makefiles into temporary files: 237 微秒 (2.3359%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0197122%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 254 微秒 (2.50345%)
+[DEBUG]   Read all makefiles and decode: 156 微秒 (1.53755%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 9960 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9307 微秒 (93.4438%)
+[DEBUG]   Manifest Parsing and Rebuilding: 351 微秒 (3.5241%)
+[DEBUG]   Initialization: 254 微秒 (2.5502%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.0100402%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9330 微秒 (93.6747%)
+[DEBUG]   Update goal chain: 9301 微秒 (93.3835%)
+[DEBUG]   The whole process of reading the makefile: 232 微秒 (2.32932%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.281124%)
+[DEBUG]   Dependency Graph Construction: 22 微秒 (0.220884%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 9067 微秒 (91.0341%)
+[DEBUG]   Iterate over all double-colon entries for this file: 252 微秒 (2.53012%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 219 微秒 (2.1988%)
+[DEBUG]   Free a chain of struct nameseq.: 37 微秒 (0.371486%)
+[DEBUG]   Setup jobservers: 6 微秒 (0.060241%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 9056 微秒 (90.9237%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 238 微秒 (2.38956%)
+[DEBUG]   Read any stdin makefiles into temporary files: 210 微秒 (2.10843%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0200803%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 213 微秒 (2.13855%)
+[DEBUG]   Read all makefiles and decode: 153 微秒 (1.53614%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 9778 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9096 微秒 (93.0252%)
+[DEBUG]   Manifest Parsing and Rebuilding: 382 微秒 (3.90673%)
+[DEBUG]   Initialization: 253 微秒 (2.58744%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.010227%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9123 微秒 (93.3013%)
+[DEBUG]   Update goal chain: 9091 微秒 (92.974%)
+[DEBUG]   The whole process of reading the makefile: 259 微秒 (2.6488%)
+[DEBUG]   Argument Parsing: 27 微秒 (0.27613%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.235222%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 8871 微秒 (90.7241%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 245 微秒 (2.50562%)
+[DEBUG]   Iterate over all double-colon entries for this file: 242 微秒 (2.47494%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.368173%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0715893%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 8860 微秒 (90.6116%)
+[DEBUG]   Read any stdin makefiles into temporary files: 236 微秒 (2.41358%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 227 微秒 (2.32154%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0204541%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 197 微秒 (2.01473%)
+[DEBUG]   Read all makefiles and decode: 176 微秒 (1.79996%)
+[DEBUG]   Set the goal's 'changed' flag: 2 微秒 (0.0204541%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 10576 微秒
+*******************************************************************************
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+[DEBUG] 总耗时: 10206 微秒
+
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 9605 微秒 (90.8188%)
+[DEBUG]   Initialization: 559 微秒 (5.28555%)
+[DEBUG]   Manifest Parsing and Rebuilding: 361 微秒 (3.41339%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00945537%)
+
+[DEBUG]   Run Build: 9537 微秒 (93.445%)
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 9631 微秒 (91.0647%)
+[DEBUG]   Manifest Parsing and Rebuilding: 353 微秒 (3.45875%)
+[DEBUG]   Update goal chain: 9600 微秒 (90.7716%)
+[DEBUG]   The whole process of reading the makefile: 236 微秒 (2.23147%)
+[DEBUG]   Initialization: 265 微秒 (2.59651%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.274206%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.00979816%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.217474%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+
+[DEBUG]   Variable initalzation: 9338 微秒 (88.2943%)
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Iterate over all double-colon entries for this file: 284 微秒 (2.68533%)
+[DEBUG]   Update all the goals: 9562 微秒 (93.69%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 222 微秒 (2.09909%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.340393%)
+[DEBUG]   Update goal chain: 9531 微秒 (93.3862%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0661876%)
+[DEBUG]   The whole process of reading the makefile: 232 微秒 (2.27317%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.274348%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.225358%)
+[DEBUG]   Wait for a child to die: 9328 微秒 (88.1997%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 270 微秒 (2.55295%)
+
+[DEBUG]   Read any stdin makefiles into temporary files: 213 微秒 (2.01399%)
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Manage jobs: 2 微秒 (0.0189107%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+[DEBUG]   Variable initalzation: 9272 微秒 (90.8485%)
+[DEBUG]   Iterate over all double-colon entries for this file: 280 微秒 (2.74348%)
+
+[DEBUG]   Set varibles and Read makefiles into temporary files: 218 微秒 (2.136%)
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Free a chain of struct nameseq.: 35 微秒 (0.342936%)
+[DEBUG]   Save the old value of 'commands_started': 241 微秒 (2.27874%)
+[DEBUG]   Read all makefiles and decode: 151 微秒 (1.42776%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0685871%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 9262 微秒 (90.7505%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 266 微秒 (2.60631%)
+[DEBUG]   Read any stdin makefiles into temporary files: 209 微秒 (2.04782%)
+[DEBUG]   Manage jobs: 2 微秒 (0.0195963%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 238 微秒 (2.33196%)
+[DEBUG]   Read all makefiles and decode: 150 微秒 (1.46972%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[DEBUG] starting profiling
+[ 88%] Building C object CMakeFiles/pngtest.dir/pngtest.c.o
+[ 90%] Building C object CMakeFiles/pngvalid.dir/contrib/libtests/pngvalid.c.o
+[ 90%] Building C object CMakeFiles/pngunknown.dir/contrib/libtests/pngunknown.c.o
+[ 91%] Building C object CMakeFiles/pngfix.dir/contrib/tools/pngfix.c.o
+[ 92%] Building C object CMakeFiles/pngstest.dir/contrib/libtests/pngstest.c.o
+[ 93%] Building C object CMakeFiles/pngimage.dir/contrib/libtests/pngimage.c.o
+[ 94%] Linking C executable pngunknown
+[ 95%] Linking C executable pngtest
+[ 96%] Linking C executable pngimage
+*******************************************************************************
+[DEBUG] 总耗时: 104115 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 103436 微秒 (99.3478%)
+[DEBUG]   Manifest Parsing and Rebuilding: 367 微秒 (0.352495%)
+[DEBUG]   Initialization: 270 微秒 (0.259329%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.000960476%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 103457 微秒 (99.368%)
+[DEBUG]   Update goal chain: 103429 微秒 (99.3411%)
+[DEBUG]   The whole process of reading the makefile: 242 微秒 (0.232435%)
+[DEBUG]   Argument Parsing: 26 微秒 (0.0249724%)
+[DEBUG]   Dependency Graph Construction: 26 微秒 (0.0249724%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 102867 微秒 (98.8013%)
+[DEBUG]   Iterate over all double-colon entries for this file: 573 微秒 (0.550353%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 228 微秒 (0.218989%)
+[DEBUG]   Free a chain of struct nameseq.: 38 微秒 (0.0364981%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.00672333%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 102844 微秒 (98.7792%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 555 微秒 (0.533064%)
+[DEBUG]   Read any stdin makefiles into temporary files: 216 微秒 (0.207463%)
+[DEBUG]   Manage jobs: 3 微秒 (0.00288143%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 523 微秒 (0.502329%)
+[DEBUG]   Read all makefiles and decode: 157 微秒 (0.150795%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 107969 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 107301 微秒 (99.3813%)
+[DEBUG]   Manifest Parsing and Rebuilding: 373 微秒 (0.34547%)
+[DEBUG]   Initialization: 250 微秒 (0.231548%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.000926192%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 107344 微秒 (99.4211%)
+[DEBUG]   Update goal chain: 107294 微秒 (99.3748%)
+[DEBUG]   The whole process of reading the makefile: 225 微秒 (0.208393%)
+[DEBUG]   Argument Parsing: 30 微秒 (0.0277858%)
+[DEBUG]   Dependency Graph Construction: 22 微秒 (0.0203762%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 106652 微秒 (98.7802%)
+[DEBUG]   Iterate over all double-colon entries for this file: 678 微秒 (0.627958%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 211 微秒 (0.195426%)
+[DEBUG]   Free a chain of struct nameseq.: 37 微秒 (0.0342691%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.00648334%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 106627 微秒 (98.7571%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 658 微秒 (0.609434%)
+[DEBUG]   Read any stdin makefiles into temporary files: 203 微秒 (0.188017%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00185238%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 601 微秒 (0.556641%)
+[DEBUG]   Read all makefiles and decode: 146 微秒 (0.135224%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 96%] Built target pngunknown
+*******************************************************************************
+[DEBUG] 总耗时: 114631 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 113946 微秒 (99.4024%)
+[DEBUG]   Manifest Parsing and Rebuilding: 353 微秒 (0.307945%)
+[DEBUG]   Initialization: 285 微秒 (0.248624%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.000872364%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 113967 微秒 (99.4208%)
+[DEBUG]   Update goal chain: 113939 微秒 (99.3963%)
+[DEBUG]   The whole process of reading the makefile: 232 微秒 (0.202389%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.0244262%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0200644%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 113365 微秒 (98.8956%)
+[DEBUG]   Iterate over all double-colon entries for this file: 585 微秒 (0.510333%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 216 微秒 (0.188431%)
+[DEBUG]   Free a chain of struct nameseq.: 37 微秒 (0.0322775%)
+[DEBUG]   Setup jobservers: 8 微秒 (0.00697891%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 113347 微秒 (98.8799%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 568 微秒 (0.495503%)
+[DEBUG]   Read any stdin makefiles into temporary files: 207 微秒 (0.180579%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00174473%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 532 微秒 (0.464098%)
+[DEBUG]   Read all makefiles and decode: 148 微秒 (0.12911%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 96%] Built target pngtest
+[ 96%] Built target pngimage
+[ 97%] Linking C executable pngfix
+[ 98%] Linking C executable pngstest
+*******************************************************************************
+[DEBUG] 总耗时: 165610 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 164912 微秒 (99.5785%)
+[DEBUG]   Manifest Parsing and Rebuilding: 370 微秒 (0.223416%)
+[DEBUG]   Initialization: 276 微秒 (0.166657%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.000603828%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 164935 微秒 (99.5924%)
+[DEBUG]   Update goal chain: 164906 微秒 (99.5749%)
+[DEBUG]   The whole process of reading the makefile: 242 微秒 (0.146126%)
+[DEBUG]   Argument Parsing: 31 微秒 (0.0187187%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0138881%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 164341 微秒 (99.2337%)
+[DEBUG]   Iterate over all double-colon entries for this file: 579 微秒 (0.349617%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 228 微秒 (0.137673%)
+[DEBUG]   Free a chain of struct nameseq.: 37 微秒 (0.0223416%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.0042268%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 164323 微秒 (99.2229%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 562 微秒 (0.339351%)
+[DEBUG]   Read any stdin makefiles into temporary files: 219 微秒 (0.132238%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00120766%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 527 微秒 (0.318217%)
+[DEBUG]   Read all makefiles and decode: 162 微秒 (0.0978202%)
+[DEBUG]   Set the goal's 'changed' flag: 2 微秒 (0.00120766%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 172152 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 171470 微秒 (99.6038%)
+[DEBUG]   Manifest Parsing and Rebuilding: 380 微秒 (0.220735%)
+[DEBUG]   Initialization: 254 微秒 (0.147544%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.000580882%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 171516 微秒 (99.6306%)
+[DEBUG]   Update goal chain: 171463 微秒 (99.5998%)
+[DEBUG]   The whole process of reading the makefile: 232 微秒 (0.134765%)
+[DEBUG]   Argument Parsing: 28 微秒 (0.0162647%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.0133603%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 170640 微秒 (99.1217%)
+[DEBUG]   Iterate over all double-colon entries for this file: 859 微秒 (0.498978%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 218 微秒 (0.126632%)
+[DEBUG]   Free a chain of struct nameseq.: 38 微秒 (0.0220735%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.00406617%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 170621 微秒 (99.1107%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 841 微秒 (0.488522%)
+[DEBUG]   Read any stdin makefiles into temporary files: 209 微秒 (0.121404%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00116176%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 781 微秒 (0.453669%)
+[DEBUG]   Read all makefiles and decode: 151 微秒 (0.0877132%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[ 98%] Built target pngfix
+[ 98%] Built target pngstest
+[100%] Linking C executable pngvalid
+*******************************************************************************
+[DEBUG] 总耗时: 406820 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 406137 微秒 (99.8321%)
+[DEBUG]   Manifest Parsing and Rebuilding: 353 微秒 (0.0867706%)
+[DEBUG]   Initialization: 280 微秒 (0.0688265%)
+[DEBUG]   Execution Preparation: 1 微秒 (0.000245809%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 406149 微秒 (99.8351%)
+[DEBUG]   Update goal chain: 406126 微秒 (99.8294%)
+[DEBUG]   The whole process of reading the makefile: 231 微秒 (0.0567819%)
+[DEBUG]   Argument Parsing: 29 微秒 (0.00712846%)
+[DEBUG]   Dependency Graph Construction: 23 微秒 (0.00565361%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 405474 微秒 (99.6691%)
+[DEBUG]   Iterate over all double-colon entries for this file: 656 微秒 (0.161251%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 217 微秒 (0.0533405%)
+[DEBUG]   Free a chain of struct nameseq.: 41 微秒 (0.0100782%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.00172066%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 405450 微秒 (99.6632%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 634 微秒 (0.155843%)
+[DEBUG]   Read any stdin makefiles into temporary files: 208 微秒 (0.0511283%)
+[DEBUG]   Manage jobs: 2 微秒 (0.000491618%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 591 微秒 (0.145273%)
+[DEBUG]   Read all makefiles and decode: 149 微秒 (0.0366255%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+[100%] Built target pngvalid
+*******************************************************************************
+[DEBUG] 总耗时: 1107666 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 1106686 微秒 (99.9115%)
+[DEBUG]   Manifest Parsing and Rebuilding: 668 微秒 (0.060307%)
+[DEBUG]   Initialization: 258 微秒 (0.0232922%)
+[DEBUG]   Execution Preparation: 1 微秒 (9.02799e-05%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 1106696 微秒 (99.9124%)
+[DEBUG]   Update goal chain: 1106681 微秒 (99.9111%)
+[DEBUG]   The whole process of reading the makefile: 562 微秒 (0.0507373%)
+[DEBUG]   Argument Parsing: 30 微秒 (0.0027084%)
+[DEBUG]   Dependency Graph Construction: 26 微秒 (0.00234728%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Variable initalzation: 1099584 微秒 (99.2704%)
+[DEBUG]   Iterate over all double-colon entries for this file: 7008 微秒 (0.632682%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 547 微秒 (0.0493831%)
+[DEBUG]   Free a chain of struct nameseq.: 33 微秒 (0.00297924%)
+[DEBUG]   Setup jobservers: 7 微秒 (0.000631959%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Wait for a child to die: 1099448 微秒 (99.2581%)
+[DEBUG]   Ensuring that build targets are checked and updated properly: 6936 微秒 (0.626182%)
+[DEBUG]   Read any stdin makefiles into temporary files: 538 微秒 (0.0485706%)
+[DEBUG]   Manage jobs: 2 微秒 (0.00018056%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 6806 微秒 (0.614445%)
+[DEBUG]   Read all makefiles and decode: 474 微秒 (0.0427927%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+*******************************************************************************
+[DEBUG] 总耗时: 1137999 微秒
+[DEBUG] Command used: $MAKE_PATH -j32 -l32 2>&1 | tee -a "$LOG_FILE"
+[DEBUG] finish profiling
+
+[DEBUG] Level 0 前 5 个耗时最多的记录:
+[DEBUG]   Run Build: 1136828 微秒 (99.8971%)
+[DEBUG]   Manifest Parsing and Rebuilding: 878 微秒 (0.077153%)
+[DEBUG]   Initialization: 241 微秒 (0.0211775%)
+[DEBUG]   Execution Preparation: 1 微秒 (8.78735e-05%)
+
+[DEBUG] Level 1 前 5 个耗时最多的记录:
+[DEBUG]   Update all the goals: 1136822 微秒 (99.8966%)
+[DEBUG]   Update goal chain: 1136817 微秒 (99.8961%)
+[DEBUG]   The whole process of reading the makefile: 785 微秒 (0.0689807%)
+[DEBUG]   Dependency Graph Construction: 30 微秒 (0.00263621%)
+[DEBUG]   Argument Parsing: 18 微秒 (0.00158172%)
+
+[DEBUG] Level 2 前 5 个耗时最多的记录:
+[DEBUG]   Iterate over all double-colon entries for this file: 1136808 微秒 (99.8953%)
+[DEBUG]   Set varibles and Read makefiles into temporary files: 776 微秒 (0.0681899%)
+[DEBUG]   Free a chain of struct nameseq.: 36 微秒 (0.00316345%)
+[DEBUG]   Variable initalzation: 6 微秒 (0.000527241%)
+[DEBUG]   Set MAKE_COMMAND variable: 2 微秒 (0.000175747%)
+
+[DEBUG] Level 3 前 5 个耗时最多的记录:
+[DEBUG]   Ensuring that build targets are checked and updated properly: 1136799 微秒 (99.8946%)
+[DEBUG]   Read any stdin makefiles into temporary files: 715 微秒 (0.0628296%)
+[DEBUG]   Manage jobs: 53 微秒 (0.0046573%)
+[DEBUG]   Set varibles for makefile reading: 0 微秒 (0%)
+[DEBUG]   Start jobs that are waiting for the load to go down: 0 微秒 (0%)
+
+[DEBUG] Level 4 前 5 个耗时最多的记录:
+[DEBUG]   Save the old value of 'commands_started': 1136777 微秒 (99.8926%)
+[DEBUG]   Read all makefiles and decode: 651 微秒 (0.0572057%)
+[DEBUG]   Keep track if any double-colon entry is not finished: 0 微秒 (0%)
+[DEBUG]   Set the goal's 'changed' flag: 0 微秒 (0%)
+--------------------------------------------------
+CMake time: 310000.00 microseconds
+Make total time: 1137999 microseconds
+Total time: 1447999.00 microseconds
+CMake ratio: 21.00%
+Make ratio: 78.00%
+Level 0 Global Percentages:
+  Run Build: 1136828 microseconds (78.00%)
+  Manifest Parsing and Rebuilding: 878 microseconds (0%)
+  Initialization: 241 microseconds (0%)

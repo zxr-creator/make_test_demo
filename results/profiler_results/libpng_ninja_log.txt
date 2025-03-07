@@ -1,0 +1,2573 @@
+Initial capacity: 34
+PROFILER_LOG: level=0|name=Initialization|duration=231 微秒
+Checking more_to_do: wanted_edges_ = 0, command_edges_ = 0
+PROFILER_LOG: level=0|name=Manifest Parsing and Rebuilding|duration=1708 微秒
+PROFILER_LOG: level=1|name=Collect Targets|duration=0 微秒
+PROFILER_LOG: level=1|name=Disk Interface Setup|duration=0 微秒
+PROFILER_LOG: level=1|name=Builder Initialization|duration=512 微秒
+PROFILER_LOG: level=1|name=Disable Stat Cache|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 92, command_edges_ = 89
+PROFILER_LOG: level=1|name=Check Up-to-date|duration=0 微秒
+PROFILER_LOG: level=2|name=Prepare Queue|duration=20 微秒
+PROFILER_LOG: level=2|name=Setup Command Runner|duration=5 微秒
+PROFILER_LOG: level=2|name=Build Start|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 92, command_edges_ = 89
+Final capacity: 34
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/arraylist.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/arraylist.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=248 微秒
+Final capacity: 33
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/debug.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/debug.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=245 微秒
+Final capacity: 32
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_c_version.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_c_version.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=256 微秒
+Final capacity: 31
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_object.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=207 微秒
+Final capacity: 30
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object_iterator.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_object_iterator.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=223 微秒
+Final capacity: 29
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_tokener.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_tokener.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=233 微秒
+Final capacity: 28
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_util.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_util.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=196 微秒
+Final capacity: 27
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_visit.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_visit.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=198 微秒
+Final capacity: 26
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/linkhash.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/linkhash.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=181 微秒
+Final capacity: 25
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/printbuf.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/printbuf.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=275 微秒
+Final capacity: 24
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/random_seed.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/random_seed.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=511 微秒
+Final capacity: 23
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/strerror_override.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/strerror_override.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=254 微秒
+Final capacity: 22
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=2 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_pointer.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_pointer.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=228 微秒
+Final capacity: 21
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_patch.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_patch.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=280 微秒
+Final capacity: 20
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/arraylist.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/arraylist.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=238 微秒
+Final capacity: 19
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/debug.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/debug.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=249 微秒
+Final capacity: 18
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_c_version.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_c_version.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=281 微秒
+Final capacity: 17
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_object.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=236 微秒
+Final capacity: 16
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object_iterator.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_object_iterator.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=212 微秒
+Final capacity: 15
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_tokener.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_tokener.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=284 微秒
+Final capacity: 14
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=2 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=1 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=5 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_util.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_util.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=271 微秒
+Final capacity: 13
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_visit.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_visit.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=278 微秒
+Final capacity: 12
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/linkhash.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/linkhash.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=274 微秒
+Final capacity: 11
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/printbuf.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/printbuf.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=264 微秒
+Final capacity: 10
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/random_seed.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/random_seed.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=237 微秒
+Final capacity: 9
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/strerror_override.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/strerror_override.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=290 微秒
+Final capacity: 8
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_pointer.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_pointer.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=309 微秒
+Final capacity: 7
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_patch.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_patch.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=369 微秒
+Final capacity: 6
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_COMPILER__test1Formatted_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test1.c
+  cmake_object_order_depends_target_test1Formatted
+Outputs:
+  tests/CMakeFiles/test1Formatted.dir/test1.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=294 微秒
+Final capacity: 5
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test1Formatted_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/parse_flags.c
+  cmake_object_order_depends_target_test1Formatted
+Outputs:
+  tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=796 微秒
+Final capacity: 4
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test2Formatted_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test2.c
+  cmake_object_order_depends_target_test2Formatted
+Outputs:
+  tests/CMakeFiles/test2Formatted.dir/test2.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=3480 微秒
+Final capacity: 3
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test2Formatted_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/parse_flags.c
+  cmake_object_order_depends_target_test2Formatted
+Outputs:
+  tests/CMakeFiles/test2Formatted.dir/parse_flags.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=245 微秒
+Final capacity: 2
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test1_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test1.c
+  cmake_object_order_depends_target_test1
+Outputs:
+  tests/CMakeFiles/test1.dir/test1.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=1721 微秒
+Final capacity: 1
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=2 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=1 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=3 微秒
+Starting Edge - Rule: C_COMPILER__test2_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test2.c
+  cmake_object_order_depends_target_test2
+Outputs:
+  tests/CMakeFiles/test2.dir/test2.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=3761 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=10703 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_c_version.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_c_version.c.o
+[1/89] Building C object CMakeFiles/json-c.dir/json_c_version.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=323 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 91, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=1 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_COMPILER__test4_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test4.c
+  cmake_object_order_depends_target_test4
+Outputs:
+  tests/CMakeFiles/test4.dir/test4.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=3905 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=3995 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_c_version.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_c_version.c.o
+[2/89] Building C object CMakeFiles/json-c-static.dir/json_c_version.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=126 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 90, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=1 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__testReplaceExisting_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/testReplaceExisting.c
+  cmake_object_order_depends_target_testReplaceExisting
+Outputs:
+  tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=1514 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=23 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=29 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/strerror_override.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/strerror_override.c.o
+[3/89] Building C object CMakeFiles/json-c.dir/strerror_override.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=2254 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 89, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_cast_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_cast.c
+  cmake_object_order_depends_target_test_cast
+Outputs:
+  tests/CMakeFiles/test_cast.dir/test_cast.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=2036 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=62 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=43 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_visit.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_visit.c.o
+[4/89] Building C object CMakeFiles/json-c.dir/json_visit.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=213 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 88, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=1 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_COMPILER__test_charcase_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_charcase.c
+  cmake_object_order_depends_target_test_charcase
+Outputs:
+  tests/CMakeFiles/test_charcase.dir/test_charcase.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=500 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=7 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_visit.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_visit.c.o
+[5/89] Building C object CMakeFiles/json-c-static.dir/json_visit.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=113 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 87, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_compare_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_compare.c
+  cmake_object_order_depends_target_test_compare
+Outputs:
+  tests/CMakeFiles/test_compare.dir/test_compare.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=368 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=7 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/strerror_override.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/strerror_override.c.o
+[6/89] Building C object CMakeFiles/json-c-static.dir/strerror_override.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=142 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 86, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_deep_copy_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_deep_copy.c
+  cmake_object_order_depends_target_test_deep_copy
+Outputs:
+  tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=1802 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=3 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=66 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/debug.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/debug.c.o
+[7/89] Building C object CMakeFiles/json-c.dir/debug.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=431 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 85, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_double_serializer_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_double_serializer.c
+  cmake_object_order_depends_target_test_double_serializer
+Outputs:
+  tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=569 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=7 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/printbuf.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/printbuf.c.o
+[8/89] Building C object CMakeFiles/json-c.dir/printbuf.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=185 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 84, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_float_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_float.c
+  cmake_object_order_depends_target_test_float
+Outputs:
+  tests/CMakeFiles/test_float.dir/test_float.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=641 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=8 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object_iterator.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_object_iterator.c.o
+[9/89] Building C object CMakeFiles/json-c-static.dir/json_object_iterator.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=177 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 83, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_int_add_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_int_add.c
+  cmake_object_order_depends_target_test_int_add
+Outputs:
+  tests/CMakeFiles/test_int_add.dir/test_int_add.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=719 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=103 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=43 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/arraylist.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/arraylist.c.o
+[10/89] Building C object CMakeFiles/json-c.dir/arraylist.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=403 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 82, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_int_get_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_int_get.c
+  cmake_object_order_depends_target_test_int_get
+Outputs:
+  tests/CMakeFiles/test_int_get.dir/test_int_get.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=726 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=3 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=6 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/arraylist.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/arraylist.c.o
+[11/89] Building C object CMakeFiles/json-c-static.dir/arraylist.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=106 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 81, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_locale_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_locale.c
+  cmake_object_order_depends_target_test_locale
+Outputs:
+  tests/CMakeFiles/test_locale.dir/test_locale.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=1252 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=23 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=6 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/debug.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/debug.c.o
+[12/89] Building C object CMakeFiles/json-c-static.dir/debug.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=236 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 80, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_COMPILER__test_null_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_null.c
+  cmake_object_order_depends_target_test_null
+Outputs:
+  tests/CMakeFiles/test_null.dir/test_null.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=542 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=7 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/printbuf.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/printbuf.c.o
+[13/89] Building C object CMakeFiles/json-c-static.dir/printbuf.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=171 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 79, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_parse_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_parse.c
+  cmake_object_order_depends_target_test_parse
+Outputs:
+  tests/CMakeFiles/test_parse.dir/test_parse.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=627 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=42 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object_iterator.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_object_iterator.c.o
+[14/89] Building C object CMakeFiles/json-c.dir/json_object_iterator.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=125 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 78, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_parse_int64_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_parse_int64.c
+  cmake_object_order_depends_target_test_parse_int64
+Outputs:
+  tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=320 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=14 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=7 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/random_seed.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/random_seed.c.o
+[15/89] Building C object CMakeFiles/json-c-static.dir/random_seed.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=216 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 77, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_printbuf_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_printbuf.c
+  cmake_object_order_depends_target_test_printbuf
+Outputs:
+  tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=1321 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=6 微秒
+Finishing Edge - Rule: C_COMPILER__test1Formatted_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/parse_flags.c
+  cmake_object_order_depends_target_test1Formatted
+Outputs:
+  tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o
+[16/89] Building C object tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=169 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 76, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_COMPILER__test_set_serializer_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_set_serializer.c
+  cmake_object_order_depends_target_test_set_serializer
+Outputs:
+  tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=1126 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=74 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=9 微秒
+Finishing Edge - Rule: C_COMPILER__test2Formatted_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test2.c
+  cmake_object_order_depends_target_test2Formatted
+Outputs:
+  tests/CMakeFiles/test2Formatted.dir/test2.c.o
+[17/89] Building C object tests/CMakeFiles/test2Formatted.dir/test2.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=1077 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 75, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=48 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_COMPILER__test_set_value_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_set_value.c
+  cmake_object_order_depends_target_test_set_value
+Outputs:
+  tests/CMakeFiles/test_set_value.dir/test_set_value.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=449 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=4 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=44 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_util.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_util.c.o
+[18/89] Building C object CMakeFiles/json-c.dir/json_util.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=193 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 74, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_strerror_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_strerror.c
+  cmake_object_order_depends_target_test_strerror
+Outputs:
+  tests/CMakeFiles/test_strerror.dir/test_strerror.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=430 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=2 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=7 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/random_seed.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/random_seed.c.o
+[19/89] Building C object CMakeFiles/json-c.dir/random_seed.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=175 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 73, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_util_file_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_util_file.c
+  cmake_object_order_depends_target_test_util_file
+Outputs:
+  tests/CMakeFiles/test_util_file.dir/test_util_file.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=266 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=7 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_patch.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_patch.c.o
+[20/89] Building C object CMakeFiles/json-c.dir/json_patch.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=156 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 72, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_visit_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_visit.c
+  cmake_object_order_depends_target_test_visit
+Outputs:
+  tests/CMakeFiles/test_visit.dir/test_visit.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=727 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=33 微秒
+Finishing Edge - Rule: C_COMPILER__test2_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test2.c
+  cmake_object_order_depends_target_test2
+Outputs:
+  tests/CMakeFiles/test2.dir/test2.c.o
+[21/89] Building C object tests/CMakeFiles/test2.dir/test2.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=139 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 71, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_object_iterator_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_object_iterator.c
+  cmake_object_order_depends_target_test_object_iterator
+Outputs:
+  tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=2229 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=37 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_patch.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_patch.c.o
+[22/89] Building C object CMakeFiles/json-c-static.dir/json_patch.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=132 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 70, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_json_pointer_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_json_pointer.c
+  cmake_object_order_depends_target_test_json_pointer
+Outputs:
+  tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=347 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=8 微秒
+Finishing Edge - Rule: C_COMPILER__test2Formatted_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/parse_flags.c
+  cmake_object_order_depends_target_test2Formatted
+Outputs:
+  tests/CMakeFiles/test2Formatted.dir/parse_flags.c.o
+[23/89] Building C object tests/CMakeFiles/test2Formatted.dir/parse_flags.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=171 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 69, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__test_json_patch_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_json_patch.c
+  cmake_object_order_depends_target_test_json_patch
+Outputs:
+  tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=1115 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=2218 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_util.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_util.c.o
+[24/89] Building C object CMakeFiles/json-c-static.dir/json_util.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=207 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 68, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_COMPILER__json_parse_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/apps/json_parse.c
+  cmake_object_order_depends_target_json_parse
+Outputs:
+  apps/CMakeFiles/json_parse.dir/json_parse.c.o
+PROFILER_LOG: level=3|name=Start Edge|duration=1384 微秒
+Final capacity: 0
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=303 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_pointer.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_pointer.c.o
+[25/89] Building C object CMakeFiles/json-c.dir/json_pointer.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=152 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 67, command_edges_ = 89
+Final capacity: 1
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=1761 微秒
+Finishing Edge - Rule: C_COMPILER__test4_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test4.c
+  cmake_object_order_depends_target_test4
+Outputs:
+  tests/CMakeFiles/test4.dir/test4.c.o
+[26/89] Building C object tests/CMakeFiles/test4.dir/test4.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=170 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 66, command_edges_ = 89
+Final capacity: 2
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=2813 微秒
+Finishing Edge - Rule: C_COMPILER__test1Formatted_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test1.c
+  cmake_object_order_depends_target_test1Formatted
+Outputs:
+  tests/CMakeFiles/test1Formatted.dir/test1.c.o
+[27/89] Building C object tests/CMakeFiles/test1Formatted.dir/test1.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=274 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 65, command_edges_ = 89
+Final capacity: 3
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=20 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_pointer.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_pointer.c.o
+[28/89] Building C object CMakeFiles/json-c-static.dir/json_pointer.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=98 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 64, command_edges_ = 89
+Final capacity: 4
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=876 微秒
+Finishing Edge - Rule: C_COMPILER__test_float_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_float.c
+  cmake_object_order_depends_target_test_float
+Outputs:
+  tests/CMakeFiles/test_float.dir/test_float.c.o
+[29/89] Building C object tests/CMakeFiles/test_float.dir/test_float.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=111 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 63, command_edges_ = 89
+Final capacity: 5
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=3259 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/linkhash.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/linkhash.c.o
+[30/89] Building C object CMakeFiles/json-c-static.dir/linkhash.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=163 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 62, command_edges_ = 89
+Final capacity: 6
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=19 微秒
+Finishing Edge - Rule: C_COMPILER__test1_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test1.c
+  cmake_object_order_depends_target_test1
+Outputs:
+  tests/CMakeFiles/test1.dir/test1.c.o
+[31/89] Building C object tests/CMakeFiles/test1.dir/test1.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=120 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 61, command_edges_ = 89
+Final capacity: 7
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=678 微秒
+Finishing Edge - Rule: C_COMPILER__test_charcase_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_charcase.c
+  cmake_object_order_depends_target_test_charcase
+Outputs:
+  tests/CMakeFiles/test_charcase.dir/test_charcase.c.o
+[32/89] Building C object tests/CMakeFiles/test_charcase.dir/test_charcase.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=123 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 60, command_edges_ = 89
+Final capacity: 8
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=168 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/linkhash.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/linkhash.c.o
+[33/89] Building C object CMakeFiles/json-c.dir/linkhash.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=119 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 59, command_edges_ = 89
+Final capacity: 9
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=567 微秒
+Finishing Edge - Rule: C_COMPILER__testReplaceExisting_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/testReplaceExisting.c
+  cmake_object_order_depends_target_testReplaceExisting
+Outputs:
+  tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o
+[34/89] Building C object tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=116 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 58, command_edges_ = 89
+Final capacity: 10
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=2405 微秒
+Finishing Edge - Rule: C_COMPILER__test_cast_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_cast.c
+  cmake_object_order_depends_target_test_cast
+Outputs:
+  tests/CMakeFiles/test_cast.dir/test_cast.c.o
+[35/89] Building C object tests/CMakeFiles/test_cast.dir/test_cast.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=109 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 57, command_edges_ = 89
+Final capacity: 11
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=18 微秒
+Finishing Edge - Rule: C_COMPILER__test_null_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_null.c
+  cmake_object_order_depends_target_test_null
+Outputs:
+  tests/CMakeFiles/test_null.dir/test_null.c.o
+[36/89] Building C object tests/CMakeFiles/test_null.dir/test_null.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=81 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 56, command_edges_ = 89
+Final capacity: 12
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=15 微秒
+Finishing Edge - Rule: C_COMPILER__test_double_serializer_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_double_serializer.c
+  cmake_object_order_depends_target_test_double_serializer
+Outputs:
+  tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.o
+[37/89] Building C object tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=117 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 55, command_edges_ = 89
+Final capacity: 13
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=2444 微秒
+Finishing Edge - Rule: C_COMPILER__test_parse_int64_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_parse_int64.c
+  cmake_object_order_depends_target_test_parse_int64
+Outputs:
+  tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o
+[38/89] Building C object tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=123 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 54, command_edges_ = 89
+Final capacity: 14
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=843 微秒
+Finishing Edge - Rule: C_COMPILER__test_strerror_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_strerror.c
+  cmake_object_order_depends_target_test_strerror
+Outputs:
+  tests/CMakeFiles/test_strerror.dir/test_strerror.c.o
+[39/89] Building C object tests/CMakeFiles/test_strerror.dir/test_strerror.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=121 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 53, command_edges_ = 89
+Final capacity: 15
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=212 微秒
+Finishing Edge - Rule: C_COMPILER__test_locale_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_locale.c
+  cmake_object_order_depends_target_test_locale
+Outputs:
+  tests/CMakeFiles/test_locale.dir/test_locale.c.o
+[40/89] Building C object tests/CMakeFiles/test_locale.dir/test_locale.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=207 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 52, command_edges_ = 89
+Final capacity: 16
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=1152 微秒
+Finishing Edge - Rule: C_COMPILER__test_compare_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_compare.c
+  cmake_object_order_depends_target_test_compare
+Outputs:
+  tests/CMakeFiles/test_compare.dir/test_compare.c.o
+[41/89] Building C object tests/CMakeFiles/test_compare.dir/test_compare.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=110 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 51, command_edges_ = 89
+Final capacity: 17
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=4 微秒
+Finishing Edge - Rule: C_COMPILER__test_int_add_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_int_add.c
+  cmake_object_order_depends_target_test_int_add
+Outputs:
+  tests/CMakeFiles/test_int_add.dir/test_int_add.c.o
+[42/89] Building C object tests/CMakeFiles/test_int_add.dir/test_int_add.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=96 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 50, command_edges_ = 89
+Final capacity: 18
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=5204 微秒
+Finishing Edge - Rule: C_COMPILER__test_object_iterator_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_object_iterator.c
+  cmake_object_order_depends_target_test_object_iterator
+Outputs:
+  tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.o
+[43/89] Building C object tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=138 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 49, command_edges_ = 89
+Final capacity: 19
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=1254 微秒
+Finishing Edge - Rule: C_COMPILER__test_deep_copy_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_deep_copy.c
+  cmake_object_order_depends_target_test_deep_copy
+Outputs:
+  tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o
+[44/89] Building C object tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=111 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 48, command_edges_ = 89
+Final capacity: 20
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=491 微秒
+Finishing Edge - Rule: C_COMPILER__test_set_serializer_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_set_serializer.c
+  cmake_object_order_depends_target_test_set_serializer
+Outputs:
+  tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.o
+[45/89] Building C object tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=98 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 47, command_edges_ = 89
+Final capacity: 21
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=4452 微秒
+Finishing Edge - Rule: C_COMPILER__test_printbuf_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_printbuf.c
+  cmake_object_order_depends_target_test_printbuf
+Outputs:
+  tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o
+[46/89] Building C object tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=149 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 46, command_edges_ = 89
+Final capacity: 22
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=730 微秒
+Finishing Edge - Rule: C_COMPILER__test_visit_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_visit.c
+  cmake_object_order_depends_target_test_visit
+Outputs:
+  tests/CMakeFiles/test_visit.dir/test_visit.c.o
+[47/89] Building C object tests/CMakeFiles/test_visit.dir/test_visit.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=100 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 45, command_edges_ = 89
+Final capacity: 23
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=1718 微秒
+Finishing Edge - Rule: C_COMPILER__test_json_patch_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_json_patch.c
+  cmake_object_order_depends_target_test_json_patch
+Outputs:
+  tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.o
+[48/89] Building C object tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=101 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 44, command_edges_ = 89
+Final capacity: 24
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=1974 微秒
+Finishing Edge - Rule: C_COMPILER__test_set_value_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_set_value.c
+  cmake_object_order_depends_target_test_set_value
+Outputs:
+  tests/CMakeFiles/test_set_value.dir/test_set_value.c.o
+[49/89] Building C object tests/CMakeFiles/test_set_value.dir/test_set_value.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=103 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 43, command_edges_ = 89
+Final capacity: 25
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=3908 微秒
+Finishing Edge - Rule: C_COMPILER__test_util_file_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_util_file.c
+  cmake_object_order_depends_target_test_util_file
+Outputs:
+  tests/CMakeFiles/test_util_file.dir/test_util_file.c.o
+[50/89] Building C object tests/CMakeFiles/test_util_file.dir/test_util_file.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=176 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 42, command_edges_ = 89
+Final capacity: 26
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=363 微秒
+Finishing Edge - Rule: C_COMPILER__test_parse_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_parse.c
+  cmake_object_order_depends_target_test_parse
+Outputs:
+  tests/CMakeFiles/test_parse.dir/test_parse.c.o
+[51/89] Building C object tests/CMakeFiles/test_parse.dir/test_parse.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=156 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 41, command_edges_ = 89
+Final capacity: 27
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=5622 微秒
+Finishing Edge - Rule: C_COMPILER__test_int_get_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_int_get.c
+  cmake_object_order_depends_target_test_int_get
+Outputs:
+  tests/CMakeFiles/test_int_get.dir/test_int_get.c.o
+[52/89] Building C object tests/CMakeFiles/test_int_get.dir/test_int_get.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=171 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 40, command_edges_ = 89
+Final capacity: 28
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=617 微秒
+Finishing Edge - Rule: C_COMPILER__json_parse_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/apps/json_parse.c
+  cmake_object_order_depends_target_json_parse
+Outputs:
+  apps/CMakeFiles/json_parse.dir/json_parse.c.o
+[53/89] Building C object apps/CMakeFiles/json_parse.dir/json_parse.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=138 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 39, command_edges_ = 89
+Final capacity: 29
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=7024 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_tokener.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_tokener.c.o
+[54/89] Building C object CMakeFiles/json-c.dir/json_tokener.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=106 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 38, command_edges_ = 89
+Final capacity: 30
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=11706 微秒
+Finishing Edge - Rule: C_COMPILER__test_json_pointer_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/tests/test_json_pointer.c
+  cmake_object_order_depends_target_test_json_pointer
+Outputs:
+  tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o
+[55/89] Building C object tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=124 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 37, command_edges_ = 89
+Final capacity: 31
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=3070 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_tokener.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_tokener.c.o
+[56/89] Building C object CMakeFiles/json-c-static.dir/json_tokener.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=106 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 36, command_edges_ = 89
+Final capacity: 32
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=30842 微秒
+Finishing Edge - Rule: C_COMPILER__json-c_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object.c
+  cmake_object_order_depends_target_json-c
+Outputs:
+  CMakeFiles/json-c.dir/json_object.c.o
+[57/89] Building C object CMakeFiles/json-c.dir/json_object.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=148 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 35, command_edges_ = 89
+Final capacity: 33
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_SHARED_LIBRARY_LINKER__json-c_debug
+Inputs:
+  CMakeFiles/json-c.dir/arraylist.c.o
+  CMakeFiles/json-c.dir/debug.c.o
+  CMakeFiles/json-c.dir/json_c_version.c.o
+  CMakeFiles/json-c.dir/json_object.c.o
+  CMakeFiles/json-c.dir/json_object_iterator.c.o
+  CMakeFiles/json-c.dir/json_tokener.c.o
+  CMakeFiles/json-c.dir/json_util.c.o
+  CMakeFiles/json-c.dir/json_visit.c.o
+  CMakeFiles/json-c.dir/linkhash.c.o
+  CMakeFiles/json-c.dir/printbuf.c.o
+  CMakeFiles/json-c.dir/random_seed.c.o
+  CMakeFiles/json-c.dir/strerror_override.c.o
+  CMakeFiles/json-c.dir/json_pointer.c.o
+  CMakeFiles/json-c.dir/json_patch.c.o
+Outputs:
+  libjson-c.so.5.4.0
+PROFILER_LOG: level=3|name=Start Edge|duration=271 微秒
+Final capacity: 32
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=2799 微秒
+Finishing Edge - Rule: C_COMPILER__json-c-static_debug
+Inputs:
+  /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c/json_object.c
+  cmake_object_order_depends_target_json-c-static
+Outputs:
+  CMakeFiles/json-c-static.dir/json_object.c.o
+[58/89] Building C object CMakeFiles/json-c-static.dir/json_object.c.o
+PROFILER_LOG: level=3|name=Finish Command|duration=135 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 34, command_edges_ = 89
+Final capacity: 33
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: C_STATIC_LIBRARY_LINKER__json-c-static_debug
+Inputs:
+  CMakeFiles/json-c-static.dir/arraylist.c.o
+  CMakeFiles/json-c-static.dir/debug.c.o
+  CMakeFiles/json-c-static.dir/json_c_version.c.o
+  CMakeFiles/json-c-static.dir/json_object.c.o
+  CMakeFiles/json-c-static.dir/json_object_iterator.c.o
+  CMakeFiles/json-c-static.dir/json_tokener.c.o
+  CMakeFiles/json-c-static.dir/json_util.c.o
+  CMakeFiles/json-c-static.dir/json_visit.c.o
+  CMakeFiles/json-c-static.dir/linkhash.c.o
+  CMakeFiles/json-c-static.dir/printbuf.c.o
+  CMakeFiles/json-c-static.dir/random_seed.c.o
+  CMakeFiles/json-c-static.dir/strerror_override.c.o
+  CMakeFiles/json-c-static.dir/json_pointer.c.o
+  CMakeFiles/json-c-static.dir/json_patch.c.o
+Outputs:
+  libjson-c.a
+PROFILER_LOG: level=3|name=Start Edge|duration=477 微秒
+Final capacity: 32
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=20631 微秒
+Finishing Edge - Rule: C_STATIC_LIBRARY_LINKER__json-c-static_debug
+Inputs:
+  CMakeFiles/json-c-static.dir/arraylist.c.o
+  CMakeFiles/json-c-static.dir/debug.c.o
+  CMakeFiles/json-c-static.dir/json_c_version.c.o
+  CMakeFiles/json-c-static.dir/json_object.c.o
+  CMakeFiles/json-c-static.dir/json_object_iterator.c.o
+  CMakeFiles/json-c-static.dir/json_tokener.c.o
+  CMakeFiles/json-c-static.dir/json_util.c.o
+  CMakeFiles/json-c-static.dir/json_visit.c.o
+  CMakeFiles/json-c-static.dir/linkhash.c.o
+  CMakeFiles/json-c-static.dir/printbuf.c.o
+  CMakeFiles/json-c-static.dir/random_seed.c.o
+  CMakeFiles/json-c-static.dir/strerror_override.c.o
+  CMakeFiles/json-c-static.dir/json_pointer.c.o
+  CMakeFiles/json-c-static.dir/json_patch.c.o
+Outputs:
+  libjson-c.a
+[59/89] Linking C static library libjson-c.a
+PROFILER_LOG: level=3|name=Finish Command|duration=40 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 33, command_edges_ = 89
+Final capacity: 33
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=310 微秒
+Finishing Edge - Rule: C_SHARED_LIBRARY_LINKER__json-c_debug
+Inputs:
+  CMakeFiles/json-c.dir/arraylist.c.o
+  CMakeFiles/json-c.dir/debug.c.o
+  CMakeFiles/json-c.dir/json_c_version.c.o
+  CMakeFiles/json-c.dir/json_object.c.o
+  CMakeFiles/json-c.dir/json_object_iterator.c.o
+  CMakeFiles/json-c.dir/json_tokener.c.o
+  CMakeFiles/json-c.dir/json_util.c.o
+  CMakeFiles/json-c.dir/json_visit.c.o
+  CMakeFiles/json-c.dir/linkhash.c.o
+  CMakeFiles/json-c.dir/printbuf.c.o
+  CMakeFiles/json-c.dir/random_seed.c.o
+  CMakeFiles/json-c.dir/strerror_override.c.o
+  CMakeFiles/json-c.dir/json_pointer.c.o
+  CMakeFiles/json-c.dir/json_patch.c.o
+Outputs:
+  libjson-c.so.5.4.0
+[60/89] Linking C shared library libjson-c.so.5.4.0
+PROFILER_LOG: level=3|name=Finish Command|duration=37 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 32, command_edges_ = 89
+Final capacity: 34
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: CMAKE_SYMLINK_LIBRARY
+Inputs:
+  libjson-c.so.5.4.0
+Outputs:
+  libjson-c.so.5
+  libjson-c.so
+PROFILER_LOG: level=3|name=Start Edge|duration=330 微秒
+Final capacity: 33
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=9924 微秒
+Finishing Edge - Rule: CMAKE_SYMLINK_LIBRARY
+Inputs:
+  libjson-c.so.5.4.0
+Outputs:
+  libjson-c.so.5
+  libjson-c.so
+[61/89] Creating library symlink libjson-c.so.5 libjson-c.so
+PROFILER_LOG: level=3|name=Finish Command|duration=33 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 31, command_edges_ = 89
+Final capacity: 34
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test1Formatted_debug
+Inputs:
+  tests/CMakeFiles/test1Formatted.dir/test1.c.o
+  tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test1Formatted
+PROFILER_LOG: level=3|name=Start Edge|duration=266 微秒
+Final capacity: 33
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test2Formatted_debug
+Inputs:
+  tests/CMakeFiles/test2Formatted.dir/test2.c.o
+  tests/CMakeFiles/test2Formatted.dir/parse_flags.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test2Formatted
+PROFILER_LOG: level=3|name=Start Edge|duration=220 微秒
+Final capacity: 32
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test1_debug
+Inputs:
+  tests/CMakeFiles/test1.dir/test1.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test1
+PROFILER_LOG: level=3|name=Start Edge|duration=277 微秒
+Final capacity: 31
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test2_debug
+Inputs:
+  tests/CMakeFiles/test2.dir/test2.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test2
+PROFILER_LOG: level=3|name=Start Edge|duration=210 微秒
+Final capacity: 30
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test4_debug
+Inputs:
+  tests/CMakeFiles/test4.dir/test4.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test4
+PROFILER_LOG: level=3|name=Start Edge|duration=216 微秒
+Final capacity: 29
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__testReplaceExisting_debug
+Inputs:
+  tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/testReplaceExisting
+PROFILER_LOG: level=3|name=Start Edge|duration=249 微秒
+Final capacity: 28
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_cast_debug
+Inputs:
+  tests/CMakeFiles/test_cast.dir/test_cast.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_cast
+PROFILER_LOG: level=3|name=Start Edge|duration=228 微秒
+Final capacity: 27
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_charcase_debug
+Inputs:
+  tests/CMakeFiles/test_charcase.dir/test_charcase.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_charcase
+PROFILER_LOG: level=3|name=Start Edge|duration=247 微秒
+Final capacity: 26
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_compare_debug
+Inputs:
+  tests/CMakeFiles/test_compare.dir/test_compare.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_compare
+PROFILER_LOG: level=3|name=Start Edge|duration=229 微秒
+Final capacity: 25
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_deep_copy_debug
+Inputs:
+  tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_deep_copy
+PROFILER_LOG: level=3|name=Start Edge|duration=244 微秒
+Final capacity: 24
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_double_serializer_debug
+Inputs:
+  tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_double_serializer
+PROFILER_LOG: level=3|name=Start Edge|duration=235 微秒
+Final capacity: 23
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_float_debug
+Inputs:
+  tests/CMakeFiles/test_float.dir/test_float.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_float
+PROFILER_LOG: level=3|name=Start Edge|duration=242 微秒
+Final capacity: 22
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_int_add_debug
+Inputs:
+  tests/CMakeFiles/test_int_add.dir/test_int_add.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_int_add
+PROFILER_LOG: level=3|name=Start Edge|duration=226 微秒
+Final capacity: 21
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_int_get_debug
+Inputs:
+  tests/CMakeFiles/test_int_get.dir/test_int_get.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_int_get
+PROFILER_LOG: level=3|name=Start Edge|duration=195 微秒
+Final capacity: 20
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_locale_debug
+Inputs:
+  tests/CMakeFiles/test_locale.dir/test_locale.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_locale
+PROFILER_LOG: level=3|name=Start Edge|duration=262 微秒
+Final capacity: 19
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_null_debug
+Inputs:
+  tests/CMakeFiles/test_null.dir/test_null.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_null
+PROFILER_LOG: level=3|name=Start Edge|duration=284 微秒
+Final capacity: 18
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_parse_debug
+Inputs:
+  tests/CMakeFiles/test_parse.dir/test_parse.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_parse
+PROFILER_LOG: level=3|name=Start Edge|duration=264 微秒
+Final capacity: 17
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_parse_int64_debug
+Inputs:
+  tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_parse_int64
+PROFILER_LOG: level=3|name=Start Edge|duration=281 微秒
+Final capacity: 16
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_printbuf_debug
+Inputs:
+  tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_printbuf
+PROFILER_LOG: level=3|name=Start Edge|duration=238 微秒
+Final capacity: 15
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_set_serializer_debug
+Inputs:
+  tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_set_serializer
+PROFILER_LOG: level=3|name=Start Edge|duration=288 微秒
+Final capacity: 14
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_set_value_debug
+Inputs:
+  tests/CMakeFiles/test_set_value.dir/test_set_value.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_set_value
+PROFILER_LOG: level=3|name=Start Edge|duration=216 微秒
+Final capacity: 13
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_strerror_debug
+Inputs:
+  tests/CMakeFiles/test_strerror.dir/test_strerror.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_strerror
+PROFILER_LOG: level=3|name=Start Edge|duration=253 微秒
+Final capacity: 12
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_util_file_debug
+Inputs:
+  tests/CMakeFiles/test_util_file.dir/test_util_file.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_util_file
+PROFILER_LOG: level=3|name=Start Edge|duration=274 微秒
+Final capacity: 11
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_visit_debug
+Inputs:
+  tests/CMakeFiles/test_visit.dir/test_visit.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_visit
+PROFILER_LOG: level=3|name=Start Edge|duration=247 微秒
+Final capacity: 10
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_object_iterator_debug
+Inputs:
+  tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_object_iterator
+PROFILER_LOG: level=3|name=Start Edge|duration=233 微秒
+Final capacity: 9
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=1 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_json_pointer_debug
+Inputs:
+  tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_json_pointer
+PROFILER_LOG: level=3|name=Start Edge|duration=224 微秒
+Final capacity: 8
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__test_json_patch_debug
+Inputs:
+  tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_json_patch
+PROFILER_LOG: level=3|name=Start Edge|duration=280 微秒
+Final capacity: 7
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=2 微秒
+Starting Edge - Rule: C_EXECUTABLE_LINKER__json_parse_debug
+Inputs:
+  apps/CMakeFiles/json_parse.dir/json_parse.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  apps/json_parse
+PROFILER_LOG: level=3|name=Start Edge|duration=503 微秒
+Final capacity: 6
+PROFILER_LOG: level=3|name=Re-evaluate Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=21792 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_deep_copy_debug
+Inputs:
+  tests/CMakeFiles/test_deep_copy.dir/test_deep_copy.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_deep_copy
+[62/89] Linking C executable tests/test_deep_copy
+PROFILER_LOG: level=3|name=Finish Command|duration=59 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 30, command_edges_ = 89
+Final capacity: 7
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=2811 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test1Formatted_debug
+Inputs:
+  tests/CMakeFiles/test1Formatted.dir/test1.c.o
+  tests/CMakeFiles/test1Formatted.dir/parse_flags.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test1Formatted
+[63/89] Linking C executable tests/test1Formatted
+PROFILER_LOG: level=3|name=Finish Command|duration=54 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 29, command_edges_ = 89
+Final capacity: 8
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=18 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test2Formatted_debug
+Inputs:
+  tests/CMakeFiles/test2Formatted.dir/test2.c.o
+  tests/CMakeFiles/test2Formatted.dir/parse_flags.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test2Formatted
+[64/89] Linking C executable tests/test2Formatted
+PROFILER_LOG: level=3|name=Finish Command|duration=29 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 28, command_edges_ = 89
+Final capacity: 9
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=62 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test1_debug
+Inputs:
+  tests/CMakeFiles/test1.dir/test1.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test1
+[65/89] Linking C executable tests/test1
+PROFILER_LOG: level=3|name=Finish Command|duration=23 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 27, command_edges_ = 89
+Final capacity: 10
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=509 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test2_debug
+Inputs:
+  tests/CMakeFiles/test2.dir/test2.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test2
+[66/89] Linking C executable tests/test2
+PROFILER_LOG: level=3|name=Finish Command|duration=29 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 26, command_edges_ = 89
+Final capacity: 11
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=249 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test4_debug
+Inputs:
+  tests/CMakeFiles/test4.dir/test4.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test4
+[67/89] Linking C executable tests/test4
+PROFILER_LOG: level=3|name=Finish Command|duration=22 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 25, command_edges_ = 89
+Final capacity: 12
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=21 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_visit_debug
+Inputs:
+  tests/CMakeFiles/test_visit.dir/test_visit.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_visit
+[68/89] Linking C executable tests/test_visit
+PROFILER_LOG: level=3|name=Finish Command|duration=19 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 24, command_edges_ = 89
+Final capacity: 13
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=94 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_parse_debug
+Inputs:
+  tests/CMakeFiles/test_parse.dir/test_parse.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_parse
+[69/89] Linking C executable tests/test_parse
+PROFILER_LOG: level=3|name=Finish Command|duration=22 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 23, command_edges_ = 89
+Final capacity: 14
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=12 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__testReplaceExisting_debug
+Inputs:
+  tests/CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/testReplaceExisting
+[70/89] Linking C executable tests/testReplaceExisting
+PROFILER_LOG: level=3|name=Finish Command|duration=19 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 22, command_edges_ = 89
+Final capacity: 15
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=1497 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_compare_debug
+Inputs:
+  tests/CMakeFiles/test_compare.dir/test_compare.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_compare
+[71/89] Linking C executable tests/test_compare
+PROFILER_LOG: level=3|name=Finish Command|duration=24 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 21, command_edges_ = 89
+Final capacity: 16
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=14 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_locale_debug
+Inputs:
+  tests/CMakeFiles/test_locale.dir/test_locale.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_locale
+[72/89] Linking C executable tests/test_locale
+PROFILER_LOG: level=3|name=Finish Command|duration=22 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 20, command_edges_ = 89
+Final capacity: 17
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=271 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_charcase_debug
+Inputs:
+  tests/CMakeFiles/test_charcase.dir/test_charcase.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_charcase
+[73/89] Linking C executable tests/test_charcase
+PROFILER_LOG: level=3|name=Finish Command|duration=24 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 19, command_edges_ = 89
+Final capacity: 18
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=833 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_float_debug
+Inputs:
+  tests/CMakeFiles/test_float.dir/test_float.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_float
+[74/89] Linking C executable tests/test_float
+PROFILER_LOG: level=3|name=Finish Command|duration=26 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 18, command_edges_ = 89
+Final capacity: 19
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=140 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_double_serializer_debug
+Inputs:
+  tests/CMakeFiles/test_double_serializer.dir/test_double_serializer.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_double_serializer
+[75/89] Linking C executable tests/test_double_serializer
+PROFILER_LOG: level=3|name=Finish Command|duration=22 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 17, command_edges_ = 89
+Final capacity: 20
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=172 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_int_get_debug
+Inputs:
+  tests/CMakeFiles/test_int_get.dir/test_int_get.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_int_get
+[76/89] Linking C executable tests/test_int_get
+PROFILER_LOG: level=3|name=Finish Command|duration=20 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 16, command_edges_ = 89
+Final capacity: 21
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=4 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_null_debug
+Inputs:
+  tests/CMakeFiles/test_null.dir/test_null.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_null
+[77/89] Linking C executable tests/test_null
+PROFILER_LOG: level=3|name=Finish Command|duration=18 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 15, command_edges_ = 89
+Final capacity: 22
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=14 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_object_iterator_debug
+Inputs:
+  tests/CMakeFiles/test_object_iterator.dir/test_object_iterator.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_object_iterator
+[78/89] Linking C executable tests/test_object_iterator
+PROFILER_LOG: level=3|name=Finish Command|duration=18 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 14, command_edges_ = 89
+Final capacity: 23
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=358 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_strerror_debug
+Inputs:
+  tests/CMakeFiles/test_strerror.dir/test_strerror.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_strerror
+[79/89] Linking C executable tests/test_strerror
+PROFILER_LOG: level=3|name=Finish Command|duration=25 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 13, command_edges_ = 89
+Final capacity: 24
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=1 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=102 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_set_serializer_debug
+Inputs:
+  tests/CMakeFiles/test_set_serializer.dir/test_set_serializer.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_set_serializer
+[80/89] Linking C executable tests/test_set_serializer
+PROFILER_LOG: level=3|name=Finish Command|duration=22 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 12, command_edges_ = 89
+Final capacity: 25
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=150 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_json_pointer_debug
+Inputs:
+  tests/CMakeFiles/test_json_pointer.dir/test_json_pointer.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_json_pointer
+[81/89] Linking C executable tests/test_json_pointer
+PROFILER_LOG: level=3|name=Finish Command|duration=21 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 11, command_edges_ = 89
+Final capacity: 26
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=53 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_set_value_debug
+Inputs:
+  tests/CMakeFiles/test_set_value.dir/test_set_value.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_set_value
+[82/89] Linking C executable tests/test_set_value
+PROFILER_LOG: level=3|name=Finish Command|duration=20 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 10, command_edges_ = 89
+Final capacity: 27
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=15 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_int_add_debug
+Inputs:
+  tests/CMakeFiles/test_int_add.dir/test_int_add.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_int_add
+[83/89] Linking C executable tests/test_int_add
+PROFILER_LOG: level=3|name=Finish Command|duration=19 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 9, command_edges_ = 89
+Final capacity: 28
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=16 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_parse_int64_debug
+Inputs:
+  tests/CMakeFiles/test_parse_int64.dir/test_parse_int64.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_parse_int64
+[84/89] Linking C executable tests/test_parse_int64
+PROFILER_LOG: level=3|name=Finish Command|duration=19 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 8, command_edges_ = 89
+Final capacity: 29
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=114 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_printbuf_debug
+Inputs:
+  tests/CMakeFiles/test_printbuf.dir/test_printbuf.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_printbuf
+[85/89] Linking C executable tests/test_printbuf
+PROFILER_LOG: level=3|name=Finish Command|duration=21 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 7, command_edges_ = 89
+Final capacity: 30
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=214 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_util_file_debug
+Inputs:
+  tests/CMakeFiles/test_util_file.dir/test_util_file.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_util_file
+[86/89] Linking C executable tests/test_util_file
+PROFILER_LOG: level=3|name=Finish Command|duration=24 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 6, command_edges_ = 89
+Final capacity: 31
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=402 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_json_patch_debug
+Inputs:
+  tests/CMakeFiles/test_json_patch.dir/test_json_patch.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_json_patch
+[87/89] Linking C executable tests/test_json_patch
+PROFILER_LOG: level=3|name=Finish Command|duration=21 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 5, command_edges_ = 89
+Final capacity: 32
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=173 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__test_cast_debug
+Inputs:
+  tests/CMakeFiles/test_cast.dir/test_cast.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  tests/test_cast
+[88/89] Linking C executable tests/test_cast
+PROFILER_LOG: level=3|name=Finish Command|duration=19 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 4, command_edges_ = 89
+Final capacity: 33
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: phony
+Inputs:
+  tests/test1Formatted
+  tests/test2Formatted
+  tests/test1
+  tests/test2
+  tests/test4
+  tests/testReplaceExisting
+  tests/test_cast
+  tests/test_charcase
+  tests/test_compare
+  tests/test_deep_copy
+  tests/test_double_serializer
+  tests/test_float
+  tests/test_int_add
+  tests/test_int_get
+  tests/test_locale
+  tests/test_null
+  tests/test_parse
+  tests/test_parse_int64
+  tests/test_printbuf
+  tests/test_set_serializer
+  tests/test_set_value
+  tests/test_strerror
+  tests/test_util_file
+  tests/test_visit
+  tests/test_object_iterator
+  tests/test_json_pointer
+  tests/test_json_patch
+Outputs:
+  tests/all
+PROFILER_LOG: level=3|name=Start Edge|duration=23 微秒
+PROFILER_LOG: level=3|name=Finish Phony Edge|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Check Early Exit|duration=0 微秒
+PROFILER_LOG: level=3|name=Wait For Command|duration=521 微秒
+Finishing Edge - Rule: C_EXECUTABLE_LINKER__json_parse_debug
+Inputs:
+  apps/CMakeFiles/json_parse.dir/json_parse.c.o
+  libjson-c.so.5.4.0
+  libjson-c.so
+  libjson-c.so
+Outputs:
+  apps/json_parse
+[89/89] Linking C executable apps/json_parse
+PROFILER_LOG: level=3|name=Finish Command|duration=23 微秒
+PROFILER_LOG: level=3|name=Handle Command Result|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 2, command_edges_ = 89
+Final capacity: 34
+PROFILER_LOG: level=3|name=Check Runner Capacity|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: phony
+Inputs:
+  apps/json_parse
+Outputs:
+  apps/all
+PROFILER_LOG: level=3|name=Start Edge|duration=3 微秒
+PROFILER_LOG: level=3|name=Finish Phony Edge|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+PROFILER_LOG: level=3|name=Handle Generator Edge|duration=0 微秒
+Starting Edge - Rule: phony
+Inputs:
+  libjson-c.so
+  libjson-c.a
+  doc/all
+  tests/all
+  apps/all
+Outputs:
+  all
+PROFILER_LOG: level=3|name=Start Edge|duration=6 微秒
+PROFILER_LOG: level=3|name=Finish Phony Edge|duration=0 微秒
+PROFILER_LOG: level=3|name=Find Work|duration=0 微秒
+Checking more_to_do: wanted_edges_ = 0, command_edges_ = 89
+PROFILER_LOG: level=3|name=Check Early Exit|duration=1 微秒
+PROFILER_LOG: level=2|name=Build Loop|duration=247673 微秒
+PROFILER_LOG: level=2|name=Build Finish|duration=0 微秒
+PROFILER_LOG: level=1|name=Build Execution|duration=247706 微秒
+PROFILER_LOG: level=1|name=Handle Build Result|duration=0 微秒
+PROFILER_LOG: level=0|name=Run Build|duration=248269 微秒
+总耗时: 250219 微秒
+
+Level 0 前 5 个耗时最多的记录:
+  Run Build: 248269 微秒 (99.22%)
+  Manifest Parsing and Rebuilding: 1708 微秒 (0.68%)
+  Initialization: 231 微秒 (0.09%)
+
+Level 1 前 5 个耗时最多的记录:
+  Build Execution: 247706 微秒 (99.00%)
+  Builder Initialization: 512 微秒 (0.20%)
+  Check Up-to-date: 0 微秒 (0.00%)
+  Collect Targets: 0 微秒 (0.00%)
+  Disable Stat Cache: 0 微秒 (0.00%)
+
+Level 2 前 5 个耗时最多的记录:
+  Build Loop: 247673 微秒 (98.98%)
+  Prepare Queue: 20 微秒 (0.01%)
+  Setup Command Runner: 5 微秒 (0.00%)
+  Build Finish: 0 微秒 (0.00%)
+  Build Start: 0 微秒 (0.00%)
+
+Level 3 前 5 个耗时最多的记录:
+  Wait For Command: 178172 微秒 (71.21%)
+  Start Edge: 50780 微秒 (20.29%)
+  Finish Command: 12904 微秒 (5.16%)
+  Re-evaluate Capacity: 388 微秒 (0.16%)
+  Check Runner Capacity: 95 微秒 (0.04%)
+Total edges started: 92
+Total edges finished: 89
+--------------------------------------------------
+CMake time: 3520000.00 microseconds
+Ninja total time: 250219 microseconds
+Total time: 3770219.00 microseconds
+CMake ratio: 93.00%
+Ninja ratio: 6.00%
+Level 0 Global Percentages:
+  Run Build: 248269 microseconds (6.00%)
+  Manifest Parsing and Rebuilding: 1708 microseconds (0%)
+  Initialization: 231 microseconds (0%)

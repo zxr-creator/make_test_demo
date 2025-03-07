@@ -110,7 +110,7 @@ check_also_make (const struct file *file)
 enum update_status
 update_goal_chain (struct goaldep *goaldeps)
 {
-  profiler_operation_start(1, "Duplicate the chain.");
+  profiler_operation_start(2, "Duplicate the chain.");
   int t = touch_flag, q = question_flag, n = just_print_flag;
   enum update_status status = us_none;
 
@@ -127,29 +127,29 @@ update_goal_chain (struct goaldep *goaldeps)
   ++considered;
 
   /* Update all the goals until they are all finished.  */
-  profiler_operation_end(1, "Duplicate the chain.");
-  profiler_operation_start(1, "Update all the goals");
+  profiler_operation_end(2, "Duplicate the chain.");
+  profiler_operation_start(2, "Update all the goals");
   while (goals != 0)
     {
-      profiler_operation_start(2,"Variable initalzation");
+      profiler_operation_start(3,"Variable initalzation");
+      profiler_operation_start(4,"Start jobs that are waiting for the load to go down");
       struct dep *gu, *g, *lastgoal;
 
       /* Start jobs that are waiting for the load to go down.  */
-      profiler_operation_start(3,"Start jobs that are waiting for the load to go down");
       start_waiting_jobs ();
-      profiler_operation_end(3,"Start jobs that are waiting for the load to go down");
+      profiler_operation_end(4,"Start jobs that are waiting for the load to go down");
       /* Wait for a child to die.  */
-      profiler_operation_start(3,"Wait for a child to die");
+      profiler_operation_start(4,"Wait for a child to die");
       reap_children (1, 0);
       
       lastgoal = 0;
       gu = goals;
-      profiler_operation_end(3,"Wait for a child to die");
-      profiler_operation_end(2,"Variable initalzation");
-      profiler_operation_start(2, "Iterate over all double-colon entries for this file");
+      profiler_operation_end(4,"Wait for a child to die");
+      profiler_operation_end(3,"Variable initalzation");
+      profiler_operation_start(3, "Iterate over all double-colon entries for this file");
       while (gu != 0)
         {
-          profiler_operation_start(3, "Ensuring that build targets are checked and updated properly");
+          profiler_operation_start(4, "Ensuring that build targets are checked and updated properly");
           /* Iterate over all double-colon entries for this file.  */
 
           struct file *file;
@@ -163,12 +163,11 @@ update_goal_chain (struct goaldep *goaldeps)
                file != NULL;
                file = file->prev)
             {
-              profiler_operation_start(4, "Save the old value of 'commands_started'");
+              profiler_operation_start(5, "Check renamed and update files");
               unsigned int ocommands_started;
               enum update_status fail;
 
               file->dontcare = ANY_SET (g->flags, RM_DONTCARE);
-              
               check_renamed (file);
               if (rebuilding_makefiles)
                 {
@@ -181,16 +180,15 @@ update_goal_chain (struct goaldep *goaldeps)
                   else
                     touch_flag = question_flag = just_print_flag = 0;
                 }
-
               /* Save the old value of 'commands_started' so we can compare
                  later.  It will be incremented when any commands are
-                 actually run.  */
+                 actually run.  */   
               ocommands_started = commands_started;
               
               fail = update_file (file, rebuilding_makefiles ? 1 : 0);
               check_renamed (file);
-              profiler_operation_end(4, "Save the old value of 'commands_started'");
-              profiler_operation_start(4, "Set the goal's 'changed' flag");
+              profiler_operation_end(5, "Check renamed and update files");
+              profiler_operation_start(5, "Set the goal's 'changed' flag");
               /* Set the goal's 'changed' flag if any commands were started
                  by calling update_file above.  We check this flag below to
                  decide when to give an "up to date" diagnostic.  */
@@ -234,21 +232,21 @@ update_goal_chain (struct goaldep *goaldeps)
                         }
                     }
                 }
-                profiler_operation_end(4, "Set the goal's 'changed' flag");  
+                profiler_operation_end(5, "Set the goal's 'changed' flag");  
               /* Keep track if any double-colon entry is not finished.
                  When they are all finished, the goal is finished.  */
-              profiler_operation_start(4, "Keep track if any double-colon entry is not finished");     
+              profiler_operation_start(5, "Keep track if any double-colon entry is not finished");     
               any_not_updated |= !file->updated;
 
               file->dontcare = 0;
 
               if (stop)
                 break;
-              profiler_operation_end(4, "Keep track if any double-colon entry is not finished");    
+              profiler_operation_end(5, "Keep track if any double-colon entry is not finished");    
             }
             
-            profiler_operation_end(3, "Ensuring that build targets are checked and updated properly");
-            profiler_operation_start(3, "Ensuring that build targets are checked and updated properly");
+            profiler_operation_end(4, "Ensuring that build targets are checked and updated properly");
+            profiler_operation_start(4, "Ensuring that build targets are checked and updated properly");
           /* Reset FILE since it is null at the end of the loop.  */
           file = g->file;
           if (stop || !any_not_updated)
@@ -289,11 +287,11 @@ update_goal_chain (struct goaldep *goaldeps)
          for the next pass.  */
       if (gu == 0)
         ++considered;
-        profiler_operation_end(3, "Ensuring that build targets are checked and updated properly");
-        profiler_operation_end(2, "Iterate over all double-colon entries for this file");  
+        profiler_operation_end(4, "Ensuring that build targets are checked and updated properly");
+        profiler_operation_end(3, "Iterate over all double-colon entries for this file");  
     }
-  profiler_operation_end(1, "Update all the goals");
-  profiler_operation_start(1, "Free_dep_chain");  
+  profiler_operation_end(2, "Update all the goals");
+  profiler_operation_start(2, "Free_dep_chain");  
   free_dep_chain (goals_orig);
   
   if (rebuilding_makefiles)
@@ -303,7 +301,7 @@ update_goal_chain (struct goaldep *goaldeps)
       just_print_flag = n;
     }
   return status;
-  profiler_operation_end(1, "Free_dep_chain");
+  profiler_operation_end(2, "Free_dep_chain");
 }
 
 /* If we're rebuilding an included makefile that failed, and we care
@@ -349,7 +347,6 @@ update_file (struct file *file, unsigned int depth)
   struct file *f;
 
   f = file->double_colon ? file->double_colon : file;
-
   /* Prune the dependency graph: if we've already been here on _this_
      pass through the dependency graph, we don't have to go any further.
      We won't reap_children until we start the next pass, so no state
@@ -366,9 +363,8 @@ update_file (struct file *file, unsigned int depth)
           return f->command_state == cs_finished ? f->update_status : us_success;
         }
     }
-
   /* This loop runs until we start commands for a double colon rule, or until
-     the chain is exhausted. */
+     the chain is exhausted. */ 
   for (; f != 0; f = f->prev)
     {
       enum update_status new;
@@ -394,7 +390,6 @@ update_file (struct file *file, unsigned int depth)
       if (new > status)
         status = new;
     }
-
   return status;
 }
 

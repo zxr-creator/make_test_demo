@@ -68,14 +68,26 @@ or
 - make clean
 - make
 - cd ..
-- sh launch_make.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/llama.cpp /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
+- sh launch_make.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
 
 4. Compile the custom ninja
 - python configure.py --bootstrap
 - cd ..
-- sh launch_ninja.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/llama.cpp /home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
+- sh launch_ninja.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c /home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
 
-5. Alternative projects:
+5. Compile Pytorch with Make and Ninja
+- git clone --recursive https://github.com/pytorch/pytorch.git
+- cd pytorch
+- export CUDA_HOME=/usr/local/cuda-12.4
+- export PATH="$CUDA_HOME/bin:${PATH}"
+- export LD_LIBRARY_PATH="$CUDA_HOME/lib64:${LD_LIBRARY_PATH}"
+- git checkout v2.6.0
+- git submodule sync && git submodule update --init --recursive
+- sh launch_make_pytorch.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
+- sh launch_ninja_pytorch.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
+
+
+6. Alternative projects:
 - OpenCV https://github.com/opencv/opencv
 - Blender https://github.com/blender/blender
 - LLVM https://github.com/llvm/llvm-project

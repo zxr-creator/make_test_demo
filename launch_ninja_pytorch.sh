@@ -6,8 +6,8 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-PROJECT_PATH="$1"
-NINJA_PATH="$2"
+PROJECT_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch"
+NINJA_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja"
 
 # Change to project directory
 cd "$PROJECT_PATH" || {
@@ -29,8 +29,12 @@ cd build_ninja
 
 # Run cmake and measure precise time
 # Using `time` command directly and capturing its output
-CMAKE_OUTPUT=$( { /usr/bin/time -p cmake -G Ninja .. 2>&1 | tee /dev/tty; } )
-
+CMAKE_OUTPUT=$( { /usr/bin/time -p cmake -G Ninja \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_MAKE_PROGRAM=/home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja \
+      -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-12.4 \
+      ..
+ 2>&1 | tee /dev/tty; } )
 # 使用 grep 提取以 "real" 开头的行，并用 awk 取出时间数值
 CMAKE_TIME=$(echo "$CMAKE_OUTPUT" | grep '^real' | awk '{print $2}')
 
@@ -61,9 +65,10 @@ MANIFEST_TIME=$(grep "Manifest Parsing and Rebuilding:" "$LOG_FILE" | awk '{prin
 INIT_TIME=$(awk '/[[:space:]]*Initialization:/ {print $2; exit}' "$LOG_FILE")
 
 # Calculate global percentages for Level 0 stages
-RUN_BUILD_RATIO=$(awk "BEGIN {printf \"%.2f\", $RUN_BUILD_TIME/$TOTAL_TIME*100}")
-MANIFEST_RATIO=$(awk "BEGIN {printf \"%.2f\", $MANIFEST_TIME/$TOTAL_TIME*100}")
-INIT_RATIO=$(awk "BEGIN {printf \"%.2f\", $INIT_TIME/$TOTAL_TIME*100}")
+RUN_BUILD_RATIO=$(echo "scale=2; $RUN_BUILD_TIME / $TOTAL_TIME * 100" | bc)
+MANIFEST_RATIO=$(echo "scale=2; $MANIFEST_TIME / $TOTAL_TIME * 100" | bc)
+INIT_RATIO=$(echo "scale=2; $INIT_TIME / $TOTAL_TIME * 100" | bc)
+
 
 # Append results to log file
 {
@@ -85,5 +90,4 @@ sed -i '1,2d' "$GRAPH_DOT"
 dot -Tsvg "$GRAPH_DOT" -o "$GRAPH_SVG"
 
 # Return to root directory
-cd ..
-cd ..
+cd /home/ubuntu/Xinrui/makefile_ninja_benchmarks

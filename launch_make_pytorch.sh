@@ -6,8 +6,8 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-PROJECT_PATH="$1"
-MAKE_PATH="$2"
+PROJECT_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch"
+MAKE_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make"
 
 # Change to project directory
 cd "$PROJECT_PATH" || {
@@ -28,15 +28,18 @@ mkdir -p build_make
 cd build_make
 
 # 使用 /usr/bin/time -p 来捕获 cmake 的执行时间
-CMAKE_OUTPUT=$( { /usr/bin/time -p cmake .. 2>&1 | tee /dev/tty; } )
-
+CMAKE_OUTPUT=$( { /usr/bin/time -p cmake -G "Unix Makefiles" \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_MAKE_PROGRAM=/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make \
+      -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-12.4 \
+      .. 2>&1 | tee /dev/tty; } )
 # 使用 grep 提取以 "real" 开头的行，并用 awk 取出时间数值
 CMAKE_TIME=$(echo "$CMAKE_OUTPUT" | grep '^real' | awk '{print $2}')
 
 # Make clean first
 make clean
 # Run make and append output to log file
-"$MAKE_PATH" -j$(nproc) -l$(nproc) 2>&1 | tee -a "$LOG_FILE"
+"$MAKE_PATH" -j$(nproc) 2>&1 | tee -a "$LOG_FILE"
 
 # Step 2: Analyze build log
 
@@ -81,5 +84,4 @@ INIT_RATIO=$(awk "BEGIN {printf \"%.2f\", $INIT_TIME/$TOTAL_TIME*100}")
 dot -Tsvg "$GRAPH_DOT" -o "$GRAPH_SVG"
 
 # Return to root directory
-cd ..
-cd ..
+cd /home/ubuntu/Xinrui/makefile_ninja_benchmarks

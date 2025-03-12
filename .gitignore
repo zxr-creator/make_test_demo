@@ -43,6 +43,5 @@ pytorch/build_make/*
 pytorch/build_ninja/*
 opencv/
 json-c/json-c-build/*
-results/
-results/profiler_results/pytorch_ninja_log.txt
-results/profiler_results/pytorch_make_log.txt
+make_new/*
+results/*

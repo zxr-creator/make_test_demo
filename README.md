@@ -8,7 +8,7 @@ The location of the process_mark.py for each benchmark:
 - zlib/process_mark.py
 2. Add logs to show running time of each part in ninja/make.
 
-3. Compile the custom make and try it on the benchmarks(take libpng as an example)
+3. Compile with custom make and try it on the benchmarks(take libpng as an example)
 The first thing to do is to add the C++ compiler and flags to the Makefile. Remember to add the C++ compiler and flags to the Makefile every time you delete the Makefile and after you run ./configure (like running the command make distclean).
 
 - Step 1: Add C++ Compiler and Flags
@@ -70,12 +70,14 @@ or
 - cd ..
 - sh launch_make.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
 
-4. Compile the custom ninja
+4. Compile with custom ninja
 - python configure.py --bootstrap
 - cd ..
 - sh launch_ninja.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c /home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
 
 5. Compile Pytorch with Make and Ninja
+- source pytorch-build-env/bin/activate
+- pip install --upgrade pip setuptools
 - git clone --recursive https://github.com/pytorch/pytorch.git
 - cd pytorch
 - export CUDA_HOME=/usr/local/cuda-12.4
@@ -83,10 +85,11 @@ or
 - export LD_LIBRARY_PATH="$CUDA_HOME/lib64:${LD_LIBRARY_PATH}"
 - git checkout v2.6.0
 - git submodule sync && git submodule update --init --recursive
-- sh launch_make_pytorch.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
-- sh launch_ninja_pytorch.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
+sh launch_make_pytorch.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
+sh launch_ninja_pytorch.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
 
-
+sh launch_make.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/opencv /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
+sh launch_ninja.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/opencv /home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja
 6. Alternative projects:
 - OpenCV https://github.com/opencv/opencv
 - Blender https://github.com/blender/blender

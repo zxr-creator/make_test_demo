@@ -78,6 +78,11 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
-    }
+        "variant": "cpp",
+        "*.ipp": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
+        "slist": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/demo_project"
 }

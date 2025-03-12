@@ -552,10 +552,7 @@ int64_t EdgeWeightHeuristic(Edge* edge, const PriorityMode mode) {
   }
 
   switch (mode) {
-    case PRIORITY_RANDOM: {
-      // 生成 1-10 的随机数
-      return 1 + (rand() % 10);  // rand() % 10 生成 0-9，加上 1 得到 1-10
-    }
+    case PRIORITY_RANDOM: 
     case PRIORITY_DEFAULT:
     default: {
       return 1;  // 默认返回 1
@@ -1013,20 +1010,6 @@ ExitStatus Builder::Build(string* err) {
 bool Builder::StartEdge(Edge* edge, string* err) {
   METRIC_RECORD("StartEdge");
   profiler.StartEdgeRecord();
-  std::cout << "Starting Edge - Rule: " << edge->rule().name() << std::endl;
-    
-  std::cout << "Inputs:" << std::endl;
-  for (std::vector<Node*>::iterator in = edge->inputs_.begin(); 
-       in != edge->inputs_.end(); ++in) {
-      std::cout << "  " << (*in)->path() << std::endl;
-  }
-
-  std::cout << "Outputs:" << std::endl;
-  for (std::vector<Node*>::iterator out = edge->outputs_.begin(); 
-       out != edge->outputs_.end(); ++out) {
-      const std::string& path = (*out)->path();
-      std::cout << "  " << path << std::endl;
-  }
 
   // 包工头先看看是不是“假活”（phony），如果是就说“OK”走人
   // phony 是啥：一种不真干活的规则，比如 build all: phony main.o，只是个标记
@@ -1107,20 +1090,6 @@ bool Builder::FinishCommand(CommandRunner::Result* result, string* err) {
   METRIC_RECORD("FinishCommand");
 
   Edge* edge = result->edge;
-  std::cout << "Finishing Edge - Rule: " << edge->rule().name() << std::endl;
-    
-  std::cout << "Inputs:" << std::endl;
-  for (std::vector<Node*>::iterator in = edge->inputs_.begin(); 
-       in != edge->inputs_.end(); ++in) {
-      std::cout << "  " << (*in)->path() << std::endl;
-  }
-
-  std::cout << "Outputs:" << std::endl;
-  for (std::vector<Node*>::iterator out = edge->outputs_.begin(); 
-       out != edge->outputs_.end(); ++out) {
-      const std::string& path = (*out)->path();
-      std::cout << "  " << path << std::endl;
-  }
   profiler.FinishEdgeRecord();
   // First try to extract dependencies from the result, if any.
   // This must happen first as it filters the command output (we want

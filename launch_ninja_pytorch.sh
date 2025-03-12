@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Check if project path is provided
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 <project_path> <ninja_path>"
-    exit 1
-fi
+# if [ $# -ne 2 ]; then
+#     echo "Usage: $0 <project_path> <ninja_path>"
+#     exit 1
+# fi
 
 PROJECT_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch"
 NINJA_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja"
@@ -40,7 +40,7 @@ CMAKE_TIME=$(echo "$CMAKE_OUTPUT" | grep '^real' | awk '{print $2}')
 
 echo $CMAKE_TIME
 # Run ninja and append output to log file
-"$NINJA_PATH" 2>&1 | tee -a "$LOG_FILE"
+"$NINJA_PATH" -p random 2>&1 | tee -a "$LOG_FILE"
 
 # Step 2: Analyze build log
 
@@ -87,7 +87,7 @@ INIT_RATIO=$(echo "scale=2; $INIT_TIME / $TOTAL_TIME * 100" | bc)
 # Step 3: Generate dependency graph using ninja
 "$NINJA_PATH" -t graph > "$GRAPH_DOT"
 sed -i '1,2d' "$GRAPH_DOT"
-dot -Tsvg "$GRAPH_DOT" -o "$GRAPH_SVG"
+
 
 # Return to root directory
 cd /home/ubuntu/Xinrui/makefile_ninja_benchmarks

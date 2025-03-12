@@ -53,10 +53,10 @@ def process_dot_file(file_path, output_file):
         out_degree[src_node_name] += 1
         in_degree[dst_node_name] += 1
 
-    # 根节点：入度为 0
-    roots = [node_name for node_name, deg in in_degree.items() if deg == 0]
     # 叶子节点：出度为 0
-    leaves = [node_name for node_name, deg in out_degree.items() if deg == 0]
+    leaves = [node_name for node_name, deg in in_degree.items() if deg == 0]
+    # 根节点：入度为 0
+    roots = [node_name for node_name, deg in out_degree.items() if deg == 0]
 
     # 将输出写入文件
     with open(output_file, 'a') as f:  # 'a' 表示追加模式
@@ -71,18 +71,21 @@ def process_dot_file(file_path, output_file):
     return label_set
 
 if __name__ == '__main__':
-    output_file = 'output.txt'
+    project_path = input("请输入工程路径：").strip()
+    output_file = f"{project_path}/build/graph_analysis.txt"
     
-    # 清空文件（如果需要覆盖而不是追加，可以用 'w' 模式）
-    open(output_file, 'w').close()
+    # 清空输出文件内容（覆盖写入）
+    open(output_file, 'w', encoding='utf-8').close()
     
-    # 处理两个 DOT 文件
-    ninja_nodes = process_dot_file('/scorpio/home/shenao/myProject/makefile_ninja_benchmarks/results/dependency_graphs/libpng_ninja_graph.dot', output_file)
-    make_nodes = process_dot_file('/scorpio/home/shenao/myProject/makefile_ninja_benchmarks/results/dependency_graphs/libpng_make_graph.dot', output_file)
+    # 处理两个 DOT 文件（假定 process_dot_file 已经定义）
+    ninja_nodes = process_dot_file(f"{project_path}/build/build_ninja/graph.dot", output_file)
+    make_nodes = process_dot_file(f"{project_path}/build/build_make/graph.dot", output_file)
     
-    # 计算交集并写入文件
+    # 计算交集
     intersection = ninja_nodes.intersection(make_nodes)
-    with open(output_file, 'a') as f:
+    
+    # 将结果追加写入输出文件
+    with open(output_file, 'a', encoding='utf-8') as f:
         f.write("\n两个图中节点（文件名）的交集:\n")
         f.write(f"交集个数: {len(intersection)}\n")
         f.write(f"交集内容: {sorted(intersection)}\n")

@@ -1,5 +1,41 @@
-Cmake:
-real 20.29
-user 16.96
-sys 6.33
-Ninja:
+real 25.66 秒
+
+总耗时: 1678345730 微秒， 27分钟
+
+Level 0 前 5 个耗时最多的记录:
+  Run Build: 1647098611 微秒 (99.66%)
+  Manifest Parsing and Rebuilding: 5586865 微秒 (0.34%)
+  Initialization: 233 微秒 (0.00%)
+
+Level 1 前 5 个耗时最多的记录:
+  Build Execution: 1647016338 微秒 (99.66%)
+  Build Loop: 5465598 微秒 (0.33%)
+  Builder Initialization: 82201 微秒 (0.00%)
+  Prepare Queue: 15 微秒 (0.00%)
+  Setup Command Runner: 6 微秒 (0.00%)
+
+Level 2 前 5 个耗时最多的记录:
+  Build Loop: 1647014273 微秒 (99.66%)
+  Wait For Command: 5308829 微秒 (0.32%)
+  Finish Command: 97729 微秒 (0.01%)
+  Start Edge: 58882 微秒 (0.00%)
+  Prepare Queue: 2047 微秒 (0.00%)
+
+Level 3 前 5 个耗时最多的记录:
+  Wait For Command: 1604110310 微秒 (97.06%)
+  Start Edge: 21942421 微秒 (1.33%)
+  Finish Command: 17413015 微秒 (1.05%)
+  Re-evaluate Capacity: 208086 微秒 (0.01%)
+  Check Runner Capacity: 87750 微秒 (0.01%)
+Total edges started: 7658
+Total edges finished: 7517
+--------------------------------------------------
+CMake time:  microseconds
+Ninja total time: 1652685730 microseconds
+Total time:  microseconds
+CMake ratio: %
+Ninja ratio: %
+Level 0 Global Percentages:
+  Run Build: 1647098611 microseconds (%)
+  Manifest Parsing and Rebuilding: 5586865 microseconds (%)
+  Initialization: 233 microseconds (%)

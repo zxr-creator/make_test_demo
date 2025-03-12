@@ -20,6 +20,7 @@
 #include <set>
 #include <string>
 #include <vector>
+#include <random>
 
 #include "dyndep.h"
 #include "eval_env.h"
@@ -480,12 +481,24 @@ struct EdgePriorityGreater {
   }
 };
 
+// 添加新的随机优先级比较器
+struct EdgePriorityRandom {
+  bool operator()(const Edge* e1, const Edge* e2) const {
+    // 使用随机数比较，而不是基于 critical_path_weight 或 id
+    // 使用线程安全的随机数生成器
+    static thread_local std::random_device rd;
+    static thread_local std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, 1);
+    return dis(gen) < dis(gen);
+  }
+};
+
 // A priority queue holding non-owning Edge pointers. top() will
 // return the edge with the largest critical path weight, and lowest
 // ID if more than one edge has the same critical path weight.
 // 按优先级管理 Edge，每次拿出权重最大、id_ 最小的那个， 自动会排序edges，要看一下是不是真的
 class EdgePriorityQueue:
-  public std::priority_queue<Edge*, std::vector<Edge*>, EdgePriorityLess>{
+  public std::priority_queue<Edge*, std::vector<Edge*>, EdgePriorityRandom>{
 public:
   void clear() {
     c.clear();

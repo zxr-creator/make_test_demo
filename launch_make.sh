@@ -36,12 +36,12 @@ CMAKE_TIME=$(echo "$CMAKE_OUTPUT" | grep '^real' | awk '{print $2}')
 # Make clean first
 make clean
 # Run make and append output to log file
-"$MAKE_PATH" -j$(nproc) -l$(nproc) 2>&1 | tee -a "$LOG_FILE"
+"$MAKE_PATH" -j $(nproc) -l $(nproc) 2>&1 | tee -a "$LOG_FILE"
 
 # Step 2: Analyze build log
 
 # Extract make total time from log (in microseconds)
-MAKE_TOTAL_TIME=$(grep "总耗时:" "$LOG_FILE" | tail -n 1 | awk -F: '{print $2}' | grep -o '[0-9]*' || echo "0")
+MAKE_TOTAL_TIME=$(grep "总耗时:" "$LOG_FILE" | awk '{print $2}' || echo "0")
 
 # Convert cmake time to microseconds
 CMAKE_TIME_US=$(echo "$CMAKE_TIME * 1000000" | bc)
@@ -54,14 +54,15 @@ CMAKE_RATIO=$(echo "scale=2; $CMAKE_TIME_US / $TOTAL_TIME * 100" | bc)
 MAKE_RATIO=$(echo "scale=2; $MAKE_TOTAL_TIME / $TOTAL_TIME * 100" | bc)
 
 # Extract Level 0 timings from log and calculate global percentages
-RUN_BUILD_TIME=$(grep "Run Build:" "$LOG_FILE" | tail -n 1 | awk -F: '{print $2}' | grep -o '[0-9]*' | head -n 1 || echo "0")
-MANIFEST_TIME=$(grep "Manifest Parsing and Rebuilding:" "$LOG_FILE" | tail -n 1 | awk '{for (i=1; i<=NF; i++) if ($i ~ /^[0-9]+$/) {print $i; exit}}' || echo "0")
-INIT_TIME=$(grep "[[:space:]]*Initialization:" "$LOG_FILE" | tail -n 1 | awk -F: '{print $2}' | grep -o '[0-9]*' | head -n 1 || echo "0")
+# Note: These may need adjustment based on Ninja's actual log output
+RUN_BUILD_TIME=$(grep "Run Build:" "$LOG_FILE" | awk '{print $3}' || echo "0")
+MANIFEST_TIME=$(grep "Manifest Parsing and Rebuilding:" "$LOG_FILE" | awk '{print $5}' || echo "0")
+INIT_TIME=$(awk '/[[:space:]]*Initialization:/ {print $2; exit}' "$LOG_FILE")
 
 # Calculate global percentages for Level 0 stages
-RUN_BUILD_RATIO=$(awk "BEGIN {printf \"%.2f\", $RUN_BUILD_TIME/$TOTAL_TIME*100}")
-MANIFEST_RATIO=$(awk "BEGIN {printf \"%.2f\", $MANIFEST_TIME/$TOTAL_TIME*100}")
-INIT_RATIO=$(awk "BEGIN {printf \"%.2f\", $INIT_TIME/$TOTAL_TIME*100}")
+RUN_BUILD_RATIO=$(echo "scale=2; $RUN_BUILD_TIME / $TOTAL_TIME * 100" | bc)
+MANIFEST_RATIO=$(echo "scale=2; $MANIFEST_TIME / $TOTAL_TIME * 100" | bc)
+INIT_RATIO=$(echo "scale=2; $INIT_TIME / $TOTAL_TIME * 100" | bc)
 # Append results to log file
 {
     echo "--------------------------------------------------"
@@ -78,7 +79,6 @@ INIT_RATIO=$(awk "BEGIN {printf \"%.2f\", $INIT_TIME/$TOTAL_TIME*100}")
 
 # Step 3: Generate dependency graphs
 "$MAKE_PATH" -Bnd | make2graph > "$GRAPH_DOT"
-dot -Tsvg "$GRAPH_DOT" -o "$GRAPH_SVG"
 
 # Return to root directory
 cd ..

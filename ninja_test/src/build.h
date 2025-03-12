@@ -134,8 +134,6 @@ private:
   /// we want for the edge.
   std::map<Edge*, Want> want_;
 
-  EdgePriorityQueue ready_;
-
   Builder* builder_;
   /// user provided targets in build order, earlier one have higher priority
   std::vector<const Node*> targets_;
@@ -145,6 +143,8 @@ private:
 
   /// Total remaining number of wanted edges.
   int wanted_edges_;
+
+  EdgePriorityQueue ready_;
 };
 
 struct BuildConfig;

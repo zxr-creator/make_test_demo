@@ -82,7 +82,7 @@ INIT_RATIO=$(awk "BEGIN {printf \"%.2f\", $INIT_TIME/$TOTAL_TIME*100}")
 # Step 3: Generate dependency graph using ninja
 "$NINJA_PATH" -t graph > "$GRAPH_DOT"
 sed -i '1,2d' "$GRAPH_DOT"
-dot -Tsvg "$GRAPH_DOT" -o "$GRAPH_SVG"
+
 
 # Return to root directory
 cd ..

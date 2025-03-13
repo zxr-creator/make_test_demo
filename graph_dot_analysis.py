@@ -6,7 +6,7 @@ def process_dot_file(file_path, output_file):
     graphs = pydot.graph_from_dot_file(file_path)
     if len(graphs) == 0:
         print(f"未找到图: {file_path}")
-        return set()
+        return set(), set(), set()  # 返回三个空集合
     elif len(graphs) > 1:
         raise ValueError("不支持多个图")
     graph = graphs[0]
@@ -14,9 +14,11 @@ def process_dot_file(file_path, output_file):
     # 用显式节点和边上出现的节点构造节点集合
     node_set = set()
     label_set = set()  # 存储 label 的集合
+    root_files = set()  # 存储根节点对应的文件名
+    leaf_files = set()  # 存储叶子节点对应的文件名
     for node in graph.get_nodes():
         node_name = node.get_name()
-        if node_name not in ('node', 'graph', 'edge'):  # 排除 pydot 内部符号，一些metadata
+        if node_name not in ('node', 'graph', 'edge'):  # 排除 pydot 内部符号
             node_set.add(node_name)
             label = node.get('label')  # 获取 label 属性
             if label:
@@ -35,9 +37,9 @@ def process_dot_file(file_path, output_file):
 
     if node_set != new_node_set:
         with open(output_file, 'a') as f:  
-            f.write(f"Warning: node set mismatch in {file_path}")
-            f.write(f"graph.get_nodes() 独有的节点: {node_set - new_node_set}")
-            f.write(f"graph.get_edges()的edge的src和dst node中 独有的节点: {new_node_set - node_set}")
+            f.write(f"Warning: node set mismatch in {file_path}\n")
+            f.write(f"graph.get_nodes() 独有的节点: {node_set - new_node_set}\n")
+            f.write(f"graph.get_edges()的edge的src和dst node中 独有的节点: {new_node_set - node_set}\n")
         node_set = node_set.union(new_node_set)
 
     node_count = len(node_set)
@@ -54,12 +56,24 @@ def process_dot_file(file_path, output_file):
         in_degree[dst_node_name] += 1
 
     # 叶子节点：出度为 0
-    leaves = [node_name for node_name, deg in in_degree.items() if deg == 0]
+    leaves = [node_name for node_name, deg in out_degree.items() if deg == 0]
     # 根节点：入度为 0
-    roots = [node_name for node_name, deg in out_degree.items() if deg == 0]
+    roots = [node_name for node_name, deg in in_degree.items() if deg == 0]
+
+    # 获取根节点和叶子节点对应的文件名
+    for node in graph.get_nodes():
+        node_name = node.get_name()
+        label = node.get('label')
+        if label:
+            label = label.strip('"')
+            filename = os.path.basename(label)
+            if node_name in roots:
+                root_files.add(filename)
+            if node_name in leaves:
+                leaf_files.add(filename)
 
     # 将输出写入文件
-    with open(output_file, 'a') as f:  # 'a' 表示追加模式
+    with open(output_file, 'a') as f:
         f.write(f"\n处理文件: {os.path.basename(file_path)}\n")
         f.write(f"节点个数: {node_count}\n")
         f.write(f"边的个数: {edge_count}\n")
@@ -67,8 +81,10 @@ def process_dot_file(file_path, output_file):
         f.write(f"叶子节点个数: {len(leaves)}\n")
         f.write(f"根节点的哈希: {roots}\n")
         f.write(f"叶子节点的哈希: {leaves}\n")
+        f.write(f"根节点对应的文件名: {sorted(root_files)}\n")
+        f.write(f"叶子节点对应的文件名: {sorted(leaf_files)}\n")
     
-    return label_set
+    return label_set, root_files, leaf_files
 
 if __name__ == '__main__':
     project_path = input("请输入工程路径：").strip()
@@ -77,15 +93,23 @@ if __name__ == '__main__':
     # 清空输出文件内容（覆盖写入）
     open(output_file, 'w', encoding='utf-8').close()
     
-    # 处理两个 DOT 文件（假定 process_dot_file 已经定义）
-    ninja_nodes = process_dot_file(f"{project_path}/build/build_ninja/graph.dot", output_file)
-    make_nodes = process_dot_file(f"{project_path}/build/build_make/graph.dot", output_file)
+    # 处理两个 DOT 文件
+    ninja_nodes, ninja_root_files, ninja_leaf_files = process_dot_file(f"{project_path}/build/build_ninja/graph.dot", output_file)
+    make_nodes, make_root_files, make_leaf_files = process_dot_file(f"{project_path}/build/build_make/graph.dot", output_file)
     
     # 计算交集
     intersection = ninja_nodes.intersection(make_nodes)
+    root_intersection = ninja_root_files.intersection(make_root_files)
+    leaf_intersection = ninja_leaf_files.intersection(make_leaf_files)
     
     # 将结果追加写入输出文件
     with open(output_file, 'a', encoding='utf-8') as f:
         f.write("\n两个图中节点（文件名）的交集:\n")
         f.write(f"交集个数: {len(intersection)}\n")
         f.write(f"交集内容: {sorted(intersection)}\n")
+        f.write("\n两个图中根节点的共同文件:\n")
+        f.write(f"共同根文件个数: {len(root_intersection)}\n")
+        f.write(f"共同根文件内容: {sorted(root_intersection)}\n")
+        f.write("\n两个图中叶子节点的共同文件:\n")
+        f.write(f"共同叶子文件个数: {len(leaf_intersection)}\n")
+        f.write(f"共同叶子文件内容: {sorted(leaf_intersection)}\n")

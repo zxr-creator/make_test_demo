@@ -18,7 +18,7 @@ this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 #include <assert.h>
 #include <string.h>
-
+#include "profiler.h"
 #include "job.h"
 #include "debug.h"
 #include "filedef.h"

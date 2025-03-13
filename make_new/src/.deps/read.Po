@@ -133,8 +133,9 @@ src/read.o: src/read.c /usr/include/stdc-predef.h src/makeint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h src/gettext.h \
  /usr/include/libintl.h /usr/include/glob.h /usr/include/assert.h \
- src/filedef.h src/hash.h src/dep.h src/job.h src/output.h src/os.h \
- src/commands.h src/variable.h src/rule.h src/debug.h /usr/include/pwd.h
+ src/profiler.h src/filedef.h src/hash.h src/dep.h src/job.h src/output.h \
+ src/os.h src/commands.h src/variable.h src/rule.h src/debug.h \
+ /usr/include/pwd.h
 /usr/include/stdc-predef.h:
 src/makeint.h:
 src/config.h:
@@ -295,6 +296,7 @@ src/gettext.h:
 /usr/include/libintl.h:
 /usr/include/glob.h:
 /usr/include/assert.h:
+src/profiler.h:
 src/filedef.h:
 src/hash.h:
 src/dep.h:

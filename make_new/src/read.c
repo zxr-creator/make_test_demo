@@ -17,7 +17,7 @@ this program.  If not, see <https://www.gnu.org/licenses/>.  */
 #include "makeint.h"
 
 #include <assert.h>
-
+#include "profiler.h"
 #include "filedef.h"
 #include "dep.h"
 #include "job.h"
@@ -309,8 +309,10 @@ restore_conditionals (struct conditionals *saved)
 }
 
 static struct goaldep *
+// Read makefile and get dependency.
 eval_makefile (const char *filename, unsigned short flags)
 {
+  profiler_operation_start(4, "Eval makefile"); 
   struct goaldep *deps;
   struct ebuffer ebuf;
   const floc *curfile;
@@ -449,6 +451,7 @@ eval_makefile (const char *filename, unsigned short flags)
   free_alloca ();
 
   errno = 0;
+  profiler_operation_end(4, "Eval makefile"); 
   return deps;
 }
 

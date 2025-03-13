@@ -2,7 +2,7 @@
 
 # 硬编码路径参数
 PROJECT_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch"
-MAKE_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/make"
+MAKE_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make"
 NINJA_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/ninja_test/ninja"
 DOT_ANALYSIS_FILE_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/graph_dot_analysis.py"
 

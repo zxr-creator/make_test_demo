@@ -61,14 +61,14 @@ LINK = $(CXX) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 - make clean
 - make
 - cd ../libpng
-- /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/make clean
-- sudo /home/ubuntu/efs/Xinrui/makefile_ninja_benchmarks/make_new/make -d > make_profile.txt
+- /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make clean
+- sudo /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make -d > make_profile.txt
 or
 - cd ./make_new
 - make clean
 - make
 - cd ..
-- sh launch_make.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/pytorch /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
+- sh launch_make.sh /home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c /home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make
 
 4. Compile with custom ninja
 - python configure.py --bootstrap

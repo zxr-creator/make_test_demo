@@ -43,7 +43,8 @@ make clean
 
 # Step 2: Analyze build log
 
-# Extract make total time from log (in microseconds)
+# Extract make total time from log (assuming make logs "Total time" in microseconds)
+# Note: You might need to adjust this grep based on actual Make output format
 MAKE_TOTAL_TIME=$(grep "总耗时:" "$LOG_FILE" | awk '{print $2}' || echo "0")
 
 # Convert cmake time to microseconds
@@ -57,15 +58,16 @@ CMAKE_RATIO=$(echo "scale=2; $CMAKE_TIME_US / $TOTAL_TIME * 100" | bc)
 MAKE_RATIO=$(echo "scale=2; $MAKE_TOTAL_TIME / $TOTAL_TIME * 100" | bc)
 
 # Extract Level 0 timings from log and calculate global percentages
-# Note: These may need adjustment based on Ninja's actual log output
+# Note: These may need adjustment based on Make's actual log output
 RUN_BUILD_TIME=$(grep "Run Build:" "$LOG_FILE" | awk '{print $3}' || echo "0")
-MANIFEST_TIME=$(grep "Manifest Parsing and Rebuilding:" "$LOG_FILE" | awk '{print $5}' || echo "0")
+PARSING_TIME=$(grep "Argument Parsing and Makefile Updates:" "$LOG_FILE" | awk '{print $5}' || echo "0")
 INIT_TIME=$(awk '/[[:space:]]*Initialization:/ {print $2; exit}' "$LOG_FILE")
 
 # Calculate global percentages for Level 0 stages
 RUN_BUILD_RATIO=$(echo "scale=2; $RUN_BUILD_TIME / $TOTAL_TIME * 100" | bc)
-MANIFEST_RATIO=$(echo "scale=2; $MANIFEST_TIME / $TOTAL_TIME * 100" | bc)
+PARSING_RATIO=$(echo "scale=2; $PARSING_TIME / $TOTAL_TIME * 100" | bc)
 INIT_RATIO=$(echo "scale=2; $INIT_TIME / $TOTAL_TIME * 100" | bc)
+
 # Append results to log file
 {
     echo "--------------------------------------------------"
@@ -76,7 +78,7 @@ INIT_RATIO=$(echo "scale=2; $INIT_TIME / $TOTAL_TIME * 100" | bc)
     echo "Make ratio: $MAKE_RATIO%"
     echo "Level 0 Global Percentages:"
     echo "  Run Build: $RUN_BUILD_TIME microseconds ($RUN_BUILD_RATIO%)"
-    echo "  Manifest Parsing and Rebuilding: $MANIFEST_TIME microseconds ($MANIFEST_RATIO%)"
+    echo "  Argument Parsing and Makefile Updates: $PARSING_TIME microseconds ($PARSING_RATIO%)"
     echo "  Initialization: $INIT_TIME microseconds ($INIT_RATIO%)"
 } >> "$LOG_FILE"
 

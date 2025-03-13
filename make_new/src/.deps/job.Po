@@ -133,9 +133,10 @@ src/job.o: src/job.c /usr/include/stdc-predef.h src/makeint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h src/gettext.h \
  /usr/include/libintl.h /usr/include/glob.h /usr/include/assert.h \
- src/job.h src/output.h src/debug.h src/filedef.h src/hash.h \
- src/commands.h src/variable.h src/os.h src/dep.h src/shuffle.h \
- /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ src/profiler.h src/job.h src/output.h src/debug.h src/filedef.h \
+ src/hash.h src/commands.h src/variable.h src/os.h src/dep.h \
+ src/shuffle.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
@@ -304,6 +305,7 @@ src/gettext.h:
 /usr/include/libintl.h:
 /usr/include/glob.h:
 /usr/include/assert.h:
+src/profiler.h:
 src/job.h:
 src/output.h:
 src/debug.h:

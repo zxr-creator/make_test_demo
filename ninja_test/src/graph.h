@@ -498,7 +498,7 @@ struct EdgePriorityRandom {
 // ID if more than one edge has the same critical path weight.
 // 按优先级管理 Edge，每次拿出权重最大、id_ 最小的那个， 自动会排序edges，要看一下是不是真的
 class EdgePriorityQueue:
-  public std::priority_queue<Edge*, std::vector<Edge*>, EdgePriorityRandom>{
+  public std::priority_queue<Edge*, std::vector<Edge*>, EdgePriorityLess>{
 public:
   void clear() {
     c.clear();

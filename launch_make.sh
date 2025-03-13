@@ -9,6 +9,9 @@ fi
 PROJECT_PATH="$1"
 MAKE_PATH="$2"
 
+PROJECT_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/json-c"
+MAKE_PATH="/home/ubuntu/Xinrui/makefile_ninja_benchmarks/make_new/make"
+
 # Change to project directory
 cd "$PROJECT_PATH" || {
     echo "Error: Could not change to directory '$PROJECT_PATH'"
@@ -40,29 +43,34 @@ make clean
 
 # Step 2: Analyze build log
 
-# Extract make total time from log (in microseconds)
-MAKE_TOTAL_TIME=$(grep "总耗时:" "$LOG_FILE" | awk '{print $2}' || echo "0")
-
+# Extract make total time from log (assuming make logs "Total time" in microseconds)
+# Note: You might need to adjust this grep based on actual Make output format
+MAKE_TOTAL_TIME=$(grep "总耗时:" "$LOG_FILE" | awk '{print $3}' | grep -oE '[0-9]+(\.[0-9]+)?' || echo "0")
+echo "MAKE_TOTAL_TIME: $MAKE_TOTAL_TIME"
 # Convert cmake time to microseconds
 CMAKE_TIME_US=$(echo "$CMAKE_TIME * 1000000" | bc)
-
+echo "CMAKE_TIME_US: $CMAKE_TIME_US"
 # Calculate total time (cmake + make)
 TOTAL_TIME=$(echo "$CMAKE_TIME_US + $MAKE_TOTAL_TIME" | bc)
-
+echo "TOTAL_TIME: $TOTAL_TIME"
 # Calculate cmake and make percentages
-CMAKE_RATIO=$(echo "scale=2; $CMAKE_TIME_US / $TOTAL_TIME * 100" | bc)
-MAKE_RATIO=$(echo "scale=2; $MAKE_TOTAL_TIME / $TOTAL_TIME * 100" | bc)
-
+CMAKE_RATIO=$(echo "$CMAKE_TIME_US / $TOTAL_TIME * 100" | bc -l | awk '{printf "%.2f\n", $0}')
+MAKE_RATIO=$(echo "$MAKE_TOTAL_TIME / $TOTAL_TIME * 100" | bc -l | awk '{printf "%.2f\n", $0}')
+echo "CMAKE_RATIO: $CMAKE_RATIO"
+echo "MAKE_RATIO: $MAKE_RATIO"
 # Extract Level 0 timings from log and calculate global percentages
-# Note: These may need adjustment based on Ninja's actual log output
-RUN_BUILD_TIME=$(grep "Run Build:" "$LOG_FILE" | awk '{print $3}' || echo "0")
-MANIFEST_TIME=$(grep "Manifest Parsing and Rebuilding:" "$LOG_FILE" | awk '{print $5}' || echo "0")
-INIT_TIME=$(awk '/[[:space:]]*Initialization:/ {print $2; exit}' "$LOG_FILE")
+# Note: These may need adjustment based on Make's actual log output
+RUN_BUILD_TIME=$(grep "Run Build:" "$LOG_FILE" | awk '{print $4}' || echo "0")
+MANIFEST_TIME=$(grep "Argument Parsing and Makefile Updates:" "$LOG_FILE" | awk '{print $7}' || echo "0")
+INIT_TIME=$(awk '/[[:space:]]*Initialization:/ {print $3; exit}' "$LOG_FILE")
+echo "RUN_BUILD_TIME: $RUN_BUILD_TIME"
+echo "MANIFEST_TIME: $MANIFEST_TIME"
+echo "INIT_TIME: $INIT_TIME"
 
 # Calculate global percentages for Level 0 stages
-RUN_BUILD_RATIO=$(echo "scale=2; $RUN_BUILD_TIME / $TOTAL_TIME * 100" | bc)
-MANIFEST_RATIO=$(echo "scale=2; $MANIFEST_TIME / $TOTAL_TIME * 100" | bc)
-INIT_RATIO=$(echo "scale=2; $INIT_TIME / $TOTAL_TIME * 100" | bc)
+RUN_BUILD_RATIO=$(awk "BEGIN {printf \"%.2f\", $RUN_BUILD_TIME/$TOTAL_TIME*100}")
+MANIFEST_RATIO=$(awk "BEGIN {printf \"%.2f\", $MANIFEST_TIME/$TOTAL_TIME*100}")
+INIT_RATIO=$(awk "BEGIN {printf \"%.2f\", $INIT_TIME/$TOTAL_TIME*100}")
 # Append results to log file
 {
     echo "--------------------------------------------------"
@@ -73,7 +81,7 @@ INIT_RATIO=$(echo "scale=2; $INIT_TIME / $TOTAL_TIME * 100" | bc)
     echo "Make ratio: $MAKE_RATIO%"
     echo "Level 0 Global Percentages:"
     echo "  Run Build: $RUN_BUILD_TIME microseconds ($RUN_BUILD_RATIO%)"
-    echo "  Manifest Parsing and Rebuilding: $MANIFEST_TIME microseconds ($MANIFEST_RATIO%)"
+    echo "  Argument Parsing and Makefile Updates: $MANIFEST_TIME microseconds ($MANIFEST_RATIO%)"
     echo "  Initialization: $INIT_TIME microseconds ($INIT_RATIO%)"
 } >> "$LOG_FILE"
 

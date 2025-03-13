@@ -51,8 +51,10 @@ CMAKE_TIME_US=$(echo "$CMAKE_TIME * 1000000" | bc)
 TOTAL_TIME=$(echo "$CMAKE_TIME_US + $NINJA_TOTAL_TIME" | bc)
 
 # Calculate cmake and ninja percentages
-CMAKE_RATIO=$(echo "scale=2; $CMAKE_TIME_US / $TOTAL_TIME * 100" | bc)
-NINJA_RATIO=$(echo "scale=2; $NINJA_TOTAL_TIME / $TOTAL_TIME * 100" | bc)
+#CMAKE_RATIO=$(echo "scale=2; $CMAKE_TIME_US / $TOTAL_TIME * 100" | bc)
+#NINJA_RATIO=$(echo "scale=2; $NINJA_TOTAL_TIME / $TOTAL_TIME * 100" | bc)
+CMAKE_RATIO=$(echo "$CMAKE_TIME_US / $TOTAL_TIME * 100" | bc -l | awk '{printf "%.2f\n", $0}')
+NINJA_RATIO=$(echo "$NINJA_TOTAL_TIME / $TOTAL_TIME * 100" | bc -l | awk '{printf "%.2f\n", $0}')
 
 # Extract Level 0 timings from log and calculate global percentages
 # Note: These may need adjustment based on Ninja's actual log output

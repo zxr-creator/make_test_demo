@@ -82,7 +82,15 @@
         "*.ipp": "cpp",
         "hash_map": "cpp",
         "hash_set": "cpp",
-        "slist": "cpp"
+        "slist": "cpp",
+        "format": "cpp",
+        "pointers": "cpp",
+        "csetjmp": "cpp",
+        "source_location": "cpp",
+        "shared_mutex": "cpp",
+        "span": "cpp",
+        "makeint.h": "c",
+        "assert.h": "c"
     },
     "cmake.sourceDirectory": "/home/ubuntu/Xinrui/makefile_ninja_benchmarks/demo_project"
 }
